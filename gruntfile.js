@@ -5,9 +5,6 @@ module.exports = function(grunt) {
 		// Add Sass pre-processor features to 'src' CSS, then compile to theme root.
 		sass: {
 			dist: {
-				options: {
-					noCache: true
-				},
 				files: {
 					'style.css': 'assets/css/src/styles.scss'
 				}

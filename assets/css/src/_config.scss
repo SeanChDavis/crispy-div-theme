@@ -21,11 +21,3 @@ html {
 	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 }
-
-@mixin FontAwesomeRegular {
-	font: var(--fa-font-regular);
-}
-
-@mixin FontAwesomeSolid {
-	font: var(--fa-font-solid);
-}

@@ -7,8 +7,8 @@ get_header();
 crispydiv_page_header( array(
 	'bg-color'            => 'background-pink',
 	'corner-accent-color' => 'white-white',
-	'title'               => get_field( get_queried_object()->name . 's_title', 'options' ) ?: get_queried_object()->name . 's',
-	'description'         => get_field( get_queried_object()->name . 's_description', 'options' ),
+	'title'               => ucfirst(get_queried_object()->name . 's'),
+	'description'         => 'Looking for a WordPress plugin or theme? Or perhaps you need to integrate a WordPress plugin into your existing site? We can help. Check out our offered services and reach out for more information.',
 ) );
 ?>
 
@@ -47,4 +47,8 @@ crispydiv_page_header( array(
     </div>
 
 <?php
+get_template_part( 'template-parts/section', 'got-questions', array(
+		'title' => 'Still have questions?',
+		'description' => 'No problem! Send a general message and we\'ll chat. No obligations.'
+) );
 get_footer();

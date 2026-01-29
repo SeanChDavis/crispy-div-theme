@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="site-info">
-            <p class="site-copyright"><?php echo '&copy ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ); ?> - A Project by <a href="https://toponecode.com" target="_blank">Top One Code LLC</a></p>
+            <p class="site-copyright"><?php echo '&copy ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ); ?> - A Service by <a href="https://seanchdavis.com" target="_blank">Sean Davis</a></p>
         </div>
 	</footer>
 </div>

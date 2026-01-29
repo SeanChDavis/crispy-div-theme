@@ -3,7 +3,6 @@
 
 	.page-header-title,
 	.entry-title {
-		font-weight: 800;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -25,7 +24,7 @@
 		}
 
 		@media all and (min-width: 980px) {
-			grid-template-columns: 3fr 2fr;
+			grid-template-columns: 5fr 4fr;
 		}
 	}
 

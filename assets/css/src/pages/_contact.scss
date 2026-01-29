@@ -1,6 +1,40 @@
 .page-contact {
 
-	#colophon {
-		background-color: $gray;
-	}
+    .contact-form-section {
+
+        .contact-form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            @media (min-width: 840px) {
+                grid-template-columns: 4fr 3fr;
+            }
+
+            .contact-form-grid-content {
+
+                .field {
+                    margin-bottom: 1rem;
+
+                    @media all and (min-width: 980px) {
+                        margin-bottom: 1.75rem;
+                    }
+
+                    label {
+                        color: $headings;
+                        font-size: 1.15rem;
+                        margin-bottom: 1rem;
+                        text-transform: unset;
+                    }
+
+                    .description {
+                        margin-bottom: 10px;
+                    }
+
+                    textarea {
+                        min-height: 150px;
+                    }
+                }
+            }
+        }
+    }
 }

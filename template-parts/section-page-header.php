@@ -58,8 +58,6 @@ if ( ! empty( $args['corner-accent-color'] ) ) {
                                 $services = get_posts( array(
                                     'post_type' => 'service',
                                     'posts_per_page' => -1,
-                                    'orderby' => 'title',
-                                    'order' => 'ASC',
                                 ) );
                                 foreach ( $services as $service ) {
                                     $service_title = $service->post_title;

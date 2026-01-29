@@ -32,7 +32,7 @@ if ( have_posts() ) {
 	?>
 	<section class="footer-lead-cta element-spacing medium background-gray corner-accent black-orange">
 		<div class="service-content">
-			<span class="all-services-cta-title h5 heavy">Looking for more?</span>
+			<span class="all-services-cta-title h5 heavy">Not what you're looking for? There's more.</span>
 			<p>We offer a wide range of services to help you grow your business.</p>
 			<?php
 			crispydiv_button(

@@ -1,16 +1,16 @@
 .button,
 button,
 input[type="submit"] {
-	background-color: $color6;
-	border: 2px solid $color6;
+	background-color: $color5;
+	border: 2px solid $color5;
 	border-radius: 1.7em;
 	color: #fff;
 	display: inline-block;
 	padding: .53em 1.7em;
 	font-size: .75rem;
-	font-weight: 800;
+	font-weight: 700;
 	text-transform: uppercase;
-	text-decoration-color: $color6;
+	text-decoration-color: $color5;
 
 	&.small {
 		font-size: .75rem;
@@ -27,10 +27,10 @@ input[type="submit"] {
 	&:active,
 	&:focus,
 	&:hover {
-		background-color: $color5;
-		border-color: $color5;
+		background-color: $color6;
+		border-color: $color6;
 		cursor: pointer;
-		text-decoration-color: $color5;
+		text-decoration-color: $color6;
 	}
 
 	&.purple {

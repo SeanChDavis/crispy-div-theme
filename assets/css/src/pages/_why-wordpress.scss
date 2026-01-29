@@ -1,0 +1,23 @@
+.page-why-wordpress {
+
+    .cd-builds {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .button {
+            color: #fff;
+        }
+    }
+
+    .why-wordpress-section {
+
+        .section-heading {
+
+            @media all and (min-width: 760px) {
+                padding-top: 4.5rem;
+            }
+        }
+    }
+}

@@ -10,6 +10,12 @@ h6, .h6,
 	display: block;
 	line-height: 1.2;
 	margin: 0 0 1.25rem;
+
+    img {
+        height: 1rem;
+        width: auto;
+        margin-right: 6px;
+    }
 }
 
 h1, .h1,
@@ -26,10 +32,6 @@ h1, .h1,
 
 	@media all and (min-width: 980px) {
 		font-size: 3.75rem;
-	}
-
-	@media all and (min-width: 1200px) {
-		font-size: 4rem;
 	}
 }
 
@@ -216,6 +218,13 @@ figure {
 
 .semi-heavy {
 	font-weight: 600;
+}
+
+p {
+
+    strong {
+        font-weight: 600;
+    }
 }
 
 .heavy {

@@ -80,10 +80,15 @@
 				}
 			}
 
+            .grid-item-icon {
+                width: 30px;
+                margin-bottom: 10px;
+            }
+
 			.grid-item-title {
 				display: block;
 				font-size: 1rem;
-				font-weight: 700;
+				font-weight: 600;
 				line-height: 1.5;
 				margin-bottom: 12px;
 

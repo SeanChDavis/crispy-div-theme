@@ -1,26 +1,30 @@
 <?php
 
-if ( function_exists( 'acf_add_options_page' ) ) {
+add_action('acf/init', function() {
 
-	acf_add_options_page( array(
-		'page_title' => 'Crispy Div',
-		'menu_title' => 'Crispy Div',
-		'menu_slug'  => 'crispy-div',
-		'capability' => 'edit_posts',
-	) );
-}
+    if( function_exists('acf_add_options_page') ) {
 
-if ( function_exists( 'acf_add_options_sub_page' ) ) {
+        acf_add_options_page( array(
+            'page_title' => 'Crispy Div',
+            'menu_title' => 'Crispy Div',
+            'menu_slug'  => 'crispy-div',
+            'capability' => 'edit_posts',
+        ) );
 
-	acf_add_options_sub_page( array(
-		'page_title'  => 'Archive Settings',
-		'menu_title'  => 'Archive Settings',
-		'parent_slug' => 'crispy-div',
-	) );
+    }
 
-	acf_add_options_sub_page( array(
-		'page_title'  => 'Mock Browser Settings',
-		'menu_title'  => 'Mock Browser',
-		'parent_slug' => 'crispy-div',
-	) );
-}
+    if ( function_exists( 'acf_add_options_sub_page' ) ) {
+
+        acf_add_options_sub_page( array(
+            'page_title'  => 'Archive Settings',
+            'menu_title'  => 'Archive Settings',
+            'parent_slug' => 'crispy-div',
+        ) );
+
+        acf_add_options_sub_page( array(
+            'page_title'  => 'Mock Browser Settings',
+            'menu_title'  => 'Mock Browser',
+            'parent_slug' => 'crispy-div',
+        ) );
+    }
+});

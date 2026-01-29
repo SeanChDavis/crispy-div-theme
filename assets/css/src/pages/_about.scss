@@ -22,7 +22,7 @@
 
 			@media (min-width: 1200px) {
 				gap: 5rem;
-				grid-template-columns: 3fr 5fr;
+				grid-template-columns: 3fr 6fr;
 			}
 
 			.history-grid-content {
@@ -59,6 +59,7 @@
 
 					.sean-label {
 						text-align: center;
+                        margin-bottom: 10px;
 
 						.name {
 							display: block;
@@ -74,20 +75,15 @@
 					.link-grid {
 						align-items: center;
 						display: flex;
-						gap: 1rem;
+						gap: .6rem;
 						justify-content: center;
 
-						.github-icon {
-							color: $black;
-						}
+                        [class*="-icon"] {
 
-						.wordpress-icon {
-							color: #0073AA;
-						}
-
-						.homepage-icon {
-							color: $color2;
-						}
+                            img {
+                                width: 1.5rem;
+                            }
+                        }
 
 						[class*="fa-"] {
 							font-size: 1.5rem;
@@ -103,7 +99,7 @@
 					p {
 
 						&:last-child {
-							padding: 2rem 0 0;
+							padding: 1rem 0 0;
 							text-align: center;
 						}
 					}

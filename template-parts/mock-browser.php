@@ -13,11 +13,14 @@
             <div class="mock_header-top">
                 <div class="mock_branding">
                     <div class="mock_logo">
-                        <span class="mock_logo"><i class="fa-sharp fa-solid fa-paintbrush-pencil"></i> Your Logo</span>
+						<span class="mock_logo">
+							<img class="mock_logo-img" src="<?php echo THEME_IMAGES . 'mock-browser/icons/paintbrush-pencil-solid-full.svg'; ?>" alt="Paintbrush Pencil Icon">
+							<span class="mock_logo-text">Your Logo</span>
+						</span>
                     </div>
                 </div>
                 <div class="mock_navigation">
-                    <div class="mock_navigation-toggle"><i class="fa-solid fa-bars"></i></div>
+					<img class="mock_navigation-toggle" src="<?php echo THEME_IMAGES . 'mock-browser/icons/bars-solid-full.svg'; ?>" alt="Menu Bars Icon">
                     <ul>
                         <li><span class="mock_anchor">Features</span></li>
                         <li><span class="mock_anchor">Demo</span></li>
@@ -37,17 +40,17 @@
         <div class="mock_columns">
             <div class="mock_columns-grid">
                 <div class="mock_column">
-                    <i class="fa-regular fa-vector-square"></i>
+					<img src="<?php echo THEME_IMAGES . 'mock-browser/icons/draw-square-regular-full.svg'; ?>" alt="Vector Square Icon">
                     <span class="mock_column-title h5">Crucial Feature</span>
                     <p class="mock_column-description">We highlight what you care about, not what we think is cool.</p>
                 </div>
                 <div class="mock_column">
-                    <i class="fa-regular fa-vector-polygon"></i>
+					<img src="<?php echo THEME_IMAGES . 'mock-browser/icons/draw-polygon-regular-full.svg'; ?>" alt="Vector Polygon Icon">
                     <span class="mock_column-title h5">Useful Feature</span>
                     <p class="mock_column-description">We ease your worries by solving problems before they arise.</p>
                 </div>
                 <div class="mock_column">
-                    <i class="fa-regular fa-vector-circle"></i>
+					<img src="<?php echo THEME_IMAGES . 'mock-browser/icons/draw-circle-regular-full.svg'; ?>" alt="Vector Circle Icon">
                     <span class="mock_column-title h5">Awesome Feature</span>
                     <p class="mock_column-description">Finally, we give you something to be excited about. Rejoice!</p>
                 </div>
@@ -60,19 +63,34 @@
                         <span class="mock_logos-title">Trusted by:</span>
                     </div>
                     <div class="mock_logo-wrap">
-                        <span class="mock_logo"><i class="fa-solid fa-cloud"></i> Storedge</span>
+                        <span class="mock_logo">
+							<img class="mock_logo-img" src="<?php echo THEME_IMAGES . 'mock-browser/icons/cloud-solid-full.svg'; ?>" alt="Cloud Icon">
+							<span class="mock_logo-text">Storedge</span>
+						</span>
                     </div>
                     <div class="mock_logo-wrap">
-                        <span class="mock_logo"><i class="fa-solid fa-heart-pulse"></i> PulsePoint</span>
+                        <span class="mock_logo">
+							<img class="mock_logo-img" src="<?php echo THEME_IMAGES . 'mock-browser/icons/heart-pulse-solid-full.svg'; ?>" alt="Heart Pulse Icon">
+							<span class="mock_logo-text">PulsePoint</span>
+						</span>
                     </div>
                     <div class="mock_logo-wrap">
-                        <span class="mock_logo"><i class="fa-sharp fa-solid fa-crown"></i> TriCrown</span>
+                        <span class="mock_logo">
+							<img class="mock_logo-img" src="<?php echo THEME_IMAGES . 'mock-browser/icons/crown-solid-full.svg'; ?>" alt="Crown Icon">
+							<span class="mock_logo-text">TriCrown</span>
+						</span>
                     </div>
                     <div class="mock_logo-wrap">
-                        <span class="mock_logo"><i class="fa-solid fa-clover"></i> LUKKY</span>
+                        <span class="mock_logo">
+							<img class="mock_logo-img" src="<?php echo THEME_IMAGES . 'mock-browser/icons/clover-solid-full.svg'; ?>" alt="Clover Icon">
+							<span class="mock_logo-text">LUKKY</span>
+						</span>
                     </div>
                     <div class="mock_logo-wrap">
-                        <span class="mock_logo"><i class="fa-solid fa-burst"></i> BitBlast</span>
+                        <span class="mock_logo">
+							<img class="mock_logo-img" src="<?php echo THEME_IMAGES . 'mock-browser/icons/burst-solid-full.svg'; ?>" alt="Burst Icon">
+							<span class="mock_logo-text">BitBlast</span>
+						</span>
                     </div>
                 </div>
             </div>

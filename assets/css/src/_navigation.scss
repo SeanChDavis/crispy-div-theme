@@ -1,15 +1,17 @@
 #site-navigation {
 
 	.menu-toggle {
+        @include headingFont;
 		background: none;
 		border: 0;
 		color: $body;
 		cursor: pointer;
-		font-size: 1.76rem;
+        font-size: .88rem;
+        font-weight: 600;
 		padding: 0;
 		position: absolute;
 		right: 1.2rem;
-		top: 1rem;
+		top: 1.2rem;
 		transition: all .3s;
 
 		@media all and (min-width: 540px) {
@@ -19,13 +21,6 @@
 		@media all and (min-width: 1200px) {
 			display: none;
 			right: 4.5rem;
-		}
-
-		&:active,
-		&:focus,
-		&:hover {
-			color: $color5;
-			transform: scale(1.2);
 		}
 	}
 
@@ -331,7 +326,6 @@
 				@include headingFont;
 				color: $headings;
 				font-size: .75rem;
-				font-weight: 800;
 				text-decoration: none;
 				text-transform: uppercase;
 
@@ -376,7 +370,6 @@
 				color: $headings;
 				display: block;
 				font-size: .75rem;
-				font-weight: 800;
 				text-transform: uppercase;
 
 				&:active,

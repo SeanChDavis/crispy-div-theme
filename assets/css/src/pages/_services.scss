@@ -11,7 +11,7 @@
 			}
 
 			@media all and (min-width: 980px) {
-				grid-template-columns: 3fr 2fr;
+				grid-template-columns: 5fr 4fr;
 			}
 
 			.jump-to-section {
@@ -91,7 +91,6 @@
 		.service-description {
 
 			.section-title {
-				font-weight: 800;
 				margin-bottom: 1rem;
 
 				@media all and (min-width: 1200px) {
@@ -245,9 +244,11 @@
 					}
 
 					.custom-development-example-accordion-item-title {
+                        background: transparent url("./assets/images/icons/circle-check-light-full.svg") no-repeat 1.5rem center;
+                        background-size: 1rem 1rem;
 						display: block;
 						font-weight: 600;
-						padding: 1rem 2.5rem 1rem 1.5rem;
+						padding: 1rem 2.5rem 1rem 3.25rem;
 
 						&:hover,
 						&:focus,
@@ -258,21 +259,10 @@
 								color: $color6;
 							}
 						}
-
-						&:before {
-							color: $color6;
-							content: '\f058';
-							display: inline-block;
-							font-family: 'Font Awesome 6 Free';
-							font: var(--fa-font-light);
-							height: 1rem;
-							margin-right: .5rem;
-							width: 1rem;
-						}
 					}
 
 					.custom-development-example-accordion-item-icon {
-						font-size: 18px;
+						width: 12px;
 						position: absolute;
 						right: 12px;
 						top: 1rem;

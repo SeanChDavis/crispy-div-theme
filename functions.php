@@ -57,6 +57,9 @@ add_action( 'after_setup_theme', function() {
 		)
 	);
 
+	// Add support for editor styles
+	add_theme_support( 'editor-styles' );
+
 	// Selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -116,6 +119,7 @@ require THEME_INCLUDES . '/template-tags.php';
 require THEME_INCLUDES . '/customizer.php';
 require THEME_INCLUDES . '/services.php';
 require THEME_INCLUDES . '/courses.php';
+require THEME_INCLUDES . '/gutenberg.php';
 
 // Integrations
 if ( class_exists( 'acf' ) ) {

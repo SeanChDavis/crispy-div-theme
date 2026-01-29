@@ -58,11 +58,11 @@
 						@media all and (min-width: 980px) {
 							padding-bottom: 5.5rem;
 							padding-top: 5.5rem;
+                            max-width: 70%;
 						}
 
 						.page-header-title {
 							color: #fff;
-							font-weight: 800;
 
 							@media all and (min-width: 980px) {
 								width: 90%;
@@ -168,10 +168,6 @@
 					.advanced-custom-fields-logo {
 						height: 40px;
 						margin-bottom: 1rem;
-					}
-
-					.acf-highlight-title {
-						font-weight: 700;
 					}
 				}
 
@@ -305,7 +301,6 @@
 
 			span {
 				font-size: 1.5rem;
-				font-weight: 800;
 				line-height: 1.6;
 			}
 		}

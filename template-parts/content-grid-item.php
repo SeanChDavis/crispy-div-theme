@@ -33,12 +33,12 @@ if ( isset( $args ) ) {
                 ?>
                 <p><?php echo get_field( 'service_description', get_the_ID() ); ?></p>
                 <?php
-                if ( $args['services-full'] && have_rows( 'features_list' ) ) {
+                if ( $args['services-full'] ) {
                     ?>
                     <ul>
-                        <?php while ( have_rows( 'features_list' ) ) { the_row(); ?>
-                            <li><?php echo get_sub_field( 'feature_title' ); ?></li>
-                        <?php } ?>
+						<li><?php echo get_field( 'service_features_list_feature_1', get_the_ID()); ?></li>
+						<li><?php echo get_field( 'service_features_list_feature_2', get_the_ID()); ?></li>
+						<li><?php echo get_field( 'service_features_list_feature_3', get_the_ID()); ?></li>
                     </ul>
                     <?php
                 }

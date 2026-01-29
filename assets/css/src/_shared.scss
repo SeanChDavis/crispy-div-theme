@@ -1,6 +1,5 @@
 .section-title {
 	font-size: 2.5rem;
-	font-weight: 800;
 
 	@media all and (min-width: 540px) {
 		font-size: 3rem;
@@ -32,25 +31,8 @@
 	}
 }
 
-.element-lead-icon {
-	display: inline-block;
-
-	[class*="fa-"] {
-		font-size: 30px;
-		margin-bottom: 10px;
-	}
-
-	&.colored {
-
-		[class*="fa-"] {
-			color: $color6;
-		}
-	}
-}
-
 .heavy {
 	font-size: 1.5rem;
-	font-weight: 800;
 	line-height: 1.6;
 }
 

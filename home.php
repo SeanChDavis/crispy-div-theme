@@ -9,7 +9,7 @@ crispydiv_page_header( array(
     'bg-color' => 'background-purple',
     'corner-accent-color' => 'white-orange',
     'title' => 'Crispy Reads',
-    'description' => 'Learn more about WordPress, web design, web development, and our favorite WordPress plugins and themes. Be sure to engage in the comments section!'
+    'description' => 'Learn more about WordPress, web design, web development, and our favorite WordPress plugins and themes. Be sure to engage in the comments section.'
 ) );
 ?>
 
@@ -52,10 +52,10 @@ crispydiv_page_header( array(
 			endif;
 		endif;
 
-        get_template_part( 'template-parts/section', 'subscribe', array(
-			'title' => 'Subscribe for more<span class="highlight-text">.</span>',
-			'size'  => 'medium',
-		) ); ?>
+//        get_template_part( 'template-parts/section', 'subscribe', array(
+//			'title' => 'Subscribe for more<span class="highlight-text">.</span>',
+//			'size'  => 'medium',
+//		) ); ?>
 	</main>
 
 <?php

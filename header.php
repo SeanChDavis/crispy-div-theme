@@ -34,7 +34,7 @@
                 </div>
 		        <?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
                     <nav id="site-navigation" class="main-navigation">
-                        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa-solid fa-ellipsis"></i></button>
+                        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
 				        <?php
 				        wp_nav_menu(
 					        array(

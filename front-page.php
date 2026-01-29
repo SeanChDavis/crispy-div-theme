@@ -13,14 +13,14 @@ get_header();
                     <div class="inner no-vertical-spacing">
                         <div class="what-we-do">
                             <div class="content-wrap">
-                                <h1 class="page-header-title">Bespoke Design &<br class="disappearing-br"> Development for WordPress<span class="highlight-text">.</span></h1>
+								<h1 class="page-header-title">Bespoke Design <small>&</small><br class="disappearing-br"> Development for WordPress<small class="highlight-text">.</small></h1>
                                 <div class="page-header-description">
                                     <?php echo get_field( 'page_header_description' ); ?>
                                 </div>
                                 <p class="page-header-cta dual-cta">
                                     <?php
                                     crispydiv_button( array(
-                                        'text' => 'Work with Crispy Div',
+                                        'text' => 'Let\'s Work Together',
                                         'url' => home_url( '/contact/' ),
                                         'classes' => array( 'button', 'primary' ),
                                     ) );
@@ -61,7 +61,7 @@ get_header();
 		    ?>
         </div>
         <div class="section-heading element-spacing corner-accent black-pink">
-            <h2 class="section-title">Plugin functionality <br class="disappearing-br">tweaked to perfection<span class="highlight-text">.</span></h2>
+            <h2 class="section-title">Plugin functionality <br class="disappearing-br">tweaked to perfection<small class="highlight-text">.</small></h2>
             <div class="section-description">
                 <p>Our goal is to transform your WordPress site into a feature-packed hub with seamless plugin integrations. WordPress plugins are not always "one-size-fits-all," or "plug & play." Sometimes you need a bit of customization. That's why we're here.</p>
             </div>
@@ -70,9 +70,9 @@ get_header();
             <div class="acf-grid">
                 <div class="acf-highlight-content">
                     <img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES . 'logos/advanced-custom-fields-logo.png'; ?>" alt="Advanced Custom Fields">
-                    <span class="h5 acf-highlight-title">Tweak settings, not code.</span>
+                    <span class="h5 acf-highlight-title semi-heavy">Tweak settings, not code.</span>
                     <p><a href="https://advancedcustomfields.com/" target="_blank">Advanced Custom Fields</a> (ACF) is a powerful plugin that allows you to create custom fields for your WordPress site. We use it to create custom post types, taxonomies, fields, and more.</p>
-                    <p>With ACF's features, <strong class="color-black">we make every element of your site editable from the WordPress dashboard</strong>. This allows you to control your site's content, regardless of type or structure, without having to deal with code or theme edits.</p>
+                    <p>With ACF's features, <span class="color-black semi-heavy">we make every element of your site editable from the WordPress dashboard</span>. This allows you to control your site's content, regardless of type or structure, without having to deal with code or theme edits.</p>
                 </div>
                 <div class="acf-graphic">
                     <img class="advanced-custom-fields-graphic framed" src="<?php echo THEME_IMAGES . 'advanced-custom-fields-hero-area-fields.png'; ?>" alt="Advanced Custom Fields - Page Hero Fields">
@@ -83,42 +83,48 @@ get_header();
             <div class="facetwp-grid-item element-spacing back">
                 <img class="logo facetwp-logo" src="<?php echo THEME_IMAGES . 'logos/facetwp-logo.png'; ?>" alt="FacetWP">
                 <p><a href="https://facetwp.com/" target="_blank">FacetWP</a> introduces advanced filtering for WordPress. The smart functionality allows site visitors to control what content they see and find what they are looking for much faster.</p>
-                <p>We use FacetWP in a number of ways, including blog post filtering. Let your readers <strong class="color-black">filter blog posts by category, tag, or custom field</strong> of your choosing (including fields created by Advanced Custom Fields). It's intelligent, fast, lightweight, and incredibly useful.</p>
+                <p>We use FacetWP in a number of ways, including blog post filtering. Let your readers <span class="color-black semi-heavy">filter blog posts by category, tag, or custom field</span> (including fields created by Advanced Custom Fields). It's intelligent, fast, lightweight, and incredibly useful.</p>
             </div>
             <div class="gravity-forms-grid-item element-spacing">
                 <img class="logo gravity-forms-logo" src="<?php echo THEME_IMAGES . 'logos/gravity-forms-logo.svg'; ?>" alt="Gravity Forms">
                 <p><a href="https://www.gravityforms.com" target="_blank">Gravity Forms</a> is more than just a custom form builder. Its functionality can handle everything from collecting payments via Stripe to routing detailed support requests to Help Scout.</p>
-                <p>We use Gravity Forms to streamline interactions with users and maintain a detailed records. With <strong class="color-black">over 30 form fields to choose from</strong> and integration capabilities through its API & webhook functionality, the possibilities are endless and exciting.</p>
+                <p>We use Gravity Forms to streamline interactions with users and maintain a detailed records. With <span class="color-black semi-heavy">over 30 form fields to choose from</span> and integration capabilities through its API & webhook functionality, the possibilities are endless and exciting.</p>
             </div>
         </div>
         <div class="small-cta-section element-spacing tiny background-gray">
-            <p>Curious about a specific plugin or service? <a href="<?php echo home_url( '/contact/?type=experience' ); ?>">Send us an email</a> to ask questions. No obligations.</p>
+            <p>Curious about a specific plugin or service? <a href="<?php echo home_url( '/contact/' ); ?>">Send us an email</a> to ask questions. No obligations.</p>
         </div>
     </section>
 
     <section class="theme-development-section background-purple">
         <div class="real-data-header element-spacing large corner-accent top-right white-white">
-            <h2 class="section-title">We build themes <br class="disappearing-br">based on real data<span class="highlight-text">.</span></h2>
+            <h2 class="section-title">We build themes <br class="disappearing-br">based on real data<small class="highlight-text">.</small></h2>
             <p class="subdued-links attribution">According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:</p>
         </div>
         <div class="nng-stats-grid general-grid three-col">
             <div class="grid-item">
                 <div class="grid-item-content">
-                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-browser"></i></span>
+                    <span class="grid-item-icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/browser-light-full.svg'; ?>" alt="Browser Icon">
+					</span>
                     <h3 class="grid-item-title">Above the Fold</h3>
                     <p>Users spend 80% of their time on a website viewing information presented above the fold.</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
-                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-eye"></i></span>
+					<span class="grid-item-icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/eye-sharp-light-full.svg'; ?>" alt="Eye Icon">
+					</span>
                     <h3 class="grid-item-title">The "F" Pattern</h3>
                     <p>User scan content in an "F" pattern: horizontally from top left, down the left side, then across the middle.</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
-                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-align-left"></i></span>
+					<span class="grid-item-icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/align-left-light-full.svg'; ?>" alt="Align Left Icon">
+					</span>
                     <h3 class="grid-item-title">Skimmable Content</h3>
                     <p>Users are more likely to engage with content that is presented as short paragraphs and clear headings.</p>
                 </div>
@@ -153,77 +159,79 @@ get_header();
         <div class="standards-grid general-grid three-col">
             <div class="grid-item">
                 <div class="grid-item-content">
-                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-mobile"></i></span>
+                    <span class="grid-item-icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/mobile-light-full.svg'; ?>" alt="Mobile Icon">
+					</span>
                     <h3 class="grid-item-title">Mobile-friendly</h3>
                     <p>Both desktop and mobile designs are standard. More than 60% of all web traffic is mobile (<a href="https://gs.statcounter.com/platform-market-share/desktop-mobile/worldwide/#yearly-2011-2022" target="_blank">source</a>).</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
-                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-bullseye-arrow"></i></span>
+                    <span class="grid-item-icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/bullseye-arrow-light-full.svg'; ?>" alt="Bullseye Arrow Icon">
+					</span>
                     <h3 class="grid-item-title">Purpose-driven</h3>
                     <p>Pages are designed to guide visitors towards an action, like clicking a link or reading specific text.</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
-                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-handshake-angle"></i></span>
+                    <span class="grid-item-icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/handshake-angle-light-full.svg'; ?>" alt="Handshake Icon">
+					</span>
                     <h3 class="grid-item-title">Accessibility-focused</h3>
                     <p>Clarity, contrast, and usability are paramount, providing the best user experience for visitors.</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
-                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-timer"></i></span>
+                    <span class="grid-item-icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/timer-light-full.svg'; ?>" alt="Timer Icon">
+					</span>
                     <h3 class="grid-item-title">Fast-loading</h3>
                     <p>47% of users expect a page to load in two seconds or less. 40% will leave after three seconds (<a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-page-speed-new-industry-benchmarks/" target="_blank">source</a>).</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
-                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-pen-ruler"></i></span>
+                    <span class="grid-item-icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/pen-ruler-light-full.svg'; ?>" alt="Pen Ruler Icon">
+					</span>
                     <h3 class="grid-item-title">Meticulously-designed</h3>
                     <p>Even the tiny details matter. When viewed as a whole, you can feel if a design is <em>crisp</em> or sloppy.</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
-                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-shield-check"></i></span>
+					<span class="grid-item-icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/shield-check-light-full.svg'; ?>" alt="Shield Check Icon">
+					</span>
                     <h3 class="grid-item-title">Well-secured</h3>
                     <p>Only trusted and maintained scripts and resources are used. Site owners and visitors are protected.</p>
                 </div>
             </div>
         </div>
         <div class="small-cta-section element-spacing tiny background-pink">
-            <p><a class="cta-link" href="<?php echo home_url( '/contact/?type=work-together' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
+            <p><a class="cta-link" href="<?php echo home_url( '/contact/' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
         </div>
     </section>
 
-    <?php if ( ! empty( get_crispydiv_courses_grid() ) ) { ?>
+    <?php
+	if ( ! empty( get_crispydiv_courses_grid() ) ) {
+		?>
         <section class="courses-section background-gray">
             <div class="section-heading element-spacing large corner-accent black-pink">
-                <h2 class="section-title">Build WordPress <br class="disappearing-br">yourself, your way<span class="highlight-text">.</span></h2>
+                <h2 class="section-title">Build WordPress <br class="disappearing-br">yourself, your way<small class="highlight-text">.</small></h2>
                 <div class="section-description">
                     <p>Sometimes you just have to "roll your own." We get it. In fact, that's how the journey begins for most self-taught developers and designers. Welcome to the club. We're here to help you <strong>learn the tricks of the trade, skip the unnecessary hardships</strong>, and actually get some work done. Here's what we have to offer.</p>
                 </div>
             </div>
 		    <?php echo get_crispydiv_courses_grid(); ?>
         </section>
-    <?php } ?>
+    	<?php
+	}
 
-    <section class="footer-lead-cta element-spacing medium background-gray corner-accent black-orange">
-        <span class="cta-title h4 heavy">Got questions?</span>
-        <p>Don't be shy! Send an email with your inquiry. No obligations.</p>
-	    <?php
-	    crispydiv_button(
-		    array(
-			    'text'  => 'Start the conversation',
-			    'url'  => home_url( '/contact' ),
-			    'classes' => array( 'button', 'outline' ),
-		    )
-	    );
-	    ?>
-    </section>
+	get_template_part( 'template-parts/section', 'got-questions' );
 
-<?php
 get_footer();
