@@ -13,7 +13,7 @@ get_header();
                     <div class="inner no-vertical-spacing">
                         <div class="what-we-do">
                             <div class="content-wrap">
-								<h1 class="page-header-title">Bespoke Design <small>&</small><br class="disappearing-br"> Development for WordPress<small class="highlight-text">.</small></h1>
+								<h1 class="page-header-title">Bespoke Design <small>&</small> Development for WordPress<small class="highlight-text">.</small></h1>
                                 <div class="page-header-description">
                                     <?php echo get_field( 'page_header_description' ); ?>
                                 </div>
