@@ -31,7 +31,7 @@
             </div>
             <div class="mock_hero">
                 <span class="mock_hero-title h4">Here's <em>exactly</em> what we offer.</span>
-                <p class="mock_hero-subtitle">Our clean and well-designed website has a clear layout, intuitive navigation, and well-organized content, all of which contribute to a positive user experience.</p>
+                <p class="mock_hero-subtitle">Our clean and well-designed website has a clear layout, intuitive navigation, and well-organized content.</p>
                 <div class="mock_hero-cta">
                     <p><span class="mock_button">See Pricing Options</span><br><span class="mock_secondary_button">Learn More</span></p>
                 </div>

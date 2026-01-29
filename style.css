@@ -1705,7 +1705,7 @@ p strong {
 }
 .browser .mock_viewport .h1, .browser .mock_viewport .h2, .browser .mock_viewport .h3, .browser .mock_viewport .h4, .browser .mock_viewport .h5, .browser .mock_viewport .h6 {
   color: #fff;
-  font-family: "Source Serif Pro";
+  font-family: "Source Serif 4";
 }
 .browser .mock_viewport .mock_header {
   background-color: #2a0c4e;
@@ -1750,7 +1750,6 @@ p strong {
 }
 .browser .mock_viewport .mock_header .mock_hero {
   margin: 0 auto;
-  max-width: 550px;
   padding: 1.5rem 0 1rem;
 }
 @media all and (min-width: 540px) {
@@ -1773,6 +1772,8 @@ p strong {
 }
 .browser .mock_viewport .mock_header .mock_hero .mock_hero-subtitle {
   font-size: 13px;
+  max-width: 420px;
+  margin: 0 auto 1rem;
 }
 @media all and (min-width: 760px) {
   .browser .mock_viewport .mock_header .mock_hero .mock_hero-subtitle {
@@ -1832,7 +1833,7 @@ p strong {
   margin-bottom: 0.25rem;
 }
 .browser .mock_viewport .mock_columns .mock_columns-grid .mock_column .mock_column-title {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 8px;
 }
 .browser .mock_viewport .mock_columns .mock_columns-grid .mock_column .mock_column-description {
