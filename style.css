@@ -3519,17 +3519,6 @@ html {
     width: 66.66667%;
   }
 }
-.single .post-content-grid .content-column > article,
-.page .post-content-grid .content-column > article {
-  margin-bottom: 2rem;
-}
-@media all and (min-width: 1080px) {
-  .single .post-content-grid .content-column > article,
-  .page .post-content-grid .content-column > article {
-    margin-bottom: 3rem;
-  }
-}
-
 .single.single-post .page-header .page-header-title {
   text-align: center;
 }
