@@ -3575,12 +3575,6 @@ html {
 .single.single-post .entry-content > p:first-child {
   font-size: 110%;
   font-weight: 600;
-  margin-top: 2rem;
-}
-@media all and (min-width: 1080px) {
-  .single.single-post .entry-content > p:first-child {
-    margin-top: 3rem;
-  }
 }
 .single.single-post .entry-content .post-password-form label {
   display: block;
