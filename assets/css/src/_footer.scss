@@ -29,7 +29,7 @@
 			}
 
 			a:not(.social-icon) {
-				color: lighten($body_light, 30%);
+				color: $body_light;
 
 				&:hover,
 				&:focus,
