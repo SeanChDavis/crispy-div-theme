@@ -6,7 +6,7 @@
 get_header();
 crispydiv_page_header(array(
 		'title'       => get_field('page_header_title') ?: get_the_title(get_the_ID()),
-		'title-class' => 'h4',
+		'title-class' => 'h2',
 		'description' => get_field('page_header_description') ?: '',
 ));
 ?>

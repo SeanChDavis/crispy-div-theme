@@ -9,7 +9,7 @@ crispydiv_page_header( array(
     'bg-color' => 'background-purple',
     'corner-accent-color' => 'white-orange',
     'title' => 'Crispy Reads',
-    'description' => 'Learn more about WordPress, web design, web development, and our favorite WordPress plugins and themes. Be sure to engage in the comments section.'
+    'description' => 'Learn more about WordPress, web design, web development, and our favorite WordPress plugins and themes.'
 ) );
 ?>
 
@@ -45,7 +45,7 @@ crispydiv_page_header( array(
 			<?php
 			if ( $wp_query->max_num_pages > 1 ) :
 				?>
-                <div class="posts-navigation-wrap element-spacing tiny">
+                <div class="posts-navigation-wrap element-spacing tiny border-bottom-over-white">
 					<?php the_posts_navigation(); ?>
                 </div>
 			<?php
