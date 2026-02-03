@@ -29,7 +29,7 @@ if ( ! empty( $args['corner-accent-color'] ) ) {
 }
 ?>
 
-<section class="page-header <?php echo $args['bg-color'], $corner_accent_classes; ?>">
+<section id="page-header" class="page-header <?php echo $args['bg-color'], $corner_accent_classes; ?>">
 	<div class="inner medium">
 		<h1 class="page-header-title <?php echo $args['title-class']; ?>">
             <?php if ( ! empty( $args['title-label'] ) ) { ?>
