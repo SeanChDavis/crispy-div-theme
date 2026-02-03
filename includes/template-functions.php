@@ -128,7 +128,7 @@ add_filter( 'wp_nav_menu_items', function( $items, $args ) {
 
 	if ( $query->have_posts() ) {
 		if ( $args->theme_location == 'primary-menu' ) {
-			$items .= '<li class="menu-item members-menu-item"><a href="' . home_url( '/members/' ) . '"><i class="fa-solid fa-circle-user"></i> Members</a></li>';
+			$items .= '<li class="menu-item menu-item-has-icon"><a href="' . home_url( '/members/' ) . '"><img class="menu-item-icon" src="' . THEME_IMAGES . 'icons/eye-sharp-light-full.svg' . '" alt=""><span>Members</a></li>';
 		}
 		wp_reset_postdata();
 		return $items;

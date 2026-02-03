@@ -20,7 +20,7 @@ get_header();
                                 <p class="page-header-cta dual-cta">
                                     <?php
                                     crispydiv_button( array(
-                                        'text' => 'Let\'s Work Together',
+                                        'text' => 'Start the Conversation',
                                         'url' => home_url( '/contact/' ),
                                         'classes' => array( 'button', 'primary' ),
                                     ) );
@@ -163,7 +163,7 @@ get_header();
 						<img src="<?php echo THEME_IMAGES . 'icons/mobile-light-full.svg'; ?>" alt="Mobile Icon">
 					</span>
                     <h3 class="grid-item-title">Mobile-friendly</h3>
-                    <p>Both desktop and mobile designs are standard. More than 60% of all web traffic is mobile (<a href="https://gs.statcounter.com/platform-market-share/desktop-mobile/worldwide/#yearly-2011-2022" target="_blank">source</a>).</p>
+                    <p>Both desktop and mobile designs are standard. More than 50% of all web traffic is mobile (<a href="https://gs.statcounter.com/platform-market-share/desktop-mobile/worldwide/#yearly-2015-2025" target="_blank">source</a>).</p>
                 </div>
             </div>
             <div class="grid-item">
@@ -232,6 +232,8 @@ get_header();
     	<?php
 	}
 
-	get_template_part( 'template-parts/section', 'got-questions' );
+	get_template_part( 'template-parts/section', 'got-questions', array(
+			'description' => 'Don\'t be shy! Send an email with your inquiry.'
+	) );
 
 get_footer();

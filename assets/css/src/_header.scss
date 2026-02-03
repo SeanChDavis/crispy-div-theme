@@ -8,9 +8,9 @@
 
 	.site-header {
 
-		@media all and (min-width: 1200px) {
+		@media all and (min-width: 980px) {
 			display: flex;
-			justify-content: space-between;
+			//justify-content: space-between;
 		}
 
 		.site-branding {
@@ -27,6 +27,7 @@
 			.site-logo {
 				height: auto;
 				width: 120px;
+                vertical-align: bottom;
 			}
 
 			.site-title {
@@ -45,13 +46,27 @@
 				}
 			}
 
-			.description {
-				font-size: .8rem;
-				font-weight: 500;
-				line-height: 1.4;
-				position: relative;
-			}
+			//.description {
+			//	font-size: .8rem;
+			//	font-weight: 500;
+			//	line-height: 1.4;
+			//	position: relative;
+			//}
 		}
+
+        .primary-cta {
+            display: none;
+
+            @media all and (min-width: 980px) {
+                display: inline-block;
+                text-decoration: none;
+
+                &:active,
+                &:focus,
+                &:hover {
+                }
+            }
+        }
 	}
 }
 
@@ -80,6 +95,23 @@
 
 		.site-header {
 			color: $body_over_purple;
+
+            @media all and (min-width: 980px) {
+
+                .primary-cta {
+                    border-color: $border_over_purple;
+                    color: $body_over_purple;
+
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        background: $color6;
+                        border-color: $color6;
+                        color: #fff;
+                        text-decoration-color: $color6;
+                    }
+                }
+            }
 		}
 	}
 }
@@ -92,6 +124,23 @@
 
 		.site-header {
 			color: $body_over_pink;
+
+            @media all and (min-width: 980px) {
+
+                .primary-cta {
+                    border-color: $border_over_pink;
+                    color: $body_over_pink;
+
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        background: $color4;
+                        border-color: $color4;
+                        color: #fff;
+                        text-decoration-color: $color4;
+                    }
+                }
+            }
 		}
 	}
 }

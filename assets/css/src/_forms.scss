@@ -1,8 +1,8 @@
 .button,
 button,
 input[type="submit"] {
-	background-color: $color5;
-	border: 2px solid $color5;
+	background-color: $color6;
+	border: 2px solid $color6;
 	border-radius: 1.7em;
 	color: #fff;
 	display: inline-block;
@@ -10,7 +10,7 @@ input[type="submit"] {
 	font-size: .75rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-decoration-color: $color5;
+	text-decoration-color: $color6;
 
 	&.small {
 		font-size: .75rem;
@@ -27,10 +27,10 @@ input[type="submit"] {
 	&:active,
 	&:focus,
 	&:hover {
-		background-color: $color6;
-		border-color: $color6;
+		background-color: $color3;
+		border-color: $color3;
 		cursor: pointer;
-		text-decoration-color: $color6;
+		text-decoration-color: $color3;
 	}
 
 	&.purple {
@@ -52,10 +52,10 @@ input[type="submit"] {
 			&:active,
 			&:focus,
 			&:hover {
-				background-color: $color6;
-				border-color: $color6;
+				background-color: $color3;
+				border-color: $color3;
 				color: #fff;
-				text-decoration-color: $color6;
+				text-decoration-color: $color3;
 			}
 		}
 	}
@@ -73,10 +73,10 @@ input[type="submit"] {
 		&:active,
 		&:focus,
 		&:hover {
-			background-color: $color6;
-			border-color: $color6;
+			background-color: $color3;
+			border-color: $color3;
 			color: #fff;
-			text-decoration-color: $color6;
+			text-decoration-color: $color3;
 		}
 	}
 }

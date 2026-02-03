@@ -58,18 +58,21 @@
 						@media all and (min-width: 980px) {
 							padding-bottom: 5.5rem;
 							padding-top: 5.5rem;
+						}
+
+						@media all and (min-width: 1200px) {
                             max-width: 70%;
 						}
 
 						.page-header-title {
 							color: #fff;
 
-							@media all and (min-width: 980px) {
-								width: 90%;
-							}
-
 							@media all and (min-width: 1200px) {
 								font-size: 3.75rem;
+							}
+
+							@media all and (min-width: 1400px) {
+								font-size: 4.25rem;
 							}
 
 							.disappearing-br {
@@ -82,9 +85,11 @@
 
 						.page-header-description {
 							color: $body_over_purple;
+                            display: block;
 							font-size: 1.1rem;
 							line-height: 1.8;
 							margin-bottom: 2rem;
+                            max-width: 700px;
 
 							@media all and (min-width: 540px) {
 								line-height: 1.6;
@@ -104,7 +109,7 @@
 			border-top: 1px dashed $border_over_purple;
 
 			@media all and (min-width: 760px) and (max-width: 1199.98px) {
-				grid-template-columns: 1fr;
+				grid-template-columns: repeat( 2, 1fr );
 			}
 
 			@media all and (min-width: 1200px) {
@@ -142,6 +147,19 @@
 			}
 		}
 
+        .customization-logos-wrap {
+
+            &.small {
+                padding-bottom: 2rem;
+                padding-top: 2rem;
+
+                @media all and (min-width: 980px) {
+                    padding-bottom: 2rem;
+                    padding-top: 2rem;
+                }
+            }
+        }
+
 		.advanced-custom-fields-highlight {
 			border-bottom: 1px dashed $border_over_white;
 
@@ -154,6 +172,10 @@
 				display: grid;
 				grid-template-columns: 1fr;
 
+				@media all and (min-width: 980px) {
+					grid-template-columns: 4fr 5fr;
+				}
+
 				@media all and (min-width: 1200px) {
 					grid-template-columns: 1fr 2fr;
 				}
@@ -161,7 +183,7 @@
 				.acf-highlight-content {
 					padding-bottom: 3rem;
 
-					@media all and (min-width: 1200px) {
+					@media all and (min-width: 980px) {
 						padding-bottom: 0;
 					}
 
@@ -172,6 +194,10 @@
 				}
 
 				.acf-graphic {
+
+					@media all and (min-width: 980px) {
+						padding-left: 3rem;
+					}
 
 					@media all and (min-width: 1200px) {
 						padding-left: 4.5rem;
@@ -184,7 +210,7 @@
 			display: grid;
 			grid-template-columns: 1fr;
 
-			@media all and (min-width: 980px) {
+			@media all and (min-width: 800px) {
 				grid-template-columns: 1fr 1fr;
 			}
 
@@ -198,7 +224,7 @@
 				&:first-child {
 					border-bottom: 1px dashed $border_over_white;
 
-					@media all and (min-width: 980px) {
+					@media all and (min-width: 800px) {
 						border-bottom: 0;
 						border-right: 1px dashed $border_over_white;
 					}
@@ -244,7 +270,7 @@
 			border-top: 1px dashed $border_over_purple;
 
 			@media all and (min-width: 760px) and (max-width: 1199.98px) {
-				grid-template-columns: 1fr;
+				grid-template-columns: repeat( 2, 1fr );
 			}
 		}
 
@@ -258,6 +284,7 @@
 			}
 
 			.mock-browser-wrap {
+                max-width: 850px;
 
 				@media all and (min-width: 1200px) {
 					padding-right: 2.75rem;
@@ -267,6 +294,7 @@
 			.design-description {
 				margin-bottom: 2.5rem;
 				padding-top: 4rem;
+                max-width: 600px;
 
 				@media all and (min-width: 1200px) {
 					margin-bottom: 0;
@@ -298,6 +326,7 @@
 
 		.the-standard-title {
 			padding-top: 0;
+            max-width: 700px;
 
 			span {
 				font-size: 1.5rem;
