@@ -378,7 +378,7 @@ html body #page {
 }
 
 .framed {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 11px;
   box-shadow: 6px 6px 0 #f8f5fc;
 }
@@ -2719,18 +2719,8 @@ html {
     grid-template-columns: 3fr 6fr;
   }
 }
-@media (min-width: 1200px) {
-  .page-about .history-section .history-grid .history-grid-content {
-    padding-top: 1rem;
-  }
-}
-.page-about .history-section .history-grid .history-grid-content .history-title {
-  color: #660f56;
-}
 .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner {
-  background-color: #fff;
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.05);
-  padding: 3rem;
+  padding: 0 3rem 3rem;
 }
 .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .history-image {
   align-items: center;
@@ -2742,11 +2732,11 @@ html {
   border-radius: 50%;
   height: auto;
   margin-bottom: 1rem;
-  width: 110px;
+  width: 160px;
 }
 .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .sean-label {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .sean-label .name {
   display: block;
@@ -2756,19 +2746,20 @@ html {
   display: block;
   font-size: 15px;
 }
+.page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .sean-label .education {
+  display: block;
+  font-size: 15px;
+}
 .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid {
   align-items: center;
   display: flex;
-  gap: 0.6rem;
+  gap: 1rem;
   justify-content: center;
 }
 .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*=-icon] img {
   width: 1.5rem;
 }
-.page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*=fa-] {
-  font-size: 1.5rem;
-}
-.page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*=fa-]:active, .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*=fa-]:focus, .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*=fa-]:hover {
+.page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*=-icon] img:active, .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*=-icon] img:focus, .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*=-icon] img:hover {
   opacity: 0.7;
 }
 .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner p:last-child {
