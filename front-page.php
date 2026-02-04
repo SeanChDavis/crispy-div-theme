@@ -9,7 +9,7 @@ get_header();
     <section id="page-header" class="page-header">
         <div class="page-header-hero" style="/* background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.2) 100% ) */">
             <div class="page-header-hero-inner">
-                <div class="corner-accent white-orange">
+                <div class="corner-accent bottom-right white-white">
                     <div class="inner no-vertical-spacing">
                         <div class="what-we-do">
                             <div class="content-wrap">
@@ -60,7 +60,7 @@ get_header();
 		    }
 		    ?>
         </div>
-        <div class="section-heading element-spacing corner-accent black-pink">
+        <div class="section-heading element-spacing corner-accent black-orange">
             <h2 class="section-title">Plugin functionality <br class="disappearing-br">tweaked to perfection<small class="highlight-text">.</small></h2>
             <div class="section-description">
                 <p>Our goal is to transform your WordPress site into a feature-packed hub with seamless plugin integrations. WordPress plugins are not always "one-size-fits-all," or "plug & play." Sometimes you need a bit of customization. That's why we're here.</p>
@@ -130,13 +130,9 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="corner-accent white-orange">
+        <div class="corner-accent bottom-right white-white">
             <div class="mock-browser-grid element-spacing large">
-                <div class="mock-browser-wrap">
-                    <div class="mock-website" noindex>
-				        <?php get_template_part( 'template-parts/mock-browser' ); ?>
-                    </div>
-                </div>
+				<?php get_template_part( 'template-parts/mock-browser' ); ?>
                 <div class="design-description">
                     <p class="blurb-title">Does this design look familiar?</p>
                     <p>There's a reason why so many website designs follow the same content structure. It's proven, and it works.</p>

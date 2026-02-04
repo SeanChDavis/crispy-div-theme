@@ -6,7 +6,7 @@
 get_header();
 crispydiv_page_header( array(
 	'bg-color'            => 'background-pink',
-	'corner-accent-color' => 'white-white',
+	'corner-accent-color' => 'bottom-right white-white',
 	'title'               => ucfirst(get_queried_object()->name . 's'),
 	'description'         => 'Looking for a WordPress plugin or theme? Or perhaps you need to integrate a WordPress plugin into your existing site? We can help. Check out our offered services and reach out for more information.',
 ) );

@@ -10,14 +10,13 @@
 
 		@media all and (min-width: 980px) {
 			display: flex;
-			//justify-content: space-between;
+			column-gap: 3rem;
 		}
 
 		.site-branding {
 			display: flex;
 			flex-direction: column;
 			gap: 10px 1rem;
-			padding-right: 4rem;
 
 			@media all and (min-width: 760px) {
 				align-items: center;

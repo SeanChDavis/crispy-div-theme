@@ -6,7 +6,7 @@
 get_header();
 crispydiv_page_header( array(
 	'bg-color'            => 'background-purple',
-	'corner-accent-color' => 'white-orange',
+	'corner-accent-color' => 'bottom-right white-white',
 	'title-class'         => 'h2',
 ) );
 ?>

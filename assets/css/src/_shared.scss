@@ -232,6 +232,10 @@
 	background-repeat: no-repeat;
 	background-position: calc( 100% - 2rem ) calc( 100% - 2rem );
 
+	//@media all and (min-width: 980px) {
+	//	background-position: calc( 100% - 4.5rem ) calc( 100% - 4.5rem );
+	//}
+
 	&.white-orange {
 		background-image: url("assets/images/corner-accent-white-orange.svg");
 	}
@@ -260,8 +264,19 @@
 		background-image: url("assets/images/corner-accent-black-pink.svg");
 	}
 
+	&.bottom-right {
+
+		&.white-white {
+			background-image: url("assets/images/corner-accent-bottom-right-white.svg");
+		}
+	}
+
 	&.top-right {
 		background-position: calc( 100% - 2rem ) 2rem;
+
+		//@media all and (min-width: 980px) {
+		//	background-position: calc( 100% - 4.5rem ) 4.5rem;
+		//}
 
 		&.white-white {
 			background-image: url("assets/images/corner-accent-top-right-white.svg");

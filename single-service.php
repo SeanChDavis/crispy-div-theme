@@ -6,7 +6,7 @@
 get_header();
 crispydiv_page_header( array(
 	'bg-color'            => 'background-pink',
-	'corner-accent-color' => 'white-white',
+	'corner-accent-color' => 'bottom-right white-white',
 	'title-label'         => 'Service:',
 	'description'         => get_field( 'service_description', get_the_ID() ),
 ) );
@@ -32,7 +32,7 @@ if ( have_posts() ) {
 	?>
 	<section class="footer-lead-cta element-spacing medium background-gray corner-accent black-orange">
 		<div class="service-content">
-			<span class="all-services-cta-title h5 heavy">Not what you're looking for? There's more.</span>
+			<span class="cta-title h4">But wait, there's more.</span>
 			<p>We offer a wide range of services to help you grow your business.</p>
 			<?php
 			crispydiv_button(

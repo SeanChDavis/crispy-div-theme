@@ -509,6 +509,9 @@ html body #page {
 .corner-accent.black-pink {
   background-image: url("assets/images/corner-accent-black-pink.svg");
 }
+.corner-accent.bottom-right.white-white {
+  background-image: url("assets/images/corner-accent-bottom-right-white.svg");
+}
 .corner-accent.top-right {
   background-position: calc(100% - 2rem) 2rem;
 }
@@ -1296,13 +1299,13 @@ form label [class*=not-valid-tip] {
 @media all and (min-width: 980px) {
   #masthead .site-header {
     display: flex;
+    column-gap: 3rem;
   }
 }
 #masthead .site-header .site-branding {
   display: flex;
   flex-direction: column;
   gap: 10px 1rem;
-  padding-right: 4rem;
 }
 @media all and (min-width: 760px) {
   #masthead .site-header .site-branding {
@@ -1694,6 +1697,10 @@ p strong {
 }
 .site-main address {
   margin-bottom: 1.25rem;
+}
+
+.mock-browser-wrap {
+  max-width: 850px;
 }
 
 .browser {
@@ -3265,9 +3272,6 @@ html {
     padding-top: 5rem;
   }
 }
-.page-front .theme-development-section .mock-browser-grid .mock-browser-wrap {
-  max-width: 850px;
-}
 @media all and (min-width: 1200px) {
   .page-front .theme-development-section .mock-browser-grid .mock-browser-wrap {
     padding-right: 2.75rem;
@@ -3382,9 +3386,6 @@ html {
 .post-type-archive-service .services-wrap .service-section:nth-child(even) {
   background-color: #f8f5fc;
 }
-.post-type-archive-service #colophon {
-  border-top: 1px dashed rgba(0, 0, 0, 0.1);
-}
 
 @media all and (min-width: 760px) and (max-width: 1199.98px) {
   .services-grid:not(.large) {
@@ -3415,6 +3416,9 @@ html {
   .service-section .service-content-grid {
     grid-template-columns: 35% 63%;
   }
+}
+.service-section .service-content-grid .service-description {
+  max-width: 650px;
 }
 .service-section .service-content-grid .service-description .section-title {
   margin-bottom: 1rem;
@@ -3457,6 +3461,7 @@ html {
   border-width: 1px 0 0 1px;
   display: grid;
   grid-template-columns: 1fr;
+  max-width: 850px;
 }
 @media all and (min-width: 760px) {
   .service-section.plugin-integration-section .customizations-service-grid {
@@ -3524,6 +3529,7 @@ html {
   border-color: rgba(0, 0, 0, 0.1);
   border-width: 0 1px 1px;
   margin: 2rem 0;
+  max-width: 850px;
 }
 .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-header {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);

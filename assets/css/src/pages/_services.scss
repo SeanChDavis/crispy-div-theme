@@ -45,10 +45,6 @@
 			}
 		}
 	}
-
-	#colophon {
-		border-top: 1px dashed $border_over_white;
-	}
 }
 
 .services-grid:not(.large) {
@@ -89,6 +85,7 @@
 		}
 
 		.service-description {
+			max-width: 650px;
 
 			.section-title {
 				margin-bottom: 1rem;
@@ -143,6 +140,7 @@
 			border-width: 1px 0 0 1px;
 			display: grid;
 			grid-template-columns: 1fr;
+			max-width: 850px;
 
 			@media all and (min-width: 760px) {
 				grid-template-columns: repeat( 2, 1fr );
@@ -230,6 +228,7 @@
 			border-color: $border_over_white;
 			border-width: 0 1px 1px;
 			margin: 2rem 0;
+			max-width: 850px;
 
 			.custom-development-example-accordion-item {
 
