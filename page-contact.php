@@ -23,7 +23,7 @@ crispydiv_page_header( array(
 
 	<section class="footer-lead-cta element-spacing medium background-gray corner-accent black-orange">
 		<div class="service-content">
-			<span class="all-services-cta-title h5">Not yet sure what you're looking for?</span>
+			<span class="cta-title h4">Unsure what you're looking for?</span>
 			<p>Take a look at our wide range of services before reaching out.</p>
 			<?php
 			crispydiv_button(

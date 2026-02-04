@@ -821,7 +821,7 @@ html body #page {
 
 .button,
 button,
-input[type=submit] {
+[type=submit] {
   background-color: #f54952;
   border: 2px solid #f54952;
   border-radius: 1.7em;
@@ -835,14 +835,14 @@ input[type=submit] {
 }
 .button.small,
 button.small,
-input[type=submit].small {
+[type=submit].small {
   font-size: 0.75rem;
   padding: 0.4em 1.2em;
 }
 @media all and (min-width: 980px) {
   .button.large,
   button.large,
-  input[type=submit].large {
+  [type=submit].large {
     font-size: 0.95rem;
   }
 }
@@ -850,9 +850,9 @@ input[type=submit].small {
 button:active,
 button:focus,
 button:hover,
-input[type=submit]:active,
-input[type=submit]:focus,
-input[type=submit]:hover {
+[type=submit]:active,
+[type=submit]:focus,
+[type=submit]:hover {
   background-color: #280659;
   border-color: #280659;
   cursor: pointer;
@@ -860,7 +860,7 @@ input[type=submit]:hover {
 }
 .button.purple,
 button.purple,
-input[type=submit].purple {
+[type=submit].purple {
   background-color: #341671;
   border-color: #341671;
   text-decoration-color: #341671;
@@ -869,25 +869,25 @@ input[type=submit].purple {
 button.purple:active,
 button.purple:focus,
 button.purple:hover,
-input[type=submit].purple:active,
-input[type=submit].purple:focus,
-input[type=submit].purple:hover {
+[type=submit].purple:active,
+[type=submit].purple:focus,
+[type=submit].purple:hover {
   background-color: #f54952;
   border-color: #f54952;
   text-decoration-color: #f54952;
 }
 .button.purple.outline,
 button.purple.outline,
-input[type=submit].purple.outline {
+[type=submit].purple.outline {
   color: #341671;
 }
 .button.purple.outline:active, .button.purple.outline:focus, .button.purple.outline:hover,
 button.purple.outline:active,
 button.purple.outline:focus,
 button.purple.outline:hover,
-input[type=submit].purple.outline:active,
-input[type=submit].purple.outline:focus,
-input[type=submit].purple.outline:hover {
+[type=submit].purple.outline:active,
+[type=submit].purple.outline:focus,
+[type=submit].purple.outline:hover {
   background-color: #280659;
   border-color: #280659;
   color: #fff;
@@ -895,7 +895,7 @@ input[type=submit].purple.outline:hover {
 }
 .button.outline,
 button.outline,
-input[type=submit].outline {
+[type=submit].outline {
   background-color: transparent;
   color: #341671;
   border-color: #ae2d68;
@@ -903,16 +903,16 @@ input[type=submit].outline {
 }
 .button.outline.orange,
 button.outline.orange,
-input[type=submit].outline.orange {
+[type=submit].outline.orange {
   border-color: #f54952;
 }
 .button.outline:active, .button.outline:focus, .button.outline:hover,
 button.outline:active,
 button.outline:focus,
 button.outline:hover,
-input[type=submit].outline:active,
-input[type=submit].outline:focus,
-input[type=submit].outline:hover {
+[type=submit].outline:active,
+[type=submit].outline:focus,
+[type=submit].outline:hover {
   background-color: #280659;
   border-color: #280659;
   color: #fff;
