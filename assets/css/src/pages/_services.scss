@@ -1,37 +1,26 @@
 .post-type-archive-service {
 
-	.page-header {
+	.page-header-description {
+		align-items: center;
+		gap: 1.5rem 5rem;
 
-		.page-header-description {
-			align-items: center;
-			gap: 1.5rem 5rem;
+		.jump-to-section {
 
-			@media all and (min-width: 760px) {
-				grid-template-columns: 1fr;
+			label {
+				display: block;
 			}
 
-			@media all and (min-width: 980px) {
-				grid-template-columns: 5fr 4fr;
+			select {
+				font-size: .85rem;
+				max-width: 300px;
 			}
 
-			.jump-to-section {
-
-				label {
-					display: block;
-				}
-
-				select {
-					font-size: .85rem;
-					max-width: 300px;
-				}
-
-				select {
-					background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%23fff' d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
-					background-color: $color4;
-					background-size: 24px 24px;
-					border: 2px solid rgba(0,0,0,.1);
-					color: #fff;
-				}
+			select {
+				background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%23fff' d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
+				background-color: $color4;
+				background-size: 24px 24px;
+				border: 2px solid rgba(0,0,0,.1);
+				color: #fff;
 			}
 		}
 	}
@@ -42,27 +31,6 @@
 
 			&:nth-child(even) {
 				background-color: $gray;
-			}
-		}
-	}
-}
-
-.services-grid:not(.large) {
-
-	@media all and (min-width: 760px) and (max-width: 1199.98px) {
-		grid-template-columns: 1fr;
-	}
-
-	@media all and (min-width: 1200px) {
-		grid-template-columns: repeat( 3, 1fr );
-	}
-
-	.grid-item-content {
-
-		.archive-item-title {
-
-			a {
-				text-decoration: none;
 			}
 		}
 	}
@@ -197,24 +165,6 @@
 					.brand-description {
 						font-size: .88rem;
 						max-width: 95%;
-					}
-
-					.cta {
-						position: absolute;
-						right: -12px;
-						top: -12px;
-
-						[class*="fa-"] {
-							color: lighten( $body_light, 60% );
-							font-size: 14px;
-							transition: color .2s ease-in-out;
-
-							&:hover,
-							&:focus,
-							&:active {
-								color: $color5;
-							}
-						}
 					}
 				}
 			}

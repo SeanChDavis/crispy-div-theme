@@ -1,38 +1,5 @@
 .page-front {
 
-	#site-navigation {
-
-		.menu-toggle {
-			color: #fff;
-		}
-
-		&:not(.toggled) {
-
-			#primary-menu {
-
-				li {
-
-					a {
-						color: $body_over_purple;
-
-						&:active,
-						&:focus,
-						&:hover {
-							color: $color6;
-						}
-					}
-
-					&.current-menu-item {
-
-						a {
-							color: #fff;
-						}
-					}
-				}
-			}
-		}
-	}
-
 	.page-header {
 		background: $color2;
 		color: #fff;
@@ -41,7 +8,6 @@
 			flex: 1;
 
 			.page-header-hero-inner {
-				//background-image: linear-gradient(45deg, rgba(102, 15, 86, .4) 0%, rgba(102, 15, 86, .2) 13%, rgba(52,22,113,.6) 40%, rgba(52, 22, 113, .7) 100%);
 				height: 100%;
 
 				.what-we-do {
@@ -108,27 +74,8 @@
 			border-bottom: none;
 			border-top: 1px dashed $border_over_purple;
 
-			@media all and (min-width: 760px) and (max-width: 1199.98px) {
-				grid-template-columns: repeat( 2, 1fr );
-			}
-
-			@media all and (min-width: 1200px) {
-				grid-template-columns: repeat( 3, 1fr );
-			}
-
-			.grid-item {
-
-				.grid-item-title {
-					font-size: 1.2rem;
-				}
-
-				p {
-					font-size: 17px;
-				}
-
-				.button {
-					color: #fff;
-				}
+			.button {
+				color: #fff;
 			}
 		}
 	}
@@ -357,27 +304,5 @@
 				z-index: 999;
 			}
 		}
-	}
-
-	.courses-section {
-
-		.section-heading {
-
-			@media all and (min-width: 1200px) {
-				padding-bottom: 4.5rem;
-			}
-
-			.section-description {
-				display: grid;
-				grid-template-columns: 1fr;
-
-				@media all and (min-width: 980px) {
-					grid-template-columns: 5fr 4fr;
-				}
-			}
-		}
-	}
-
-	#colophon {
 	}
 }

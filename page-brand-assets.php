@@ -13,7 +13,7 @@ crispydiv_page_header( array(
 
 	<main id="site-content" class="site-main">
 		<div class="inner medium">
-            <h3 class="brand-asset-title">Brand Colors</h3>
+            <h3>Brand Colors</h3>
             <div class="section-description">
                 <p>Please use these colors responsibly to ensure a cohesive look and feel. If you'd like to keep it simple, our two primary colors are purple <strong>(#341671)</strong> and orange <strong>(#f54952)</strong>.</p>
             </div>
@@ -43,9 +43,9 @@ crispydiv_page_header( array(
                     <span class="hex">#f8f5fc</span>
                 </div>
             </div>
-            <h3 class="brand-asset-title">Logos & Logomark</h3>
+            <h3>Logos & Logomark</h3>
             <div class="section-description">
-                <p>Try to keep contrast in mind when implementing the logo so that the text is legible. Also be sure to give the logo room to breathe. Do not allow it to touch or overlap any other elements (subtle background design elements are okay).</p>
+                <p>Try to keep the contrast in mind when implementing the logo so that the text is legible. Also be sure to give the logo room to breathe. Do not allow it to touch or overlap any other elements (subtle background design elements are okay).</p>
             </div>
             <div class="logos-grid">
                 <div class="logo-white background-purple">
@@ -61,7 +61,7 @@ crispydiv_page_header( array(
                     <img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-mark.svg'; ?>" alt="Crispy Div Logomark">
                 </div>
             </div>
-            <h3 class="brand-asset-title">Typography & Text</h3>
+            <h3>Typography & Text</h3>
             <div class="section-description">
                 <p>You have no obligation to use our preferred font when referencing our brand. If you choose to do so, we use <a href="https://fonts.google.com/specimen/Montserrat?query=montse" target="_blank" rel="nofollow">Montserrat</a> for headings (font weights 700 and 800) and <a href="https://fonts.google.com/specimen/Raleway?query=ralew" target="_blank" rel="nofollow">Raleway</a> for body text. Our Brand name is <strong>Crispy Div</strong>. That's capital C and D with a space between the two words.</p>
             </div>
@@ -83,7 +83,7 @@ crispydiv_page_header( array(
                     <span class="example-status">Correct</span>
                 </div>
             </div>
-            <h3 class="brand-asset-title">Downloads</h3>
+            <h3>Downloads</h3>
             <div class="section-description">
                 <p>Logo and logomark variations can be downloaded in a single .zip file.</p>
             </div>

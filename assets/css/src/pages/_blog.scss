@@ -1,6 +1,9 @@
 .blog {
 
 	.subscribe-cta {
+		margin-top: -1px;
+		position: relative;
+		z-index: 999;
 
 		.subscribe-content-wrap {
 
@@ -67,11 +70,5 @@
 				padding-top: 4rem;
 			}
 		}
-	}
-
-	.subscribe-cta {
-		margin-top: -1px;
-		position: relative;
-		z-index: 999;
 	}
 }

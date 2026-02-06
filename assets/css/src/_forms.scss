@@ -95,7 +95,6 @@ p {
 input[type="text"],
 input[type="email"],
 input[type="url"],
-input[type="text"],
 input[type="search"],
 input[type="password"],
 textarea,
@@ -109,7 +108,7 @@ select {
 
 	&:active,
 	&:focus {
-		border-color: $color6;
+		border: 2px solid $color6;
 	}
 }
 
@@ -145,20 +144,5 @@ form label {
 		font-style: italic;
 		padding-top: 6px;
 		text-transform: none;
-	}
-}
-
-.dual-cta {
-
-	.button {
-
-		& ~ a {
-			color: #fff;
-			display: inline-block;
-			font-size: .88rem;
-			margin-top: .52rem;
-			text-decoration-thickness: 1px;
-			text-transform: capitalize;
-		}
 	}
 }

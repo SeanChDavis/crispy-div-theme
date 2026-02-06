@@ -35,12 +35,24 @@ add_filter( 'body_class', function( $classes ) {
 
 	if ( get_crispydiv_logo_by_color() ) {
 		$classes[] = 'has-dark-header';
+	} else {
+		$classes[] = 'has-light-header';
 	}
 
     // Conditionally add header color classes
-    if ( is_front_page() || is_home() || is_singular( 'post' ) || is_post_type_archive( 'course' ) || is_singular( 'course' ) || is_page( 'about' ) ) {
+    if (
+			is_front_page()
+			|| is_home()
+			|| is_singular( 'post' )
+			|| is_page( 'about' )
+			|| is_post_type_archive( 'course' )
+			|| is_singular( 'course' )
+	) {
         $classes[] = 'has-purple-header';
-    } else if ( is_post_type_archive( 'service' ) || is_singular( 'service' ) ) {
+    } else if (
+			is_post_type_archive( 'service' )
+			|| is_singular( 'service' )
+	) {
 	    $classes[] = 'has-pink-header';
     } else {
 	    $classes[] = 'has-gray-header';

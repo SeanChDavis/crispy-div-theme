@@ -2,10 +2,6 @@
 	position: relative;
 	border-bottom: 1px dashed $border_over_white;
 
-	.inner {
-		max-width: unset;
-	}
-
 	.site-header {
 
 		@media all and (min-width: 980px) {
@@ -16,7 +12,6 @@
 		.site-branding {
 			display: flex;
 			flex-direction: column;
-			gap: 10px 1rem;
 
 			@media all and (min-width: 760px) {
 				align-items: center;
@@ -44,26 +39,15 @@
 					text-decoration: none;
 				}
 			}
-
-			//.description {
-			//	font-size: .8rem;
-			//	font-weight: 500;
-			//	line-height: 1.4;
-			//	position: relative;
-			//}
 		}
+
+		/* Nav in _navigation.scss */
 
         .primary-cta {
             display: none;
 
             @media all and (min-width: 980px) {
                 display: inline-block;
-                text-decoration: none;
-
-                &:active,
-                &:focus,
-                &:hover {
-                }
             }
         }
 	}

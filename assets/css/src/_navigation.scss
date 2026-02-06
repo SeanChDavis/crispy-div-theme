@@ -87,23 +87,6 @@
 
 			.menu-item {
 
-				a {
-					color: $color2;
-
-					&:active,
-					&:focus,
-					&:hover {
-						color: $color6;
-					}
-				}
-
-				&.current-menu-item {
-
-					a {
-						color: $color6;
-					}
-				}
-
                 &.hide-on-desktop {
 
                     @media all and (min-width: 980px) {
@@ -116,48 +99,75 @@
 
 	&.toggled {
 
-		& > [class*="-container"] {
-			//background: $color4;
-			//border-bottom-left-radius: 5px;
-			//position: absolute;
-			//top: 0;
-			//right: 0;
-			//height: 90vh;
-			//max-width: 400px;
-			//min-width: 230px;
-			//width: 100%;
-		}
-
 		#primary-menu {
 			gap: .7rem;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
-			margin-top: 10px;
+			margin-top: 12px;
 			padding: 10px 0;
 
 			.menu-item {
 
 				a {
-					background: rgba(0,0,0,.1);
 					border-radius: 24px;
-					color: $color2;
 					display: block;
 					font-weight: 600;
 					padding: 7px 20px;
 					text-decoration: none;
-
-					&:active,
-					&:focus,
-					&:hover {
-						color: $color5;
-					}
 				}
+			}
+		}
+	}
+}
 
-				&.current-menu-item {
+.has-light-header { /* default */
+
+	#site-navigation {
+
+		.menu-item {
+
+			a {
+				color: $color2;
+
+				&:active,
+				&:focus,
+				&:hover {
+					color: $color6;
+				}
+			}
+
+			&.current-menu-item {
+
+				a {
+					color: $color6;
+				}
+			}
+		}
+
+		&.toggled {
+
+			#primary-menu {
+
+				.menu-item {
 
 					a {
-						color: $color5;
+						background: #fff;
+						border: 2px solid rgba(0,0,0,.06);
+						color: $color2;
+
+						&:active,
+						&:focus,
+						&:hover {
+							color: $color5;
+						}
+					}
+
+					&.current-menu-item {
+
+						a {
+							color: $color5;
+						}
 					}
 				}
 			}
@@ -165,14 +175,7 @@
 	}
 }
 
-.has-dark-header {
-
-	.site-title {
-
-		a {
-			color: #fff;
-		}
-	}
+.has-dark-header { /* All dark header themes */
 
 	#site-navigation {
 
@@ -180,49 +183,33 @@
 			color: #fff;
 		}
 
-		#primary-menu {
+		.menu-item {
 
-			.menu-item {
+			a {
+				color: rgba(255,255,255,.7);
+
+				&:active,
+				&:focus,
+				&:hover {
+					color: #fff;
+				}
+			}
+
+			&.current-menu-item {
 
 				a {
-
-					&:active,
-					&:focus,
-					&:hover {
-						color: #fff;
-					}
-				}
-
-				&.current-menu-item {
-
-					a {
-						color: #fff;
-					}
+					color: #fff;
 				}
 			}
 		}
 
 		&.toggled {
 
-			#primary-menu.menu {
+			.menu-item {
 
-				.menu-item {
-
-					a {
-
-						&:active,
-						&:focus,
-						&:hover {
-							color: #fff;
-						}
-					}
-
-					&.current-menu-item {
-
-						a {
-							color: #fff;
-						}
-					}
+				a {
+					background: rgba(255,255,255,.04);
+					border: 2px solid rgba(255,255,255,.15);
 				}
 			}
 		}
@@ -231,46 +218,17 @@
 
 .has-purple-header {
 
-	.site-header {
+	#site-navigation {
 
-		#site-navigation {
+		.menu-item {
 
-			&:not(.toggled) {
+			a {
+				color: $body_over_purple;
 
-				#primary-menu {
-
-					.menu-item {
-
-						a {
-							color: $body_over_purple;
-
-							&:active,
-							&:focus,
-							&:hover {
-								color: $color6;
-							}
-						}
-
-						&.current-menu-item {
-
-							a {
-								color: #fff;
-							}
-						}
-					}
-				}
-			}
-
-			&.toggled {
-
-				#primary-menu {
-
-					.menu-item {
-
-						a {
-							color: $body_over_purple;
-						}
-					}
+				&:active,
+				&:focus,
+				&:hover {
+					color: $color6;
 				}
 			}
 		}
@@ -279,46 +237,17 @@
 
 .has-pink-header {
 
-	.site-header {
+	#site-navigation {
 
-		#site-navigation {
+		.menu-item {
 
-			&:not(.toggled) {
+			a {
+				color: $body_over_pink;
 
-				#primary-menu {
-
-					.menu-item {
-
-						a {
-							color: $body_over_pink;
-
-							&:active,
-							&:focus,
-							&:hover {
-								color: #fff;
-							}
-						}
-
-						&.current-menu-item {
-
-							a {
-								color: #fff;
-							}
-						}
-					}
-				}
-			}
-
-			&.toggled {
-
-				#primary-menu {
-
-					.menu-item {
-
-						a {
-							color: $body_over_pink;
-						}
-					}
+				&:active,
+				&:focus,
+				&:hover {
+					color: #fff;
 				}
 			}
 		}

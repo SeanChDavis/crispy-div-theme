@@ -17,7 +17,7 @@ get_header();
                                 <div class="page-header-description">
                                     <?php echo get_field( 'page_header_description' ); ?>
                                 </div>
-                                <p class="page-header-cta dual-cta">
+                                <p class="page-header-cta">
                                     <?php
                                     crispydiv_button( array(
                                         'text' => 'Start the Conversation',
@@ -98,7 +98,7 @@ get_header();
 
     <section class="theme-development-section background-purple">
         <div class="real-data-header element-spacing large corner-accent top-right white-white">
-            <h2 class="section-title">We build themes <br class="disappearing-br">based on real data<small class="highlight-text">.</small></h2>
+            <h2 class="section-title">Theme building <br class="disappearing-br">based on real data<small class="highlight-text">.</small></h2>
             <p class="subdued-links attribution">According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:</p>
         </div>
         <div class="nng-stats-grid general-grid three-col">
@@ -209,7 +209,7 @@ get_header();
             </div>
         </div>
         <div class="small-cta-section element-spacing tiny background-pink">
-            <p><a class="cta-link" href="<?php echo home_url( '/contact/' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
+            <p><a href="<?php echo home_url( '/contact/' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
         </div>
     </section>
 

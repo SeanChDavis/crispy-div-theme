@@ -1,123 +1,117 @@
 .page-about {
 
-	.history-section {
-
-		.history-grid {
-			display: grid;
-			gap: 2.5rem;
-			grid-template-columns: 1fr;
-
-			@media (min-width: 840px) {
-				gap: 3.5rem;
-				grid-template-columns: 3fr 4fr;
-
-				.history-grid-content {
-					order: 2;
-				}
-
-				.history-grid-media {
-					order: 1;
-				}
-			}
-
-			@media (min-width: 1200px) {
-				gap: 5rem;
-				grid-template-columns: 3fr 6fr;
-			}
-
-			.history-grid-media {
-
-				.history-grid-media-inner {
-					padding: 0 3rem 3rem;
-
-					.history-image {
-						align-items: center;
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-
-						img {
-							border-radius: 50%;
-							height: auto;
-							margin-bottom: 1rem;
-							width: 160px;
-						}
-					}
-
-					.sean-label {
-						text-align: center;
-                        margin-bottom: 1rem;
-
-						.name {
-							display: block;
-							font-weight: 600;
-						}
-
-						.title {
-							display: block;
-							font-size: 15px;
-						}
-
-						.education {
-							display: block;
-							font-size: 15px;
-						}
-					}
-
-					.link-grid {
-						align-items: center;
-						display: flex;
-						gap: 1rem;
-						justify-content: center;
-
-                        [class*="-icon"] {
-
-                            img {
-                                width: 1.5rem;
-
-								&:active,
-								&:focus,
-								&:hover {
-									opacity: .7;
-								}
-                            }
-                        }
-					}
-
-					p {
-
-						&:last-child {
-							padding: 1rem 0 0;
-							text-align: center;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.how-we-work-grid {
-
-		.grid-item {
-
-			.grid-item-title {
-
-				@media all and (min-width: 1400px) {
-					font-size: 1.35rem;
-				}
-			}
-
-			@media all and (min-width: 1400px) {
-				padding: 2.75rem 4.5rem;
-			}
-		}
-	}
-
 	.footer-lead-cta {
 		text-align: center;
 	}
 
 	#colophon {
 		background-color: $gray;
+	}
+}
+
+.history-grid {
+	display: grid;
+	gap: 2.5rem;
+	grid-template-columns: 1fr;
+
+	@media (min-width: 840px) {
+		gap: 3.5rem;
+		grid-template-columns: 3fr 4fr;
+
+		.history-grid-content {
+			order: 2;
+		}
+
+		.history-grid-media {
+			order: 1;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		gap: 5rem;
+		grid-template-columns: 3fr 6fr;
+	}
+
+	.history-grid-media-inner {
+		padding: 0 3rem 3rem;
+
+		.history-image {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			img {
+				border-radius: 50%;
+				height: auto;
+				margin-bottom: 1rem;
+				width: 160px;
+			}
+		}
+
+		.sean-label {
+			text-align: center;
+			margin-bottom: 1.2rem;
+
+			.name {
+				display: block;
+				font-weight: 600;
+			}
+
+			.title {
+				display: block;
+				font-size: 15px;
+			}
+
+			.education {
+				display: block;
+				font-size: 15px;
+			}
+		}
+
+		.link-grid {
+			align-items: center;
+			display: flex;
+			gap: 1rem;
+			justify-content: center;
+
+			[class*="-icon"] {
+
+				img {
+					width: 20px;
+
+					&:active,
+					&:focus,
+					&:hover {
+						opacity: .7;
+					}
+				}
+			}
+		}
+
+		p {
+
+			&:last-child {
+				padding: 1rem 0 0;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.how-we-work-grid {
+
+	.grid-item {
+
+		.grid-item-title {
+
+			@media all and (min-width: 1400px) {
+				font-size: 1.35rem;
+			}
+		}
+
+		@media all and (min-width: 1400px) {
+			padding: 2.75rem 4.5rem;
+		}
 	}
 }
