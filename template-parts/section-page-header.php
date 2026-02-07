@@ -47,7 +47,12 @@ if ( ! empty( $args['corner-accent-color'] ) ) {
                 ?>
                 <div class="page-header-description">
                     <div class="page-header-description-inner">
-                        <?php echo $args['description']; ?>
+                        <?php
+						echo $args['description'];
+						if ( is_home() ) {
+							echo get_search_form();
+						}
+						?>
                     </div>
                     <?php if ( is_post_type_archive( 'service' ) ) { ?>
                         <div class="jump-to-section">
@@ -80,7 +85,7 @@ if ( ! empty( $args['corner-accent-color'] ) ) {
                     <?php
                     if ( have_posts() ) {
                         ?>
-                        <p>Success! Explore the content below, or try searching again.</p>
+                        <p>Success! Explore the content below or search again.</p>
                         <?php
                     } else {
                         ?>

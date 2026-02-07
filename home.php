@@ -9,7 +9,7 @@ crispydiv_page_header( array(
     'bg-color' => 'background-purple',
     'corner-accent-color' => 'bottom-right white-white',
     'title' => 'Crispy Reads',
-    'description' => 'Learn more about WordPress, web design, web development, and our favorite WordPress plugins and themes.'
+    'description' => 'Learn more about WordPress, web design, web development, and our favorite WordPress plugins and themes. Try searching for something specific.'
 ) );
 ?>
 

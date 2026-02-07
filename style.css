@@ -1224,6 +1224,8 @@ form label [class*=not-valid-tip] {
 }
 .general-grid .grid-item .grid-item-content .post-thumbnail img {
   border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
 }
 .general-grid .grid-item .grid-item-content .grid-item-icon {
   width: 30px;
@@ -2575,10 +2577,14 @@ template {
 .entry-header .search-form {
   margin-top: 2rem;
 }
+.page-header .search-form input,
+.entry-header .search-form input {
+  max-width: 85%;
+}
 @media all and (min-width: 760px) {
   .page-header .search-form input,
   .entry-header .search-form input {
-    max-width: 50%;
+    max-width: 350px;
   }
 }
 
@@ -2816,10 +2822,6 @@ html {
     padding-bottom: 4rem;
     padding-top: 4rem;
   }
-}
-.blog .general-grid .grid-item .post-thumbnail img {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
 }
 
 .page-brand-assets .section-description {
