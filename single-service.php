@@ -34,7 +34,7 @@ if ( have_posts() ) {
 get_template_part( 'template-parts/section', 'footer-lead', array(
 		'title' => 'But wait, there\'s more.',
 		'description' => 'We offer a wide range of services to help you grow your business.',
-		'classes' => 'background-gray corner-accent black-orange',
+		'classes' => 'border-y-over-white corner-accent black-orange',
 		'button_text' => 'View All Services',
 		'button_url' => get_post_type_archive_link( 'service' ),
 		'button_classes' => array( 'button', 'outline' ),

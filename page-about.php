@@ -115,7 +115,7 @@ crispydiv_page_header( array(
 get_template_part( 'template-parts/section', 'footer-lead', array(
 		'title' => 'Let\'s have a conversation<small class="highlight-text">.</small>',
 		'description' => 'If you believe we\'re a good fit, let\'s work. If you have questions, just reach out.',
-		'classes' => 'large center',
+		'classes' => 'border-bottom-over-white large center',
 		'button_classes' => array( 'button', 'large' ),
 ) );
 get_footer();

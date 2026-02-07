@@ -12,7 +12,7 @@ crispydiv_page_header( array(
 ) );
 ?>
 
-	<main id="site-content" class="site-main full-width">
+	<main id="site-content" class="site-main full-width border-bottom-over-white">
 		<div class="inner medium">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="post-content-grid">

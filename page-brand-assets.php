@@ -11,7 +11,7 @@ crispydiv_page_header( array(
 ) );
 ?>
 
-	<main id="site-content" class="site-main">
+	<main id="site-content" class="site-main border-bottom-over-white">
 		<div class="inner medium">
             <h3>Brand Colors</h3>
             <div class="section-description">

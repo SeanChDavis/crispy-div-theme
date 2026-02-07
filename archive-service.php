@@ -50,6 +50,6 @@ crispydiv_page_header( array(
 get_template_part( 'template-parts/section', 'footer-lead', array(
 		'title' => 'Still have questions?',
 		'description' => 'No problem! Send a general message and we\'ll chat. No obligations.',
-		'classes' => 'background-gray corner-accent black-orange',
+		'classes' => 'border-y-over-white corner-accent black-orange',
 ) );
 get_footer();

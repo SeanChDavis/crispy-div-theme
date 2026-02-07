@@ -2683,10 +2683,6 @@ html {
   }
 }
 
-.page-about #colophon {
-  background-color: #f8f5fc;
-}
-
 .history-grid {
   display: grid;
   gap: 2.5rem;
@@ -3281,10 +3277,6 @@ html {
   margin-top: -1px;
   position: relative;
   z-index: 999;
-}
-
-.page-privacy-policy #colophon {
-  background-color: #f8f5fc;
 }
 
 .post-type-archive-service .page-header-description {
