@@ -388,6 +388,11 @@ html body #page {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
+.border-y-over-white {
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
 .border-bottom-over-purple {
   border-bottom: 1px dashed #45307c;
 }
@@ -2660,6 +2665,9 @@ template {
   border-radius: 11px;
 }
 
+.footer-lead-cta.center {
+  text-align: center;
+}
 .footer-lead-cta p + .button {
   margin-top: 0.75rem;
 }
@@ -2675,9 +2683,6 @@ html {
   }
 }
 
-.page-about .footer-lead-cta {
-  text-align: center;
-}
 .page-about #colophon {
   background-color: #f8f5fc;
 }
@@ -3659,6 +3664,13 @@ html {
   }
 }
 
+.page-why-wordpress .page-header-description em.semi-heavy {
+  font-style: normal;
+  font-weight: 800;
+  color: #fff;
+  display: inline-block;
+  margin-right: 6px;
+}
 .page-why-wordpress .cd-builds {
   display: flex;
   flex-wrap: wrap;

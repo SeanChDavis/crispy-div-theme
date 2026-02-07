@@ -8,7 +8,6 @@ crispydiv_page_header(array(
 		'bg-color'            => 'background-pink',
 		'corner-accent-color' => 'bottom-right white-white',
 		'title'       => get_field('page_header_title') ?: get_the_title(get_the_ID()),
-		'title-class' => 'h2',
 		'description' => get_field('page_header_description') ?: '',
 ));
 ?>
@@ -104,5 +103,7 @@ crispydiv_page_header(array(
 	</section>
 
 <?php
-get_template_part( 'template-parts/section', 'got-questions' );
+get_template_part( 'template-parts/section', 'footer-lead', array(
+		'classes' => 'border-bottom-over-white corner-accent black-orange',
+) );
 get_footer();

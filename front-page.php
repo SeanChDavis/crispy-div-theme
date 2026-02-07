@@ -228,8 +228,9 @@ get_header();
     	<?php
 	}
 
-	get_template_part( 'template-parts/section', 'got-questions', array(
-			'description' => 'Don\'t be shy! Send an email with your inquiry.'
+	get_template_part( 'template-parts/section', 'footer-lead', array(
+			'description' => 'Don\'t be shy! Send an email with your inquiry.',
+			'classes' => 'border-bottom-over-white corner-accent black-orange',
 	) );
 
 get_footer();

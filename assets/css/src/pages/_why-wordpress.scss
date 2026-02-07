@@ -1,5 +1,16 @@
 .page-why-wordpress {
 
+    .page-header-description {
+
+        em.semi-heavy {
+            font-style: normal;
+            font-weight: 800;
+            color: #fff;
+            display: inline-block;
+            margin-right: 6px;
+        }
+    }
+
     .cd-builds {
         display: flex;
         flex-wrap: wrap;

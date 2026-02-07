@@ -71,6 +71,11 @@
 	border-top: 1px dashed $border_over_white;
 }
 
+.border-y-over-white {
+	border-top: 1px dashed $border_over_white;
+	border-bottom: 1px dashed $border_over_white;
+}
+
 .border-bottom-over-purple {
 	border-bottom: 1px dashed $border_over_purple;
 }

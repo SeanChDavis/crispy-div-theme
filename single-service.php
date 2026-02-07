@@ -29,22 +29,14 @@ if ( have_posts() ) {
 			'the-title' => $the_title,
 		) );
 	}
-	?>
-	<section class="footer-lead-cta element-spacing medium background-gray corner-accent black-orange">
-		<div class="service-content">
-			<span class="cta-title h4">But wait, there's more.</span>
-			<p>We offer a wide range of services to help you grow your business.</p>
-			<?php
-			crispydiv_button(
-				array(
-					'text'  => 'View All Services',
-					'url'  => get_post_type_archive_link( 'service' ),
-					'classes' => array( 'button', 'outline' ),
-				)
-			);
-			?>
-		</div>
-	</section>
-	<?php
 }
+
+get_template_part( 'template-parts/section', 'footer-lead', array(
+		'title' => 'But wait, there\'s more.',
+		'description' => 'We offer a wide range of services to help you grow your business.',
+		'classes' => 'background-gray corner-accent black-orange',
+		'button_text' => 'View All Services',
+		'button_url' => get_post_type_archive_link( 'service' ),
+		'button_classes' => array( 'button', 'outline' ),
+) );
 get_footer();

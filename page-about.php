@@ -111,21 +111,11 @@ crispydiv_page_header( array(
     </div>
 </section>
 
-<section class="footer-lead-cta element-spacing large">
-    <div class="service-content">
-        <span class="footer-lead-cta-title h4">Let's have a conversation<small class="highlight-text">.</small></span>
-        <p>If you believe we're a good fit, let's work. If you have questions, just reach out.</p>
-        <?php
-        crispydiv_button(
-            array(
-                'text'  => 'Start the Conversation',
-                'url'  => home_url( '/contact' ),
-                'classes' => array( 'button', 'large' ),
-            )
-        );
-        ?>
-    </div>
-</section>
-
 <?php
+get_template_part( 'template-parts/section', 'footer-lead', array(
+		'title' => 'Let\'s have a conversation<small class="highlight-text">.</small>',
+		'description' => 'If you believe we\'re a good fit, let\'s work. If you have questions, just reach out.',
+		'classes' => 'large center',
+		'button_classes' => array( 'button', 'large' ),
+) );
 get_footer();

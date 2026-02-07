@@ -21,21 +21,13 @@ crispydiv_page_header( array(
 		</div>
 	</main>
 
-	<section class="footer-lead-cta element-spacing medium background-gray corner-accent black-orange">
-		<div class="service-content">
-			<span class="cta-title h4">Unsure what you're looking for?</span>
-			<p>Take a look at our wide range of services before reaching out.</p>
-			<?php
-			crispydiv_button(
-				array(
-					'text'  => 'View All Services',
-					'url'  => get_post_type_archive_link( 'service' ),
-					'classes' => array( 'button', 'outline' ),
-				)
-			);
-			?>
-		</div>
-	</section>
-
 <?php
+get_template_part( 'template-parts/section', 'footer-lead', array(
+		'title' => 'Unsure what you\'re looking for?',
+		'description' => 'Take a look at our wide range of services before reaching out.',
+		'classes' => 'border-y-over-white corner-accent black-orange',
+		'button_text' => 'View All Services',
+		'button_url' => get_post_type_archive_link( 'service' ),
+		'button_classes' => array( 'button', 'outline' ),
+) );
 get_footer();

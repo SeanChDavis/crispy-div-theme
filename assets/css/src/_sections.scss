@@ -93,6 +93,10 @@
 
 .footer-lead-cta {
 
+	&.center {
+		text-align: center;
+	}
+
 	p {
 
 		& + .button {
