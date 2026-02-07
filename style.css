@@ -3665,9 +3665,6 @@ html {
   gap: 1rem;
   margin-top: 2rem;
 }
-.page-why-wordpress .cd-builds .button {
-  color: #fff;
-}
 @media all and (min-width: 760px) {
   .page-why-wordpress .why-wordpress-section .section-heading {
     padding-top: 4.5rem;

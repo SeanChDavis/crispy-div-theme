@@ -52,6 +52,7 @@ add_filter( 'body_class', function( $classes ) {
     } else if (
 			is_post_type_archive( 'service' )
 			|| is_singular( 'service' )
+			|| is_page( 'why-wordpress' )
 	) {
 	    $classes[] = 'has-pink-header';
     } else {

@@ -280,6 +280,7 @@ function get_crispydiv_logo_by_color() {
             || is_home()
             || is_singular( 'post' )
 			|| is_page( 'about' )
+			|| is_page( 'why-wordpress' )
             || is_post_type_archive( 'service' )
             || is_post_type_archive( 'course' )
             || is_singular( 'course' )

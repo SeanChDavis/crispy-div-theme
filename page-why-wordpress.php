@@ -5,20 +5,22 @@
 
 get_header();
 crispydiv_page_header(array(
+		'bg-color'            => 'background-pink',
+		'corner-accent-color' => 'bottom-right white-white',
 		'title'       => get_field('page_header_title') ?: get_the_title(get_the_ID()),
 		'title-class' => 'h2',
 		'description' => get_field('page_header_description') ?: '',
 ));
 ?>
 
-	<main class="background-purple-gradient">
+	<main class="background-gray">
 		<div class="inner medium">
 			<h5>First, is WordPress a Crispy Div requirement? 🤔</h5>
 			<div class="section-description">
 				<div>
-					<p><span class="semi-heavy color-white">Absolutely not!</span> Crispy Div is a
+					<p><span class="semi-heavy">Absolutely not!</span> Crispy Div is a
 						<em>web development</em> agency. WordPress is an option, not a requirement.
-						<span class="semi-heavy color-white">Take a look at a few Crispy Div websites that don't use WordPress.</span> Whatever your preference or need, we can help you build it.
+						<span class="semi-heavy">Take a look at a few Crispy Div websites that don't use WordPress.</span> Whatever your preference or need, we can help you build it.
 					</p>
 				</div>
 			</div>
@@ -51,7 +53,7 @@ crispydiv_page_header(array(
 	</main>
 
 	<section class="why-wordpress-section">
-		<div class="section-heading element-spacing small background-gray">
+		<div class="section-heading element-spacing small">
 			<h2 class="section-title h3">Now, let's talk benefits<small class="highlight-text">.</small></h2>
 			<div class="section-description">
 				<p>There are several reasons why WordPress is a great choice for your project.</p>
