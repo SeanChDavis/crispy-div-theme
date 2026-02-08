@@ -27,10 +27,15 @@ $corner_accent_classes = '';
 if ( ! empty( $args['corner-accent-color'] ) ) {
 	$corner_accent_classes = ' corner-accent ' . $args['corner-accent-color'];
 }
+
+$size = 'medium';
+if ( ! empty( $args['size'] ) ) {
+	$size = $args['size'];
+}
 ?>
 
 <section id="page-header" class="page-header <?php echo $args['bg-color'], $corner_accent_classes; ?>">
-	<div class="inner medium">
+	<div class="inner <?php echo $size; ?>">
 		<h1 class="page-header-title <?php echo $args['title-class']; ?>">
             <?php if ( ! empty( $args['title-label'] ) ) { ?>
                 <span class="page-header-title-label"><?php echo $args['title-label']; ?></span>
@@ -39,7 +44,7 @@ if ( ! empty( $args['corner-accent-color'] ) ) {
         </h1>
 		<?php if ( is_singular( 'post' ) ) { ?>
             <div class="entry-meta">
-                <span class="posted-on"><?php echo crispydiv_posted_on(), crispydiv_posted_by(); ?></span>
+                <span class="posted-on"><?php echo crispydiv_posted_on(); ?></span>
             </div>
 		<?php } ?>
 		<?php

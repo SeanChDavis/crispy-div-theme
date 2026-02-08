@@ -1408,25 +1408,21 @@ h6 img, .h6 img,
   margin-right: 6px;
 }
 
-h1, .h1,
-.archive .page-header-title span {
+h1, .h1 {
   font-size: 2.5rem;
 }
 @media all and (min-width: 540px) {
-  h1, .h1,
-  .archive .page-header-title span {
+  h1, .h1 {
     font-size: 3rem;
   }
 }
 @media all and (min-width: 760px) {
-  h1, .h1,
-  .archive .page-header-title span {
+  h1, .h1 {
     font-size: 3.5rem;
   }
 }
 @media all and (min-width: 980px) {
-  h1, .h1,
-  .archive .page-header-title span {
+  h1, .h1 {
     font-size: 3.75rem;
   }
 }
@@ -1479,26 +1475,31 @@ h3, .h3 {
   }
 }
 
-h4, .h4 {
+h4, .h4,
+.archive .page-header-title span {
   font-size: 1.25rem;
 }
 @media all and (min-width: 540px) {
-  h4, .h4 {
+  h4, .h4,
+  .archive .page-header-title span {
     font-size: 1.5rem;
   }
 }
 @media all and (min-width: 760px) {
-  h4, .h4 {
+  h4, .h4,
+  .archive .page-header-title span {
     font-size: 1.75rem;
   }
 }
 @media all and (min-width: 980px) {
-  h4, .h4 {
+  h4, .h4,
+  .archive .page-header-title span {
     font-size: 2rem;
   }
 }
 @media all and (min-width: 1200px) {
-  h4, .h4 {
+  h4, .h4,
+  .archive .page-header-title span {
     font-size: 2.25rem;
   }
 }
@@ -2769,6 +2770,9 @@ html {
   color: #ae2d68;
   display: block;
   font-size: 1.1rem;
+}
+.archive:not(.post-type-archive) .page-header .page-header-title span {
+  margin-top: 0.35rem;
 }
 
 .blog .subscribe-cta {
