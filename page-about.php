@@ -29,17 +29,6 @@ crispydiv_page_header( array(
                     <div class="link-grid">
 						<a class="homepage-icon" href="https://seanchdavis.com/" title="Sean Davis Homepage" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/circle-user-sharp-solid-full.svg'; ?>" alt="Homepage Icon"></a><a class="github-icon" href="https://github.com/SeanChDavis" title="Sean Davis on GitHub" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/github-brands-solid-full.svg'; ?>" alt="GitHub Icon"></a><a class="wordpress-icon" href="https://profiles.wordpress.org/sdavis2702/" title="Sean Davis on WordPress" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/wordpress-brands-solid-full.svg'; ?>" alt="WordPress Icon"></a>
                     </div>
-<!--                    <p>-->
-<!--		                --><?php
-//		                crispydiv_button(
-//			                array(
-//				                'text' => 'Email Sean Directly',
-//				                'url' => 'https://seanchdavis.com/contact',
-//				                'classes' => array( 'button', 'purple', 'outline' ),
-//			                )
-//		                );
-//		                ?>
-<!--                    </p>-->
                 </div>
             </div>
 		</div>
@@ -47,7 +36,7 @@ crispydiv_page_header( array(
 </section>
 
 <section class="who-works">
-    <div class="section-heading element-spacing medium corner-accent black-pink">
+    <div class="section-heading element-spacing top-semi-heavy corner-accent black-pink">
         <h2 class="section-title h2">Working Together</h2>
         <div class="section-description">
             <p>Sean is the sole developer and designer behind Crispy Div. However, a network of talented individuals (curated by Sean) may come together to work on any given project. <strong>It all depends on the scope and needed resources.</strong> If we're a good fit for each other, here's generally how things go:</p>
@@ -115,7 +104,7 @@ crispydiv_page_header( array(
 get_template_part( 'template-parts/section', 'footer-lead', array(
 		'title' => 'Let\'s have a conversation<small class="highlight-text">.</small>',
 		'description' => 'If you believe we\'re a good fit, let\'s work. If you have questions, just reach out.',
-		'classes' => 'border-bottom-over-white large center',
-		'button_classes' => array( 'button', 'large' ),
+		'classes' => 'border-bottom-over-white medium center',
+		'button_classes' => array( 'button' ),
 ) );
 get_footer();

@@ -74,7 +74,7 @@ get_header();
             </div>
         </div>
         <div class="facetwp-gravity-forms-grid">
-            <div class="facetwp-grid-item element-spacing back">
+            <div class="facetwp-grid-item element-spacing">
                 <img class="logo facetwp-logo" src="<?php echo THEME_IMAGES . 'logos/facetwp-logo.png'; ?>" alt="FacetWP">
                 <p><a href="https://facetwp.com/" target="_blank">FacetWP</a> introduces advanced filtering for WordPress. The smart functionality allows site visitors to control what content they see and find what they are looking for much faster.</p>
                 <p>We use FacetWP in a number of ways, including blog post filtering. Let your readers <span class="color-black semi-heavy">filter blog posts by category, tag, or custom field</span> (including fields created by Advanced Custom Fields). It's intelligent, fast, lightweight, and incredibly useful.</p>

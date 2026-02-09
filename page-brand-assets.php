@@ -11,7 +11,7 @@ crispydiv_page_header( array(
 ?>
 
 	<main id="site-content" class="site-main border-bottom-over-white">
-		<div class="inner medium">
+		<div class="inner small">
             <h3>Brand Colors</h3>
             <div class="section-description">
                 <p>Please use these colors responsibly to ensure a cohesive look and feel. If you'd like to keep it simple, our two primary colors are purple <strong>(#341671)</strong> and orange <strong>(#f54952)</strong>.</p>

@@ -11,7 +11,7 @@ if ( ! empty( $args['description'] ) ) {
 	$description = $args['description'];
 }
 
-$classes = 'footer-lead-cta element-spacing medium';
+$classes = 'footer-lead-cta element-spacing small';
 if ( ! empty( $args['classes'] ) ) {
 	$classes = $classes . ' ' . $args['classes'];
 }
@@ -33,7 +33,7 @@ if ( ! empty( $args['button_classes'] ) ) {
 ?>
 
 <section class="<?php echo $classes; ?>">
-	<span class="cta-title h4"><?php echo $title; ?></span>
+	<span class="cta-title h5"><?php echo $title; ?></span>
 	<p><?php echo $description; ?></p>
 	<?php
 	crispydiv_button(

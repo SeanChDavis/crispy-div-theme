@@ -93,7 +93,7 @@ crispydiv_page_header(array(
 	</section>
 
 	<section class="border-bottom-over-white center">
-		<div class="inner medium">
+		<div class="inner small">
 			<div class="other-platforms">
 				<div class="description">
 					<p>

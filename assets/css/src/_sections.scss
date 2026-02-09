@@ -97,10 +97,18 @@
 		text-align: center;
 	}
 
+	.cta-title.h5 {
+		margin-bottom: .6rem;
+	}
+
 	p {
 
+		@media all and (min-width: 760px) {
+			max-width: 50%;
+		}
+
 		& + .button {
-			margin-top: .75rem;
+			margin-top: .5rem;
 		}
 	}
 }
