@@ -84,14 +84,6 @@
 
 		.section-heading {
 			border-bottom: 1px dashed $border_over_white;
-
-			@media all and (min-width: 980px) {
-				padding-top: 4.5rem;
-			}
-
-			@media all and (min-width: 1400px) {
-				padding-top: 6rem;
-			}
 		}
 
         .customization-logos-wrap {
@@ -128,6 +120,7 @@
 				}
 
 				.acf-highlight-content {
+					max-width: 650px;
 					padding-bottom: 3rem;
 
 					@media all and (min-width: 980px) {
@@ -206,7 +199,6 @@
 
 		.real-data-header {
 			border-bottom: 1px dashed $border_over_purple;
-			padding-bottom: 2rem;
 
 			.attribution {
 				color: #fff;

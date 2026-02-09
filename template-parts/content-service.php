@@ -14,7 +14,7 @@ if (isset($args)) {
 ?>
 
 <section id="<?php echo $args['the-slug']; ?>"
-		 class="<?php echo $args['the-slug']; ?>-section service-section element-spacing large">
+		 class="<?php echo $args['the-slug']; ?>-section service-section element-spacing medium">
 	<div class="service-content-grid">
 		<div class="service-description">
 			<h2 class="section-title h3"><?php echo $args['the-title']; ?></h2>

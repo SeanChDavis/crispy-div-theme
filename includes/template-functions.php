@@ -56,7 +56,7 @@ add_filter( 'body_class', function( $classes ) {
 	) {
 	    $classes[] = 'has-pink-header';
     } else {
-	    $classes[] = 'has-gray-header';
+//	    $classes[] = 'has-gray-header';
     }
 
     if ( is_singular() && has_post_thumbnail( $post->ID ) ) {

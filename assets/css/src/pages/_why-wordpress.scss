@@ -11,19 +11,93 @@
         }
     }
 
-    .cd-builds {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 2rem;
-    }
-
     .why-wordpress-section {
 
-        .section-heading {
+        .section-description {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
 
             @media all and (min-width: 760px) {
-                padding-top: 4.5rem;
+                grid-template-columns: 1fr;
+            }
+
+            @media all and (min-width: 980px) {
+                grid-template-columns: 3fr 2fr;
+                gap: 0;
+            }
+
+            @media all and (min-width: 1200px) {
+                grid-template-columns: 5fr 4fr;
+            }
+
+            p {
+                margin-bottom: 0;
+                max-width: 700px;
+            }
+
+            .button-container {
+                display: flex;
+
+                @media all and (min-width: 980px) {
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: start;
+
+                    .subdued-title {
+                        text-align: center;
+                    }
+                }
+
+                .subdued-title {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .other-platforms {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media all and (min-width: 980px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .description {
+            padding-right: 2rem;
+            max-width: 700px;
+
+            @media all and (min-width: 980px) {
+                padding-right: 3.5rem;
+            }
+
+            @media all and (min-width: 1200px) {
+                padding-right: 4.5rem;
+            }
+
+            .cd-builds {
+                display: flex;
+                flex-wrap: wrap;
+                gap: .75rem;
+                margin-top: 1rem;
+            }
+        }
+
+        .media {
+            display: none;
+
+            @media all and (min-width: 980px) {
+                display: block;
+                padding-left: 3.5rem;
+            }
+
+            @media all and (min-width: 1200px) {
+                padding-left: 4.5rem;
+            }
+
+            img {
+                max-width: 380px;
             }
         }
     }

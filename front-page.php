@@ -60,7 +60,7 @@ get_header();
 		    }
 		    ?>
         </div>
-        <div class="section-heading element-spacing corner-accent black-orange">
+        <div class="section-heading element-spacing top-heavy corner-accent black-orange">
             <h2 class="section-title">Plugin functionality <br class="disappearing-br">tweaked to perfection<small class="highlight-text">.</small></h2>
             <div class="section-description">
                 <p>Our goal is to transform your WordPress site into a feature-packed hub with seamless plugin integrations. WordPress plugins are not always "one-size-fits-all," or "plug & play." Sometimes you need a bit of customization. That's why we're here.</p>
@@ -97,7 +97,7 @@ get_header();
     </section>
 
     <section class="theme-development-section background-purple">
-        <div class="real-data-header element-spacing large corner-accent top-right white-white">
+        <div class="real-data-header element-spacing top-heavy corner-accent top-right white-white">
             <h2 class="section-title">Theme building <br class="disappearing-br">based on real data<small class="highlight-text">.</small></h2>
             <p class="subdued-links attribution">According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:</p>
         </div>

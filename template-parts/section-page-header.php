@@ -13,10 +13,10 @@ if ( get_field( 'page_header_hide', get_the_ID() ) ) {
 if ( isset( $args ) ) {
 
     $args = wp_parse_args( $args, array(
-        'bg-color' => 'background-gray',
+        'bg-color' => 'background-white',
         'corner-accent-color' => 'black-orange',
         'title' => get_the_title( get_the_ID() ),
-        'title-class' => 'h1',
+        'title-class' => 'h3',
         'title-label' => '',
         'description' => '',
     ) );
@@ -28,7 +28,7 @@ if ( ! empty( $args['corner-accent-color'] ) ) {
 	$corner_accent_classes = ' corner-accent ' . $args['corner-accent-color'];
 }
 
-$size = 'medium';
+$size = 'small';
 if ( ! empty( $args['size'] ) ) {
 	$size = $args['size'];
 }

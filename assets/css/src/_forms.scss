@@ -63,12 +63,8 @@ button,
 	&.outline {
 		background-color: transparent;
 		color: $color2;
-		border-color: $color5;
+		border-color: $color6;
 		text-decoration-color: transparent;
-
-		&.orange {
-			border-color: $color6;
-		}
 
 		&:active,
 		&:focus,
