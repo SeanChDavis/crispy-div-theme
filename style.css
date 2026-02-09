@@ -3040,67 +3040,55 @@ html {
   background: #341671;
   color: #fff;
 }
-.page-front .page-header .page-header-hero {
-  flex: 1;
-}
-.page-front .page-header .page-header-hero .page-header-hero-inner {
-  height: 100%;
-}
-.page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap {
+.page-front .page-header .what-we-do .content-wrap {
   padding-bottom: 3.5rem;
   padding-top: 3.5rem;
 }
 @media all and (min-width: 760px) {
-  .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap {
-    padding-bottom: 4.5rem;
+  .page-front .page-header .what-we-do .content-wrap {
+    padding-bottom: 3.75rem;
     padding-top: 4.5rem;
   }
 }
 @media all and (min-width: 980px) {
-  .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap {
-    padding-bottom: 5.5rem;
-    padding-top: 5.5rem;
+  .page-front .page-header .what-we-do .content-wrap {
+    padding-top: 5rem;
   }
 }
 @media all and (min-width: 1200px) {
-  .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap {
+  .page-front .page-header .what-we-do .content-wrap {
     max-width: 70%;
   }
 }
-.page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-title {
+.page-front .page-header .what-we-do .content-wrap .page-header-title {
   color: #fff;
 }
-@media all and (min-width: 1200px) {
-  .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-title {
-    font-size: 3.75rem;
-  }
-}
-@media all and (min-width: 1400px) {
-  .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-title {
-    font-size: 4.25rem;
-  }
-}
 @media all and (min-width: 760px) {
-  .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-title .disappearing-br {
+  .page-front .page-header .what-we-do .content-wrap .page-header-title .disappearing-br {
     display: block;
   }
 }
-.page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-description {
+.page-front .page-header .what-we-do .content-wrap .page-header-description {
   color: #cfc4e6;
   display: block;
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 2rem;
-  max-width: 700px;
+  max-width: 640px;
 }
 @media all and (min-width: 540px) {
-  .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-description {
+  .page-front .page-header .what-we-do .content-wrap .page-header-description {
     line-height: 1.6;
   }
 }
 @media all and (min-width: 760px) {
-  .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-description {
+  .page-front .page-header .what-we-do .content-wrap .page-header-description {
     margin-bottom: 2.5rem;
+  }
+}
+@media all and (min-width: 1200px) {
+  .page-front .page-header .what-we-do .content-wrap .page-header-description {
+    max-width: 700px;
   }
 }
 .page-front .page-header .services-grid {

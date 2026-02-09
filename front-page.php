@@ -7,31 +7,25 @@ get_header();
 ?>
 
     <section id="page-header" class="page-header">
-        <div class="page-header-hero" style="/* background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.2) 100% ) */">
-            <div class="page-header-hero-inner">
-                <div class="corner-accent bottom-right white-white">
-                    <div class="inner no-vertical-spacing">
-                        <div class="what-we-do">
-                            <div class="content-wrap">
-								<h1 class="page-header-title">Bespoke Design <small>&</small> Development for WordPress<small class="highlight-text">.</small></h1>
-                                <div class="page-header-description">
-                                    <?php echo get_field( 'page_header_description' ); ?>
-                                </div>
-                                <p class="page-header-cta">
-                                    <?php
-                                    crispydiv_button( array(
-                                        'text' => 'Start the Conversation',
-                                        'url' => home_url( '/contact/' ),
-                                        'classes' => array( 'button', 'primary' ),
-                                    ) );
-                                    ?>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<div class="inner no-vertical-spacing corner-accent bottom-right white-white">
+			<div class="what-we-do">
+				<div class="content-wrap">
+					<h1 class="page-header-title">Bespoke Design <small>&</small> Development for WordPress<small class="highlight-text">.</small></h1>
+					<div class="page-header-description">
+						<?php echo get_field( 'page_header_description' ); ?>
+					</div>
+					<p class="page-header-cta">
+						<?php
+						crispydiv_button( array(
+								'text' => 'Start the Conversation',
+								'url' => home_url( '/contact/' ),
+								'classes' => array( 'button', 'primary' ),
+						) );
+						?>
+					</p>
+				</div>
+			</div>
+		</div>
         <?php echo get_crispydiv_services_grid( true, true, array( 'background-purple' ) ); ?>
     </section>
 
