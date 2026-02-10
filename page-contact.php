@@ -14,7 +14,16 @@ crispydiv_page_header( array(
 		<div class="inner medium">
 			<div class="contact-form-grid">
 				<div class="contact-form-grid-content">
+					<h4>Enter your project details below.</h4>
 					<?php echo get_field( 'contact_form', get_the_ID() ); ?>
+				</div>
+				<div class="kvk-details">
+					<h4>Looking for KVK details?</h4>
+					<span class="semi-heavy">KVK Number:</span> <em>99162024</em><br>
+					<span class="semi-heavy">Business Name:</span> <em>Crispy Div</em><br>
+					<span class="semi-heavy">Phone:</span> <em>+31684698107</em><br>
+					<span class="semi-heavy">E-mail:</span> <em>mail@crispydiv.com</em><br>
+					<span class="semi-heavy">Address:</span> <em>Willem Ruyslaan 225, 3063 ER Rotterdam</em>
 				</div>
 			</div>
 		</div>

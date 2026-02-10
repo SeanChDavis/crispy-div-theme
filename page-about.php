@@ -103,7 +103,7 @@ crispydiv_page_header( array(
 <?php
 get_template_part( 'template-parts/section', 'footer-lead', array(
 		'title' => 'Let\'s have a conversation<small class="highlight-text">.</small>',
-		'description' => 'If you believe we\'re a good fit, let\'s work. If you have questions, just reach out.',
+		'description' => 'If you believe we\'re a good fit, let\'s work together. Just reach out.',
 		'classes' => 'border-bottom-over-white medium center',
 		'button_classes' => array( 'button' ),
 ) );

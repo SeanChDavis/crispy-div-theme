@@ -2692,6 +2692,10 @@ template {
 .footer-lead-cta.center {
   text-align: center;
 }
+.footer-lead-cta.center p {
+  margin-left: auto;
+  margin-right: auto;
+}
 .footer-lead-cta .cta-title.h5 {
   margin-bottom: 0.6rem;
 }
@@ -3014,11 +3018,17 @@ html {
 
 .page-contact .contact-form-grid {
   display: grid;
+  gap: 2.5rem;
   grid-template-columns: 1fr;
 }
 @media (min-width: 840px) {
   .page-contact .contact-form-grid {
     grid-template-columns: 4fr 3fr;
+  }
+}
+@media (min-width: 980px) {
+  .page-contact .contact-form-grid {
+    gap: 4rem;
   }
 }
 .page-contact .contact-form-grid .field {
