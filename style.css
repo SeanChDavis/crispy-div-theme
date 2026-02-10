@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.1.19
+ * Version: 1.2
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -939,6 +939,13 @@ p + .button {
   }
 }
 
+.secondary-cta {
+  color: #ae2d68;
+  display: inline-block;
+  font-size: 90%;
+  margin-top: 0.5rem;
+}
+
 input[type=text],
 input[type=email],
 input[type=url],
@@ -1462,55 +1469,55 @@ h2, .h2 {
   }
 }
 
-h3, .h3 {
+h3, .h3,
+.archive .page-header-title span {
   font-size: 1.5rem;
 }
 @media all and (min-width: 540px) {
-  h3, .h3 {
+  h3, .h3,
+  .archive .page-header-title span {
     font-size: 1.75rem;
   }
 }
 @media all and (min-width: 760px) {
-  h3, .h3 {
+  h3, .h3,
+  .archive .page-header-title span {
     font-size: 2rem;
   }
 }
 @media all and (min-width: 980px) {
-  h3, .h3 {
+  h3, .h3,
+  .archive .page-header-title span {
     font-size: 2.25rem;
   }
 }
 @media all and (min-width: 1200px) {
-  h3, .h3 {
+  h3, .h3,
+  .archive .page-header-title span {
     font-size: 2.5rem;
   }
 }
 
-h4, .h4,
-.archive .page-header-title span {
+h4, .h4 {
   font-size: 1.25rem;
 }
 @media all and (min-width: 540px) {
-  h4, .h4,
-  .archive .page-header-title span {
+  h4, .h4 {
     font-size: 1.5rem;
   }
 }
 @media all and (min-width: 760px) {
-  h4, .h4,
-  .archive .page-header-title span {
+  h4, .h4 {
     font-size: 1.75rem;
   }
 }
 @media all and (min-width: 980px) {
-  h4, .h4,
-  .archive .page-header-title span {
+  h4, .h4 {
     font-size: 2rem;
   }
 }
 @media all and (min-width: 1200px) {
-  h4, .h4,
-  .archive .page-header-title span {
+  h4, .h4 {
     font-size: 2.25rem;
   }
 }
@@ -2572,6 +2579,7 @@ template {
   color: #ae2d68;
   display: block;
   font-size: 1.1rem;
+  margin-bottom: 0.35rem;
 }
 .page-header .page-header-description,
 .entry-header .page-header-description {
@@ -3346,12 +3354,6 @@ html {
 }
 .service-section .service-content-grid .service-description p + .button {
   margin-top: 1.25rem;
-}
-.service-section .service-content-grid .service-description .secondary-cta {
-  color: #ae2d68;
-  display: inline-block;
-  font-size: 90%;
-  margin-top: 0.5rem;
 }
 @media all and (min-width: 1200px) {
   .service-section .service-content-grid .service-aside {

@@ -88,6 +88,13 @@ p {
 	}
 }
 
+.secondary-cta {
+	color: $color5;
+	display: inline-block;
+	font-size: 90%;
+	margin-top: .5rem;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],

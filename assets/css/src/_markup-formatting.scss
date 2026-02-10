@@ -54,7 +54,8 @@ h2, .h2 {
 	}
 }
 
-h3, .h3 {
+h3, .h3,
+.archive .page-header-title span {
 	font-size: 1.5rem;
 
 	@media all and (min-width: 540px) {
@@ -74,8 +75,7 @@ h3, .h3 {
 	}
 }
 
-h4, .h4,
-.archive .page-header-title span {
+h4, .h4 {
 	font-size: 1.25rem;
 
 	@media all and (min-width: 540px) {

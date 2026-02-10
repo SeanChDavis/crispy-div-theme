@@ -15,8 +15,8 @@ crispydiv_page_header( array(
 	<div class="inner medium">
 		<div class="history-grid">
             <div class="history-grid-content">
-                <span class="history-title h5">A Brief History</span>
-                <p>Crispy Div is the brainchild of <a class="homepage-icon" href="https://seanchdavis.com/" title="Sean Davis Homepage" target="_blank">Sean Davis</a>, a web developer and designer from St. Louis, Missouri now living in Rotterdam, Netherlands. Sean started building websites in 2007 with heavy focus on WordPress beginning in 2008 (<a href="https://profiles.wordpress.org/sdavis2702/" target="_blank">Sean's WordPress profile</a>).</p>
+                <span class="history-title h5">Sean's Brief History</span>
+                <p>Crispy Div is the brainchild of <a class="homepage-icon" href="https://seanchdavis.com/" title="Sean Davis Homepage" target="_blank">Sean Davis</a>, a web developer and designer from St. Louis, Missouri now living in Rotterdam, Netherlands. Sean started building websites in 2007 with a heavy focus on WordPress beginning in 2008 (<a href="https://profiles.wordpress.org/sdavis2702/" target="_blank">Sean's WordPress profile</a>).</p>
                 <p>As the first employee and eventual Partner at <a href="https://sandhillsdev.com/about/" target="_blank">Sandhills Development</a>, Sean co-owned and helped design, develop, and maintain several popular WordPress plugins such as <span class="semi-heavy">Easy Digital Downloads</span>, <span class="semi-heavy">AffiliateWP</span>, and <span class="semi-heavy">Restrict Content Pro</span> before acquisition.</p>
                 <p>Before his 7+ years at Sandhills, Sean developed a WordPress theme framework called <span class="semi-heavy">Volatyl</span> along with many other WordPress themes and plugins. Sean has also contributed to the <span class="semi-heavy">Twenty Sixteen</span> core WordPress theme, the popular WordPress starter theme <span class="semi-heavy">Underscores (_s)</span>, and <span class="semi-heavy">WordPress core</span> itself.</p>
             </div>
@@ -36,8 +36,8 @@ crispydiv_page_header( array(
 </section>
 
 <section class="who-works">
-    <div class="section-heading element-spacing top-semi-heavy corner-accent black-pink">
-        <h2 class="section-title h2">Working Together</h2>
+    <div class="section-heading element-spacing top-semi-heavy corner-accent black-orange">
+        <h3 class="section-title h3">Working Together</h3>
         <div class="section-description">
             <p>Sean is the sole developer and designer behind Crispy Div. However, a network of talented individuals (curated by Sean) may come together to work on any given project. <strong>It all depends on the scope and needed resources.</strong> If we're a good fit for each other, here's generally how things go:</p>
         </div>

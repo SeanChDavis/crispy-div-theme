@@ -23,9 +23,10 @@ crispydiv_page_header(array(
 						<?php
 						crispydiv_button(
 								array(
-										'text'    => 'See Latest WordPress Release',
-										'url'     => 'https://wordpress.org/download/',
-										'classes' => array('button', 'purple')
+										'text'        => 'See Latest WordPress Release',
+										'url'         => 'https://wordpress.org/download/',
+										'classes'     => array('button', 'purple'),
+										'target_self' => false
 								)
 						);
 						?>
@@ -105,23 +106,26 @@ crispydiv_page_header(array(
 						<?php
 						crispydiv_button(
 								array(
-										'text'    => 'PageMotor',
-										'url'     => 'https://pm.crispydiv.com/',
-										'classes' => array('button outline'),
+										'text'        => 'PageMotor',
+										'url'         => 'https://pm.crispydiv.com/',
+										'classes'     => array('button outline'),
+										'target_self' => false
 								)
 						);
 						crispydiv_button(
 								array(
-										'text'    => 'Astro',
-										'url'     => 'https://astro.crispydiv.com/',
-										'classes' => array('button outline'),
+										'text'        => 'Astro',
+										'url'         => 'https://astro.crispydiv.com/',
+										'classes'     => array('button outline'),
+										'target_self' => false
 								)
 						);
 						crispydiv_button(
 								array(
-										'text'    => 'React (Personal)',
-										'url'     => 'https://seanchdavis.com/',
-										'classes' => array('button outline'),
+										'text'        => 'React (Personal)',
+										'url'         => 'https://seanchdavis.com/',
+										'classes'     => array('button outline'),
+										'target_self' => false
 								)
 						);
 						?>
