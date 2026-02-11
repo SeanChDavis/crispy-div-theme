@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.2
+ * Version: 1.2.1
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -338,7 +338,7 @@ html body #page {
 .subdued-title {
   font-family: "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
-  color: #8b829d;
+  color: #756c86;
   display: block;
   font-size: 0.75rem;
   font-weight: 700;
@@ -540,6 +540,18 @@ html body #page {
   padding-top: 3rem;
 }
 @media all and (min-width: 760px) {
+  .inner.smedium {
+    padding-bottom: 3.75rem;
+    padding-top: 3.75rem;
+  }
+}
+@media all and (min-width: 980px) {
+  .inner.smedium {
+    padding-bottom: 4.25rem;
+    padding-top: 4.25rem;
+  }
+}
+@media all and (min-width: 760px) {
   .inner.medium {
     padding-bottom: 4.5rem;
     padding-top: 4.5rem;
@@ -649,7 +661,7 @@ html body #page {
 #comments .comments-title {
   font-family: "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
-  color: #8b829d;
+  color: #756c86;
   display: block;
   font-size: 0.75rem;
   font-weight: 700;
@@ -661,13 +673,13 @@ html body #page {
 }
 #comments .logged-in-as,
 #comments .comment-notes {
-  color: #8b829d;
+  color: #756c86;
   font-size: 15px;
   font-weight: 600;
 }
 #comments .logged-in-as a,
 #comments .comment-notes a {
-  color: #595168;
+  color: #443e4e;
   text-decoration-color: #ae2d68;
 }
 #comments .comment-list > .comment, #comments .comment-list > .pingback {
@@ -824,11 +836,11 @@ html body #page {
   max-width: 100px;
 }
 #colophon .site-info .site-copyright {
-  color: gray;
+  color: #666666;
   font-size: 90%;
 }
 #colophon .site-info .site-copyright a {
-  color: gray;
+  color: #666666;
   text-decoration: none;
 }
 #colophon .site-info .site-copyright a:hover, #colophon .site-info .site-copyright a:focus, #colophon .site-info .site-copyright a:active {
@@ -843,6 +855,7 @@ button,
   border-radius: 1.7em;
   color: #fff;
   display: inline-block;
+  line-height: 1.6;
   padding: 0.53em 1.7em;
   font-size: 0.75rem;
   font-weight: 700;
@@ -2053,14 +2066,9 @@ figure.frame img {
   font-weight: 600;
   padding: 0;
   position: absolute;
-  right: 1.2rem;
+  right: 2rem;
   top: 1.2rem;
   transition: all 0.3s;
-}
-@media all and (min-width: 540px) {
-  #site-navigation .menu-toggle {
-    right: 2rem;
-  }
 }
 @media all and (min-width: 980px) {
   #site-navigation .menu-toggle {
@@ -2716,6 +2724,10 @@ template {
   margin-top: 0.5rem;
 }
 
+.small-cta-section p {
+  font-size: 0.875rem;
+}
+
 html {
   font-size: 17px;
   font-weight: 500;
@@ -2747,11 +2759,13 @@ html {
 @media (min-width: 1200px) {
   .history-grid {
     gap: 5rem;
-    grid-template-columns: 3fr 6fr;
+    grid-template-columns: 3fr 4.5fr;
   }
 }
-.history-grid .history-grid-media-inner {
-  padding: 0 3rem 3rem;
+@media (min-width: 840px) {
+  .history-grid .history-grid-media-inner {
+    padding: 0 3rem 3rem;
+  }
 }
 .history-grid .history-grid-media-inner .history-image {
   align-items: center;
@@ -3109,6 +3123,9 @@ html {
   .page-front .page-header .what-we-do .content-wrap .page-header-description {
     max-width: 700px;
   }
+}
+.page-front .page-header .what-we-do .content-wrap .button {
+  color: #fff;
 }
 .page-front .page-header .services-grid {
   border-bottom: none;
@@ -3572,7 +3589,7 @@ html {
   max-width: 300px;
 }
 .single.single-post .entry-footer {
-  color: #8b829d;
+  color: #756c86;
   margin-top: 1.5rem;
 }
 .single.single-post .entry-footer .image-attribution {
@@ -3580,7 +3597,7 @@ html {
   margin-top: 6px;
 }
 .single.single-post .entry-footer a {
-  color: #595168;
+  color: #443e4e;
 }
 
 @media all and (min-width: 980px) {
@@ -3646,7 +3663,7 @@ html {
   border-color: #f54952;
 }
 .page .sidebar-column .sidebar .widget.widget_search input::-webkit-input-placeholder {
-  color: gray;
+  color: #666666;
 }
 .page .sidebar-column .sidebar .widget.widget_recent_entries ul li a {
   color: #341671;

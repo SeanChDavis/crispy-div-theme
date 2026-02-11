@@ -5,15 +5,18 @@
 
 get_header();
 crispydiv_page_header(array(
-		'bg-color'            => 'background-pink',
+		'bg-color'            => 'background-purple',
 		'corner-accent-color' => 'bottom-right white-white',
 		'title'               => get_field('page_header_title') ?: get_the_title(get_the_ID()),
 		'description'         => get_field('page_header_description') ?: '',
 ));
 ?>
 
+	<div class="small-cta-section element-spacing tiny background-pink">
+		<p><span class="semi-heavy color-white">Note:</span> Crispy Div builds with self-hosted WordPress (<em>wordpress.org</em>), not WordPress as a service (<em>wordpress.com</em>).</p>
+	</div>
 	<section class="why-wordpress-section">
-		<div class="section-heading element-spacing top-semi-heavy">
+		<div class="section-heading element-spacing top-semi-heavy background-gray">
 			<h2 class="section-title h3">Let's talk benefits<small class="highlight-text">.</small></h2>
 			<div class="section-description">
 				<p>There are several reasons why WordPress is a great choice for your project. Many of those reasons become clearer over time as you use the platform. Remember, you can scale if you have a solid foundation.</p>
@@ -34,7 +37,7 @@ crispydiv_page_header(array(
 				</div>
 			</div>
 		</div>
-		<div class="how-we-work-grid general-grid large border-top-over-white">
+		<div class="how-we-work-grid general-grid large">
 			<div class="grid-item">
 				<div class="grid-item-content">
                 <span class="grid-item-icon">

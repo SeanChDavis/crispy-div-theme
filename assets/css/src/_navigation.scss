@@ -9,13 +9,9 @@
         font-weight: 600;
 		padding: 0;
 		position: absolute;
-		right: 1.2rem;
+		right: 2rem;
 		top: 1.2rem;
 		transition: all .3s;
-
-		@media all and (min-width: 540px) {
-			right: 2rem;
-		}
 
 		@media all and (min-width: 980px) {
 			display: none;

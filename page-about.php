@@ -12,10 +12,9 @@ crispydiv_page_header( array(
 ?>
 
 <section class="history-section background-gray">
-	<div class="inner medium">
+	<div class="inner smedium">
 		<div class="history-grid">
             <div class="history-grid-content">
-                <span class="history-title h5">Sean's Brief History</span>
                 <p>Crispy Div is the brainchild of <a class="homepage-icon" href="https://seanchdavis.com/" title="Sean Davis Homepage" target="_blank">Sean Davis</a>, a web developer and designer from St. Louis, Missouri now living in Rotterdam, Netherlands. Sean started building websites in 2007 with a heavy focus on WordPress beginning in 2008 (<a href="https://profiles.wordpress.org/sdavis2702/" target="_blank">Sean's WordPress profile</a>).</p>
                 <p>As the first employee and eventual Partner at <a href="https://sandhillsdev.com/about/" target="_blank">Sandhills Development</a>, Sean co-owned and helped design, develop, and maintain several popular WordPress plugins such as <span class="semi-heavy">Easy Digital Downloads</span>, <span class="semi-heavy">AffiliateWP</span>, and <span class="semi-heavy">Restrict Content Pro</span> before acquisition.</p>
                 <p>Before his 7+ years at Sandhills, Sean developed a WordPress theme framework called <span class="semi-heavy">Volatyl</span> along with many other WordPress themes and plugins. Sean has also contributed to the <span class="semi-heavy">Twenty Sixteen</span> core WordPress theme, the popular WordPress starter theme <span class="semi-heavy">Underscores (_s)</span>, and <span class="semi-heavy">WordPress core</span> itself.</p>
@@ -105,6 +104,6 @@ get_template_part( 'template-parts/section', 'footer-lead', array(
 		'title' => 'Let\'s have a conversation<small class="highlight-text">.</small>',
 		'description' => 'If you believe we\'re a good fit, let\'s work together. Just reach out.',
 		'classes' => 'border-bottom-over-white medium center',
-		'button_classes' => array( 'button' ),
+		'button_classes' => array( 'button', 'purple' ),
 ) );
 get_footer();

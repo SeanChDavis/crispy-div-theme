@@ -17,6 +17,19 @@
 		padding-top: 3rem;
 	}
 
+	&.smedium {
+
+		@media all and (min-width: 760px) {
+			padding-bottom: 3.75rem;
+			padding-top: 3.75rem;
+		}
+
+		@media all and (min-width: 980px) {
+			padding-bottom: 4.25rem;
+			padding-top: 4.25rem;
+		}
+	}
+
 	&.medium {
 
 		@media all and (min-width: 760px) {

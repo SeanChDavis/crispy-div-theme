@@ -87,7 +87,7 @@ crispydiv_page_header( array(
                 <p>Logo and logomark variations can be downloaded in a single .zip file.</p>
             </div>
             <div class="download-logos">
-                <a href="<?php echo THEME_ASSETS . 'brand/crispy-div-brand-assets.zip'; ?>" download="crispy-div-brand-assets.zip" class="button button-purple">Download All Assets</a>
+                <a href="<?php echo THEME_ASSETS . 'brand/crispy-div-brand-assets.zip'; ?>" download="crispy-div-brand-assets.zip" class="button purple">Download All Assets</a>
             </div>
 		</div>
 	</main>

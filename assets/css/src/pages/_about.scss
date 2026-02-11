@@ -18,11 +18,14 @@
 
 	@media (min-width: 1200px) {
 		gap: 5rem;
-		grid-template-columns: 3fr 6fr;
+		grid-template-columns: 3fr 4.5fr;
 	}
 
 	.history-grid-media-inner {
-		padding: 0 3rem 3rem;
+
+		@media (min-width: 840px) {
+			padding: 0 3rem 3rem;
+		}
 
 		.history-image {
 			align-items: center;

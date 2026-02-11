@@ -12,6 +12,9 @@ crispydiv_page_header( array(
 ) );
 ?>
 
+	<div class="small-cta-section element-spacing tiny background-gray">
+		<p>Curious about a service not listed below? <a href="<?php echo home_url( '/contact/' ); ?>">Send an email to ask questions.</a> No obligations.</p>
+	</div>
     <div class="services-wrap">
 		<?php
 		$services = new WP_Query( array(

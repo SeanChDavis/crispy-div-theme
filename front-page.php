@@ -19,7 +19,7 @@ get_header();
 						crispydiv_button( array(
 								'text' => 'Start the Conversation',
 								'url' => home_url( '/contact/' ),
-								'classes' => array( 'button', 'primary' ),
+								'classes' => array( 'button', 'outline', 'orange' ),
 						) );
 						?>
 					</p>
@@ -86,7 +86,7 @@ get_header();
             </div>
         </div>
         <div class="small-cta-section element-spacing tiny background-gray">
-            <p>Curious about a specific plugin or service? <a href="<?php echo home_url( '/contact/' ); ?>">Send us an email</a> to ask questions. No obligations.</p>
+            <p>Curious about a specific plugin or service? <a href="<?php echo home_url( '/contact/' ); ?>">Send an email to ask questions.</a> No obligations.</p>
         </div>
     </section>
 
