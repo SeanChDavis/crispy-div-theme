@@ -97,7 +97,7 @@
 				<div class="mock_content-area-grid">
 					<div class="mock_content">
 						<span class="h5">We've covered some essentials.</span>
-						<p>Not only have we presented you with a clean, understandable design, but we've also told you upfront what we do, how you can learn more, and where to go if you'd like to get started. Example images are provided by <a href="https://unsplash.com/@joannakosinska?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank">Joanna Kosinska</a></p>
+						<p>Not only have we presented you with a clean, understandable design, but we've also told you upfront what we do, how you can learn more, and where to go if you'd like to get started. Example images are provided by <a href="https://unsplash.com/@joannakosinska?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank" tabindex="-1">Joanna Kosinska</a></p>
 					</div>
 					<div class="mock_aside background-gray">
 

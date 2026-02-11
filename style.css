@@ -1937,7 +1937,7 @@ figure.frame img {
   width: 14px;
 }
 .browser .mock_viewport .mock_content-area .mock_trusted-by .mock_logos .mock_logo-wrap .mock_logo .mock_logo-text {
-  color: #cca38b;
+  color: #a0562a;
   font-size: 12px;
   font-weight: 700;
 }
@@ -1993,7 +1993,7 @@ figure.frame img {
   }
 }
 .browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_content a {
-  color: #7c7c7c;
+  color: #161616;
 }
 .browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_aside {
   display: none;
