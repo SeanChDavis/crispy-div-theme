@@ -32,8 +32,8 @@ if ( ! empty( $args['button_classes'] ) ) {
 }
 ?>
 
-<section class="<?php echo $classes; ?>" role="region" aria-labelledby="cta-title">
-	<span class="cta-title h5"><?php echo $title; ?></span>
+<section class="<?php echo $classes; ?>" role="region" aria-labelledby="footer-lead-title">
+	<h5 id="footer-lead-title" class="cta-title"><?php echo $title; ?></h5>
 	<p><?php echo $description; ?></p>
 	<?php
 	crispydiv_button(
