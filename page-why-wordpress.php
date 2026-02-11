@@ -41,7 +41,7 @@ crispydiv_page_header(array(
 			<div class="grid-item">
 				<div class="grid-item-content">
                 <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES.'icons/circle-1-light-full.svg'; ?>" alt="Number 1 Icon">
+					<img src="<?php echo THEME_IMAGES.'icons/circle-1-light-full.svg'; ?>" alt="">
 				</span>
 					<h3 class="grid-item-title">Ownership & Responsibility</h3>
 					<p>When you own a website using the WordPress script from <em>wordpress.org</em>,
@@ -54,7 +54,7 @@ crispydiv_page_header(array(
 			<div class="grid-item">
 				<div class="grid-item-content">
                 <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES.'icons/circle-2-light-full.svg'; ?>" alt="Number 2 Icon">
+					<img src="<?php echo THEME_IMAGES.'icons/circle-2-light-full.svg'; ?>" alt="">
 				</span>
 					<h3 class="grid-item-title">Flexibility & Customization</h3>
 					<p>All WordPress websites look quite similar after installation. Where you go from there is up to you. WordPress
@@ -69,7 +69,7 @@ crispydiv_page_header(array(
 			<div class="grid-item">
 				<div class="grid-item-content">
                 <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES.'icons/circle-3-light-full.svg'; ?>" alt="Number 3 Icon">
+					<img src="<?php echo THEME_IMAGES.'icons/circle-3-light-full.svg'; ?>" alt="">
 				</span>
 					<h3 class="grid-item-title">Selective Scalability</h3>
 					<p>The beauty of Plugins is that they
@@ -82,11 +82,11 @@ crispydiv_page_header(array(
 			<div class="grid-item">
 				<div class="grid-item-content">
                 <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES.'icons/circle-4-light-full.svg'; ?>" alt="Number 4 Icon">
+					<img src="<?php echo THEME_IMAGES.'icons/circle-4-light-full.svg'; ?>" alt="">
 				</span>
 					<h3 class="grid-item-title">Community Activity</h3>
 					<p>Perhaps the best part about WordPress is its
-						<strong>community of enthusiastic users and developers</strong>. Everything from bustling, unofficial support forums to million-dollar businesses have been built within the WordPress ecosystem. It's a world of its own.
+						<strong>community of enthusiastic users and developers</strong>. Everything from bustling, unofficial support forums to million-dollar businesses has been built within the WordPress ecosystem. It's a world of its own.
 					</p>
 					<p>WordPress is tied to the livelihoods of many individuals and families around the world. Your success as a user is often tied to the success of the community.
 						<strong>If there's something you need, there's a chance someone is ready to provide it.</strong>
@@ -135,7 +135,7 @@ crispydiv_page_header(array(
 					</div>
 				</div>
 				<div class="media">
-					<img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES.'platforms.svg'; ?>" alt="Logos: top left to bottom right - React, Angular, Shopify, Shopify, PageMotor, Firebase, Vue, Tailwind CSS, Laravel">
+					<img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES.'platforms.svg'; ?>" alt="Logos of some supported platforms, tools, and services - React, Angular, Shopify, Shopify, PageMotor, Firebase, Vue, Tailwind CSS, Laravel">
 				</div>
 			</div>
 		</div>

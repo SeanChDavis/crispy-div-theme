@@ -24,9 +24,9 @@ crispydiv_page_header( array(
                     <div class="history-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sean-davis-headshot.png" alt="Sean Davis" />
                     </div>
-					<p class="sean-label"><span class="name">Sean Davis</span><span class="title">Web Developer & Designer</span><span class="education"><abbr title="Bachelor of Science">BSc</abbr> Information Systems</span></p>
+					<p class="sean-label"><span class="name" aria-hidden="true">Sean Davis</span><span class="title">Web Developer & Designer</span><span class="education"><abbr title="Bachelor of Science">BSc</abbr> Information Systems</span></p>
                     <div class="link-grid">
-						<a class="homepage-icon" href="https://seanchdavis.com/" title="Sean Davis Homepage" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/circle-user-sharp-solid-full.svg'; ?>" alt="Homepage Icon"></a><a class="github-icon" href="https://github.com/SeanChDavis" title="Sean Davis on GitHub" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/github-brands-solid-full.svg'; ?>" alt="GitHub Icon"></a><a class="wordpress-icon" href="https://profiles.wordpress.org/sdavis2702/" title="Sean Davis on WordPress" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/wordpress-brands-solid-full.svg'; ?>" alt="WordPress Icon"></a>
+						<a class="homepage-icon" href="https://seanchdavis.com/" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/circle-user-sharp-solid-full.svg'; ?>" alt="Sean's Homepage"></a><a class="github-icon" href="https://github.com/SeanChDavis" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/github-brands-solid-full.svg'; ?>" alt="Sean's GitHub"></a><a class="wordpress-icon" href="https://profiles.wordpress.org/sdavis2702/" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/wordpress-brands-solid-full.svg'; ?>" alt="Sean's WordPress"></a>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@ crispydiv_page_header( array(
         <div class="grid-item">
             <div class="grid-item-content">
                 <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/comment-light-full.svg'; ?>" alt="Comments Icon">
+					<img src="<?php echo THEME_IMAGES . 'icons/comment-light-full.svg'; ?>" alt="">
 				</span>
                 <h3 class="grid-item-title">1. Consult</h3>
                 <p>Meet to discuss project goals and gather information about your target audience, brand, and any specific functionality that you want to include on the website.</p>
@@ -54,7 +54,7 @@ crispydiv_page_header( array(
         <div class="grid-item">
             <div class="grid-item-content">
                 <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/presentation-screen-light-full.svg'; ?>" alt="Presentation Icon">
+					<img src="<?php echo THEME_IMAGES . 'icons/presentation-screen-light-full.svg'; ?>" alt="">
 				</span>
                 <h3 class="grid-item-title">2. Propose</h3>
                 <p>Based on information gathered during consultation, you will be presented with a proposal outlining the scope of work, timeline, and cost for the project.</p>
@@ -63,7 +63,7 @@ crispydiv_page_header( array(
         <div class="grid-item">
             <div class="grid-item-content">
                 <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/palette-light-full.svg'; ?>" alt="Palette Icon">
+					<img src="<?php echo THEME_IMAGES . 'icons/palette-light-full.svg'; ?>" alt="">
 				</span>
                 <h3 class="grid-item-title">3. Design</h3>
                 <p>Upon agreement, Crispy Div will start designing. This may include wireframes and mockups to give you an idea of how the website will look and function.</p>
@@ -72,7 +72,7 @@ crispydiv_page_header( array(
         <div class="grid-item">
             <div class="grid-item-content">
                 <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/code-light-full.svg'; ?>" alt="Code Icon">
+					<img src="<?php echo THEME_IMAGES . 'icons/code-light-full.svg'; ?>" alt="">
 				</span>
                 <h3 class="grid-item-title">4. Develop</h3>
                 <p>With an approved design, the development phase will begin. This includes technical implementation and testing the website to ensure it is fully functional.</p>
@@ -81,7 +81,7 @@ crispydiv_page_header( array(
         <div class="grid-item">
             <div class="grid-item-content">
                 <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/rocket-launch-light-full.svg'; ?>" alt="Rocket Launch Icon">
+					<img src="<?php echo THEME_IMAGES . 'icons/rocket-launch-light-full.svg'; ?>" alt="">
 				</span>
                 <h3 class="grid-item-title">5. Launch</h3>
                 <p>After successful design, development, and configuration, we are clear to launch your newly designed website and make it live for the public to enjoy.</p>
@@ -90,7 +90,7 @@ crispydiv_page_header( array(
         <div class="grid-item">
             <div class="grid-item-content">
                 <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/screwdriver-wrench-light-full.svg'; ?>" alt="Screwdriver Wrench Icon">
+					<img src="<?php echo THEME_IMAGES . 'icons/screwdriver-wrench-light-full.svg'; ?>" alt="">
 				</span>
                 <h3 class="grid-item-title">6. Maintain</h3>
                 <p>If it makes sense for your business, Crispy Div will provide ongoing maintenance and support to ensure that the website stays up-to-date and is functioning properly.</p>

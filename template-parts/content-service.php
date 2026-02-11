@@ -66,8 +66,7 @@ if (isset($args)) {
 												class="logo <?php echo str_replace(" ", "-",
 														strtolower($logo_name)); ?>-logo"
 												src="<?php echo THEME_IMAGES.'logos/'.$logo['image']; ?>"
-												alt="<?php echo $logo['name'].' - '.$logo['description']; ?>"
-												aria-describedby="<?php echo $logo['description']; ?>"></a>
+												alt="<?php echo $logo['name']; ?>"></a>
 									<div class="brand-description"
 										 id="<?php echo $logo['description']; ?>"><?php echo $logo['description']; ?></div>
 								</div>
@@ -78,7 +77,7 @@ if (isset($args)) {
 				}
 			} elseif ('theme-development' === $args['the-slug']) {
 				?>
-				<h3 class="subdued-title">Proven Design Practices</h3>
+				<h3 class="subdued-title" aria-hidden="true">Proven Design Practices</h3>
 				<?php
 				get_template_part('template-parts/mock-browser');
 			} elseif ('custom-development' === $args['the-slug']) {

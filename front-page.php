@@ -46,7 +46,7 @@ get_header();
 				    <?php foreach ( $customization_logos as $logo ) { ?>
                         <div class="customization-logo">
 						    <?php $logo_name = isset( $logo['alias'] ) ? $logo['alias'] : $logo['name']; ?>
-                            <img class="logo <?php echo str_replace( " ", "-", strtolower( $logo_name ) ); ?>-logo" src="<?php echo THEME_IMAGES . 'logos/' . $logo['image']; ?>" alt="<?php echo $logo['name'] . ' - ' . $logo['description']; ?>" aria-describedby="<?php echo $logo['description']; ?>">
+                            <img class="logo <?php echo str_replace( " ", "-", strtolower( $logo_name ) ); ?>-logo" src="<?php echo THEME_IMAGES . 'logos/' . $logo['image']; ?>" alt="<?php echo $logo['name']; ?>">
                         </div>
 				    <?php } ?>
                 </div>
@@ -63,29 +63,29 @@ get_header();
         <div class="advanced-custom-fields-highlight element-spacing large">
             <div class="acf-grid">
                 <div class="acf-highlight-content">
-                    <img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES . 'logos/advanced-custom-fields-logo.png'; ?>" alt="Advanced Custom Fields">
+                    <img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES . 'logos/advanced-custom-fields-logo.png'; ?>" alt="Advanced Custom Fields Logomark">
                     <span class="h5 acf-highlight-title semi-heavy">Tweak settings, not code.</span>
                     <p><a href="https://advancedcustomfields.com/" target="_blank">Advanced Custom Fields</a> (ACF) is a powerful plugin that allows you to create custom fields for your WordPress site. We use it to create custom post types, taxonomies, fields, and more.</p>
                     <p>With ACF's features, <span class="color-black semi-heavy">we make every element of your site editable from the WordPress dashboard</span>. This allows you to control your site's content, regardless of type or structure, without having to deal with code or theme edits.</p>
                 </div>
                 <div class="acf-graphic">
-                    <img class="advanced-custom-fields-graphic framed" src="<?php echo THEME_IMAGES . 'advanced-custom-fields-hero-area-fields.png'; ?>" alt="Advanced Custom Fields - Page Hero Fields">
+                    <img class="advanced-custom-fields-graphic framed" src="<?php echo THEME_IMAGES . 'advanced-custom-fields-hero-area-fields.png'; ?>" alt="Screenshot of ACF example fields for a page hero">
                 </div>
             </div>
         </div>
         <div class="facetwp-gravity-forms-grid">
             <div class="facetwp-grid-item element-spacing">
-                <img class="logo facetwp-logo" src="<?php echo THEME_IMAGES . 'logos/facetwp-logo.png'; ?>" alt="FacetWP">
+                <img class="logo facetwp-logo" src="<?php echo THEME_IMAGES . 'logos/facetwp-logo.png'; ?>" alt="">
                 <p><a href="https://facetwp.com/" target="_blank">FacetWP</a> introduces advanced filtering for WordPress. The smart functionality allows site visitors to control what content they see and find what they are looking for much faster.</p>
                 <p>We use FacetWP in a number of ways, including blog post filtering. Let your readers <span class="color-black semi-heavy">filter blog posts by category, tag, or custom field</span> (including fields created by Advanced Custom Fields). It's intelligent, fast, lightweight, and incredibly useful.</p>
             </div>
             <div class="gravity-forms-grid-item element-spacing">
-                <img class="logo gravity-forms-logo" src="<?php echo THEME_IMAGES . 'logos/gravity-forms-logo.svg'; ?>" alt="Gravity Forms">
+                <img class="logo gravity-forms-logo" src="<?php echo THEME_IMAGES . 'logos/gravity-forms-logo.svg'; ?>" alt="">
                 <p><a href="https://www.gravityforms.com" target="_blank">Gravity Forms</a> is more than just a custom form builder. Its functionality can handle everything from collecting payments via Stripe to routing detailed support requests to Help Scout.</p>
                 <p>We use Gravity Forms to streamline interactions with users and maintain a detailed records. With <span class="color-black semi-heavy">over 30 form fields to choose from</span> and integration capabilities through its API & webhook functionality, the possibilities are endless and exciting.</p>
             </div>
         </div>
-        <div class="small-cta-section element-spacing tiny background-gray">
+        <div class="small-cta-section element-spacing tiny background-pink">
             <p>Curious about a specific plugin or service? <a href="<?php echo home_url( '/contact/' ); ?>">Send an email to ask questions.</a> No obligations.</p>
         </div>
     </section>
@@ -99,7 +99,7 @@ get_header();
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/browser-light-full.svg'; ?>" alt="Browser Icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/browser-light-full.svg'; ?>" alt="">
 					</span>
                     <h3 class="grid-item-title">Above the Fold</h3>
                     <p>Users spend 80% of their time on a website viewing information presented above the fold.</p>
@@ -108,7 +108,7 @@ get_header();
             <div class="grid-item">
                 <div class="grid-item-content">
 					<span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/eye-sharp-light-full.svg'; ?>" alt="Eye Icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/eye-sharp-light-full.svg'; ?>" alt="">
 					</span>
                     <h3 class="grid-item-title">The "F" Pattern</h3>
                     <p>User scan content in an "F" pattern: horizontally from top left, down the left side, then across the middle.</p>
@@ -117,7 +117,7 @@ get_header();
             <div class="grid-item">
                 <div class="grid-item-content">
 					<span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/align-left-light-full.svg'; ?>" alt="Align Left Icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/align-left-light-full.svg'; ?>" alt="">
 					</span>
                     <h3 class="grid-item-title">Skimmable Content</h3>
                     <p>Users are more likely to engage with content that is presented as short paragraphs and clear headings.</p>
@@ -150,7 +150,7 @@ get_header();
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/mobile-light-full.svg'; ?>" alt="Mobile Icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/mobile-light-full.svg'; ?>" alt="">
 					</span>
                     <h3 class="grid-item-title">Mobile-friendly</h3>
                     <p>Both desktop and mobile designs are standard. More than 50% of all web traffic is mobile (<a href="https://gs.statcounter.com/platform-market-share/desktop-mobile/worldwide/#yearly-2015-2025" target="_blank">source</a>).</p>
@@ -159,7 +159,7 @@ get_header();
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/bullseye-arrow-light-full.svg'; ?>" alt="Bullseye Arrow Icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/bullseye-arrow-light-full.svg'; ?>" alt="">
 					</span>
                     <h3 class="grid-item-title">Purpose-driven</h3>
                     <p>Pages are designed to guide visitors towards an action, like clicking a link or reading specific text.</p>
@@ -168,7 +168,7 @@ get_header();
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/handshake-angle-light-full.svg'; ?>" alt="Handshake Icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/handshake-angle-light-full.svg'; ?>" alt="">
 					</span>
                     <h3 class="grid-item-title">Accessibility-focused</h3>
                     <p>Clarity, contrast, and usability are paramount, providing the best user experience for visitors.</p>
@@ -177,7 +177,7 @@ get_header();
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/timer-light-full.svg'; ?>" alt="Timer Icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/timer-light-full.svg'; ?>" alt="">
 					</span>
                     <h3 class="grid-item-title">Fast-loading</h3>
                     <p>47% of users expect a page to load in two seconds or less. 40% will leave after three seconds (<a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-page-speed-new-industry-benchmarks/" target="_blank">source</a>).</p>
@@ -186,7 +186,7 @@ get_header();
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/pen-ruler-light-full.svg'; ?>" alt="Pen Ruler Icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/pen-ruler-light-full.svg'; ?>" alt="">
 					</span>
                     <h3 class="grid-item-title">Meticulously-designed</h3>
                     <p>Even the tiny details matter. When viewed as a whole, you can feel if a design is <em>crisp</em> or sloppy.</p>
@@ -195,7 +195,7 @@ get_header();
             <div class="grid-item">
                 <div class="grid-item-content">
 					<span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/shield-check-light-full.svg'; ?>" alt="Shield Check Icon">
+						<img src="<?php echo THEME_IMAGES . 'icons/shield-check-light-full.svg'; ?>" alt="">
 					</span>
                     <h3 class="grid-item-title">Well-secured</h3>
                     <p>Only trusted and maintained scripts and resources are used. Site owners and visitors are protected.</p>

@@ -1337,6 +1337,7 @@ form label [class*=not-valid-tip] {
   height: auto;
   width: 120px;
   vertical-align: bottom;
+  margin: 0;
 }
 #masthead .site-header .site-branding .site-title {
   display: inline-block;

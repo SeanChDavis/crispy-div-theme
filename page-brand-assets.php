@@ -44,20 +44,20 @@ crispydiv_page_header( array(
             </div>
             <h3>Logos & Logomark</h3>
             <div class="section-description">
-                <p>Try to keep the contrast in mind when implementing the logo so that the text is legible. Also be sure to give the logo room to breathe. Do not allow it to touch or overlap any other elements (subtle background design elements are okay).</p>
+                <p>Try to keep the contrast in mind when implementing the logo so that the text is legible. Also, be sure to give the logo room to breathe. Do not allow it to touch or overlap any other elements (subtle background design elements are okay).</p>
             </div>
             <div class="logos-grid">
                 <div class="logo-white background-purple">
-                    <img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-white.svg'; ?>" alt="Crispy Div Logo - White">
+                    <img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-white.svg'; ?>" alt="Crispy Div Logo for dark backgrounds">
                 </div>
                 <div class="logomark background-pink">
-                    <img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-mark.svg'; ?>" alt="Crispy Div Logomark">
+                    <img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-mark.svg'; ?>" alt="Crispy Div Logomark for dark backgrounds">
                 </div>
                 <div class="logo-color background-gray">
-                    <img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-color.svg'; ?>" alt="Crispy Div Logo - Color">
+                    <img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-color.svg'; ?>" alt="Crispy Div Logo for light backgrounds">
                 </div>
                 <div class="logomark background-white">
-                    <img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-mark.svg'; ?>" alt="Crispy Div Logomark">
+                    <img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-mark.svg'; ?>" alt="Crispy Div Logomark for light backgrounds">
                 </div>
             </div>
             <h3>Typography & Text</h3>
