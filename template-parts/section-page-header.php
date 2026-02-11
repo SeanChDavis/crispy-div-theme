@@ -34,9 +34,9 @@ if ( ! empty( $args['size'] ) ) {
 }
 ?>
 
-<section id="page-header" class="page-header <?php echo $args['bg-color'], $corner_accent_classes; ?>">
+<section id="page-header" class="page-header <?php echo $args['bg-color'], $corner_accent_classes; ?>" role="region" aria-labelledby="page-header-title">
 	<div class="inner <?php echo $size; ?>">
-		<h1 class="page-header-title <?php echo $args['title-class']; ?>">
+		<h1 id="page-header-title" class="page-header-title <?php echo $args['title-class']; ?>">
             <?php if ( ! empty( $args['title-label'] ) ) { ?>
                 <span class="page-header-title-label"><?php echo $args['title-label']; ?></span>
             <?php } ?>

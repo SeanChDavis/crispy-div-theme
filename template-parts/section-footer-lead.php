@@ -32,7 +32,7 @@ if ( ! empty( $args['button_classes'] ) ) {
 }
 ?>
 
-<section class="<?php echo $classes; ?>">
+<section class="<?php echo $classes; ?>" role="region" aria-labelledby="cta-title">
 	<span class="cta-title h5"><?php echo $title; ?></span>
 	<p><?php echo $description; ?></p>
 	<?php
