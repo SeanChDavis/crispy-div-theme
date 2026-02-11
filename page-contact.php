@@ -22,6 +22,7 @@ crispydiv_page_header( array(
 					<span class="semi-heavy">KVK Number:</span> <em>99162024</em><br>
 					<span class="semi-heavy">Business Name:</span> <em>Crispy Div</em><br>
 					<span class="semi-heavy">Phone:</span> <em>+31684698107</em><br>
+					<span class="semi-heavy">Email:</span> <em>mail@crispydiv.com</em><br>
 					<span class="semi-heavy">Address:</span> <em>Willem Ruyslaan 225, 3063 ER Rotterdam</em>
 				</div>
 			</div>
