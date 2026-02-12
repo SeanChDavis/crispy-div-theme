@@ -12,6 +12,9 @@ crispydiv_page_header( array(
 ?>
 
 	<main id="site-content">
+		<div class="small-cta-section element-spacing tiny background-pink">
+			<p><span class="semi-heavy color-white">Note:</span> Crispy Div is a registered business in the Netherlands but can accept clients from anywhere in the world.</p>
+		</div>
 		<section class="history-section background-gray">
 			<div class="inner smedium">
 				<div class="history-grid">
