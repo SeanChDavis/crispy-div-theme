@@ -53,7 +53,7 @@ crispydiv_page_header( array(
 			<?php endwhile; ?>
         </div>
 <!--		--><?php //get_template_part( 'template-parts/section', 'subscribe', array(
-//			'title' => 'Subscribe for more<span class="highlight-text">.</span>',
+//			'title' => 'Subscribe for More',
 //			'size'  => 'medium',
 //		) ); ?>
         <div class="post-navigation-wrap element-spacing small background-gray">

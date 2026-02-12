@@ -114,16 +114,6 @@ endif;
 
 
 /**
- * Main site tagline output
- *
- * @return false|string
- */
-function get_crispydiv_tagline() {
-    return 'Bespoke Design & Development for WordPress<span class="highlight-text">.</span>';
-}
-
-
-/**
  * Social media link grid
  *
  * @return void

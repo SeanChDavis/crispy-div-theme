@@ -1,7 +1,7 @@
 <?php // Footer Lead CTA
 
 // Template args
-$title = 'Got Questions?';
+$title = 'Got questions?';
 if ( ! empty( $args['title'] ) ) {
 	$title = $args['title'];
 }

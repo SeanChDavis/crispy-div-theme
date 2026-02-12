@@ -1,6 +1,7 @@
 .button,
 button,
 [type="submit"] {
+	@include headingFont;
 	background-color: $color6;
 	border: 2px solid $color6;
 	border-radius: 1.7em;
@@ -9,7 +10,6 @@ button,
 	line-height: 1.6;
 	padding: .53em 1.7em;
 	font-size: .75rem;
-	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration-color: $color6;
 

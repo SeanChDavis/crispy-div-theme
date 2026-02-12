@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="site-info">
-            <p class="site-copyright"><?php echo '&copy ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ); ?> - <?php echo get_bloginfo( 'description' ); ?><span class="highlight-text">.</span></p>
+            <p class="site-copyright"><?php echo '&copy ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ); ?> - <?php echo get_bloginfo( 'description' ); ?></p>
         </div>
 	</footer>
 </div>

@@ -84,15 +84,15 @@
 
                 .primary-cta {
                     border-color: $border_over_purple;
-                    color: $body_over_purple;
+					color: #fff;
 
                     &:active,
                     &:focus,
                     &:hover {
-                        background: $color6;
-                        border-color: $color6;
+                        background: $color3;
+                        border-color: $color3;
                         color: #fff;
-                        text-decoration-color: $color6;
+                        text-decoration-color: $color3;
                     }
                 }
             }
@@ -113,7 +113,7 @@
 
                 .primary-cta {
                     border-color: $border_over_pink;
-                    color: $body_over_pink;
+					color: #fff;
 
                     &:active,
                     &:focus,

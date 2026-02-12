@@ -186,10 +186,10 @@
 					}
 
 					.custom-development-example-accordion-item-title {
+						@include headingFont;
                         background: transparent url("./assets/images/icons/circle-check-light-full.svg") no-repeat 1.5rem center;
                         background-size: 1rem 1rem;
 						display: block;
-						font-weight: 600;
 						padding: 1rem 2.5rem 1rem 3.25rem;
 
 						&:hover,

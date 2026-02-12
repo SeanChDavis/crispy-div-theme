@@ -18,7 +18,7 @@ crispydiv_page_header(array(
 		</div>
 		<section class="why-wordpress-section">
 			<div class="section-heading element-spacing top-semi-heavy background-gray">
-				<h2 class="section-title h3">Let's talk benefits<small class="highlight-text">.</small></h2>
+				<h2 class="section-title h3">Let's Talk Benefits</h2>
 				<div class="section-description">
 					<p>There are several reasons why WordPress is a great choice for your project. Many of those reasons become clearer over time as you use the platform. Remember, you can scale if you have a solid foundation.</p>
 					<div class="button-container">

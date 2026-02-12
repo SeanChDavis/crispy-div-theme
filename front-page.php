@@ -6,24 +6,22 @@
 get_header();
 ?>
 
-    <section id="page-header" class="page-header" role="region" aria-labelledby="page-header-title">
-		<div class="inner no-vertical-spacing corner-accent bottom-right white-white">
-			<div class="what-we-do">
-				<div class="content-wrap">
-					<h1 class="page-header-title">Bespoke Design <small>&</small> Development for WordPress<small class="highlight-text">.</small></h1>
-					<div class="page-header-description">
-						<?php echo get_field( 'page_header_description' ); ?>
-					</div>
-					<p class="page-header-cta">
-						<?php
-						crispydiv_button( array(
-								'text' => 'Start the Conversation',
-								'url' => home_url( '/contact/' ),
-								'classes' => array( 'button', 'outline', 'orange' ),
-						) );
-						?>
-					</p>
+    <section id="page-header" class="page-header background-purple" role="region" aria-labelledby="page-header-title">
+		<div class="inner smedium corner-accent bottom-right white-white">
+			<div class="content-wrap">
+				<h1 class="page-header-title">Creatively Customized WordPress Development</h1>
+				<div class="page-header-description">
+					<?php echo get_field( 'page_header_description' ); ?>
 				</div>
+				<p class="page-header-cta">
+					<?php
+					crispydiv_button( array(
+							'text' => 'Work with Crispy Div',
+							'url' => home_url( '/contact/' ),
+							'classes' => array( 'button', 'outline', 'orange' ),
+					) );
+					?>
+				</p>
 			</div>
 		</div>
         <?php echo get_crispydiv_services_grid( true, true, array( 'background-purple' ) ); ?>
@@ -57,7 +55,7 @@ get_header();
 				?>
 			</div>
 			<div class="section-heading element-spacing top-heavy corner-accent black-orange">
-				<h2 class="section-title">Plugin functionality <br class="disappearing-br">tweaked to perfection<small class="highlight-text">.</small></h2>
+				<h2 class="section-title">Plugin Functionality <br class="disappearing-br">Tweaked to Perfection</h2>
 				<div class="section-description">
 					<p>Our goal is to transform your WordPress site into a feature-packed hub with seamless plugin integrations. WordPress plugins are not always "one-size-fits-all," or "plug & play." Sometimes you need a bit of customization. That's why we're here.</p>
 				</div>
@@ -94,7 +92,7 @@ get_header();
 
 		<section class="theme-development-section background-purple">
 			<div class="real-data-header element-spacing top-heavy corner-accent top-right white-white">
-				<h2 class="section-title">Theme building <br class="disappearing-br">based on real data<small class="highlight-text">.</small></h2>
+				<h2 class="section-title">Theme Building <br class="disappearing-br">Based on Real Data</h2>
 				<p class="subdued-links attribution">According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:</p>
 			</div>
 			<div class="nng-stats-grid general-grid three-col">
@@ -127,7 +125,7 @@ get_header();
 				</div>
 			</div>
 			<div class="corner-accent bottom-right white-white">
-				<div class="mock-browser-grid element-spacing large">
+				<div class="mock-browser-grid element-spacing medium">
 					<?php get_template_part( 'template-parts/mock-browser' ); ?>
 					<div class="design-description">
 						<p class="blurb-title">Does this design look familiar?</p>
@@ -212,7 +210,7 @@ get_header();
 		<?php if ( ! empty( get_crispydiv_courses_grid() ) ) { ?>
 			<section class="courses-section background-gray">
 				<div class="section-heading element-spacing large corner-accent black-orange">
-					<h2 class="section-title">Build WordPress <br class="disappearing-br">yourself, your way<small class="highlight-text">.</small></h2>
+					<h2 class="section-title">Build WordPress <br class="disappearing-br">yourself, your way.</h2>
 					<div class="section-description">
 						<p>Sometimes you have to "roll your own." We get it. In fact, that's how the journey begins for most self-taught developers and designers. Welcome to the club. We're here to help you <strong>learn the tricks of the trade, skip the unnecessary hardships</strong>, and actually get some work done. Here's what we have to offer.</p>
 					</div>

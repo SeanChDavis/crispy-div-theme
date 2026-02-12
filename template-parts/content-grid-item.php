@@ -19,8 +19,13 @@ if ( isset( $args ) ) {
     <article id="post-<?php the_ID(); ?>" <?php post_class( 'grid-item-content' ); ?>>
 	    <?php crispydiv_post_thumbnail(); ?>
         <header class="entry-header">
-            <?php
+			<?php
             if ( $args['is-services'] ) {
+				?>
+				<span class="grid-item-icon">
+					<img src="<?php echo THEME_IMAGES . 'icons/' . get_field( 'service_icon', get_the_ID() ) . '.svg'; ?>" alt="">
+				</span>
+				<?php
 	            the_title( '<h2 class="entry-title grid-item-title">', '</h2>' );
             } else {
 	            the_title( '<h2 class="entry-title grid-item-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );

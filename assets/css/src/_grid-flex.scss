@@ -83,6 +83,7 @@
 			}
 
             .grid-item-icon {
+				display: inline-block;
                 width: 30px;
                 margin-bottom: 10px;
             }
@@ -100,7 +101,6 @@
 				a {
 					color: $color2;
 					font-size: 1.35rem;
-					font-weight: 700;
 					text-decoration-color: $color5;
 				}
 			}
