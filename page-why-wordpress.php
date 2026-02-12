@@ -41,10 +41,12 @@ crispydiv_page_header(array(
 			<div class="how-we-work-grid general-grid large">
 				<div class="grid-item">
 					<div class="grid-item-content">
-                <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES.'icons/circle-1-light-full.svg'; ?>" alt="">
-				</span>
-						<h3 class="grid-item-title">Ownership & Responsibility</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Ownership & Responsibility',
+								'img_file' => 'circle-1-light-full',
+						) );
+						?>
 						<p>When you own a website using the WordPress script from <em>wordpress.org</em>,
 							<strong>everything about the website belongs to you</strong>, including the data. This stands in stark contrast to many other modern platforms. You maintain complete control.
 						</p>
@@ -54,10 +56,12 @@ crispydiv_page_header(array(
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES.'icons/circle-2-light-full.svg'; ?>" alt="">
-				</span>
-						<h3 class="grid-item-title">Flexibility & Customization</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Flexibility & Customization',
+								'img_file' => 'circle-2-light-full',
+						) );
+						?>
 						<p>All WordPress websites look quite similar after installation. Where you go from there is up to you. WordPress
 							<a href="https://wordpress.org/plugins/" target="_blank">Plugins</a> are snippets of code that affect the functionality of your website. WordPress
 							<a href="https://wordpress.org/themes/" target="_blank">Themes</a> use the template engine to control the structure and design of your website.
@@ -69,10 +73,12 @@ crispydiv_page_header(array(
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES.'icons/circle-3-light-full.svg'; ?>" alt="">
-				</span>
-						<h3 class="grid-item-title">Selective Scalability</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Selective Scalability',
+								'img_file' => 'circle-3-light-full',
+						) );
+						?>
 						<p>The beauty of Plugins is that they
 							<strong>add only the functionality that you need</strong> if you choose them wisely. It is simpler to add necessary functionality when you need it than it is to navigate around unneeded functionality that just sits in your admin dashboard.
 						</p>
@@ -82,10 +88,12 @@ crispydiv_page_header(array(
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES.'icons/circle-4-light-full.svg'; ?>" alt="">
-				</span>
-						<h3 class="grid-item-title">Community Activity</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Community Activity',
+								'img_file' => 'circle-4-light-full',
+						) );
+						?>
 						<p>Perhaps the best part about WordPress is its
 							<strong>community of enthusiastic users and developers</strong>. Everything from bustling, unofficial support forums to million-dollar businesses has been built within the WordPress ecosystem. It's a world of its own.
 						</p>

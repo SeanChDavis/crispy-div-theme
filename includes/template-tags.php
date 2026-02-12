@@ -291,5 +291,5 @@ function get_crispydiv_logo_by_color() {
  * @return void
  */
 function crispydiv_button( $args = array() ) {
-    get_template_part( 'template-parts/button', null, $args );
+    get_template_part( 'template-parts/element', 'button', $args );
 }

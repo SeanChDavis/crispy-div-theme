@@ -9,7 +9,7 @@ get_header();
     <section id="page-header" class="page-header background-purple" role="region" aria-labelledby="page-header-title">
 		<div class="inner smedium corner-accent bottom-right white-white">
 			<div class="content-wrap">
-				<h1 class="page-header-title">Creatively Customized WordPress Development</h1>
+				<h1 class="page-header-title"><?php echo get_bloginfo( 'description' ); ?></h1>
 				<div class="page-header-description">
 					<?php echo get_field( 'page_header_description' ); ?>
 				</div>
@@ -28,7 +28,6 @@ get_header();
     </section>
 
 	<main id="site-content">
-
 		<section class="plugin-integration-section">
 			<div class="customization-logos-wrap element-spacing small background-gray">
 				<span class="customizations-title subdued-title">Experienced with your favorite plugins, themes, libraries, and services:</span>
@@ -45,7 +44,7 @@ get_header();
 					<div class="customizations-grid">
 						<?php foreach ( $customization_logos as $logo ) { ?>
 							<div class="customization-logo">
-								<?php $logo_name = isset( $logo['alias'] ) ? $logo['alias'] : $logo['name']; ?>
+								<?php $logo_name = $logo['alias'] ?? $logo['name']; ?>
 								<img class="logo <?php echo str_replace( " ", "-", strtolower( $logo_name ) ); ?>-logo" src="<?php echo THEME_IMAGES . 'logos/' . $logo['image']; ?>" alt="<?php echo $logo['name']; ?>">
 							</div>
 						<?php } ?>
@@ -57,7 +56,7 @@ get_header();
 			<div class="section-heading element-spacing top-heavy corner-accent black-orange">
 				<h2 class="section-title">Plugin Functionality <br class="disappearing-br">Tweaked to Perfection</h2>
 				<div class="section-description">
-					<p>Our goal is to transform your WordPress site into a feature-packed hub with seamless plugin integrations. WordPress plugins are not always "one-size-fits-all," or "plug & play." Sometimes you need a bit of customization. That's why we're here.</p>
+					<p>The goal is to transform your WordPress site into an intentionally built tool with seamless plugin integrations. WordPress plugins are not always "one size fits all," or "plug & play." Sometimes you need a bit of customization.</p>
 				</div>
 			</div>
 			<div class="advanced-custom-fields-highlight element-spacing large">
@@ -66,7 +65,7 @@ get_header();
 						<img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES . 'logos/advanced-custom-fields-logo.png'; ?>" alt="Advanced Custom Fields Logomark">
 						<span class="h5 acf-highlight-title semi-heavy">Tweak settings, not code.</span>
 						<p><a href="https://advancedcustomfields.com/" target="_blank">Advanced Custom Fields</a> (ACF) is a powerful plugin that allows you to create custom fields for your WordPress site. We use it to create custom post types, taxonomies, fields, and more.</p>
-						<p>With ACF's features, <span class="color-black semi-heavy">we make every element of your site editable from the WordPress dashboard</span>. This allows you to control your site's content, regardless of type or structure, without having to deal with code or theme edits.</p>
+						<p>With ACF's features, <span class="color-black semi-heavy">we make important elements of your site editable from the WordPress dashboard</span>. This allows you to control your site's content, regardless of type or structure, without having to deal with code or theme customizations.</p>
 					</div>
 					<div class="acf-graphic">
 						<img class="advanced-custom-fields-graphic framed" src="<?php echo THEME_IMAGES . 'advanced-custom-fields-hero-area-fields.png'; ?>" alt="Screenshot of ACF example fields for a page hero">
@@ -98,34 +97,40 @@ get_header();
 			<div class="nng-stats-grid general-grid three-col">
 				<div class="grid-item">
 					<div class="grid-item-content">
-                    <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/browser-light-full.svg'; ?>" alt="">
-					</span>
-						<h3 class="grid-item-title">Above the Fold</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Above the Fold',
+								'img_file' => 'browser-light-full',
+						) );
+						?>
 						<p>Users spend 80% of their time on a website viewing information presented above the fold.</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-					<span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/eye-sharp-light-full.svg'; ?>" alt="">
-					</span>
-						<h3 class="grid-item-title">The "F" Pattern</h3>
-						<p>User scan content in an "F" pattern: horizontally from top left, down the left side, then across the middle.</p>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'The "F" Pattern',
+								'img_file' => 'eye-sharp-light-full',
+						) );
+						?>
+						<p>Users scan content in an "F" pattern: horizontally from the top left, down the left side, and across the middle.</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-					<span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/align-left-light-full.svg'; ?>" alt="">
-					</span>
-						<h3 class="grid-item-title">Skimmable Content</h3>
-						<p>Users are more likely to engage with content that is presented as short paragraphs and clear headings.</p>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Skimmable Content',
+								'img_file' => 'align-left-light-full',
+						) );
+						?>
+						<p>Users are more likely to engage with content presented as short paragraphs and clear headings.</p>
 					</div>
 				</div>
 			</div>
 			<div class="corner-accent bottom-right white-white">
-				<div class="mock-browser-grid element-spacing medium">
+				<div class="mock-browser-grid element-spacing smedium">
 					<?php get_template_part( 'template-parts/mock-browser' ); ?>
 					<div class="design-description">
 						<p class="blurb-title">Does this design look familiar?</p>
@@ -149,55 +154,67 @@ get_header();
 			<div class="standards-grid general-grid three-col">
 				<div class="grid-item">
 					<div class="grid-item-content">
-                    <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/mobile-light-full.svg'; ?>" alt="">
-					</span>
-						<h3 class="grid-item-title">Mobile-friendly</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Mobile-friendly',
+								'img_file' => 'mobile-light-full',
+						) );
+						?>
 						<p>Both desktop and mobile designs are standard. More than 50% of all web traffic is mobile (<a href="https://gs.statcounter.com/platform-market-share/desktop-mobile/worldwide/#yearly-2015-2025" target="_blank">source</a>).</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                    <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/bullseye-arrow-light-full.svg'; ?>" alt="">
-					</span>
-						<h3 class="grid-item-title">Purpose-driven</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Purpose-driven',
+								'img_file' => 'bullseye-arrow-light-full',
+						) );
+						?>
 						<p>Pages are designed to guide visitors towards an action, like clicking a link or reading specific text.</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                    <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/handshake-angle-light-full.svg'; ?>" alt="">
-					</span>
-						<h3 class="grid-item-title">Accessibility-focused</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Accessible',
+								'img_file' => 'handshake-angle-light-full',
+						) );
+						?>
 						<p>Clarity, contrast, and usability are paramount, providing the best user experience for visitors.</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                    <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/timer-light-full.svg'; ?>" alt="">
-					</span>
-						<h3 class="grid-item-title">Fast-loading</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Fast-loading',
+								'img_file' => 'timer-light-full',
+						) );
+						?>
 						<p>47% of users expect a page to load in two seconds or less. 40% will leave after three seconds (<a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-page-speed-new-industry-benchmarks/" target="_blank">source</a>).</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                    <span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/pen-ruler-light-full.svg'; ?>" alt="">
-					</span>
-						<h3 class="grid-item-title">Meticulously-designed</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Carefully-designed',
+								'img_file' => 'pen-ruler-light-full',
+						) );
+						?>
 						<p>Even the tiny details matter. When viewed as a whole, you can feel if a design is <em>crisp</em> or sloppy.</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-					<span class="grid-item-icon">
-						<img src="<?php echo THEME_IMAGES . 'icons/shield-check-light-full.svg'; ?>" alt="">
-					</span>
-						<h3 class="grid-item-title">Well-secured</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => 'Well-secured',
+								'img_file' => 'shield-check-light-full',
+						) );
+						?>
 						<p>Only trusted and maintained scripts and resources are used. Site owners and visitors are protected.</p>
 					</div>
 				</div>

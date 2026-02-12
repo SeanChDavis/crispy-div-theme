@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.2.2
+ * Version: 1.2.3
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -1265,18 +1265,28 @@ form label [class*=not-valid-tip] {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
 }
-.general-grid .grid-item .grid-item-content .grid-item-icon {
+.general-grid .grid-item .grid-item-content .grid-item-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 0.8rem;
+  row-gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+.general-grid .grid-item .grid-item-content .grid-item-header .grid-item-icon {
   display: inline-block;
-  width: 30px;
-  margin-bottom: 10px;
+  width: 27px;
+}
+.general-grid .grid-item .grid-item-content .grid-item-header .grid-item-icon + .grid-item-title {
+  margin-bottom: 0;
 }
 .general-grid .grid-item .grid-item-content .grid-item-title {
-  display: block;
+  display: inline-block;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 12px;
 }
-@media (min-width: 1090px) {
+@media (min-width: 980px) {
   .general-grid .grid-item .grid-item-content .grid-item-title {
     font-size: 1.15rem;
   }
@@ -2886,6 +2896,9 @@ html {
     padding-bottom: 4rem;
     padding-top: 4rem;
   }
+}
+.blog .general-grid .grid-item .grid-item-header {
+  margin-bottom: 0;
 }
 
 .page-brand-assets .section-description {

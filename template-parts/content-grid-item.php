@@ -18,13 +18,11 @@ if ( isset( $args ) ) {
 <div class="grid-item">
     <article id="post-<?php the_ID(); ?>" <?php post_class( 'grid-item-content' ); ?>>
 	    <?php crispydiv_post_thumbnail(); ?>
-        <header class="entry-header">
+        <header class="entry-header grid-item-header">
 			<?php
             if ( $args['is-services'] ) {
 				?>
-				<span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/' . get_field( 'service_icon', get_the_ID() ) . '.svg'; ?>" alt="">
-				</span>
+				<img class="grid-item-icon" src="<?php echo THEME_IMAGES . 'icons/' . get_field( 'service_icon', get_the_ID() ) . '.svg'; ?>" alt="">
 				<?php
 	            the_title( '<h2 class="entry-title grid-item-title">', '</h2>' );
             } else {

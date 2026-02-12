@@ -82,19 +82,31 @@
 				}
 			}
 
-            .grid-item-icon {
-				display: inline-block;
-                width: 30px;
-                margin-bottom: 10px;
-            }
+			.grid-item-header {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				column-gap: .8rem;
+				row-gap: .25rem;
+				margin-bottom: 1rem;
+
+				.grid-item-icon {
+					display: inline-block;
+					width: 27px;
+
+					& + .grid-item-title {
+						margin-bottom: 0;
+					}
+				}
+			}
 
 			.grid-item-title {
-				display: block;
+				display: inline-block;
 				font-size: 1rem;
 				line-height: 1.5;
 				margin-bottom: 12px;
 
-				@media (min-width: 1090px) {
+				@media (min-width: 980px) {
 					font-size: 1.15rem;
 				}
 

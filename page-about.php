@@ -45,56 +45,68 @@ crispydiv_page_header( array(
 			<div class="how-we-work-grid general-grid large border-top-over-white">
 				<div class="grid-item">
 					<div class="grid-item-content">
-                <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/comment-light-full.svg'; ?>" alt="">
-				</span>
-						<h3 class="grid-item-title">1. Consult</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => '1. Consult',
+								'img_file' => 'comment-light-full',
+						) );
+						?>
 						<p>Meet to discuss project goals and gather information about your target audience, brand, and any specific functionality that you want to include on the website.</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/presentation-screen-light-full.svg'; ?>" alt="">
-				</span>
-						<h3 class="grid-item-title">2. Propose</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => '2. Propose',
+								'img_file' => 'presentation-screen-light-full',
+						) );
+						?>
 						<p>Based on information gathered during consultation, you will be presented with a proposal outlining the scope of work, timeline, and cost for the project.</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/palette-light-full.svg'; ?>" alt="">
-				</span>
-						<h3 class="grid-item-title">3. Design</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => '3. Design',
+								'img_file' => 'palette-light-full',
+						) );
+						?>
 						<p>Upon agreement, Crispy Div will start designing. This may include wireframes and mockups to give you an idea of how the website will look and function.</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/code-light-full.svg'; ?>" alt="">
-				</span>
-						<h3 class="grid-item-title">4. Develop</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => '4. Develop',
+								'img_file' => 'code-light-full',
+						) );
+						?>
 						<p>With an approved design, the development phase will begin. This includes technical implementation and testing the website to ensure it is fully functional.</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/rocket-launch-light-full.svg'; ?>" alt="">
-				</span>
-						<h3 class="grid-item-title">5. Launch</h3>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => '5. Launch',
+								'img_file' => 'rocket-launch-light-full',
+						) );
+						?>
 						<p>After successful design, development, and configuration, we are clear to launch your newly designed website and make it live for the public to enjoy.</p>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="grid-item-content">
-                <span class="grid-item-icon">
-					<img src="<?php echo THEME_IMAGES . 'icons/screwdriver-wrench-light-full.svg'; ?>" alt="">
-				</span>
-						<h3 class="grid-item-title">6. Maintain</h3>
-						<p>If it makes sense for your business, Crispy Div will provide ongoing maintenance and support to ensure that the website stays up-to-date and is functioning properly.</p>
+						<?php
+						get_template_part( 'template-parts/element', 'grid-item-header', array(
+								'title' => '6. Maintain',
+								'img_file' => 'screwdriver-wrench-light-full',
+						) );
+						?>
+						<p>If it makes sense for your business, Crispy Div will provide ongoing maintenance and support to ensure that the website stays up to date and is functioning properly.</p>
 					</div>
 				</div>
 			</div>
