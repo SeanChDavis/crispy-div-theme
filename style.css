@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.2.6
+ * Version: 1.2.7
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -1396,11 +1396,17 @@ form label [class*=not-valid-tip] {
 #masthead .site-header .site-branding {
   display: flex;
   flex-direction: column;
+  width: calc(100% - 3rem);
 }
 @media all and (min-width: 760px) {
   #masthead .site-header .site-branding {
     align-items: center;
     flex-direction: row;
+  }
+}
+@media all and (min-width: 980px) {
+  #masthead .site-header .site-branding {
+    width: auto;
   }
 }
 #masthead .site-header .site-branding .site-logo {
@@ -2150,6 +2156,7 @@ figure.frame img {
   right: 2rem;
   top: 1.2rem;
   transition: all 0.3s;
+  border-radius: 0;
 }
 @media all and (min-width: 980px) {
   #site-navigation .menu-toggle {
