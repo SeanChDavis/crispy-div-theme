@@ -38,37 +38,6 @@ add_action( 'init', function() {
 		)
 	);
 
-	// Course
-	register_post_type( 'course', array(
-		'labels' => array(
-			'name' => 'Course',
-			'singular_name' => 'Course',
-			'add_new' => 'Add New',
-			'add_new_item' => 'Add New Course',
-			'edit_item' => 'Edit Course',
-			'new_item' => 'New Course',
-			'view_item' => 'View Course',
-			'search_items' => 'Search Courses',
-			'not_found' => 'No courses found',
-			'not_found_in_trash' => 'No courses found in Trash',
-			'parent_item_colon' => '',
-			'menu_name' => 'Courses'
-		),
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'show_in_rest' => true,
-		'query_var' => true,
-		'rewrite' => array( 'slug' => 'courses' ),
-		'capability_type' => 'post',
-		'has_archive' => true,
-		'hierarchical' => false,
-		'menu_icon' => 'dashicons-feedback',
-		'menu_position' => null,
-		'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
-	) );
-
 	// Custom Development
 	register_post_type( 'custom_development', array(
 		'labels' => array(

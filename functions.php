@@ -119,7 +119,6 @@ require THEME_INCLUDES . '/template-tags.php';
 require THEME_INCLUDES . '/customizer.php';
 require THEME_INCLUDES . '/services.php';
 require THEME_INCLUDES . '/custom-dev.php';
-require THEME_INCLUDES . '/courses.php';
 require THEME_INCLUDES . '/gutenberg.php';
 
 // Integrations

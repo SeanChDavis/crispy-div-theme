@@ -8,7 +8,6 @@ if ( isset( $args ) ) {
 
 	$args = wp_parse_args( $args, array(
         'is-services' => false,
-        'is-courses' => false,
 		'services-full' => false,
 		'services-with-cta' => false,
 	) );
@@ -71,7 +70,7 @@ if ( isset( $args ) ) {
             <div class="cta">
 		        <?php
 		        crispydiv_button( array(
-			        'text' => $args['is-courses'] ? 'Get Started' : 'Keep Reading',
+			        'text' => 'Keep Reading',
 			        'url' => get_permalink(),
 			        'classes' => array( 'button', 'purple', 'small', 'outline' ),
 		        ) );

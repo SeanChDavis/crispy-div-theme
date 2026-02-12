@@ -46,8 +46,6 @@ add_filter( 'body_class', function( $classes ) {
 			|| is_singular( 'post' )
 			|| is_page( 'about' )
 			|| is_page( 'why-wordpress' )
-			|| is_post_type_archive( 'course' )
-			|| is_singular( 'course' )
 	) {
         $classes[] = 'has-purple-header';
     } else if (
@@ -103,51 +101,4 @@ add_action( 'wp_head', function() {
 		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
 	}
 } );
-
-/**
- * Add a class to the body if the header is dark
- *
- * @param $classes
- *
- * @return array
- */
-add_action( 'wp_footer', function() {
-	?>
-    <!-- ... other HTML ... -->
-
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <!-- Load our React component. -->
-    <script src="like_button.js"></script>
-	<?php
-} );
-
-/**
- * Add icon to the last menu item (Members)
- * @param $items
- * @param $args
- *
- * @return mixed|string
- */
-add_filter( 'wp_nav_menu_items', function( $items, $args ) {
-
-	$query = new WP_Query( array(
-		'post_type' => 'course',
-		'post_status' => 'publish',
-		'posts_per_page' => 1,
-		'fields' => 'ids'
-	) );
-
-	if ( $query->have_posts() ) {
-		if ( $args->theme_location == 'primary-menu' ) {
-			$items .= '<li class="menu-item menu-item-has-icon"><a href="' . home_url( '/members/' ) . '"><img class="menu-item-icon" src="' . THEME_IMAGES . 'icons/eye-sharp-light-full.svg' . '" alt=""><span>Members</a></li>';
-		}
-		wp_reset_postdata();
-		return $items;
-	}
-
-	return $items;
-
-}, 10, 2 );
 
