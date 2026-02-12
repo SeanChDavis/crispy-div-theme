@@ -34,6 +34,11 @@ button,
 		text-decoration-color: $color3;
 	}
 
+	&:focus-visible {
+		outline: 3px dashed $color6;
+		outline-offset: 2px;
+	}
+
 	&.purple {
 		background-color: $color2;
 		border-color: $color2;
@@ -113,6 +118,12 @@ select {
 	&:active,
 	&:focus {
 		border: 2px solid $color6;
+	}
+
+	&:focus-visible {
+		background: $soft_orange !important;
+		outline: 3px dashed $color6;
+		outline-offset: 2px;
 	}
 }
 

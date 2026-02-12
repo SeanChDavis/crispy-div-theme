@@ -122,6 +122,11 @@ a {
 	&:hover {
 		text-decoration-style: solid;
 	}
+
+	&:focus-visible {
+		outline: 3px dashed $color6;
+		outline-offset: 2px;
+	}
 }
 
 ul {

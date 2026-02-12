@@ -65,6 +65,17 @@
 
 				a {
 					color: #fff;
+
+					&:focus-visible {
+						outline-color: #fff;
+					}
+				}
+			}
+
+			.primary-cta {
+
+				&:focus-visible {
+					outline-color: #fff !important;
 				}
 			}
 		}

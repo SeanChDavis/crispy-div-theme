@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.2.4
+ * Version: 1.2.5
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -168,6 +168,24 @@ strong {
 .background-purple-gradient select:focus {
   border-color: #f54952;
 }
+.background-purple input[type=text]:focus-visible,
+.background-purple input[type=email]:focus-visible,
+.background-purple input[type=url]:focus-visible,
+.background-purple input[type=text]:focus-visible,
+.background-purple input[type=search]:focus-visible,
+.background-purple input[type=password]:focus-visible,
+.background-purple textarea:focus-visible,
+.background-purple select:focus-visible,
+.background-purple-gradient input[type=text]:focus-visible,
+.background-purple-gradient input[type=email]:focus-visible,
+.background-purple-gradient input[type=url]:focus-visible,
+.background-purple-gradient input[type=text]:focus-visible,
+.background-purple-gradient input[type=search]:focus-visible,
+.background-purple-gradient input[type=password]:focus-visible,
+.background-purple-gradient textarea:focus-visible,
+.background-purple-gradient select:focus-visible {
+  outline-color: #fff;
+}
 
 .background-purple {
   background-color: #341671;
@@ -178,6 +196,9 @@ strong {
 }
 .background-purple .grid-item {
   border-color: #45307c !important;
+}
+.background-purple a:focus-visible {
+  outline-color: #fff;
 }
 
 .background-pink {
@@ -218,6 +239,19 @@ strong {
 .background-pink select:active,
 .background-pink select:focus {
   border-color: #f54952;
+}
+.background-pink input[type=text]:focus-visible,
+.background-pink input[type=email]:focus-visible,
+.background-pink input[type=url]:focus-visible,
+.background-pink input[type=text]:focus-visible,
+.background-pink input[type=search]:focus-visible,
+.background-pink input[type=password]:focus-visible,
+.background-pink textarea:focus-visible,
+.background-pink select:focus-visible {
+  outline-color: #fff;
+}
+.background-pink a:focus-visible {
+  outline-color: #fff;
 }
 
 .background-orange {
@@ -888,6 +922,12 @@ button:hover,
   cursor: pointer;
   text-decoration-color: #280659;
 }
+.button:focus-visible,
+button:focus-visible,
+[type=submit]:focus-visible {
+  outline: 3px dashed #f54952;
+  outline-offset: 2px;
+}
 .button.purple,
 button.purple,
 [type=submit].purple {
@@ -988,6 +1028,17 @@ textarea:focus,
 select:active,
 select:focus {
   border: 2px solid #f54952;
+}
+input[type=text]:focus-visible,
+input[type=email]:focus-visible,
+input[type=url]:focus-visible,
+input[type=search]:focus-visible,
+input[type=password]:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  background: #fff0f1 !important;
+  outline: 3px dashed #f54952;
+  outline-offset: 2px;
 }
 
 select {
@@ -1379,6 +1430,12 @@ form label [class*=not-valid-tip] {
 .has-dark-header #masthead .site-header .site-title a {
   color: #fff;
 }
+.has-dark-header #masthead .site-header .site-title a:focus-visible {
+  outline-color: #fff;
+}
+.has-dark-header #masthead .site-header .primary-cta:focus-visible {
+  outline-color: #fff !important;
+}
 
 .has-purple-header #masthead {
   background-color: #341671;
@@ -1569,6 +1626,10 @@ a {
 }
 a:active, a:focus, a:hover {
   text-decoration-style: solid;
+}
+a:focus-visible {
+  outline: 3px dashed #f54952;
+  outline-offset: 2px;
 }
 
 ul li::marker {
@@ -2187,6 +2248,9 @@ figure.frame img {
 .has-dark-header #site-navigation .menu-item a:active, .has-dark-header #site-navigation .menu-item a:focus, .has-dark-header #site-navigation .menu-item a:hover {
   color: #fff;
 }
+.has-dark-header #site-navigation .menu-item a:focus-visible {
+  outline-color: #fff;
+}
 .has-dark-header #site-navigation .menu-item.current-menu-item a {
   color: #fff;
 }
@@ -2198,15 +2262,9 @@ figure.frame img {
 .has-purple-header #site-navigation .menu-item a {
   color: #cfc4e6;
 }
-.has-purple-header #site-navigation .menu-item a:active, .has-purple-header #site-navigation .menu-item a:focus, .has-purple-header #site-navigation .menu-item a:hover {
-  color: #f54952;
-}
 
 .has-pink-header #site-navigation .menu-item a {
   color: #fae1ee;
-}
-.has-pink-header #site-navigation .menu-item a:active, .has-pink-header #site-navigation .menu-item a:focus, .has-pink-header #site-navigation .menu-item a:hover {
-  color: #fff;
 }
 
 .posts-navigation .nav-links {
@@ -2251,6 +2309,11 @@ figure.frame img {
 .post-navigation .nav-links .nav-previous a,
 .post-navigation .nav-links .nav-next a {
   text-decoration: none;
+}
+.post-navigation .nav-links .nav-previous a:focus-visible,
+.post-navigation .nav-links .nav-next a:focus-visible {
+  display: block;
+  outline-color: #f54952;
 }
 .post-navigation .nav-links .nav-previous .nav-subtitle,
 .post-navigation .nav-links .nav-next .nav-subtitle {

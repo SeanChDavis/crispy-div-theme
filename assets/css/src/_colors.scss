@@ -4,6 +4,7 @@ $color3: #280659;
 $color4: #660f56;
 $color5: #ae2d68;
 $color6: #f54952;
+$soft_orange: #fff0f1;
 $gray: #f8f5fc;
 //$gray_text: #8b829d;
 $gray_text: #756c86;
@@ -84,6 +85,10 @@ strong {
 		&:focus {
 			border-color: $color6;
 		}
+
+		&:focus-visible {
+			outline-color: #fff;
+		}
 	}
 }
 
@@ -97,6 +102,13 @@ strong {
 
 	.grid-item {
 		border-color: $border_over_purple !important;
+	}
+
+	a {
+
+		&:focus-visible {
+			outline-color: #fff;
+		}
 	}
 }
 
@@ -130,6 +142,17 @@ strong {
 		&:active,
 		&:focus {
 			border-color: $color6;
+		}
+
+		&:focus-visible {
+			outline-color: #fff;
+		}
+	}
+
+	a {
+
+		&:focus-visible {
+			outline-color: #fff;
 		}
 	}
 }

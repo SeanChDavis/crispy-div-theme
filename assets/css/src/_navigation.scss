@@ -192,6 +192,10 @@
 				&:hover {
 					color: #fff;
 				}
+
+				&:focus-visible {
+					outline-color: #fff;
+				}
 			}
 
 			&.current-menu-item {
@@ -223,12 +227,6 @@
 
 			a {
 				color: $body_over_purple;
-
-				&:active,
-				&:focus,
-				&:hover {
-					color: $color6;
-				}
 			}
 		}
 	}
@@ -242,12 +240,6 @@
 
 			a {
 				color: $body_over_pink;
-
-				&:active,
-				&:focus,
-				&:hover {
-					color: #fff;
-				}
 			}
 		}
 	}
@@ -307,6 +299,11 @@
 
 			a {
 				text-decoration: none;
+
+				&:focus-visible {
+					display: block;
+					outline-color: $color6;
+				}
 			}
 
 			.nav-subtitle {
