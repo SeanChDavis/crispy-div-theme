@@ -2,6 +2,14 @@
 	position: relative;
 	border-bottom: 1px dashed $border_over_white;
 
+	.screen-reader-text {
+		@include headingFont;
+		background-color: $soft_orange;
+		text-decoration: underline;
+		top: 1rem;
+		left: 1rem;
+	}
+
 	.site-header {
 
 		@media all and (min-width: 980px) {

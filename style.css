@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.2.5
+ * Version: 1.2.6
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -1375,6 +1375,14 @@ form label [class*=not-valid-tip] {
 #masthead {
   position: relative;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+#masthead .screen-reader-text {
+  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 800;
+  background-color: #fff0f1;
+  text-decoration: underline;
+  top: 1rem;
+  left: 1rem;
 }
 #masthead .site-header {
   /* Nav in _navigation.scss */
@@ -3385,12 +3393,15 @@ html {
   font-size: 0.85rem;
   max-width: 300px;
 }
-.post-type-archive-service .page-header-description .jump-to-section select {
+.post-type-archive-service .page-header-description .jump-to-section select#jump-menu {
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%23fff' d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
   background-color: #660f56;
   background-size: 24px 24px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   color: #fff;
+}
+.post-type-archive-service .page-header-description .jump-to-section select#jump-menu:focus-visible {
+  background-color: #660f56 !important;
 }
 .post-type-archive-service .services-wrap .service-section:nth-child(even) {
   background-color: #f8f5fc;

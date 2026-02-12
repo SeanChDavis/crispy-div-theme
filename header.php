@@ -24,7 +24,7 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<header id="masthead">
-			<a class="skip-link screen-reader-text" href="#page-header"><?php esc_html_e('Skip to content', 'crispydiv'); ?></a>
+			<a class="skip-link screen-reader-text" href="#site-content">Skip to Content</a>
 			<div class="inner tiny">
 				<div class="site-header">
 					<div class="site-branding">
