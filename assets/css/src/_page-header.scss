@@ -26,9 +26,12 @@
 	.page-header-description {
 		@include sectionDescription;
 
-		@media all and (min-width: 1200px) {
-			margin-bottom: .75rem;
+		&:not(:last-child) {
+			@media all and (min-width: 1200px) {
+				margin-bottom: .75rem;
+			}
 		}
+
 	}
 
 	.search-form {
@@ -39,18 +42,6 @@
 
 			@media all and (min-width: 760px) {
 				max-width: 350px;
-			}
-		}
-	}
-}
-
-.archive {
-
-	.page-header {
-
-		.page-header-title-label {
-
-			span {
 			}
 		}
 	}

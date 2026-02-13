@@ -213,15 +213,7 @@ figure {
 		h4:not(:first-child), .h4:not(:first-child),
 		h5:not(:first-child), .h5:not(:first-child),
 		h6:not(:first-child), .h6:not(:first-child) {
-			margin-top: 1.75rem;
-
-			@media all and (min-width: 760px) {
-				margin-top: 2rem;
-			}
-
-			@media all and (min-width: 1080px) {
-				margin-top: 2.5rem;
-			}
+			margin-top: clamp(1.75rem, 4vw, 2.5rem);
 		}
 	}
 

@@ -1,29 +1,5 @@
 .blog {
 
-	.subscribe-cta {
-		margin-top: -1px;
-		position: relative;
-		z-index: 999;
-
-		.subscribe-content-wrap {
-
-			@media all and (min-width: 1400px) {
-				grid-template-columns: 5fr 3fr;
-			}
-
-			&.element-spacing {
-
-				&.medium {
-
-					@media all and (min-width: 980px) {
-						padding-bottom: 5.5rem;
-						padding-top: 5.5rem;
-					}
-				}
-			}
-		}
-	}
-
 	.content-filter-section {
 		border-bottom: 1px dashed $border_over_white;
 
@@ -59,16 +35,8 @@
 	.general-grid {
 
 		.grid-item {
-
-			@media all and (min-width:980px) {
-				padding-bottom: 3.5rem;
-				padding-top: 3.5rem;
-			}
-
-			@media all and (min-width:1200px) {
-				padding-bottom: 4rem;
-				padding-top: 4rem;
-			}
+			padding-bottom: clamp( 2.25rem, 5.5vw, 4rem );
+			padding-top: clamp( 2.25rem, 5.5vw, 4rem );
 
 			.grid-item-header {
 				margin-bottom: 0;

@@ -53,13 +53,13 @@ get_header();
 				}
 				?>
 			</div>
-			<div class="section-heading element-spacing top-heavy corner-accent black-orange">
+			<div class="section-heading element-spacing top-semi-heavy corner-accent black-orange">
 				<h2 class="section-title">Plugin Functionality <br class="disappearing-br">Tweaked to Perfection</h2>
 				<div class="section-description">
 					<p>The goal is to transform your WordPress site into an intentionally built tool with seamless plugin integrations. WordPress plugins are not always "one size fits all," or "plug & play." Sometimes you need a bit of customization.</p>
 				</div>
 			</div>
-			<div class="advanced-custom-fields-highlight element-spacing large">
+			<div class="advanced-custom-fields-highlight element-spacing medium">
 				<div class="acf-grid">
 					<div class="acf-highlight-content">
 						<img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES . 'logos/advanced-custom-fields-logo.png'; ?>" alt="Advanced Custom Fields Logomark">
@@ -90,7 +90,7 @@ get_header();
 		</section>
 
 		<section class="theme-development-section background-purple">
-			<div class="real-data-header element-spacing top-heavy corner-accent top-right white-white">
+			<div class="real-data-header element-spacing top-semi-heavy corner-accent top-right white-white">
 				<h2 class="section-title">Theme Building <br class="disappearing-br">Based on Real Data</h2>
 				<p class="subdued-links attribution">According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:</p>
 			</div>

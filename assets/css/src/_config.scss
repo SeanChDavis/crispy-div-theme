@@ -43,3 +43,11 @@ html {
 		}
 	}
 }
+
+:root {
+	--space-tiny: 1rem;
+	--space-small: clamp(2rem, 4.5vw, 3rem);
+	--space-smedium: clamp(2.5rem, 5.5vw, 4.25rem);
+	--space-medium: clamp(2.75rem, 6.25vw, 4.75rem);
+	--space-large: clamp(3rem, 10vw, 7.5rem);
+}

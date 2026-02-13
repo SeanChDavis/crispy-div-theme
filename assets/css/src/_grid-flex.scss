@@ -57,15 +57,7 @@
 
 	.grid-item {
 		border-bottom: 1px dashed $border_over_white;
-		padding: 2rem;
-
-		@media all and (min-width: 980px) {
-			padding: 2.75rem 4.5rem;
-		}
-
-		@media all and (min-width: 1400px) {
-			padding: 3.5rem 4.5rem;
-		}
+		padding: clamp(2rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
 
 		.grid-item-content {
 			display: flex;
@@ -73,12 +65,13 @@
 			height: 100%;
 
 			.post-thumbnail {
-				margin-bottom: 1.5rem;
+				margin-bottom: 1rem;
 
 				img {
 					border-radius: 10px;
 					border: 1px solid rgba(0,0,0,.1);
 					box-shadow: 0 0 40px rgba(0,0,0,.1);
+					vertical-align: bottom;
 				}
 			}
 
@@ -102,18 +95,14 @@
 
 			.grid-item-title {
 				display: inline-block;
-				font-size: 1rem;
+				font-size: 1.1rem;
 				font-weight: 700;
 				line-height: 1.5;
 				margin-bottom: 12px;
 
-				@media (min-width: 980px) {
-					font-size: 1.11rem;
-				}
-
 				a {
 					color: $color2;
-					font-size: 1.35rem;
+					font-size: clamp(1.1rem, 2vw, 1.35rem);
 					text-decoration-color: $color5;
 				}
 			}

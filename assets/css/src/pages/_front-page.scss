@@ -65,11 +65,6 @@
 		.advanced-custom-fields-highlight {
 			border-bottom: 1px dashed $border_over_white;
 
-			@media all and (min-width: 980px) {
-				padding-bottom: 3rem;
-				padding-top: 4rem;
-			}
-
 			.acf-grid {
 				display: grid;
 				grid-template-columns: 1fr;

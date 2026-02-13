@@ -2,7 +2,8 @@
 	font-size: .83rem;
 
 	.fat-footer {
-		padding: 3rem 0;
+		padding-bottom: var(--space-small);
+		padding-top: var(--space-small);
 
 		.fat-footer-grid {
 			display: grid;
@@ -47,5 +48,9 @@
 				}
 			}
 		}
+	}
+
+	.site-info {
+		padding-bottom: var(--space-tiny);
 	}
 }

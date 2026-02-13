@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer element-spacing tiny">
+	<footer id="colophon" class="site-footer element-spacing no-vertical-spacing">
         <div class="fat-footer">
             <div class="fat-footer-grid">
                 <div class="crispy-div-info">
