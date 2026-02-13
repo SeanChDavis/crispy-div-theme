@@ -260,27 +260,7 @@ html body #page {
 }
 
 .section-title {
-  font-size: 2.5rem;
-}
-@media all and (min-width: 540px) {
-  .section-title {
-    font-size: 3rem;
-  }
-}
-@media all and (min-width: 760px) {
-  .section-title {
-    font-size: 3.5rem;
-  }
-}
-@media all and (min-width: 980px) {
-  .section-title {
-    font-size: 3.75rem;
-  }
-}
-@media all and (min-width: 1200px) {
-  .section-title {
-    font-size: 4rem;
-  }
+  font-size: clamp(2.5rem, 5vw, 5rem);
 }
 
 .section-description {
@@ -344,7 +324,7 @@ html body #page {
 .disappearing-br {
   display: none;
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 600px) {
   .disappearing-br {
     display: block;
   }
@@ -1260,102 +1240,23 @@ h6 img, .h6 img,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
   font-weight: 800;
-}
-@media all and (min-width: 540px) {
-  h1, .h1 {
-    font-size: 3rem;
-  }
-}
-@media all and (min-width: 760px) {
-  h1, .h1 {
-    font-size: 3.5rem;
-  }
-}
-@media all and (min-width: 980px) {
-  h1, .h1 {
-    font-size: 3.75rem;
-  }
 }
 
 h2, .h2 {
-  font-size: 2rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
-}
-@media all and (min-width: 540px) {
-  h2, .h2 {
-    font-size: 2.25rem;
-  }
-}
-@media all and (min-width: 760px) {
-  h2, .h2 {
-    font-size: 2.5rem;
-  }
-}
-@media all and (min-width: 980px) {
-  h2, .h2 {
-    font-size: 2.75rem;
-  }
-}
-@media all and (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 3rem;
-  }
 }
 
 h3, .h3,
 .archive .page-header-title span {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 800;
-}
-@media all and (min-width: 540px) {
-  h3, .h3,
-  .archive .page-header-title span {
-    font-size: 1.75rem;
-  }
-}
-@media all and (min-width: 760px) {
-  h3, .h3,
-  .archive .page-header-title span {
-    font-size: 2rem;
-  }
-}
-@media all and (min-width: 980px) {
-  h3, .h3,
-  .archive .page-header-title span {
-    font-size: 2.25rem;
-  }
-}
-@media all and (min-width: 1200px) {
-  h3, .h3,
-  .archive .page-header-title span {
-    font-size: 2.5rem;
-  }
 }
 
 h4, .h4 {
-  font-size: 1.25rem;
-}
-@media all and (min-width: 540px) {
-  h4, .h4 {
-    font-size: 1.5rem;
-  }
-}
-@media all and (min-width: 760px) {
-  h4, .h4 {
-    font-size: 1.75rem;
-  }
-}
-@media all and (min-width: 980px) {
-  h4, .h4 {
-    font-size: 2rem;
-  }
-}
-@media all and (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 2.25rem;
-  }
+  font-size: clamp(1.25rem, 5vw, 2.25rem);
 }
 
 h5, .h5,
@@ -2889,30 +2790,26 @@ html {
   background: #341671;
   color: #fff;
 }
-@media all and (min-width: 1200px) {
-  .page-front .page-header .content-wrap .page-header-title {
-    font-size: 4rem;
-  }
+.page-front .page-header .content-wrap .page-header-title {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  max-width: 88%;
 }
 .page-front .page-header .content-wrap .page-header-description {
   color: #cfc4e6;
   display: block;
   margin-bottom: 2rem;
-  max-width: 640px;
+  max-width: 92%;
 }
 @media all and (min-width: 540px) {
   .page-front .page-header .content-wrap .page-header-description {
     line-height: 1.6;
+    max-width: 95%;
   }
 }
 @media all and (min-width: 760px) {
   .page-front .page-header .content-wrap .page-header-description {
+    max-width: 650px;
     margin-bottom: 2rem;
-  }
-}
-@media all and (min-width: 1200px) {
-  .page-front .page-header .content-wrap .page-header-description {
-    max-width: 700px;
   }
 }
 .page-front .page-header .content-wrap .button {

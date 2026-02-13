@@ -7,28 +7,24 @@
 		.content-wrap {
 
 			.page-header-title {
-
-				@media all and (min-width: 1200px) {
-					font-size: 4rem;
-				}
+				font-size: clamp(2.5rem, 5vw, 5rem);
+				max-width: 88%;
 			}
 
 			.page-header-description {
 				color: $body_over_purple;
 				display: block;
 				margin-bottom: 2rem;
-				max-width: 640px;
+				max-width: 92%;
 
 				@media all and (min-width: 540px) {
 					line-height: 1.6;
+					max-width: 95%;
 				}
 
 				@media all and (min-width: 760px) {
+					max-width: 650px;
 					margin-bottom: 2rem;
-				}
-
-				@media all and (min-width: 1200px) {
-					max-width: 700px;
 				}
 			}
 
