@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.2.9
+ * Version: 1.2.10
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -2349,6 +2349,24 @@ template {
 .small-cta-section p {
   font-size: 0.88rem;
 }
+@media all and (min-width: 980px) {
+  .small-cta-section p:has(img) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.small-cta-section p img {
+  display: none;
+  margin-right: 0.5rem;
+  height: auto;
+  width: 1rem;
+}
+@media all and (min-width: 980px) {
+  .small-cta-section p img {
+    display: inline-block;
+  }
+}
 
 html {
   font-size: 18px;
@@ -2626,26 +2644,16 @@ html {
 
 .page-contact .contact-form-grid {
   display: grid;
-  gap: 2.5rem;
+  gap: var(--space-medium);
   grid-template-columns: 1fr;
 }
 @media (min-width: 840px) {
   .page-contact .contact-form-grid {
-    grid-template-columns: 4fr 3fr;
-  }
-}
-@media (min-width: 980px) {
-  .page-contact .contact-form-grid {
-    gap: 4rem;
+    grid-template-columns: 5fr 3fr;
   }
 }
 .page-contact .contact-form-grid .field {
-  margin-bottom: 1.5rem;
-}
-@media all and (min-width: 980px) {
-  .page-contact .contact-form-grid .field {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
 }
 .page-contact .contact-form-grid .field label {
   color: #341671;
@@ -2657,6 +2665,16 @@ html {
 }
 .page-contact .contact-form-grid .field textarea {
   min-height: 180px;
+}
+.page-contact .contact-form-grid .kvk-details {
+  font-size: 0.88rem;
+}
+.page-contact .contact-form-grid .kvk-details .subdued-title {
+  margin: 4px 0 1rem;
+}
+.page-contact .contact-form-grid .kvk-details .semi-heavy {
+  color: #660f56;
+  font-weight: 700;
 }
 
 .page-front .page-header {

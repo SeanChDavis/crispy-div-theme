@@ -2,23 +2,15 @@
 
     .contact-form-grid {
         display: grid;
-        gap: 2.5rem;
+        gap: var(--space-medium);
         grid-template-columns: 1fr;
 
         @media (min-width: 840px) {
-            grid-template-columns: 4fr 3fr;
-        }
-
-        @media (min-width: 980px) {
-            gap: 4rem;
+            grid-template-columns: 5fr 3fr;
         }
 
         .field {
-            margin-bottom: 1.5rem;
-
-            @media all and (min-width: 980px) {
-                margin-bottom: 2rem;
-            }
+            margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
 
             label {
                 color: $headings;
@@ -32,6 +24,19 @@
 
             textarea {
                 min-height: 180px;
+            }
+        }
+
+        .kvk-details {
+            font-size: .88rem;
+
+            .subdued-title {
+                margin: 4px 0 1rem;
+            }
+
+            .semi-heavy {
+                color: $color4;
+                font-weight: 700;
             }
         }
     }

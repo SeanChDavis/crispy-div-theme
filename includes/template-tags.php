@@ -270,6 +270,7 @@ function get_crispydiv_logo_by_color() {
             || is_home()
             || is_singular( 'post' )
 			|| is_page( 'about' )
+			|| is_page( 'contact' )
 			|| is_page( 'why-wordpress' )
 			|| is_page( 'brand-assets' )
             || is_post_type_archive( 'service' )

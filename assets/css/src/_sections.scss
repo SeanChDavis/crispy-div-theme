@@ -122,5 +122,25 @@
 
 	p {
 		font-size: .88rem;
+
+		&:has(img) {
+
+			@media all and (min-width: 980px) {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+		}
+
+		img {
+			display: none;
+			margin-right: .5rem;
+			height: auto;
+			width: 1rem;
+
+			@media all and (min-width: 980px) {
+				display: inline-block;
+			}
+		}
 	}
 }

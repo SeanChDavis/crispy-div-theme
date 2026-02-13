@@ -14,7 +14,7 @@ crispydiv_page_header(array(
 
 	<main id="site-content">
 		<div class="small-cta-section element-spacing tiny background-pink">
-			<p><span class="semi-heavy color-white">Note:</span> Crispy Div builds with self-hosted WordPress (<em>wordpress.org</em>), not WordPress as a service (<em>wordpress.com</em>).</p>
+			<p><img src="<?php echo THEME_IMAGES . 'icons/circle-info-light-full.svg'; ?>" alt="">Crispy Div builds with self-hosted WordPress (<em>wordpress.org</em>), not WordPress as a service (<em>wordpress.com</em>).</p>
 		</div>
 		<section class="why-wordpress-section">
 			<div class="section-heading element-spacing top-semi-heavy background-gray">

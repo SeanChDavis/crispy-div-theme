@@ -5,25 +5,29 @@
 
 get_header();
 crispydiv_page_header( array(
+		'bg-color' => 'background-purple',
+	'corner-accent-color' => 'bottom-right white-white',
 	'title' => get_field( 'page_header_title' ) ?: get_the_title( get_the_ID() ),
 	'description' => get_field( 'page_header_description' ) ?: '',
 ) );
 ?>
 
 	<main id="site-content" class="contact-form-section site-main">
+		<div class="small-cta-section element-spacing tiny background-gray">
+			<p>Looking for a general chat with Sean? Try reaching out on his <a href="https://seanchdavis.com">personal website</a>.</p>
+		</div>
 		<div class="inner smedium">
 			<div class="contact-form-grid">
 				<div class="contact-form-grid-content">
-					<span class="h4">Enter your project details below.</span>
 					<?php echo get_field( 'contact_form', get_the_ID() ); ?>
 				</div>
 				<div class="kvk-details">
-					<span class="h4">Looking for KVK details?</span>
-					<span class="semi-heavy">KVK Number:</span> <em>99162024</em><br>
+					<span class="subdued-title"><abbr title="Kamer van Koophandel">KVK</abbr> Details</span>
+					<span class="semi-heavy">Number:</span> <em>99162024</em><br>
 					<span class="semi-heavy">Business Name:</span> <em>Crispy Div</em><br>
 					<span class="semi-heavy">Phone:</span> <em>+31684698107</em><br>
 					<span class="semi-heavy">Email:</span> <em>mail@crispydiv.com</em><br>
-					<span class="semi-heavy">Address:</span> <em>Willem Ruyslaan 225, 3063 ER Rotterdam</em>
+					<span class="semi-heavy">Address:</span> <em>Willem Ruyslaan 225,<br>3063 ER Rotterdam</em>
 				</div>
 			</div>
 		</div>
