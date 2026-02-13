@@ -11,14 +11,14 @@ crispydiv_page_header( array(
 ?>
 
 	<main id="site-content" class="contact-form-section site-main">
-		<div class="inner medium">
+		<div class="inner smedium">
 			<div class="contact-form-grid">
 				<div class="contact-form-grid-content">
-					<h4>Enter your project details below.</h4>
+					<span class="h4">Enter your project details below.</span>
 					<?php echo get_field( 'contact_form', get_the_ID() ); ?>
 				</div>
 				<div class="kvk-details">
-					<h4>Looking for KVK details?</h4>
+					<span class="h4">Looking for KVK details?</span>
 					<span class="semi-heavy">KVK Number:</span> <em>99162024</em><br>
 					<span class="semi-heavy">Business Name:</span> <em>Crispy Div</em><br>
 					<span class="semi-heavy">Phone:</span> <em>+31684698107</em><br>

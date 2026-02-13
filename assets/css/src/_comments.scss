@@ -9,7 +9,7 @@
 		@include headingFont;
 		color: $gray_text;
 		display: block;
-		font-size: .75rem;
+		font-size: .8rem;
 		font-weight: 700;
 		margin-bottom: 1.5rem;
 		text-transform: uppercase;
@@ -22,7 +22,7 @@
 	.logged-in-as,
 	.comment-notes {
 		color: $gray_text;
-		font-size: 15px;
+		font-size: .8rem;
 		font-weight: 600;
 
 		 a {
@@ -48,15 +48,15 @@
 		.pingback {
 
 			.comment-body {
-				font-size: 17px;
+				font-size: .94rem;
 
 				.comment-meta {
-					font-size: 13px;
+					font-size: .75rem;
 					font-weight: 700;
 					margin-bottom: 1rem;
 
 					.comment-author {
-						font-size: 19px;
+						font-size: 1.05rem;
 
 						a {
 							color: $color2;
@@ -93,7 +93,7 @@
 					a {
 						@include headingFont;
 						color: $color2;
-						font-size: 13px;
+						font-size: .75rem;
 						text-transform: uppercase;
 
 						&:active,
@@ -120,7 +120,7 @@
 			margin-bottom: .5rem;
 
 			.comment-body {
-				font-size: 15px;
+				font-size: .83rem;
 
 				 a {
 					 color: $color2;
@@ -140,7 +140,7 @@
 	.no-comments {
 		background: lighten( $color6, 35% );
 		border-radius: 5px;
-		font-size: 16px;
+		font-size: .88rem;
 		font-weight: 500;
 		margin-top: 2rem;
 		padding: 1rem;
@@ -156,7 +156,7 @@
 			&[class*="-url"] {
 
 				label {
-					font-size: 15px;
+					font-size: .83rem;
 				}
 			}
 		}
@@ -165,7 +165,7 @@
 	.comment-form-cookies-consent {
 
 		label {
-			font-size: 15px;
+			font-size: .83rem;
 			text-transform: unset;
 			font-weight: 500;
 			margin-left: 6px;

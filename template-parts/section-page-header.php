@@ -61,7 +61,7 @@ if ( ! empty( $args['size'] ) ) {
                     </div>
                     <?php if ( is_post_type_archive( 'service' ) ) { ?>
                         <div class="jump-to-section">
-                            <select id="jump-menu" onchange="location = this.options[this.selectedIndex].value;">
+							<label class="screen-reader-text" for="jump-menu">Service Selector</label><select id="jump-menu" onchange="location = this.options[this.selectedIndex].value;">
                                 <option value="#">Select a Service</option>
                                 <?php
                                 // Get all services by title

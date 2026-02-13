@@ -1,13 +1,16 @@
 .page-why-wordpress {
 
-    .page-header-description {
+    &.has-dark-header {
 
-        em.semi-heavy {
-            font-style: normal;
-            font-weight: 800;
-            color: #fff;
-            display: inline-block;
-            margin-right: 6px;
+        .page-header-description {
+
+            em.semi-heavy {
+                @include headingFont;
+                font-style: normal;
+                color: #fff;
+                display: inline-block;
+                margin-right: 4px;
+            }
         }
     }
 

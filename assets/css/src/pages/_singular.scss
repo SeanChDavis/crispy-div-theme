@@ -15,7 +15,6 @@
 
 		.post-content-grid {
 			margin: 0 auto;
-			max-width: 1600px;
 		}
 	}
 
@@ -82,8 +81,7 @@
 
 	.entry-meta,
 	.entry-footer {
-		font-size: 16px;
-		font-weight: 600;
+		font-size: .88rem;
 
 		a {
 			color: $color5;
@@ -107,12 +105,12 @@
 	.entry-content {
 
 		& > p:first-child {
-			font-size: 110%;
+			font-size: 1.11rem;
 			font-weight: 600;
-			margin-top: 2rem;
+			margin-top: 1.75rem;
 
 			@media all and (min-width: 1080px) {
-				margin-top: 2.5rem;
+				margin-top: 2.25rem;
 			}
 		}
 
@@ -134,12 +132,8 @@
 		margin-top: 1.5rem;
 
 		.image-attribution {
-			font-size: 14px;
+			font-size: .88rem;
 			margin-top: 6px;
-		}
-
-		a {
-			color: darken( $gray_text, 20% );
 		}
 	}
 }

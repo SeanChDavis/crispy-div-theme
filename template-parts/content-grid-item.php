@@ -23,7 +23,7 @@ if ( isset( $args ) ) {
 				?>
 				<img class="grid-item-icon" src="<?php echo THEME_IMAGES . 'icons/' . get_field( 'service_icon', get_the_ID() ) . '.svg'; ?>" alt="">
 				<?php
-	            the_title( '<h2 class="entry-title grid-item-title">', '</h2>' );
+	            the_title( '<span class="entry-title grid-item-title h4">', '</h2>' );
             } else {
 	            the_title( '<h2 class="entry-title grid-item-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
             }

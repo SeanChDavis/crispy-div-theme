@@ -6,7 +6,6 @@
 		border: 0;
 		cursor: pointer;
         font-size: .88rem;
-        font-weight: 600;
 		padding: 0;
 		position: absolute;
 		right: 2rem;
@@ -28,9 +27,15 @@
 		.menu-item {
 
 			a {
-				font-size: 16px;
+				font-size: .88rem;
 				font-weight: 600;
 				text-decoration: none;
+
+				&:active,
+				&:focus,
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 
 			&.current-menu-item {
@@ -258,7 +263,7 @@
 			a {
 				@include headingFont;
 				color: $headings;
-				font-size: .75rem;
+				font-size: .88rem;
 				text-decoration: none;
 				text-transform: uppercase;
 
@@ -311,7 +316,7 @@
 				@include headingFont;
 				color: $headings;
 				display: block;
-				font-size: .75rem;
+				font-size: .88rem;
 				text-transform: uppercase;
 
 				&:active,

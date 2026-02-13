@@ -103,11 +103,12 @@
 			.grid-item-title {
 				display: inline-block;
 				font-size: 1rem;
+				font-weight: 700;
 				line-height: 1.5;
 				margin-bottom: 12px;
 
 				@media (min-width: 980px) {
-					font-size: 1.15rem;
+					font-size: 1.11rem;
 				}
 
 				a {
@@ -119,7 +120,7 @@
 
 			.grid-item-description {
 				flex: 1 0 auto;
-				font-size: 17px;
+				font-size: .94rem;
 
 				&:not(:last-child) {
 					margin-bottom: 1.5rem;
@@ -128,12 +129,10 @@
 				ul,
 				ol {
 					margin: 0;
-					padding: 0;
-					padding-left: 24px;
+					padding: 0 0 0 24px;
 
 					li {
 						font-size: .85rem;
-						font-weight: 600;
 						padding: 4px 0 6px;
 						margin-bottom: 0;
 

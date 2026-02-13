@@ -46,6 +46,7 @@ add_filter( 'body_class', function( $classes ) {
 			|| is_singular( 'post' )
 			|| is_page( 'about' )
 			|| is_page( 'why-wordpress' )
+			|| is_page( 'brand-assets' )
 	) {
         $classes[] = 'has-purple-header';
     } else if (

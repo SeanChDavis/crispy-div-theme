@@ -18,7 +18,7 @@ function crispydiv_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	echo '<span class="posted-on">Posted on ' . $time_string . '</span>';
+	echo '<span class="posted-on">Published ' . $time_string . '</span>';
 }
 
 
@@ -271,6 +271,7 @@ function get_crispydiv_logo_by_color() {
             || is_singular( 'post' )
 			|| is_page( 'about' )
 			|| is_page( 'why-wordpress' )
+			|| is_page( 'brand-assets' )
             || is_post_type_archive( 'service' )
             || is_singular( 'service' )
     ) {

@@ -39,18 +39,15 @@
 			}
 
 			.site-title {
+				@include headingFont;
 				display: inline-block;
 				margin: 0;
-				text-transform: uppercase;
 
 				a {
 					color: $body;
 					display: block;
 					font-size: 1rem;
-					font-weight: 700;
-					letter-spacing: 1px;
 					line-height: 1;
-					text-decoration: none;
 				}
 			}
 		}

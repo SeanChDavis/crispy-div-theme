@@ -45,7 +45,7 @@ crispydiv_page_header( array(
 					<p>Sean is the sole developer and designer behind Crispy Div. However, a network of talented individuals (curated by Sean) may come together to work on any given project. <strong>It all depends on the scope and needed resources.</strong> If we're a good fit for each other, here's generally how things go:</p>
 				</div>
 			</div>
-			<div class="how-we-work-grid general-grid large border-top-over-white">
+			<div class="general-grid large border-top-over-white">
 				<div class="grid-item">
 					<div class="grid-item-content">
 						<?php

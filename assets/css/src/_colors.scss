@@ -49,8 +49,7 @@ strong {
 .background-purple,
 .background-pink,
 .background-orange,
-.background-black,
-.background-purple-gradient {
+.background-black {
 
 	h1, .h1,
 	h2, .h2,
@@ -68,8 +67,7 @@ strong {
 	}
 }
 
-.background-purple,
-.background-purple-gradient {
+.background-purple {
 
 	input[type="text"],
 	input[type="email"],
@@ -193,8 +191,7 @@ strong {
 	}
 }
 
-.body-over-purple,
-.background-purple-gradient {
+.body-over-purple {
 	color: $body_over_purple;
 
 	a,
@@ -208,9 +205,4 @@ strong {
 	strong {
 		color: #fff;
 	}
-}
-
-.background-purple-gradient {
-	background-color: $color2;
-	background-image: linear-gradient( 145deg, $color2 0%, rgba( 52,22,113,.85) 35%, rgba( 52,22,113,.85) 65%, $color2 100% );
 }

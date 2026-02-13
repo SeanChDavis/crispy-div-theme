@@ -43,7 +43,6 @@
 	.mock_viewport {
 		background: #fff;
 		border-radius: 0 0 11px 11px;
-		font-family: 'Montserrat';
 		font-size: 15px;
 
 		.h1, .h2, .h3, .h4, .h5, .h6 {
@@ -160,10 +159,10 @@
 			background-color: #102541;
 			color: #fff;
 			padding: .6rem 1.2rem;
-			text-align: center;
 
 			@media all and (min-width: 540px) {
 				padding: .6rem 2rem;
+				text-align: center;
 			}
 
 			@media all and (min-width: 980px) {

@@ -4,7 +4,7 @@
 
 @mixin headingFont {
 	font-family: 'Raleway', 'Montserrat', system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-weight: 800;
+	font-weight: 700;
 }
 
 @mixin sectionDescription {
@@ -37,9 +37,9 @@ html {
 
 		#page {
 			background: #fff;
-			box-shadow: 0 0 20px rgba(40, 6, 89, 0.15);
+			box-shadow: 0 0 20px rgba(40, 6, 89, 0.1);
 			margin: 0 auto;
-			max-width: 1600px;
+			max-width: 1500px;
 		}
 	}
 }

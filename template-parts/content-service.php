@@ -17,7 +17,7 @@ if (isset($args)) {
 		 class="<?php echo $args['the-slug']; ?>-section service-section element-spacing medium">
 	<div class="service-content-grid">
 		<div class="service-description">
-			<h2 class="section-title h3"><?php echo $args['the-title']; ?></h2>
+			<span class="section-title"><?php echo $args['the-title']; ?></span>
 			<?php
 			// Service content description
 			$content = get_the_content(get_the_ID());

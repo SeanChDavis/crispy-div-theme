@@ -51,7 +51,7 @@
 					</div>
 					<div class="mock_column">
 						<img src="<?php echo THEME_IMAGES . 'mock-browser/icons/draw-circle-regular-full.svg'; ?>" alt="">
-						<span class="mock_column-title h5">Awesome Feature</span>
+						<span class="mock_column-title h5">Great Feature</span>
 						<p class="mock_column-description">Finally, we give you something to be excited about. Rejoice!</p>
 					</div>
 				</div>

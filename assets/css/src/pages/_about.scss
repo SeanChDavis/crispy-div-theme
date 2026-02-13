@@ -52,12 +52,12 @@
 
 			.title {
 				display: block;
-				font-size: 15px;
+				font-size: .83rem;
 			}
 
 			.education {
 				display: block;
-				font-size: 15px;
+				font-size: .83rem;
 			}
 		}
 
@@ -70,7 +70,7 @@
 			[class*="-icon"] {
 
 				img {
-					width: 20px;
+					width: 27px;
 
 					&:active,
 					&:focus,
@@ -87,23 +87,6 @@
 				padding: 1rem 0 0;
 				text-align: center;
 			}
-		}
-	}
-}
-
-.how-we-work-grid {
-
-	.grid-item {
-
-		.grid-item-title {
-
-			@media all and (min-width: 1400px) {
-				font-size: 1.35rem;
-			}
-		}
-
-		@media all and (min-width: 1400px) {
-			padding: 2.75rem 4.5rem;
 		}
 	}
 }

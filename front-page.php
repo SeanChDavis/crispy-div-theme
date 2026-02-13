@@ -18,13 +18,13 @@ get_header();
 					crispydiv_button( array(
 							'text' => 'Work with Crispy Div',
 							'url' => home_url( '/contact/' ),
-							'classes' => array( 'button', 'outline', 'orange' ),
+							'classes' => array( 'button', 'outline', 'orange' )
 					) );
 					?>
 				</p>
 			</div>
 		</div>
-        <?php echo get_crispydiv_services_grid( true, true, array( 'background-purple' ) ); ?>
+        <?php echo get_crispydiv_services_grid( true, true, array( 'three-col', 'background-purple' ) ); ?>
     </section>
 
 	<main id="site-content">
@@ -133,7 +133,6 @@ get_header();
 				<div class="mock-browser-grid element-spacing smedium">
 					<?php get_template_part( 'template-parts/mock-browser' ); ?>
 					<div class="design-description">
-						<p class="blurb-title">Does this design look familiar?</p>
 						<p>There's a reason why so many website designs follow the same content structure. It's proven, and it works.</p>
 						<p>You've probably seen dozens of websites like this example.</p>
 						<ul>

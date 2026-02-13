@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.2.7
+ * Version: 1.2.8
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -95,25 +95,7 @@ strong {
 .background-black .cta-link,
 .background-black a,
 .background-black strong,
-.background-black form label,
-.background-purple-gradient h1,
-.background-purple-gradient .h1,
-.background-purple-gradient h2,
-.background-purple-gradient .h2,
-.background-purple-gradient h3,
-.background-purple-gradient .h3,
-.background-purple-gradient h4,
-.background-purple-gradient .h4,
-.background-purple-gradient h5,
-.background-purple-gradient .h5,
-.background-purple-gradient h6,
-.background-purple-gradient .h6,
-.background-purple-gradient .grid-item-title,
-.background-purple-gradient .grid-item-title.archive-item-title a,
-.background-purple-gradient .cta-link,
-.background-purple-gradient a,
-.background-purple-gradient strong,
-.background-purple-gradient form label {
+.background-black form label {
   color: #fff;
 }
 
@@ -124,15 +106,7 @@ strong {
 .background-purple input[type=search],
 .background-purple input[type=password],
 .background-purple textarea,
-.background-purple select,
-.background-purple-gradient input[type=text],
-.background-purple-gradient input[type=email],
-.background-purple-gradient input[type=url],
-.background-purple-gradient input[type=text],
-.background-purple-gradient input[type=search],
-.background-purple-gradient input[type=password],
-.background-purple-gradient textarea,
-.background-purple-gradient select {
+.background-purple select {
   border-color: #ae2d68;
 }
 .background-purple input[type=text]:active, .background-purple input[type=text]:focus,
@@ -149,23 +123,7 @@ strong {
 .background-purple textarea:active,
 .background-purple textarea:focus,
 .background-purple select:active,
-.background-purple select:focus,
-.background-purple-gradient input[type=text]:active,
-.background-purple-gradient input[type=text]:focus,
-.background-purple-gradient input[type=email]:active,
-.background-purple-gradient input[type=email]:focus,
-.background-purple-gradient input[type=url]:active,
-.background-purple-gradient input[type=url]:focus,
-.background-purple-gradient input[type=text]:active,
-.background-purple-gradient input[type=text]:focus,
-.background-purple-gradient input[type=search]:active,
-.background-purple-gradient input[type=search]:focus,
-.background-purple-gradient input[type=password]:active,
-.background-purple-gradient input[type=password]:focus,
-.background-purple-gradient textarea:active,
-.background-purple-gradient textarea:focus,
-.background-purple-gradient select:active,
-.background-purple-gradient select:focus {
+.background-purple select:focus {
   border-color: #f54952;
 }
 .background-purple input[type=text]:focus-visible,
@@ -175,15 +133,7 @@ strong {
 .background-purple input[type=search]:focus-visible,
 .background-purple input[type=password]:focus-visible,
 .background-purple textarea:focus-visible,
-.background-purple select:focus-visible,
-.background-purple-gradient input[type=text]:focus-visible,
-.background-purple-gradient input[type=email]:focus-visible,
-.background-purple-gradient input[type=url]:focus-visible,
-.background-purple-gradient input[type=text]:focus-visible,
-.background-purple-gradient input[type=search]:focus-visible,
-.background-purple-gradient input[type=password]:focus-visible,
-.background-purple-gradient textarea:focus-visible,
-.background-purple-gradient select:focus-visible {
+.background-purple select:focus-visible {
   outline-color: #fff;
 }
 
@@ -280,24 +230,16 @@ strong {
   -webkit-text-fill-color: #dfdfdf;
 }
 
-.body-over-purple,
-.background-purple-gradient {
+.body-over-purple {
   color: #cfc4e6;
 }
 .body-over-purple a,
-.body-over-purple .subdued-links a,
-.background-purple-gradient a,
-.background-purple-gradient .subdued-links a {
+.body-over-purple .subdued-links a {
   color: #cfc4e6;
 }
 
 .body-over-purple strong {
   color: #fff;
-}
-
-.background-purple-gradient {
-  background-color: #341671;
-  background-image: linear-gradient(145deg, #341671 0%, rgba(52, 22, 113, 0.85) 35%, rgba(52, 22, 113, 0.85) 65%, #341671 100%);
 }
 
 html {
@@ -312,9 +254,9 @@ html body * {
 }
 html body #page {
   background: #fff;
-  box-shadow: 0 0 20px rgba(40, 6, 89, 0.15);
+  box-shadow: 0 0 20px rgba(40, 6, 89, 0.1);
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1500px;
 }
 
 .section-title {
@@ -371,10 +313,10 @@ html body #page {
 
 .subdued-title {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   color: #756c86;
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -694,10 +636,10 @@ html body #page {
 #comments #reply-title,
 #comments .comments-title {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   color: #756c86;
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
@@ -708,7 +650,7 @@ html body #page {
 #comments .logged-in-as,
 #comments .comment-notes {
   color: #756c86;
-  font-size: 15px;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 #comments .logged-in-as a,
@@ -726,17 +668,17 @@ html body #page {
 }
 #comments .comment-list .comment .comment-body,
 #comments .comment-list .pingback .comment-body {
-  font-size: 17px;
+  font-size: 0.94rem;
 }
 #comments .comment-list .comment .comment-body .comment-meta,
 #comments .comment-list .pingback .comment-body .comment-meta {
-  font-size: 13px;
+  font-size: 0.75rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 #comments .comment-list .comment .comment-body .comment-meta .comment-author,
 #comments .comment-list .pingback .comment-body .comment-meta .comment-author {
-  font-size: 19px;
+  font-size: 1.05rem;
 }
 #comments .comment-list .comment .comment-body .comment-meta .comment-author a,
 #comments .comment-list .pingback .comment-body .comment-meta .comment-author a {
@@ -766,9 +708,9 @@ html body #page {
 #comments .comment-list .comment .comment-body .reply a,
 #comments .comment-list .pingback .comment-body .reply a {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   color: #341671;
-  font-size: 13px;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 #comments .comment-list .comment .comment-body .reply a:active, #comments .comment-list .comment .comment-body .reply a:focus, #comments .comment-list .comment .comment-body .reply a:hover,
@@ -787,7 +729,7 @@ html body #page {
   margin-bottom: 0.5rem;
 }
 #comments .comment-list .pingback .comment-body {
-  font-size: 15px;
+  font-size: 0.83rem;
 }
 #comments .comment-list .pingback .comment-body a {
   color: #341671;
@@ -801,25 +743,24 @@ html body #page {
 #comments .no-comments {
   background: #fef2f3;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 0.88rem;
   font-weight: 500;
   margin-top: 2rem;
   padding: 1rem;
   text-align: center;
 }
 #comments #commentform > p[class*=-author] label, #comments #commentform > p[class*=-email] label, #comments #commentform > p[class*=-url] label {
-  font-size: 15px;
+  font-size: 0.83rem;
 }
 #comments .comment-form-cookies-consent label {
-  font-size: 15px;
+  font-size: 0.83rem;
   text-transform: unset;
   font-weight: 500;
   margin-left: 6px;
 }
 
 #colophon {
-  font-size: 0.88rem;
-  line-height: 1.4;
+  font-size: 0.83rem;
 }
 #colophon .fat-footer {
   padding: 3rem 0;
@@ -842,8 +783,8 @@ html body #page {
 }
 #colophon .fat-footer .fat-footer-grid .footer-list-title {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 0.83rem;
   font-weight: 900;
   margin-bottom: 1.58rem;
   text-transform: uppercase;
@@ -851,17 +792,10 @@ html body #page {
 #colophon .fat-footer .fat-footer-grid a:not(.social-icon) {
   color: #333333;
 }
-#colophon .fat-footer .fat-footer-grid a:not(.social-icon):hover, #colophon .fat-footer .fat-footer-grid a:not(.social-icon):focus, #colophon .fat-footer .fat-footer-grid a:not(.social-icon):active {
-  color: #333333;
-}
 #colophon .fat-footer .fat-footer-grid ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-#colophon .fat-footer .fat-footer-grid ul li {
-  font-size: 90%;
-  margin-bottom: 0.15rem;
 }
 #colophon .fat-footer .fat-footer-grid .crispy-div-info .site-title {
   margin-bottom: 1rem;
@@ -869,23 +803,12 @@ html body #page {
 #colophon .fat-footer .fat-footer-grid .crispy-div-info .site-title .site-logo {
   max-width: 100px;
 }
-#colophon .site-info .site-copyright {
-  color: #666666;
-  font-size: 90%;
-}
-#colophon .site-info .site-copyright a {
-  color: #666666;
-  text-decoration: none;
-}
-#colophon .site-info .site-copyright a:hover, #colophon .site-info .site-copyright a:focus, #colophon .site-info .site-copyright a:active {
-  color: #333333;
-}
 
 .button,
 button,
 [type=submit] {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   background-color: #f54952;
   border: 2px solid #f54952;
   border-radius: 1.7em;
@@ -893,14 +816,14 @@ button,
   display: inline-block;
   line-height: 1.6;
   padding: 0.53em 1.7em;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   text-decoration-color: #f54952;
 }
 .button.small,
 button.small,
 [type=submit].small {
-  font-size: 0.75rem;
+  font-size: 0.73rem;
   padding: 0.4em 1.2em;
 }
 @media all and (min-width: 980px) {
@@ -996,7 +919,7 @@ p + .button {
 .secondary-cta {
   color: #ae2d68;
   display: inline-block;
-  font-size: 90%;
+  font-size: 0.9rem;
   margin-top: 0.5rem;
 }
 
@@ -1055,191 +978,8 @@ textarea {
 }
 
 form label {
-  font-size: 0.95rem;
+  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
-  text-transform: uppercase;
-}
-form label [class*=form-control-wrap] {
-  display: block;
-  margin-top: 6px;
-}
-form label [class*=not-valid-tip] {
-  color: #fff;
-  opacity: 0.8;
-  display: block;
-  font-weight: 600;
-  font-size: 0.82rem;
-  font-style: italic;
-  padding-top: 6px;
-  text-transform: none;
-}
-
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield {
-  margin-bottom: 1rem;
-  max-width: 900px;
-}
-@media all and (min-width: 980px) {
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield {
-    margin-bottom: 2rem;
-  }
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type {
-  margin-bottom: 2rem;
-}
-@media all and (min-width: 980px) {
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type {
-    margin-bottom: 3rem;
-  }
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type > .gfield_label {
-  color: #341671;
-}
-@media all and (min-width: 980px) {
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type > .gfield_label {
-    font-size: 1.7rem;
-  }
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio {
-  display: grid;
-  gap: 1rem 2rem;
-  grid-template-columns: 1fr;
-  margin-top: 1rem;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label {
-  border: 1px dashed rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  font-weight: 700;
-  height: 100%;
-  margin-left: 0;
-  max-width: 100%;
-  padding: 1rem;
-  width: 100%;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:hover {
-  cursor: pointer;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:active, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:focus, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:hover {
-  background: #f8f5fc;
-  border: 1px dashed #f54952;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:active::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:focus::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:hover::before {
-  color: #341671;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label::before {
-  color: #341671;
-  content: "\f058";
-  display: inline-block;
-  font: var(--fa-font-light);
-  margin-right: 0.5rem;
-  height: 1rem;
-  width: 1rem;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type=radio] {
-  display: none;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type=radio]:checked + label {
-  background: #341671;
-  color: #fff;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type=radio]:checked + label:active, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type=radio]:checked + label:focus, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type=radio]:checked + label:hover {
-  border: 1px solid #341671;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type=radio]:checked + label:active::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type=radio]:checked + label:focus::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type=radio]:checked + label:hover::before {
-  color: #f54952;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type=radio]:checked + label::before {
-  color: #f54952;
-}
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=color] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=date] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime-local] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=email] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=month] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=number] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=password] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=search] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=tel] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=text] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=time] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=url] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=week] + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield select + label,
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield textarea + label {
-  color: #494949;
-  font-weight: 600;
-  text-transform: unset;
-}
-.gform_wrapper.gravity-theme .gform_body .gfield_label {
-  color: #341671;
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  text-transform: unset;
-}
-.gform_wrapper.gravity-theme .gform_body .gfield_label .gfield_required {
-  color: #f54952;
-}
-.gform_wrapper.gravity-theme .gform_body .gfield_label + .gfield_description {
-  margin-top: -1rem;
-}
-.gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice label {
-  color: #494949;
-  font-weight: 500;
-  margin-left: 6px;
-  text-transform: unset;
-}
-.gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice input:checked + label {
-  font-weight: 700;
-}
-.gform_wrapper.gravity-theme .gform_validation_errors {
-  border-color: #f54952 !important;
-  box-shadow: none !important;
-  margin-bottom: 2rem;
-}
-@media all and (min-width: 980px) {
-  .gform_wrapper.gravity-theme .gform_validation_errors {
-    margin-bottom: 3.5rem;
-  }
-}
-.gform_wrapper.gravity-theme .gform_validation_errors > h2 {
-  color: #f54952 !important;
-}
-.gform_wrapper.gravity-theme .gfield_validation_message,
-.gform_wrapper.gravity-theme .validation_message {
-  background-color: transparent !important;
-  border: none !important;
-  color: #f54952 !important;
-  padding: 0 !important;
-  font-style: italic;
-}
-.gform_wrapper.gravity-theme .gfield_error [aria-invalid=true] {
-  border-width: 2px !important;
-  border-color: #f54952 !important;
-}
-
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=color] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=date] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime-local] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=email] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=month] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=number] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=password] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=search] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=tel] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=text] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=time] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=url] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=week] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield select + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield textarea + label {
-  color: #cfc4e6;
-}
-.background-purple .gform_wrapper.gravity-theme .gform_body .gfield_label {
-  color: #fff;
-}
-.background-purple .gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice label {
-  color: #cfc4e6;
 }
 
 .general-grid {
@@ -1334,12 +1074,13 @@ form label [class*=not-valid-tip] {
 .general-grid .grid-item .grid-item-content .grid-item-title {
   display: inline-block;
   font-size: 1rem;
+  font-weight: 700;
   line-height: 1.5;
   margin-bottom: 12px;
 }
 @media (min-width: 980px) {
   .general-grid .grid-item .grid-item-content .grid-item-title {
-    font-size: 1.15rem;
+    font-size: 1.11rem;
   }
 }
 .general-grid .grid-item .grid-item-content .grid-item-title a {
@@ -1349,7 +1090,7 @@ form label [class*=not-valid-tip] {
 }
 .general-grid .grid-item .grid-item-content .grid-item-description {
   flex: 1 0 auto;
-  font-size: 17px;
+  font-size: 0.94rem;
 }
 .general-grid .grid-item .grid-item-content .grid-item-description:not(:last-child) {
   margin-bottom: 1.5rem;
@@ -1357,13 +1098,11 @@ form label [class*=not-valid-tip] {
 .general-grid .grid-item .grid-item-content .grid-item-description ul,
 .general-grid .grid-item .grid-item-content .grid-item-description ol {
   margin: 0;
-  padding: 0;
-  padding-left: 24px;
+  padding: 0 0 0 24px;
 }
 .general-grid .grid-item .grid-item-content .grid-item-description ul li,
 .general-grid .grid-item .grid-item-content .grid-item-description ol li {
   font-size: 0.85rem;
-  font-weight: 600;
   padding: 4px 0 6px;
   margin-bottom: 0;
 }
@@ -1378,7 +1117,7 @@ form label [class*=not-valid-tip] {
 }
 #masthead .screen-reader-text {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   background-color: #fff0f1;
   text-decoration: underline;
   top: 1rem;
@@ -1416,18 +1155,16 @@ form label [class*=not-valid-tip] {
   margin: 0;
 }
 #masthead .site-header .site-branding .site-title {
+  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
   display: inline-block;
   margin: 0;
-  text-transform: uppercase;
 }
 #masthead .site-header .site-branding .site-title a {
   color: #494949;
   display: block;
   font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
   line-height: 1;
-  text-decoration: none;
 }
 #masthead .site-header .primary-cta {
   display: none;
@@ -1504,7 +1241,7 @@ h5, .h5,
 h6, .h6,
 .archive .page-header-title span {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   color: #341671;
   display: block;
   line-height: 1.2;
@@ -1524,6 +1261,7 @@ h6 img, .h6 img,
 
 h1, .h1 {
   font-size: 2.5rem;
+  font-weight: 800;
 }
 @media all and (min-width: 540px) {
   h1, .h1 {
@@ -1543,6 +1281,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 2rem;
+  font-weight: 800;
 }
 @media all and (min-width: 540px) {
   h2, .h2 {
@@ -1568,6 +1307,7 @@ h2, .h2 {
 h3, .h3,
 .archive .page-header-title span {
   font-size: 1.5rem;
+  font-weight: 800;
 }
 @media all and (min-width: 540px) {
   h3, .h3,
@@ -1670,9 +1410,7 @@ figcaption,
 
 blockquote {
   border-left: 2px solid #ae2d68;
-  font-size: 17px;
   font-style: italic;
-  font-weight: 500;
   margin: 0 0 1.25rem;
   padding: 0 0 0 1.25rem;
 }
@@ -1743,11 +1481,6 @@ figure.frame img {
 .site-main h6, .site-main .h6 {
   color: #ae2d68;
 }
-@media all and (min-width: 1500px) {
-  .site-main .entry-content {
-    font-size: 19px;
-  }
-}
 .site-main .entry-content h1:not(:first-child), .site-main .entry-content .h1:not(:first-child),
 .site-main .entry-content h2:not(:first-child), .site-main .entry-content .h2:not(:first-child),
 .site-main .entry-content h3:not(:first-child), .site-main .entry-content .h3:not(:first-child),
@@ -1794,7 +1527,7 @@ figure.frame img {
   background: #f8f5fc;
   color: #341671;
   font-family: "Fira Code", monospace;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 .site-main address {
@@ -1840,7 +1573,6 @@ figure.frame img {
 .browser .mock_viewport {
   background: #fff;
   border-radius: 0 0 11px 11px;
-  font-family: "Montserrat";
   font-size: 15px;
 }
 .browser .mock_viewport .h1, .browser .mock_viewport .h2, .browser .mock_viewport .h3, .browser .mock_viewport .h4, .browser .mock_viewport .h5, .browser .mock_viewport .h6 {
@@ -1939,11 +1671,11 @@ figure.frame img {
   background-color: #102541;
   color: #fff;
   padding: 0.6rem 1.2rem;
-  text-align: center;
 }
 @media all and (min-width: 540px) {
   .browser .mock_viewport .mock_columns {
     padding: 0.6rem 2rem;
+    text-align: center;
   }
 }
 @media all and (min-width: 980px) {
@@ -2145,12 +1877,11 @@ figure.frame img {
 
 #site-navigation .menu-toggle {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   background: none;
   border: 0;
   cursor: pointer;
   font-size: 0.88rem;
-  font-weight: 600;
   padding: 0;
   position: absolute;
   right: 2rem;
@@ -2170,9 +1901,12 @@ figure.frame img {
   padding: 0;
 }
 #site-navigation #primary-menu .menu-item a {
-  font-size: 16px;
+  font-size: 0.88rem;
   font-weight: 600;
   text-decoration: none;
+}
+#site-navigation #primary-menu .menu-item a:active, #site-navigation #primary-menu .menu-item a:focus, #site-navigation #primary-menu .menu-item a:hover {
+  text-decoration: underline;
 }
 #site-navigation #primary-menu .menu-item.current-menu-item a {
   text-decoration: underline;
@@ -2289,9 +2023,9 @@ figure.frame img {
 .posts-navigation .nav-links .nav-previous a,
 .posts-navigation .nav-links .nav-next a {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   color: #341671;
-  font-size: 0.75rem;
+  font-size: 0.88rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -2333,10 +2067,10 @@ figure.frame img {
 .post-navigation .nav-links .nav-previous .nav-subtitle,
 .post-navigation .nav-links .nav-next .nav-subtitle {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   color: #341671;
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.88rem;
   text-transform: uppercase;
 }
 .post-navigation .nav-links .nav-previous .nav-subtitle:active, .post-navigation .nav-links .nav-previous .nav-subtitle:focus, .post-navigation .nav-links .nav-previous .nav-subtitle:hover,
@@ -2676,7 +2410,7 @@ template {
 .entry-header .page-header-title-label {
   color: #ae2d68;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.35rem;
 }
 .page-header .page-header-description,
@@ -2815,18 +2549,13 @@ template {
 }
 
 .small-cta-section p {
-  font-size: 0.875rem;
+  font-size: 0.88rem;
 }
 
 html {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.6;
-}
-@media all and (min-width: 1300px) {
-  html {
-    font-size: 18px;
-  }
 }
 
 .history-grid {
@@ -2879,11 +2608,11 @@ html {
 }
 .history-grid .history-grid-media-inner .sean-label .title {
   display: block;
-  font-size: 15px;
+  font-size: 0.83rem;
 }
 .history-grid .history-grid-media-inner .sean-label .education {
   display: block;
-  font-size: 15px;
+  font-size: 0.83rem;
 }
 .history-grid .history-grid-media-inner .link-grid {
   align-items: center;
@@ -2892,7 +2621,7 @@ html {
   justify-content: center;
 }
 .history-grid .history-grid-media-inner .link-grid [class*=-icon] img {
-  width: 20px;
+  width: 27px;
 }
 .history-grid .history-grid-media-inner .link-grid [class*=-icon] img:active, .history-grid .history-grid-media-inner .link-grid [class*=-icon] img:focus, .history-grid .history-grid-media-inner .link-grid [class*=-icon] img:hover {
   opacity: 0.7;
@@ -2902,21 +2631,10 @@ html {
   text-align: center;
 }
 
-@media all and (min-width: 1400px) {
-  .how-we-work-grid .grid-item .grid-item-title {
-    font-size: 1.35rem;
-  }
-}
-@media all and (min-width: 1400px) {
-  .how-we-work-grid .grid-item {
-    padding: 2.75rem 4.5rem;
-  }
-}
-
 .archive:not(.post-type-archive) .page-header .page-header-title {
   color: #ae2d68;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .archive:not(.post-type-archive) .page-header .page-header-title span {
   margin-top: 0.35rem;
@@ -3002,6 +2720,7 @@ html {
   justify-content: center;
   padding: 1rem;
   width: 100%;
+  text-transform: uppercase;
 }
 .page-brand-assets .colors-grid > [class*=color-]:nth-child(1) {
   background-color: #422680;
@@ -3029,7 +2748,7 @@ html {
 }
 .page-brand-assets .colors-grid > [class*=color-] span {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   color: #f8f5fc;
 }
 .page-brand-assets .colors-grid > [class*=color-].light-color span {
@@ -3112,7 +2831,7 @@ html {
 }
 .page-brand-assets .brand-name-grid .brand-name-example .brand-name {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   color: #341671;
   display: block;
   font-size: 1.25rem;
@@ -3147,24 +2866,23 @@ html {
   }
 }
 .page-contact .contact-form-grid .field {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 @media all and (min-width: 980px) {
   .page-contact .contact-form-grid .field {
-    margin-bottom: 1.75rem;
+    margin-bottom: 2rem;
   }
 }
 .page-contact .contact-form-grid .field label {
   color: #341671;
-  font-size: 1.15rem;
+  font-size: 1.11rem;
   margin-bottom: 1rem;
-  text-transform: unset;
 }
 .page-contact .contact-form-grid .field .description {
   margin-bottom: 10px;
 }
 .page-contact .contact-form-grid .field textarea {
-  min-height: 150px;
+  min-height: 180px;
 }
 
 .page-front .page-header {
@@ -3179,8 +2897,6 @@ html {
 .page-front .page-header .content-wrap .page-header-description {
   color: #cfc4e6;
   display: block;
-  font-size: 1.1rem;
-  line-height: 1.8;
   margin-bottom: 2rem;
   max-width: 640px;
 }
@@ -3208,6 +2924,9 @@ html {
 }
 .page-front .page-header .services-grid .button {
   color: #fff;
+}
+.page-front .plugin-integration-section {
+  /* Customization logos Grid in _shared.scss */
 }
 .page-front .plugin-integration-section .section-heading {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
@@ -3290,26 +3009,6 @@ html {
     border-right: 1px dashed rgba(0, 0, 0, 0.1);
   }
 }
-.page-front .plugin-integration-section .customization-logos-wrap {
-  /* Customization logos Grid in _shared.scss */
-}
-.page-front .plugin-integration-section .customization-logos-wrap .customizations-title {
-  font-size: 0.75rem;
-}
-.page-front .theme-development-section {
-  font-size: 17px;
-}
-@media all and (min-width: 1200px) {
-  .page-front .theme-development-section .section-content {
-    padding-right: 2.75rem;
-  }
-}
-.page-front .theme-development-section .real-data-header {
-  border-bottom: 1px dashed #45307c;
-}
-.page-front .theme-development-section .real-data-header .attribution {
-  color: #fff;
-}
 .page-front .theme-development-section .nng-stats-grid {
   border-top: 1px dashed #45307c;
 }
@@ -3320,46 +3019,30 @@ html {
 }
 .page-front .theme-development-section .mock-browser-grid {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
 }
-@media (min-width: 1200px) {
+@media all and (min-width: 1200px) {
   .page-front .theme-development-section .mock-browser-grid {
+    column-gap: 5rem;
     grid-template-columns: 2fr 1fr;
   }
 }
-@media all and (min-width: 1200px) {
-  .page-front .theme-development-section .mock-browser-grid .mock-browser-wrap {
-    padding-right: 2.75rem;
-  }
-}
 .page-front .theme-development-section .mock-browser-grid .design-description {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   padding-top: 4rem;
   max-width: 600px;
 }
 @media all and (min-width: 1200px) {
   .page-front .theme-development-section .mock-browser-grid .design-description {
     margin-bottom: 0;
-    padding-left: 2.7rem;
     padding-top: 2rem;
   }
 }
-.page-front .theme-development-section .mock-browser-grid .design-description .blurb-title {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
-  color: #fff;
-  font-weight: 700;
-}
 .page-front .theme-development-section .mock-browser-grid .design-description ul {
-  padding-left: 24px;
+  padding-left: 1.4rem;
 }
 .page-front .theme-development-section .mock-browser-grid .design-description ul li {
-  color: #fff;
-  font-weight: 500;
-  padding-bottom: 6px;
-}
-.page-front .theme-development-section .mock-browser-grid .design-description ul li::marker {
-  color: #f54952;
+  padding-bottom: 0.3rem;
 }
 .page-front .theme-development-section .the-standard-title {
   padding-top: 0;
@@ -3367,20 +3050,11 @@ html {
 }
 .page-front .theme-development-section .the-standard-title span {
   font-size: 1.5rem;
-  line-height: 1.6;
 }
 .page-front .theme-development-section .standards-grid {
   border-top: 1px dashed #45307c;
 }
-@media all and (min-width: 1200px) {
-  .page-front .theme-development-section .standards-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-.page-front .theme-development-section .standards-grid .grid-item p {
-  color: #cfc4e6;
-}
-.page-front .theme-development-section .standards-grid .grid-item p a {
+.page-front .theme-development-section .standards-grid .grid-item a {
   color: #cfc4e6;
 }
 .page-front .theme-development-section .standards-grid + .small-cta-section {
@@ -3390,15 +3064,14 @@ html {
 }
 
 .post-type-archive-service .page-header-description {
-  align-items: center;
   gap: 1.5rem 5rem;
 }
 .post-type-archive-service .page-header-description .jump-to-section label {
   display: block;
 }
 .post-type-archive-service .page-header-description .jump-to-section select {
-  font-size: 0.85rem;
-  max-width: 300px;
+  max-width: 320px;
+  margin-top: 8px;
 }
 .post-type-archive-service .page-header-description .jump-to-section select#jump-menu {
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%23fff' d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
@@ -3416,35 +3089,35 @@ html {
 
 /* Singulars */
 .service-section .service-content-grid {
-  gap: 4rem 2%;
+  gap: 4rem 1.25%;
   display: grid;
   grid-template-columns: 1fr;
 }
 @media all and (min-width: 1200px) {
   .service-section .service-content-grid {
-    grid-template-columns: 33% 65%;
+    grid-template-columns: 33% 65.75%;
   }
 }
 @media all and (min-width: 1400px) {
   .service-section .service-content-grid {
-    grid-template-columns: 35% 63%;
+    grid-template-columns: 35% 63.75%;
   }
 }
 .service-section .service-content-grid .service-description {
   max-width: 650px;
 }
 .service-section .service-content-grid .service-description .section-title {
+  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  color: #341671;
+  font-weight: 800;
   margin-bottom: 1rem;
-}
-@media all and (min-width: 1200px) {
-  .service-section .service-content-grid .service-description .section-title {
-    font-size: 2rem;
-  }
+  font-size: 1.5rem;
 }
 .service-section .service-content-grid .service-description .section-title .wp-title-prefix {
   color: #ae2d68;
   display: block;
-  font-size: 50%;
+  font-size: 1.11rem;
 }
 .service-section .service-content-grid .service-description p + .button {
   margin-top: 1.25rem;
@@ -3516,7 +3189,6 @@ html {
 }
 .service-section.plugin-integration-section .customizations-service-grid .customization-brand .customization-brand-inner .brand-description {
   font-size: 0.88rem;
-  max-width: 95%;
 }
 .service-section.custom-development-section .custom-development-example-accordion-items {
   border-style: dashed;
@@ -3534,7 +3206,7 @@ html {
 }
 .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-header .custom-development-example-accordion-item-title {
   font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 800;
+  font-weight: 700;
   background: transparent url("./assets/images/icons/circle-check-light-full.svg") no-repeat 1.5rem center;
   background-size: 1rem 1rem;
   display: block;
@@ -3573,7 +3245,7 @@ html {
 .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-content {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   display: none;
-  font-size: 90%;
+  font-size: 0.88rem;
   padding: 1rem 1.5rem;
 }
 
@@ -3590,7 +3262,6 @@ html {
 .single #site-content .post-content-grid,
 .page #site-content .post-content-grid {
   margin: 0 auto;
-  max-width: 1600px;
 }
 .single .post-content-grid,
 .page .post-content-grid {
@@ -3630,8 +3301,7 @@ html {
 }
 .single.single-post .entry-meta,
 .single.single-post .entry-footer {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 0.88rem;
 }
 .single.single-post .entry-meta a,
 .single.single-post .entry-footer a {
@@ -3650,13 +3320,13 @@ html {
   color: #fff;
 }
 .single.single-post .entry-content > p:first-child {
-  font-size: 110%;
+  font-size: 1.11rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1.75rem;
 }
 @media all and (min-width: 1080px) {
   .single.single-post .entry-content > p:first-child {
-    margin-top: 2.5rem;
+    margin-top: 2.25rem;
   }
 }
 .single.single-post .entry-content .post-password-form label {
@@ -3671,11 +3341,8 @@ html {
   margin-top: 1.5rem;
 }
 .single.single-post .entry-footer .image-attribution {
-  font-size: 14px;
+  font-size: 0.88rem;
   margin-top: 6px;
-}
-.single.single-post .entry-footer a {
-  color: #443e4e;
 }
 
 @media all and (min-width: 980px) {
@@ -3764,12 +3431,13 @@ html {
   }
 }
 
-.page-why-wordpress .page-header-description em.semi-heavy {
+.page-why-wordpress.has-dark-header .page-header-description em.semi-heavy {
+  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
   font-style: normal;
-  font-weight: 800;
   color: #fff;
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 .page-why-wordpress .why-wordpress-section .section-description {
   grid-template-columns: 1fr;
