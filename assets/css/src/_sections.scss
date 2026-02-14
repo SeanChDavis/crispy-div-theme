@@ -113,7 +113,7 @@
 		}
 
 		& + .button {
-			margin-top: .5rem;
+			margin-top: clamp(0rem, .75vw, .5rem);
 		}
 	}
 }

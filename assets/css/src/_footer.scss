@@ -1,5 +1,5 @@
 #colophon {
-	font-size: .83rem;
+	font-size: .88rem;
 
 	.fat-footer {
 		padding-bottom: var(--space-small);
@@ -22,7 +22,7 @@
 				@include headingFont;
 				font-size: .83rem;
 				font-weight: 900;
-				margin-bottom: 1.58rem;
+				margin-bottom: clamp(.5rem, 2vw, 1rem);
 				text-transform: uppercase;
 			}
 
@@ -38,8 +38,12 @@
 
 			.crispy-div-info {
 
+				.site-description {
+					padding-right: clamp(0rem, 1vw, 1rem);
+				}
+
 				.site-title {
-					margin-bottom: 1rem;
+					margin-bottom: clamp(.5rem, 1.25vw, .17rem);
 
 					.site-logo {
 						max-width: 100px;

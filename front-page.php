@@ -11,7 +11,7 @@ get_header();
 			<div class="content-wrap">
 				<h1 class="page-header-title"><?php echo get_bloginfo( 'description' ); ?></h1>
 				<div class="page-header-description">
-					<?php echo get_field( 'page_header_description' ); ?>
+					<?php echo crispydiv_site_description(); ?>
 				</div>
 				<p class="page-header-cta">
 					<?php

@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.2.11
+ * Version: 1.2.12
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -329,9 +329,9 @@ html body #page {
 
 .corner-accent {
   background-image: url("assets/images/corner-accent-black-orange.svg");
-  background-size: 160px auto;
+  background-size: 145px auto;
   background-repeat: no-repeat;
-  background-position: calc(100% - 2rem) calc(100% - 2rem);
+  background-position: calc(100% - clamp(2rem, 6vw, 4.5rem)) calc(100% - clamp(1.5rem, 2.75vw, 2.5rem));
 }
 .corner-accent.white-orange {
   background-image: url("assets/images/corner-accent-white-orange.svg");
@@ -358,7 +358,7 @@ html body #page {
   background-image: url("assets/images/corner-accent-bottom-right-white.svg");
 }
 .corner-accent.top-right {
-  background-position: calc(100% - 2rem) 2rem;
+  background-position: calc(100% - clamp(2rem, 6vw, 4.5rem)) clamp(1.5rem, 2.75vw, 2.5rem);
 }
 .corner-accent.top-right.white-white {
   background-image: url("assets/images/corner-accent-top-right-white.svg");
@@ -511,7 +511,7 @@ html body #page {
 }
 
 #colophon {
-  font-size: 0.83rem;
+  font-size: 0.88rem;
 }
 #colophon .fat-footer {
   padding-bottom: var(--space-small);
@@ -537,7 +537,7 @@ html body #page {
   font-weight: 700;
   font-size: 0.83rem;
   font-weight: 900;
-  margin-bottom: 1.58rem;
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
   text-transform: uppercase;
 }
 #colophon .fat-footer .fat-footer-grid a:not(.social-icon) {
@@ -548,8 +548,11 @@ html body #page {
   margin: 0;
   padding: 0;
 }
+#colophon .fat-footer .fat-footer-grid .crispy-div-info .site-description {
+  padding-right: clamp(0rem, 1vw, 1rem);
+}
 #colophon .fat-footer .fat-footer-grid .crispy-div-info .site-title {
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0.5rem, 1.25vw, 0.17rem);
 }
 #colophon .fat-footer .fat-footer-grid .crispy-div-info .site-title .site-logo {
   max-width: 100px;
@@ -2190,7 +2193,7 @@ template {
   }
 }
 .footer-lead-cta p + .button {
-  margin-top: 0.5rem;
+  margin-top: clamp(0rem, 0.75vw, 0.5rem);
 }
 
 .small-cta-section p {

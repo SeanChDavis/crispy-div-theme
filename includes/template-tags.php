@@ -127,6 +127,13 @@ function crispydiv_social_links( $full_color = true ) {
 	<?php
 }
 
+/**
+ * Site Description text
+ */
+function crispydiv_site_description() {
+    return 'Getting started with WordPress is simple. Molding WordPress to your needs can be difficult. Let\'s find creative ways to solve that problem.';
+}
+
 
 /**
  * Get array of company logos for customizations
