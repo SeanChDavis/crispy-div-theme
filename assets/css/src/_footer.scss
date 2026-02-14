@@ -8,10 +8,9 @@
 		.fat-footer-grid {
 			display: grid;
 			grid-template-columns: 1fr;
-			gap: 2rem;
+			gap: clamp(2rem, 3.5vw, 2.5rem) clamp(2rem, 3.5vw, 4rem);
 
 			@media all and (min-width: 760px) {
-				gap: 2.5rem 4rem;
 				grid-template-columns: 1fr 1fr;
 			}
 

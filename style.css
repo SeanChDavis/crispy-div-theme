@@ -42,6 +42,24 @@ strong {
 .background-purple a,
 .background-purple strong,
 .background-purple form label,
+.background-purple-darker h1,
+.background-purple-darker .h1,
+.background-purple-darker h2,
+.background-purple-darker .h2,
+.background-purple-darker h3,
+.background-purple-darker .h3,
+.background-purple-darker h4,
+.background-purple-darker .h4,
+.background-purple-darker h5,
+.background-purple-darker .h5,
+.background-purple-darker h6,
+.background-purple-darker .h6,
+.background-purple-darker .grid-item-title,
+.background-purple-darker .grid-item-title.archive-item-title a,
+.background-purple-darker .cta-link,
+.background-purple-darker a,
+.background-purple-darker strong,
+.background-purple-darker form label,
 .background-pink h1,
 .background-pink .h1,
 .background-pink h2,
@@ -59,46 +77,27 @@ strong {
 .background-pink .cta-link,
 .background-pink a,
 .background-pink strong,
-.background-pink form label,
-.background-orange h1,
-.background-orange .h1,
-.background-orange h2,
-.background-orange .h2,
-.background-orange h3,
-.background-orange .h3,
-.background-orange h4,
-.background-orange .h4,
-.background-orange h5,
-.background-orange .h5,
-.background-orange h6,
-.background-orange .h6,
-.background-orange .grid-item-title,
-.background-orange .grid-item-title.archive-item-title a,
-.background-orange .cta-link,
-.background-orange a,
-.background-orange strong,
-.background-orange form label,
-.background-black h1,
-.background-black .h1,
-.background-black h2,
-.background-black .h2,
-.background-black h3,
-.background-black .h3,
-.background-black h4,
-.background-black .h4,
-.background-black h5,
-.background-black .h5,
-.background-black h6,
-.background-black .h6,
-.background-black .grid-item-title,
-.background-black .grid-item-title.archive-item-title a,
-.background-black .cta-link,
-.background-black a,
-.background-black strong,
-.background-black form label {
+.background-pink form label {
   color: #fff;
 }
 
+.background-purple,
+.background-purple-darker {
+  background-color: #341671;
+  color: #cfc4e6;
+}
+.background-purple .subdued-links a,
+.background-purple-darker .subdued-links a {
+  color: #cfc4e6;
+}
+.background-purple .grid-item,
+.background-purple-darker .grid-item {
+  border-color: #45307c !important;
+}
+.background-purple a:focus-visible,
+.background-purple-darker a:focus-visible {
+  outline-color: #fff;
+}
 .background-purple input[type=text],
 .background-purple input[type=email],
 .background-purple input[type=url],
@@ -106,7 +105,15 @@ strong {
 .background-purple input[type=search],
 .background-purple input[type=password],
 .background-purple textarea,
-.background-purple select {
+.background-purple select,
+.background-purple-darker input[type=text],
+.background-purple-darker input[type=email],
+.background-purple-darker input[type=url],
+.background-purple-darker input[type=text],
+.background-purple-darker input[type=search],
+.background-purple-darker input[type=password],
+.background-purple-darker textarea,
+.background-purple-darker select {
   border-color: #ae2d68;
 }
 .background-purple input[type=text]:active, .background-purple input[type=text]:focus,
@@ -123,7 +130,23 @@ strong {
 .background-purple textarea:active,
 .background-purple textarea:focus,
 .background-purple select:active,
-.background-purple select:focus {
+.background-purple select:focus,
+.background-purple-darker input[type=text]:active,
+.background-purple-darker input[type=text]:focus,
+.background-purple-darker input[type=email]:active,
+.background-purple-darker input[type=email]:focus,
+.background-purple-darker input[type=url]:active,
+.background-purple-darker input[type=url]:focus,
+.background-purple-darker input[type=text]:active,
+.background-purple-darker input[type=text]:focus,
+.background-purple-darker input[type=search]:active,
+.background-purple-darker input[type=search]:focus,
+.background-purple-darker input[type=password]:active,
+.background-purple-darker input[type=password]:focus,
+.background-purple-darker textarea:active,
+.background-purple-darker textarea:focus,
+.background-purple-darker select:active,
+.background-purple-darker select:focus {
   border-color: #f54952;
 }
 .background-purple input[type=text]:focus-visible,
@@ -133,22 +156,20 @@ strong {
 .background-purple input[type=search]:focus-visible,
 .background-purple input[type=password]:focus-visible,
 .background-purple textarea:focus-visible,
-.background-purple select:focus-visible {
+.background-purple select:focus-visible,
+.background-purple-darker input[type=text]:focus-visible,
+.background-purple-darker input[type=email]:focus-visible,
+.background-purple-darker input[type=url]:focus-visible,
+.background-purple-darker input[type=text]:focus-visible,
+.background-purple-darker input[type=search]:focus-visible,
+.background-purple-darker input[type=password]:focus-visible,
+.background-purple-darker textarea:focus-visible,
+.background-purple-darker select:focus-visible {
   outline-color: #fff;
 }
 
-.background-purple {
-  background-color: #341671;
-  color: #cfc4e6;
-}
-.background-purple .subdued-links a {
-  color: #cfc4e6;
-}
-.background-purple .grid-item {
-  border-color: #45307c !important;
-}
-.background-purple a:focus-visible {
-  outline-color: #fff;
+.background-purple-darker {
+  background-color: #280659;
 }
 
 .background-pink {
@@ -156,12 +177,7 @@ strong {
   color: #fae1ee;
 }
 .background-pink .subdued-links a {
-  color: #fff;
-}
-.background-pink .element-lead-icon.colored {
-  background: none;
   color: #fae1ee;
-  -webkit-text-fill-color: #fae1ee;
 }
 .background-pink input[type=text],
 .background-pink input[type=email],
@@ -204,44 +220,6 @@ strong {
   outline-color: #fff;
 }
 
-.background-orange {
-  background-color: #f54952;
-  color: #ffeeef;
-}
-.background-orange .subdued-links a {
-  color: #fff;
-}
-.background-orange .element-lead-icon.colored {
-  background: none;
-  color: #ffeeef;
-  -webkit-text-fill-color: #ffeeef;
-}
-
-.background-black {
-  background-color: #161616;
-  color: #dfdfdf;
-}
-.background-black .subdued-links a {
-  color: #dfdfdf;
-}
-.background-black .element-lead-icon.colored {
-  background: none;
-  color: #dfdfdf;
-  -webkit-text-fill-color: #dfdfdf;
-}
-
-.body-over-purple {
-  color: #cfc4e6;
-}
-.body-over-purple a,
-.body-over-purple .subdued-links a {
-  color: #cfc4e6;
-}
-
-.body-over-purple strong {
-  color: #fff;
-}
-
 html {
   color: #494949;
 }
@@ -260,7 +238,7 @@ html body #page {
 }
 
 :root {
-  --space-tiny: 1rem;
+  --space-tiny: clamp(.75rem, 2.25vw, 1rem);
   --space-small: clamp(2rem, 4.5vw, 3rem);
   --space-smedium: clamp(2.5rem, 5.5vw, 4.25rem);
   --space-medium: clamp(2.75rem, 6.25vw, 4.75rem);
@@ -293,14 +271,10 @@ html body #page {
 
 .subdued-links a {
   color: #494949;
-  text-decoration: underline;
-}
-.subdued-links a:active, .subdued-links a:focus, .subdued-links a:hover {
-  text-decoration: none;
 }
 
 .subdued-title {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   color: #756c86;
   display: block;
@@ -536,136 +510,6 @@ html body #page {
   padding-top: 0;
 }
 
-.post-comments {
-  padding-top: 3rem;
-}
-
-#comments #reply-title,
-#comments .comments-title {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 700;
-  color: #756c86;
-  display: block;
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  text-transform: uppercase;
-}
-#comments #reply-title {
-  color: #333333;
-}
-#comments .logged-in-as,
-#comments .comment-notes {
-  color: #756c86;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-#comments .logged-in-as a,
-#comments .comment-notes a {
-  color: #443e4e;
-  text-decoration-color: #ae2d68;
-}
-#comments .comment-list > .comment, #comments .comment-list > .pingback {
-  margin-bottom: 2rem;
-}
-#comments .comment-list > .comment {
-  background: #f8f5fc;
-  border-radius: 5px;
-  padding: 1.5rem;
-}
-#comments .comment-list .comment .comment-body,
-#comments .comment-list .pingback .comment-body {
-  font-size: 0.94rem;
-}
-#comments .comment-list .comment .comment-body .comment-meta,
-#comments .comment-list .pingback .comment-body .comment-meta {
-  font-size: 0.75rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-#comments .comment-list .comment .comment-body .comment-meta .comment-author,
-#comments .comment-list .pingback .comment-body .comment-meta .comment-author {
-  font-size: 1.05rem;
-}
-#comments .comment-list .comment .comment-body .comment-meta .comment-author a,
-#comments .comment-list .pingback .comment-body .comment-meta .comment-author a {
-  color: #341671;
-}
-#comments .comment-list .comment .comment-body .comment-meta .comment-author a:active, #comments .comment-list .comment .comment-body .comment-meta .comment-author a:focus, #comments .comment-list .comment .comment-body .comment-meta .comment-author a:hover,
-#comments .comment-list .pingback .comment-body .comment-meta .comment-author a:active,
-#comments .comment-list .pingback .comment-body .comment-meta .comment-author a:focus,
-#comments .comment-list .pingback .comment-body .comment-meta .comment-author a:hover {
-  color: #ae2d68;
-}
-#comments .comment-list .comment .comment-body .comment-meta a,
-#comments .comment-list .pingback .comment-body .comment-meta a {
-  color: #494949;
-  text-decoration: none;
-}
-#comments .comment-list .comment .comment-body .comment-meta a:active, #comments .comment-list .comment .comment-body .comment-meta a:focus, #comments .comment-list .comment .comment-body .comment-meta a:hover,
-#comments .comment-list .pingback .comment-body .comment-meta a:active,
-#comments .comment-list .pingback .comment-body .comment-meta a:focus,
-#comments .comment-list .pingback .comment-body .comment-meta a:hover {
-  text-decoration: underline;
-}
-#comments .comment-list .comment .comment-body .comment-content:not(:last-child),
-#comments .comment-list .pingback .comment-body .comment-content:not(:last-child) {
-  margin-bottom: 1rem;
-}
-#comments .comment-list .comment .comment-body .reply a,
-#comments .comment-list .pingback .comment-body .reply a {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 700;
-  color: #341671;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-}
-#comments .comment-list .comment .comment-body .reply a:active, #comments .comment-list .comment .comment-body .reply a:focus, #comments .comment-list .comment .comment-body .reply a:hover,
-#comments .comment-list .pingback .comment-body .reply a:active,
-#comments .comment-list .pingback .comment-body .reply a:focus,
-#comments .comment-list .pingback .comment-body .reply a:hover {
-  text-decoration: none;
-}
-#comments .comment-list .comment .comment {
-  border-left: 1px dashed rgba(0, 0, 0, 0.1);
-  margin: 1.5rem 0 0;
-  padding-left: 1.5rem;
-}
-#comments .comment-list .pingback {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-#comments .comment-list .pingback .comment-body {
-  font-size: 0.83rem;
-}
-#comments .comment-list .pingback .comment-body a {
-  color: #341671;
-}
-#comments .comment-list .pingback + .comment {
-  margin-top: 2rem;
-}
-#comments .comment-list + #respond {
-  margin-top: 3rem;
-}
-#comments .no-comments {
-  background: #fef2f3;
-  border-radius: 5px;
-  font-size: 0.88rem;
-  font-weight: 500;
-  margin-top: 2rem;
-  padding: 1rem;
-  text-align: center;
-}
-#comments #commentform > p[class*=-author] label, #comments #commentform > p[class*=-email] label, #comments #commentform > p[class*=-url] label {
-  font-size: 0.83rem;
-}
-#comments .comment-form-cookies-consent label {
-  font-size: 0.83rem;
-  text-transform: unset;
-  font-weight: 500;
-  margin-left: 6px;
-}
-
 #colophon {
   font-size: 0.83rem;
 }
@@ -676,11 +520,10 @@ html body #page {
 #colophon .fat-footer .fat-footer-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: clamp(2rem, 3.5vw, 2.5rem) clamp(2rem, 3.5vw, 4rem);
 }
 @media all and (min-width: 760px) {
   #colophon .fat-footer .fat-footer-grid {
-    gap: 2.5rem 4rem;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -690,7 +533,7 @@ html body #page {
   }
 }
 #colophon .fat-footer .fat-footer-grid .footer-list-title {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   font-size: 0.83rem;
   font-weight: 900;
@@ -718,7 +561,7 @@ html body #page {
 .button,
 button,
 [type=submit] {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   background-color: #f54952;
   border: 2px solid #f54952;
@@ -889,7 +732,7 @@ textarea {
 }
 
 form label {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
 }
 
@@ -1013,7 +856,7 @@ form label {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
 #masthead .screen-reader-text {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   background-color: #fff0f1;
   text-decoration: underline;
@@ -1052,7 +895,7 @@ form label {
   margin: 0;
 }
 #masthead .site-header .site-branding .site-title {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   display: inline-block;
   margin: 0;
@@ -1137,7 +980,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6,
 .archive .page-header-title span {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   color: #341671;
   display: block;
@@ -1674,23 +1517,27 @@ figure.frame img {
 }
 
 #site-navigation .menu-toggle {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   background: none;
   border: 0;
   cursor: pointer;
-  font-size: 0.88rem;
+  font-size: 0.83rem;
   padding: 0;
   position: absolute;
-  right: 2rem;
-  top: 1.2rem;
   transition: all 0.3s;
   border-radius: 0;
+  text-transform: uppercase;
+}
+@media all and (max-width: 979.98px) {
+  #site-navigation .menu-toggle {
+    right: clamp(2rem, 5vw, 4.5rem);
+    top: clamp(1rem, 2.5vw, 1.2rem);
+  }
 }
 @media all and (min-width: 980px) {
   #site-navigation .menu-toggle {
     display: none;
-    right: 4.5rem;
   }
 }
 #site-navigation #primary-menu {
@@ -1820,7 +1667,7 @@ figure.frame img {
 }
 .posts-navigation .nav-links .nav-previous a,
 .posts-navigation .nav-links .nav-next a {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   color: #341671;
   font-size: 0.88rem;
@@ -1864,7 +1711,7 @@ figure.frame img {
 }
 .post-navigation .nav-links .nav-previous .nav-subtitle,
 .post-navigation .nav-links .nav-next .nav-subtitle {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   color: #341671;
   display: block;
@@ -2349,25 +2196,12 @@ template {
 .small-cta-section p {
   font-size: 0.88rem;
 }
-@media all and (min-width: 980px) {
-  .small-cta-section p:has(img) {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
 .small-cta-section p img {
-  display: none;
   margin-right: 0.5rem;
   height: auto;
   width: 1rem;
+  vertical-align: text-bottom;
 }
-@media all and (min-width: 980px) {
-  .small-cta-section p img {
-    display: inline-block;
-  }
-}
-
 html {
   font-size: 18px;
   font-weight: 500;
@@ -2376,14 +2210,10 @@ html {
 
 .history-grid {
   display: grid;
-  gap: 2.5rem;
+  gap: clamp(2.5rem, 5.5vw, 5rem);
   grid-template-columns: 1fr;
 }
-@media (min-width: 840px) {
-  .history-grid {
-    gap: 3.5rem;
-    grid-template-columns: 3fr 4fr;
-  }
+@media all and (min-width: 840px) {
   .history-grid .history-grid-content {
     order: 2;
   }
@@ -2391,60 +2221,67 @@ html {
     order: 1;
   }
 }
-@media (min-width: 1200px) {
+@media all and (min-width: 840px) and (max-width: 1199.98px) {
   .history-grid {
-    gap: 5rem;
-    grid-template-columns: 3fr 4.5fr;
+    grid-template-columns: 3fr 4.7fr;
   }
 }
-@media (min-width: 840px) {
-  .history-grid .history-grid-media-inner {
-    padding: 0 3rem 3rem;
+@media all and (min-width: 1200px) {
+  .history-grid {
+    grid-template-columns: 4fr 5fr;
   }
 }
-.history-grid .history-grid-media-inner .history-image {
-  align-items: center;
-  display: flex;
+.history-grid .history-grid-media-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 2.5vw, 1.5rem);
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+@media all and (min-width: 980px) {
+  .history-grid .history-grid-media-inner {
+    grid-template-columns: 2fr 3.5fr;
+  }
+}
+@media all and (min-width: 1200px) {
+  .history-grid .history-grid-media-inner {
+    grid-template-columns: 2fr 2.5fr;
+  }
 }
 .history-grid .history-grid-media-inner .history-image img {
   border-radius: 50%;
   height: auto;
-  margin-bottom: 1rem;
-  width: 160px;
+  width: clamp(160px, 13vw, 240px);
 }
-.history-grid .history-grid-media-inner .sean-label {
-  text-align: center;
-  margin-bottom: 1.2rem;
+.history-grid .history-grid-media-inner .history-media-content .sean-label {
+  margin-bottom: 0.5rem;
 }
-.history-grid .history-grid-media-inner .sean-label .name,
-.history-grid .history-grid-media-inner .sean-label .title,
-.history-grid .history-grid-media-inner .sean-label .education {
+.history-grid .history-grid-media-inner .history-media-content .sean-label .name,
+.history-grid .history-grid-media-inner .history-media-content .sean-label .title,
+.history-grid .history-grid-media-inner .history-media-content .sean-label .education {
   display: block;
 }
-.history-grid .history-grid-media-inner .sean-label .name {
+.history-grid .history-grid-media-inner .history-media-content .sean-label .name {
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+}
+.history-grid .history-grid-media-inner .history-media-content .sean-label .title,
+.history-grid .history-grid-media-inner .history-media-content .sean-label .education {
+  font-size: clamp(0.75rem, 1.2vw, 0.88rem);
   font-weight: 600;
 }
-.history-grid .history-grid-media-inner .sean-label .title,
-.history-grid .history-grid-media-inner .sean-label .education {
-  font-size: 0.83rem;
-}
-.history-grid .history-grid-media-inner .link-grid {
-  align-items: center;
+.history-grid .history-grid-media-inner .history-media-content .link-grid {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
+  gap: 0.88rem;
 }
-.history-grid .history-grid-media-inner .link-grid [class*=-icon] img {
-  width: 27px;
+.history-grid .history-grid-media-inner .history-media-content .link-grid [class*=-icon] img {
+  width: 22.5px;
 }
-.history-grid .history-grid-media-inner .link-grid [class*=-icon] img:active, .history-grid .history-grid-media-inner .link-grid [class*=-icon] img:focus, .history-grid .history-grid-media-inner .link-grid [class*=-icon] img:hover {
+.history-grid .history-grid-media-inner .history-media-content .link-grid [class*=-icon] img:active, .history-grid .history-grid-media-inner .history-media-content .link-grid [class*=-icon] img:focus, .history-grid .history-grid-media-inner .history-media-content .link-grid [class*=-icon] img:hover {
   opacity: 0.7;
 }
-.history-grid .history-grid-media-inner p:last-child {
+.history-grid .history-grid-media-inner .history-media-content p:last-child {
   padding: 1rem 0 0;
-  text-align: center;
 }
 
 .archive:not(.post-type-archive) .page-header .page-header-title {
@@ -2496,12 +2333,11 @@ html {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 4rem;
+  margin-bottom: var(--space-medium);
 }
 @media all and (min-width: 980px) {
   .page-brand-assets .colors-grid {
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 5rem;
   }
 }
 .page-brand-assets .colors-grid > [class*=color-] {
@@ -2539,7 +2375,7 @@ html {
   background-color: #f8f5fc;
 }
 .page-brand-assets .colors-grid > [class*=color-] span {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   color: #f8f5fc;
 }
@@ -2550,12 +2386,11 @@ html {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 3fr 1fr;
-  margin-bottom: 4rem;
+  margin-bottom: var(--space-medium);
 }
 @media all and (min-width: 980px) {
   .page-brand-assets .logos-grid {
     grid-template-columns: 3fr 2fr 3fr 2fr;
-    margin-bottom: 5rem;
   }
 }
 @media all and (min-width: 1200px) {
@@ -2577,28 +2412,17 @@ html {
   max-width: 220px;
 }
 .page-brand-assets .logos-grid .logomark {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-@media all and (min-width: 980px) {
-  .page-brand-assets .logos-grid .logomark {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+  padding-left: clamp(1.25rem, 3vw, 2rem);
+  padding-right: clamp(1.25rem, 3vw, 2rem);
 }
 .page-brand-assets .logos-grid .logomark img {
-  max-height: 47px;
-}
-@media all and (min-width: 1200px) {
-  .page-brand-assets .logos-grid .logomark img {
-    max-height: 63px;
-  }
+  max-height: clamp(2.5rem, 4.5vw, 3.5rem);
 }
 .page-brand-assets .brand-name-grid {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr;
-  margin-bottom: 4rem;
+  margin-bottom: var(--space-medium);
 }
 @media all and (min-width: 600px) {
   .page-brand-assets .brand-name-grid {
@@ -2608,30 +2432,19 @@ html {
 @media all and (min-width: 1200px) {
   .page-brand-assets .brand-name-grid {
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 5rem;
   }
 }
 .page-brand-assets .brand-name-grid .brand-name-example {
   border-radius: 5px;
-  padding: 1rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
   text-align: center;
 }
-@media all and (min-width: 980px) {
-  .page-brand-assets .brand-name-grid .brand-name-example {
-    padding: 1.5rem;
-  }
-}
 .page-brand-assets .brand-name-grid .brand-name-example .brand-name {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   color: #341671;
   display: block;
-  font-size: 1.25rem;
-}
-@media all and (min-width: 1200px) {
-  .page-brand-assets .brand-name-grid .brand-name-example .brand-name {
-    font-size: 1.5rem;
-  }
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
 }
 .page-brand-assets .brand-name-grid .brand-name-example .example-status {
   color: #d24949;
@@ -2889,7 +2702,7 @@ html {
   max-width: 650px;
 }
 .service-section .service-content-grid .service-description .section-title {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   color: #341671;
   font-weight: 800;
@@ -2987,7 +2800,7 @@ html {
   background: #f8f5fc;
 }
 .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-header .custom-development-example-accordion-item-title {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   background: transparent url("./assets/images/icons/circle-check-light-full.svg") no-repeat 1.5rem center;
   background-size: 1rem 1rem;
@@ -3214,7 +3027,7 @@ html {
 }
 
 .page-why-wordpress.has-dark-header .page-header-description em.semi-heavy {
-  font-family: "Raleway", "Montserrat", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   font-style: normal;
   color: #fff;

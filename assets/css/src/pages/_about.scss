@@ -1,11 +1,9 @@
 .history-grid {
 	display: grid;
-	gap: 2.5rem;
+	gap: clamp(2.5rem, 5.5vw, 5rem);
 	grid-template-columns: 1fr;
 
-	@media (min-width: 840px) {
-		gap: 3.5rem;
-		grid-template-columns: 3fr 4fr;
+	@media all and (min-width: 840px) {
 
 		.history-grid-content {
 			order: 2;
@@ -16,76 +14,83 @@
 		}
 	}
 
-	@media (min-width: 1200px) {
-		gap: 5rem;
-		grid-template-columns: 3fr 4.5fr;
+	@media all and (min-width: 840px) and (max-width: 1199.98px) {
+		grid-template-columns: 3fr 4.7fr;
+	}
+
+	@media all and (min-width: 1200px) {
+		grid-template-columns: 4fr 5fr;
 	}
 
 	.history-grid-media-inner {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: clamp(1rem, 2.5vw, 1.5rem);
+		flex-direction: column;
+		align-items: center;
 
-		@media (min-width: 840px) {
-			padding: 0 3rem 3rem;
+		@media all and (min-width: 980px) {
+			grid-template-columns: 2fr 3.5fr;
+		}
+
+		@media all and (min-width: 1200px) {
+			grid-template-columns: 2fr 2.5fr;
 		}
 
 		.history-image {
-			align-items: center;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
 
 			img {
 				border-radius: 50%;
 				height: auto;
-				margin-bottom: 1rem;
-				width: 160px;
+				width: clamp(160px, 13vw, 240px);
 			}
 		}
 
-		.sean-label {
-			text-align: center;
-			margin-bottom: 1.2rem;
+		.history-media-content {
 
-			.name,
-			.title,
-			.education {
-				display: block;
+			.sean-label {
+				margin-bottom: .5rem;
+
+				.name,
+				.title,
+				.education {
+					display: block;
+				}
+
+				.name {
+					@include headingFont;
+				}
+
+				.title,
+				.education {
+					font-size: clamp(.75rem, 1.2vw, .88rem);
+					font-weight: 600;
+				}
 			}
 
-			.name {
-				font-weight: 600;
-			}
+			.link-grid {
+				display: flex;
+				gap: .88rem;
 
-			.title,
-			.education {
-				font-size: .83rem;
-			}
-		}
+				[class*="-icon"] {
 
-		.link-grid {
-			align-items: center;
-			display: flex;
-			gap: 1rem;
-			justify-content: center;
+					img {
+						width: 22.5px;
 
-			[class*="-icon"] {
-
-				img {
-					width: 27px;
-
-					&:active,
-					&:focus,
-					&:hover {
-						opacity: .7;
+						&:active,
+						&:focus,
+						&:hover {
+							opacity: .7;
+						}
 					}
 				}
 			}
-		}
 
-		p {
+			p {
 
-			&:last-child {
-				padding: 1rem 0 0;
-				text-align: center;
+				&:last-child {
+					padding: 1rem 0 0;
+				}
 			}
 		}
 	}

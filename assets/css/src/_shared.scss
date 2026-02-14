@@ -10,13 +10,6 @@
 
 	a {
 		color: $body;
-		text-decoration: underline;
-
-		&:active,
-		&:focus,
-		&:hover {
-			text-decoration: none;
-		}
 	}
 }
 

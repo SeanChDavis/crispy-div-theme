@@ -6,7 +6,6 @@ $color5: #ae2d68;
 $color6: #f54952;
 $soft_orange: #fff0f1;
 $gray: #f8f5fc;
-//$gray_text: #8b829d;
 $gray_text: #756c86;
 $black: #161616;
 
@@ -47,9 +46,8 @@ strong {
 }
 
 .background-purple,
-.background-pink,
-.background-orange,
-.background-black {
+.background-purple-darker,
+.background-pink {
 
 	h1, .h1,
 	h2, .h2,
@@ -67,7 +65,28 @@ strong {
 	}
 }
 
-.background-purple {
+.background-purple,
+.background-purple-darker {
+	background-color: $color2;
+	color: $body_over_purple;
+
+	.subdued-links {
+
+		a {
+			color: $body_over_purple;
+		}
+	}
+
+	.grid-item {
+		border-color: $border_over_purple !important;
+	}
+
+	a {
+
+		&:focus-visible {
+			outline-color: #fff;
+		}
+	}
 
 	input[type="text"],
 	input[type="email"],
@@ -90,40 +109,18 @@ strong {
 	}
 }
 
-.background-purple {
-	background-color: $color2;
-	color: $body_over_purple;
-
-	.subdued-links a {
-		color: $body_over_purple;
-	}
-
-	.grid-item {
-		border-color: $border_over_purple !important;
-	}
-
-	a {
-
-		&:focus-visible {
-			outline-color: #fff;
-		}
-	}
+.background-purple-darker {
+	background-color: $color3;
 }
 
 .background-pink {
 	background-color: $color5;
 	color: $body_over_pink;
 
-	.subdued-links a {
-		color: #fff;
-	}
+	.subdued-links {
 
-	.element-lead-icon {
-
-		&.colored {
-			background: none;
+		a {
 			color: $body_over_pink;
-			-webkit-text-fill-color: $body_over_pink;
 		}
 	}
 
@@ -152,57 +149,5 @@ strong {
 		&:focus-visible {
 			outline-color: #fff;
 		}
-	}
-}
-
-.background-orange {
-	background-color: $color6;
-	color: $body_over_orange;
-
-	.subdued-links a {
-		color: #fff;
-	}
-
-	.element-lead-icon {
-
-		&.colored {
-			background: none;
-			color: $body_over_orange;
-			-webkit-text-fill-color: $body_over_orange;
-		}
-	}
-}
-
-.background-black {
-	background-color: $black;
-	color: #dfdfdf;
-
-	.subdued-links a {
-		color: #dfdfdf;
-	}
-
-	.element-lead-icon {
-
-		&.colored {
-			background: none;
-			color: #dfdfdf;
-			-webkit-text-fill-color: #dfdfdf;
-		}
-	}
-}
-
-.body-over-purple {
-	color: $body_over_purple;
-
-	a,
-	.subdued-links a {
-		color: $body_over_purple;
-	}
-}
-
-.body-over-purple {
-
-	strong {
-		color: #fff;
 	}
 }

@@ -13,8 +13,8 @@ crispydiv_page_header(array(
 ?>
 
 	<main id="site-content">
-		<div class="small-cta-section element-spacing tiny background-pink">
-			<p><img src="<?php echo THEME_IMAGES . 'icons/circle-info-light-full.svg'; ?>" alt="">Crispy Div builds with self-hosted WordPress (<em>wordpress.org</em>), not WordPress as a service (<em>wordpress.com</em>).</p>
+		<div class="small-cta-section element-spacing tiny background-purple-darker">
+			<p><img src="<?php echo THEME_IMAGES . 'icons/circle-info-solid-full.svg'; ?>" alt="">Crispy Div builds with self-hosted WordPress (<em>wordpress.org</em>), not WordPress as a service (<em>wordpress.com</em>).</p>
 		</div>
 		<section class="why-wordpress-section">
 			<div class="section-heading element-spacing top-semi-heavy background-gray">
@@ -27,7 +27,7 @@ crispydiv_page_header(array(
 							<?php
 							crispydiv_button(
 									array(
-											'text'        => 'See Latest WordPress Release',
+											'text'        => 'See Latest Release',
 											'url'         => 'https://wordpress.org/download/',
 											'classes'     => array('button', 'purple'),
 											'target_self' => false

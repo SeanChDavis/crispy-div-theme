@@ -13,8 +13,8 @@ crispydiv_page_header( array(
 ?>
 
 	<main id="site-content" class="contact-form-section site-main">
-		<div class="small-cta-section element-spacing tiny background-gray">
-			<p>Looking for a general chat with Sean? Try reaching out on his <a href="https://seanchdavis.com">personal website</a>.</p>
+		<div class="small-cta-section element-spacing tiny background-purple-darker">
+			<p><img src="<?php echo THEME_IMAGES . 'icons/circle-info-solid-full.svg'; ?>" alt="">Looking for a general chat with Sean? Try reaching out on his <a href="https://seanchdavis.com">personal website</a>.</p>
 		</div>
 		<div class="inner smedium">
 			<div class="contact-form-grid">

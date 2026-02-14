@@ -12,34 +12,36 @@ crispydiv_page_header( array(
 ?>
 
 	<main id="site-content">
-		<div class="small-cta-section element-spacing tiny background-pink">
-			<p><img src="<?php echo THEME_IMAGES . 'icons/circle-info-light-full.svg'; ?>" alt="">Crispy Div is a registered business in the Netherlands but can accept clients from anywhere in the world.</p>
+		<div class="small-cta-section element-spacing tiny background-purple-darker">
+			<p><img src="<?php echo THEME_IMAGES . 'icons/circle-info-solid-full.svg'; ?>" alt="">Crispy Div is a registered business in the Netherlands but can accept clients from anywhere in the world.</p>
 		</div>
-		<section class="history-section background-gray">
+		<section class="history-section border-bottom-over-white">
 			<div class="inner smedium">
 				<div class="history-grid">
-					<div class="history-grid-content">
-						<p>Crispy Div is the brainchild of <a class="homepage-icon" href="https://seanchdavis.com/" title="Sean Davis Homepage" target="_blank">Sean Davis</a>, a web developer and designer from St. Louis, Missouri now living in Rotterdam, Netherlands. Sean started building websites in 2007 with a heavy focus on WordPress beginning in 2008 (<a href="https://profiles.wordpress.org/sdavis2702/" target="_blank">Sean's WordPress profile</a>).</p>
-						<p>As the first employee and eventual Partner at <a href="https://sandhillsdev.com/about/" target="_blank">Sandhills Development</a>, Sean co-owned and helped design, develop, and maintain several popular WordPress plugins such as <span class="semi-heavy">Easy Digital Downloads</span>, <span class="semi-heavy">AffiliateWP</span>, and <span class="semi-heavy">Restrict Content Pro</span> before acquisition.</p>
-						<p>Before his 7+ years at Sandhills, Sean developed a WordPress theme framework called <span class="semi-heavy">Volatyl</span> along with many other WordPress themes and plugins. Sean has also contributed to the <span class="semi-heavy">Twenty Sixteen</span> core WordPress theme, the popular WordPress starter theme <span class="semi-heavy">Underscores (_s)</span>, and <span class="semi-heavy">WordPress core</span> itself.</p>
+					<div class="history-grid-content subdued-links">
+						<span class="h5">Sean's Quick Story</span>
+						<p class="semi-heavy">Crispy Div is the brainchild of <a class="homepage-icon" href="https://seanchdavis.com/" title="Sean Davis Homepage" target="_blank">Sean Davis</a>, a web developer and designer from St. Louis, Missouri now living in 📍 Rotterdam, Netherlands.</p>
+						<p>Sean started building websites in 2007 with a heavy focus on WordPress beginning in 2008 (<a href="https://profiles.wordpress.org/sdavis2702/" target="_blank">Sean's WordPress profile</a>). As the first employee and eventual Partner at <a href="https://sandhillsdev.com/about/" target="_blank">Sandhills Development</a>, Sean co-owned and helped design, develop, and maintain several popular WordPress plugins such as Easy Digital Downloads and AffiliateWP before acquisition.</p>
+						<p>Before 7+ years at Sandhills, Sean developed a WordPress theme framework called Volatyl along with other WordPress themes and plugins. Sean has also contributed to the Twenty Sixteen core WordPress theme, the popular WordPress starter theme Underscores (_s), and WordPress core.</p>
 					</div>
 					<div class="history-grid-media">
 						<div class="history-grid-media-inner">
 							<div class="history-image">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sean-davis-headshot.png" alt="Sean Davis" />
 							</div>
-							<p class="sean-label"><span class="name" aria-hidden="true">Sean Davis</span><span class="title">Web Developer & Designer</span><span class="education"><abbr title="Bachelor of Science">BSc</abbr> Information Systems</span></p>
-							<div class="link-grid">
-								<a class="homepage-icon" href="https://seanchdavis.com/" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/circle-user-sharp-solid-full.svg'; ?>" alt="Sean's Homepage"></a><a class="github-icon" href="https://github.com/SeanChDavis" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/github-brands-solid-full.svg'; ?>" alt="Sean's GitHub"></a><a class="wordpress-icon" href="https://profiles.wordpress.org/sdavis2702/" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/wordpress-brands-solid-full.svg'; ?>" alt="Sean's WordPress"></a>
+							<div class="history-media-content">
+								<p class="sean-label"><span class="name" aria-hidden="true">Sean Davis</span><span class="title">Web Developer</span><span class="education"><abbr title="Bachelor of Science">BSc</abbr> Information Systems</span></p>
+								<div class="link-grid">
+									<a class="homepage-icon" href="https://seanchdavis.com/" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/circle-user-sharp-solid-full.svg'; ?>" alt="Sean's Homepage"></a><a class="github-icon" href="https://github.com/SeanChDavis" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/github-brands-solid-full.svg'; ?>" alt="Sean's GitHub"></a><a class="wordpress-icon" href="https://profiles.wordpress.org/sdavis2702/" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/wordpress-brands-solid-full.svg'; ?>" alt="Sean's WordPress"></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
 		<section class="who-works">
-			<div class="section-heading element-spacing top-semi-heavy corner-accent black-orange">
+			<div class="section-heading element-spacing small corner-accent black-orange">
 				<h3 class="section-title h3">Working Together</h3>
 				<div class="section-description">
 					<p>Sean is the sole developer and designer behind Crispy Div. However, a network of talented individuals (curated by Sean) may come together to work on any given project. <strong>It all depends on the scope and needed resources.</strong> If we're a good fit for each other, here's generally how things go:</p>
