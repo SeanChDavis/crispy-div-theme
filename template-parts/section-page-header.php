@@ -13,7 +13,7 @@ if ( get_field( 'page_header_hide', get_the_ID() ) ) {
 if ( isset( $args ) ) {
 
     $args = wp_parse_args( $args, array(
-        'bg-color' => 'background-white',
+        'bg-color' => 'background-gray',
         'corner-accent-color' => 'black-orange',
         'title' => get_the_title( get_the_ID() ),
         'title-class' => 'h3',

@@ -12,4 +12,4 @@
         </div>
     </div>
 </section>
-<?php echo get_crispydiv_services_grid( true, true, array( 'background-white' ) ); ?>
+<?php echo get_crispydiv_services_grid( true, true, array( 'three-col', 'background-white' ) ); ?>

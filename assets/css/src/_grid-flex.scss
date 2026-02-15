@@ -53,6 +53,16 @@
 				border-right: 1px dashed $border_over_white;
 			}
 		}
+
+		.grid-item {
+
+			.grid-item-content {
+
+				.grid-item-description {
+					font-size: .94rem;
+				}
+			}
+		}
 	}
 
 	.grid-item {
@@ -109,7 +119,6 @@
 
 			.grid-item-description {
 				flex: 1 0 auto;
-				font-size: .94rem;
 
 				&:not(:last-child) {
 					margin-bottom: 1.5rem;

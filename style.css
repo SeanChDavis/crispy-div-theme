@@ -86,7 +86,9 @@ strong {
   background-color: #341671;
   color: #cfc4e6;
 }
+.background-purple .subdued-title,
 .background-purple .subdued-links a,
+.background-purple-darker .subdued-title,
 .background-purple-darker .subdued-links a {
   color: #cfc4e6;
 }
@@ -176,6 +178,7 @@ strong {
   background-color: #ae2d68;
   color: #fae1ee;
 }
+.background-pink .subdued-title,
 .background-pink .subdued-links a {
   color: #fae1ee;
 }
@@ -243,10 +246,6 @@ html body #page {
   --space-smedium: clamp(2.5rem, 5.5vw, 4.25rem);
   --space-medium: clamp(2.75rem, 6.25vw, 4.75rem);
   --space-large: clamp(3rem, 10vw, 7.5rem);
-}
-
-.section-title {
-  font-size: clamp(2.5rem, 5vw, 5rem);
 }
 
 .section-description {
@@ -690,7 +689,6 @@ select {
   border: 2px solid #341671;
   border-radius: 4px;
   box-sizing: border-box;
-  font-weight: 500 !important;
   padding: 12px 14px;
   width: 100%;
 }
@@ -717,6 +715,7 @@ input[type=password]:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
   background: #fff0f1 !important;
+  color: #161616;
   outline: 3px dashed #f54952;
   outline-offset: 2px;
 }
@@ -728,10 +727,6 @@ select {
   background-size: 24px 24px;
   border: 2px solid #341671;
   padding-right: 40px;
-}
-
-textarea {
-  font-weight: 400;
 }
 
 form label {
@@ -786,6 +781,9 @@ form label {
     border-right: 1px dashed rgba(0, 0, 0, 0.1);
   }
 }
+.general-grid.three-col .grid-item .grid-item-content .grid-item-description {
+  font-size: 0.94rem;
+}
 .general-grid .grid-item {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   padding: clamp(2rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
@@ -833,7 +831,6 @@ form label {
 }
 .general-grid .grid-item .grid-item-content .grid-item-description {
   flex: 1 0 auto;
-  font-size: 0.94rem;
 }
 .general-grid .grid-item .grid-item-content .grid-item-description:not(:last-child) {
   margin-bottom: 1.5rem;
@@ -1219,9 +1216,12 @@ figure.frame img {
   border-radius: 0 0 11px 11px;
   font-size: 15px;
 }
-.browser .mock_viewport .h1, .browser .mock_viewport .h2, .browser .mock_viewport .h3, .browser .mock_viewport .h4, .browser .mock_viewport .h5, .browser .mock_viewport .h6 {
+.browser .mock_viewport .h1m, .browser .mock_viewport .h2m, .browser .mock_viewport .h3m, .browser .mock_viewport .h4m, .browser .mock_viewport .h5m, .browser .mock_viewport .h6m {
   color: #fff;
+  display: block;
   font-family: "Source Serif 4";
+  line-height: 1.2;
+  margin: 0 0 1.25rem;
 }
 .browser .mock_viewport .mock_header {
   background-color: #2a0c4e;
@@ -1250,7 +1250,7 @@ figure.frame img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: clamp(0.5rem, 3vw, 1.5rem);
 }
 .browser .mock_viewport .mock_header .mock_header-top .mock_branding .mock_logo {
   border-radius: 5px;
@@ -1266,19 +1266,15 @@ figure.frame img {
 }
 .browser .mock_viewport .mock_header .mock_hero {
   margin: 0 auto;
-  padding: 1.5rem 0 1rem;
-}
-@media all and (min-width: 540px) {
-  .browser .mock_viewport .mock_header .mock_hero {
-    text-align: center;
-  }
+  padding: clamp(1rem, 2.25vw, 1.5rem) 0 1rem;
+  text-align: center;
 }
 .browser .mock_viewport .mock_header .mock_hero .mock_hero-title,
 .browser .mock_viewport .mock_header .mock_hero .mock_hero-subtitle {
   text-shadow: 1px 1px 13px rgba(0, 0, 0, 0.7);
 }
 .browser .mock_viewport .mock_header .mock_hero .mock_hero-title {
-  font-size: 26px;
+  font-size: clamp(16px, 2.5vw, 26px);
   margin-bottom: 0.7rem;
 }
 @media all and (min-width: 540px) {
@@ -1287,7 +1283,7 @@ figure.frame img {
   }
 }
 .browser .mock_viewport .mock_header .mock_hero .mock_hero-subtitle {
-  font-size: 13px;
+  font-size: clamp(11px, 1.5vw, 13px);
   max-width: 420px;
   margin: 0 auto 1rem;
 }
@@ -1315,11 +1311,11 @@ figure.frame img {
   background-color: #102541;
   color: #fff;
   padding: 0.6rem 1.2rem;
+  text-align: center;
 }
 @media all and (min-width: 540px) {
   .browser .mock_viewport .mock_columns {
     padding: 0.6rem 2rem;
-    text-align: center;
   }
 }
 @media all and (min-width: 980px) {
@@ -1331,9 +1327,9 @@ figure.frame img {
   column-gap: 2rem;
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0rem, 1.5vw, 1rem);
 }
-@media all and (min-width: 760px) {
+@media all and (min-width: 620px) {
   .browser .mock_viewport .mock_columns .mock_columns-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -1341,7 +1337,9 @@ figure.frame img {
 .browser .mock_viewport .mock_columns .mock_columns-grid .mock_column {
   background-color: transparent;
   border-radius: 10px;
-  padding: 1rem 0.5rem;
+  padding: clamp(0.5rem, 1.5vw, 1rem) 0.5rem;
+  max-width: 200px;
+  margin: 0 auto;
 }
 .browser .mock_viewport .mock_columns .mock_columns-grid .mock_column img {
   color: #a0562a;
@@ -1349,7 +1347,7 @@ figure.frame img {
   margin-bottom: 0.25rem;
 }
 .browser .mock_viewport .mock_columns .mock_columns-grid .mock_column .mock_column-title {
-  font-size: 15px;
+  font-size: clamp(12px, 2vw, 15px);
   margin-bottom: 8px;
 }
 .browser .mock_viewport .mock_columns .mock_columns-grid .mock_column .mock_column-description {
@@ -1408,17 +1406,7 @@ figure.frame img {
   display: flex;
   column-gap: 8.5%;
   flex-wrap: wrap;
-  padding: 2rem 1.2rem 0;
-}
-@media all and (min-width: 540px) {
-  .browser .mock_viewport .mock_content-area .mock_content-area-grid {
-    padding: 2rem 2rem 0;
-  }
-}
-@media all and (min-width: 980px) {
-  .browser .mock_viewport .mock_content-area .mock_content-area-grid {
-    padding: 2.5rem 3rem 0;
-  }
+  padding: clamp(1rem, 3vw, 2.5rem) clamp(1.2rem, 4vw, 3rem) 0;
 }
 .browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_content {
   font-size: 10px;
@@ -1433,24 +1421,24 @@ figure.frame img {
     width: 54.5%;
   }
 }
-.browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_content .h5 {
+.browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_content .h5m {
   color: #161616;
-  font-size: 18px;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
   line-height: 1.5;
-  margin-bottom: 12px;
+  margin-bottom: clamp(10px, 0.8vw, 12px);
   max-width: 80%;
 }
 @media all and (min-width: 480px) {
-  .browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_content .h5 {
+  .browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_content .h5m {
     display: block;
     max-width: unset;
   }
 }
-.browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_content .h5 span {
+.browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_content .h5m span {
   display: inline;
 }
 @media all and (min-width: 540px) {
-  .browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_content .h5 span {
+  .browser .mock_viewport .mock_content-area .mock_content-area-grid .mock_content .h5m span {
     display: block;
   }
 }
@@ -2044,10 +2032,6 @@ template {
   display: none;
 }
 
-.has-light-header .page-header {
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-}
-
 .page-header .page-header-title:last-child,
 .page-header .entry-title:last-child,
 .entry-header .page-header-title:last-child,
@@ -2472,7 +2456,6 @@ html {
   margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
 }
 .page-contact .contact-form-grid .field label {
-  color: #341671;
   font-size: 1.11rem;
   margin-bottom: 1rem;
 }
@@ -2708,14 +2691,16 @@ html {
   font-family: "Raleway", system-ui, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   color: #341671;
+  display: block;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0.5rem, 1.5vw, 0.8rem);
   font-size: 1.5rem;
 }
 .service-section .service-content-grid .service-description .section-title .wp-title-prefix {
   color: #ae2d68;
   display: block;
   font-size: 1.11rem;
+  line-height: 1;
 }
 .service-section .service-content-grid .service-description p + .button {
   margin-top: 1.25rem;

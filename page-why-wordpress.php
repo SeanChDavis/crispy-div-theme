@@ -14,27 +14,26 @@ crispydiv_page_header(array(
 
 	<main id="site-content">
 		<div class="small-cta-section element-spacing tiny background-purple-darker">
-			<p><img src="<?php echo THEME_IMAGES . 'icons/circle-info-solid-full.svg'; ?>" alt="">Crispy Div builds with self-hosted WordPress (<em>wordpress.org</em>), not WordPress as a service (<em>wordpress.com</em>).</p>
+			<p>
+				<img src="<?php echo THEME_IMAGES.'icons/circle-info-solid-full.svg'; ?>" alt="">Crispy Div builds with self-hosted WordPress (<em>wordpress.org</em>), not WordPress as a service (<em>wordpress.com</em>).
+			</p>
 		</div>
 		<section class="why-wordpress-section">
 			<div class="section-heading element-spacing top-semi-heavy background-gray">
-				<h2 class="section-title h3">Let's Talk Benefits</h2>
+				<h3 class="section-title">Let's Talk Benefits</h3>
 				<div class="section-description">
 					<p>There are several reasons why WordPress is a great choice for your project. Many of those reasons become clearer over time as you use the platform. Remember, you can scale if you have a solid foundation.</p>
 					<div class="button-container">
-						<div>
-							<span class="subdued-title">Explore WordPress: </span>
+						<p><span class="subdued-title">Explore WordPress: </span>
 							<?php
-							crispydiv_button(
-									array(
-											'text'        => 'See Latest Release',
-											'url'         => 'https://wordpress.org/download/',
-											'classes'     => array('button', 'purple'),
-											'target_self' => false
-									)
-							);
+							crispydiv_button(array(
+									'text'        => 'See Latest Release',
+									'url'         => 'https://wordpress.org/download/',
+									'classes'     => array('button', 'purple'),
+									'target_self' => false
+							));
 							?>
-						</div>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -42,10 +41,10 @@ crispydiv_page_header(array(
 				<div class="grid-item">
 					<div class="grid-item-content">
 						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Ownership & Responsibility',
+						get_template_part('template-parts/element', 'grid-item-header', array(
+								'title'    => 'Ownership & Responsibility',
 								'img_file' => 'circle-1-light-full',
-						) );
+						));
 						?>
 						<p>When you own a website using the WordPress script from <em>wordpress.org</em>,
 							<strong>everything about the website belongs to you</strong>, including the data. This stands in stark contrast to many other modern platforms. You maintain complete control.
@@ -57,10 +56,10 @@ crispydiv_page_header(array(
 				<div class="grid-item">
 					<div class="grid-item-content">
 						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Flexibility & Customization',
+						get_template_part('template-parts/element', 'grid-item-header', array(
+								'title'    => 'Flexibility & Customization',
 								'img_file' => 'circle-2-light-full',
-						) );
+						));
 						?>
 						<p>All WordPress websites look quite similar after installation. Where you go from there is up to you. WordPress
 							<a href="https://wordpress.org/plugins/" target="_blank">Plugins</a> are snippets of code that affect the functionality of your website. WordPress
@@ -74,10 +73,10 @@ crispydiv_page_header(array(
 				<div class="grid-item">
 					<div class="grid-item-content">
 						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Selective Scalability',
+						get_template_part('template-parts/element', 'grid-item-header', array(
+								'title'    => 'Selective Scalability',
 								'img_file' => 'circle-3-light-full',
-						) );
+						));
 						?>
 						<p>The beauty of Plugins is that they
 							<strong>add only the functionality that you need</strong> if you choose them wisely. It is simpler to add necessary functionality when you need it than it is to navigate around unneeded functionality that just sits in your admin dashboard.
@@ -89,10 +88,10 @@ crispydiv_page_header(array(
 				<div class="grid-item">
 					<div class="grid-item-content">
 						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Community Activity',
+						get_template_part('template-parts/element', 'grid-item-header', array(
+								'title'    => 'Community Activity',
 								'img_file' => 'circle-4-light-full',
-						) );
+						));
 						?>
 						<p>Perhaps the best part about WordPress is its
 							<strong>community of enthusiastic users and developers</strong>. Everything from bustling, unofficial support forums to million-dollar businesses has been built within the WordPress ecosystem. It's a world of its own.
@@ -116,30 +115,24 @@ crispydiv_page_header(array(
 						</p>
 						<div class="cd-builds">
 							<?php
-							crispydiv_button(
-									array(
-											'text'        => 'PageMotor',
-											'url'         => 'https://pm.crispydiv.com/',
-											'classes'     => array('button outline'),
-											'target_self' => false
-									)
-							);
-							crispydiv_button(
-									array(
-											'text'        => 'Astro',
-											'url'         => 'https://astro.crispydiv.com/',
-											'classes'     => array('button outline'),
-											'target_self' => false
-									)
-							);
-							crispydiv_button(
-									array(
-											'text'        => 'React (Personal)',
-											'url'         => 'https://seanchdavis.com/',
-											'classes'     => array('button outline'),
-											'target_self' => false
-									)
-							);
+							crispydiv_button(array(
+									'text'        => 'PageMotor',
+									'url'         => 'https://pm.crispydiv.com/',
+									'classes'     => array('button outline'),
+									'target_self' => false
+							));
+							crispydiv_button(array(
+									'text'        => 'Astro',
+									'url'         => 'https://astro.crispydiv.com/',
+									'classes'     => array('button outline'),
+									'target_self' => false
+							));
+							crispydiv_button(array(
+									'text'        => 'React (Personal)',
+									'url'         => 'https://seanchdavis.com/',
+									'classes'     => array('button outline'),
+									'target_self' => false
+							));
 							?>
 						</div>
 					</div>

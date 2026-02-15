@@ -40,80 +40,47 @@ crispydiv_page_header( array(
 				</div>
 			</div>
 		</section>
-		<section class="who-works">
-			<div class="section-heading element-spacing small corner-accent black-orange">
-				<h3 class="section-title h3">Working Together</h3>
-				<div class="section-description">
-					<p>Sean is the sole developer and designer behind Crispy Div. However, a network of talented individuals (curated by Sean) may come together to work on any given project. <strong>It all depends on the scope and needed resources.</strong> If we're a good fit for each other, here's generally how things go:</p>
-				</div>
-			</div>
+		<section class="how-it-works">
+			<?php
+			get_template_part( 'template-parts/element', 'section-heading', array(
+					'title' => 'Working Together',
+					'description' => 'Sean is the sole developer and designer behind Crispy Div. However, a network of talented individuals (curated by Sean) may come together to work on any given project. <strong>It all depends on the scope and needed resources.</strong> If we\'re a good fit for each other, here\'s generally how things go:',
+					'classes' => 'small corner-accent black-orange'
+			) );
+			?>
 			<div class="general-grid large border-top-over-white">
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => '1. Consult',
-								'img_file' => 'comment-light-full',
-						) );
-						?>
-						<p>Meet to discuss project goals and gather information about your target audience, brand, and any specific functionality that you want to include on the website.</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => '2. Propose',
-								'img_file' => 'presentation-screen-light-full',
-						) );
-						?>
-						<p>Based on information gathered during consultation, you will be presented with a proposal outlining the scope of work, timeline, and cost for the project.</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => '3. Design',
-								'img_file' => 'palette-light-full',
-						) );
-						?>
-						<p>Upon agreement, Crispy Div will start designing. This may include wireframes and mockups to give you an idea of how the website will look and function.</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => '4. Develop',
-								'img_file' => 'code-light-full',
-						) );
-						?>
-						<p>With an approved design, the development phase will begin. This includes technical implementation and testing the website to ensure it is fully functional.</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => '5. Launch',
-								'img_file' => 'rocket-launch-light-full',
-						) );
-						?>
-						<p>After successful design, development, and configuration, we are clear to launch your newly designed website and make it live for the public to enjoy.</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => '6. Maintain',
-								'img_file' => 'screwdriver-wrench-light-full',
-						) );
-						?>
-						<p>If it makes sense for your business, Crispy Div will provide ongoing maintenance and support to ensure that the website stays up to date and is functioning properly.</p>
-					</div>
-				</div>
+				<?php
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => '1. Consult',
+						'description' => 'Meet to discuss project goals and gather information about your target audience, brand, and any specific functionality that you want to include on the website.',
+						'img_file' => 'comment-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => '2. Propose',
+						'description' => 'Based on information gathered during consultation, you will be presented with a proposal outlining the scope of work, timeline, and cost for the project.',
+						'img_file' => 'presentation-screen-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => '3. Design',
+						'description' => 'Upon agreement, Crispy Div will start designing. This may include wireframes and mockups to give you an idea of how the website will look and function.',
+						'img_file' => 'palette-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => '4. Develop',
+						'description' => 'With an approved design, the development phase will begin. This includes technical implementation and testing the website to ensure it is fully functional.',
+						'img_file' => 'code-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => '5. Launch',
+						'description' => 'After successful design, development, and configuration, we are clear to launch your newly designed website and make it live for the public to enjoy.',
+						'img_file' => 'rocket-launch-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => '6. Maintain',
+						'description' => 'If it makes sense for your business, Crispy Div will provide ongoing maintenance and support to ensure that the website stays up to date and is functioning properly.',
+						'img_file' => 'screwdriver-wrench-light-full',
+				) );
+				?>
 			</div>
 		</section>
 	</main>

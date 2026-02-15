@@ -29,36 +29,15 @@ get_header();
 
 	<main id="site-content">
 		<section class="plugin-integration-section">
-			<div class="customization-logos-wrap element-spacing small background-gray">
-				<span class="customizations-title subdued-title">Experienced with your favorite plugins, themes, libraries, and services:</span>
-				<?php
-				$customization_logos = get_customization_logos( array(
-						'easy-digital-downloads',
-						'gravity-forms',
-						'advanced-custom-fields',
-						'searchwp',
-						'facetwp',
-				) );
-				if ( ! empty( $customization_logos ) ) {
-					?>
-					<div class="customizations-grid">
-						<?php foreach ( $customization_logos as $logo ) { ?>
-							<div class="customization-logo">
-								<?php $logo_name = $logo['alias'] ?? $logo['name']; ?>
-								<img class="logo <?php echo str_replace( " ", "-", strtolower( $logo_name ) ); ?>-logo" src="<?php echo THEME_IMAGES . 'logos/' . $logo['image']; ?>" alt="<?php echo $logo['name']; ?>">
-							</div>
-						<?php } ?>
-					</div>
-					<?php
-				}
-				?>
-			</div>
-			<div class="section-heading element-spacing top-semi-heavy corner-accent black-orange">
-				<h2 class="section-title">Plugin Functionality <br class="disappearing-br">Tweaked to Perfection</h2>
-				<div class="section-description">
-					<p>The goal is to transform your WordPress site into an intentionally built tool with seamless plugin integrations. WordPress plugins are not always "one size fits all," or "plug & play." Sometimes you need a bit of customization.</p>
-				</div>
-			</div>
+			<?php
+			get_template_part( 'template-parts/element', 'customization-logos' );
+			get_template_part( 'template-parts/element', 'section-heading', array(
+					'title' => 'Plugin Functionality <br class="disappearing-br">Tweaked to Perfection',
+					'title_size' => 'h2',
+					'description' => 'The goal is to transform your WordPress site into an intentionally built tool with seamless plugin integrations. WordPress plugins are not always "one size fits all," or "plug & play." Sometimes you need a bit of customization.',
+					'classes' => 'top-semi-heavy corner-accent black-orange'
+			) );
+			?>
 			<div class="advanced-custom-fields-highlight element-spacing medium">
 				<div class="acf-grid">
 					<div class="acf-highlight-content">
@@ -90,44 +69,32 @@ get_header();
 		</section>
 
 		<section class="theme-development-section background-purple">
-			<div class="real-data-header element-spacing top-semi-heavy corner-accent top-right white-white">
-				<h2 class="section-title">Theme Building <br class="disappearing-br">Based on Real Data</h2>
-				<p class="subdued-links attribution">According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:</p>
-			</div>
+			<?php
+			get_template_part( 'template-parts/element', 'section-heading', array(
+					'title' => 'Theme Building <br class="disappearing-br">Based on Real Data',
+					'title_size' => 'h2',
+					'description' => 'According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:',
+					'classes' => 'subdued-links attribution top-semi-heavy corner-accent top-right white-white'
+			) );
+			?>
 			<div class="nng-stats-grid general-grid three-col">
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Above the Fold',
-								'img_file' => 'browser-light-full',
-						) );
-						?>
-						<p>Users spend 80% of their time on a website viewing information presented above the fold.</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'The "F" Pattern',
-								'img_file' => 'eye-sharp-light-full',
-						) );
-						?>
-						<p>Users scan content in an "F" pattern: horizontally from the top left, down the left side, and across the middle.</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Skimmable Content',
-								'img_file' => 'align-left-light-full',
-						) );
-						?>
-						<p>Users are more likely to engage with content presented as short paragraphs and clear headings.</p>
-					</div>
-				</div>
+				<?php
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => 'Above the Fold',
+						'description' => 'Users spend 80% of their time on a website viewing information presented above the fold.',
+						'img_file' => 'browser-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => 'The "F" Pattern',
+						'description' => 'Users scan content in an "F" pattern: horizontally from the top left, down the left side, and across the middle.',
+						'img_file' => 'eye-sharp-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => 'Skimmable Content',
+						'description' => 'Users are more likely to engage with content presented as short paragraphs and clear headings.',
+						'img_file' => 'align-left-light-full',
+				) );
+				?>
 			</div>
 			<div class="corner-accent bottom-right white-white">
 				<div class="mock-browser-grid element-spacing smedium">
@@ -151,72 +118,38 @@ get_header();
 				</div>
 			</div>
 			<div class="standards-grid general-grid three-col">
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Mobile-friendly',
-								'img_file' => 'mobile-light-full',
-						) );
-						?>
-						<p>Both desktop and mobile designs are standard. More than 50% of all web traffic is mobile (<a href="https://gs.statcounter.com/platform-market-share/desktop-mobile/worldwide/#yearly-2015-2025" target="_blank">source</a>).</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Purpose-driven',
-								'img_file' => 'bullseye-arrow-light-full',
-						) );
-						?>
-						<p>Pages are designed to guide visitors towards an action, like clicking a link or reading specific text.</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Accessible',
-								'img_file' => 'handshake-angle-light-full',
-						) );
-						?>
-						<p>Clarity, contrast, and usability are paramount, providing the best user experience for visitors.</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Fast-loading',
-								'img_file' => 'timer-light-full',
-						) );
-						?>
-						<p>47% of users expect a page to load in two seconds or less. 40% will leave after three seconds (<a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-page-speed-new-industry-benchmarks/" target="_blank">source</a>).</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Carefully-designed',
-								'img_file' => 'pen-ruler-light-full',
-						) );
-						?>
-						<p>Even the tiny details matter. When viewed as a whole, you can feel if a design is <em>crisp</em> or sloppy.</p>
-					</div>
-				</div>
-				<div class="grid-item">
-					<div class="grid-item-content">
-						<?php
-						get_template_part( 'template-parts/element', 'grid-item-header', array(
-								'title' => 'Well-secured',
-								'img_file' => 'shield-check-light-full',
-						) );
-						?>
-						<p>Only trusted and maintained scripts and resources are used. Site owners and visitors are protected.</p>
-					</div>
-				</div>
+				<?php
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => 'Mobile-friendly',
+						'description' => 'Both desktop and mobile designs are standard. More than 50% of all web traffic is mobile (<a href="https://gs.statcounter.com/platform-market-share/desktop-mobile/worldwide/#yearly-2015-2025" target="_blank">source</a>).',
+						'img_file' => 'mobile-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => 'Purpose-driven',
+						'description' => 'Pages are designed to guide visitors towards an action, like clicking a link or reading specific text.',
+						'img_file' => 'bullseye-arrow-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => 'Accessible',
+						'description' => 'Clarity, contrast, and usability are paramount, providing the best user experience for visitors.',
+						'img_file' => 'handshake-angle-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => 'Fast-loading',
+						'description' => '47% of users expect a page to load in two seconds or less. 40% will leave after three seconds (<a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-page-speed-new-industry-benchmarks/" target="_blank">source</a>).',
+						'img_file' => 'timer-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => 'Carefully-designed',
+						'description' => 'Even the tiny details matter. When viewed as a whole, you can feel if a design is <em>crisp</em> or sloppy.',
+						'img_file' => 'pen-ruler-light-full',
+				) );
+				get_template_part( 'template-parts/element', 'grid-item', array(
+						'title' => 'Well-secured',
+						'description' => 'Only trusted and maintained scripts and resources are used. Site owners and visitors are protected.',
+						'img_file' => 'shield-check-light-full',
+				) );
+				?>
 			</div>
 			<div class="small-cta-section element-spacing tiny background-pink">
 				<p><a href="<?php echo home_url( '/contact/' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>

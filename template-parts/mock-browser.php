@@ -30,7 +30,7 @@
 					</div>
 				</div>
 				<div class="mock_hero">
-					<span class="mock_hero-title h4">Here's <em>exactly</em> what we offer.</span>
+					<span class="mock_hero-title h4m">Here's <em>exactly</em> what we offer.</span>
 					<p class="mock_hero-subtitle">Our clean and well-designed website has a clear layout, intuitive navigation, and well-organized content.</p>
 					<div class="mock_hero-cta">
 						<p><span class="mock_button">See Pricing Options</span><br><span class="mock_secondary_button">Learn More</span></p>
@@ -41,17 +41,17 @@
 				<div class="mock_columns-grid">
 					<div class="mock_column">
 						<img src="<?php echo THEME_IMAGES . 'mock-browser/icons/draw-square-regular-full.svg'; ?>" alt="">
-						<span class="mock_column-title h5">Crucial Feature</span>
+						<span class="mock_column-title h5m">Crucial Feature</span>
 						<p class="mock_column-description">We highlight what you care about, not what we think is cool.</p>
 					</div>
 					<div class="mock_column">
 						<img src="<?php echo THEME_IMAGES . 'mock-browser/icons/draw-polygon-regular-full.svg'; ?>" alt="">
-						<span class="mock_column-title h5">Useful Feature</span>
+						<span class="mock_column-title h5m">Useful Feature</span>
 						<p class="mock_column-description">We ease your worries by solving problems before they arise.</p>
 					</div>
 					<div class="mock_column">
 						<img src="<?php echo THEME_IMAGES . 'mock-browser/icons/draw-circle-regular-full.svg'; ?>" alt="">
-						<span class="mock_column-title h5">Great Feature</span>
+						<span class="mock_column-title h5m">Great Feature</span>
 						<p class="mock_column-description">Finally, we give you something to be excited about. Rejoice!</p>
 					</div>
 				</div>
@@ -96,7 +96,7 @@
 				</div>
 				<div class="mock_content-area-grid">
 					<div class="mock_content">
-						<span class="h5">We've covered some essentials.</span>
+						<span class="h5m">We've covered some essentials.</span>
 						<p>Not only have we presented you with a clean, understandable design, but we've also told you upfront what we do, how you can learn more, and where to go if you'd like to get started. Example images are provided by <a href="https://unsplash.com/@joannakosinska?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank" tabindex="-1">Joanna Kosinska</a></p>
 					</div>
 					<div class="mock_aside background-gray">

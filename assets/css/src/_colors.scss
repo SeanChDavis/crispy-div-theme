@@ -70,11 +70,9 @@ strong {
 	background-color: $color2;
 	color: $body_over_purple;
 
-	.subdued-links {
-
-		a {
-			color: $body_over_purple;
-		}
+	.subdued-title,
+	.subdued-links a {
+		color: $body_over_purple;
 	}
 
 	.grid-item {
@@ -117,11 +115,9 @@ strong {
 	background-color: $color5;
 	color: $body_over_pink;
 
-	.subdued-links {
-
-		a {
-			color: $body_over_pink;
-		}
+	.subdued-title,
+	.subdued-links a {
+		color: $body_over_pink;
 	}
 
 	input[type="text"],
