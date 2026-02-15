@@ -154,7 +154,7 @@
 
 			.design-description {
 				margin-bottom: 1.5rem;
-				padding-top: 4rem;
+				padding-top: clamp(2.5rem, 5vw, 4rem);
                 max-width: 600px;
 
 				@media all and (min-width: 1200px) {

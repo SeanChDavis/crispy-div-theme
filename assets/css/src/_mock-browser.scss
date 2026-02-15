@@ -60,11 +60,7 @@
 					url( "assets/images/mock-browser/mock_hero-bg--joanna-kosinska-unsplash.png" );
 			background-size: cover;
 			color: #fff;
-			padding: 1.2rem;
-
-			@media all and (min-width: 540px) {
-				padding: 1.2rem 2rem;
-			}
+			padding: 1rem clamp(1rem, 2vw, 1.6rem);
 
 			@media all and (min-width: 760px) {
 				background-image:
@@ -103,7 +99,7 @@
 
 			.mock_hero {
 				margin: 0 auto;
-				padding: clamp(1rem, 2.25vw, 1.5rem) 0 1rem;
+				padding: clamp(0rem, 2vw, 1rem) 1rem clamp(0rem, 1.5vw, 1rem);
 				text-align: center;
 
 				.mock_hero-title,
@@ -112,18 +108,14 @@
 				}
 
 				.mock_hero-title {
-					font-size: clamp(16px, 2.5vw, 26px);
+					font-size: clamp(15px, 2.5vw, 25px);
 					margin-bottom: .7rem;
-
-					@media all and (min-width: 540px) {
-						font-size: 30px;
-					}
 				}
 
 				.mock_hero-subtitle {
-					font-size: clamp(11px, 1.5vw, 13px);
-                    max-width: 420px;
-                    margin: 0 auto 1rem;
+					font-size: clamp(10px, 1.75vw, 13px);
+                    max-width: 380px;
+                    margin: 0 auto clamp(10px, 1.75vw, 1rem);
 
 					@media all and (min-width: 760px) {
 						color: #ced5db;
@@ -137,7 +129,7 @@
 						border: 2px solid #a0562a;
 						border-radius: 4px;
 						display: inline-block;
-						font-size: 10px;
+						font-size: clamp(8px, 1.5vw, 10px);
 						font-weight: 700;
 						line-height: 1;
 						padding: 5px 7px;
@@ -146,7 +138,7 @@
 
 					.mock_secondary_button {
 						color: #ced5db;
-						font-size: 9px;
+						font-size: clamp(7px, 1.35vw, 9px);
 					}
 				}
 			}
@@ -163,30 +155,29 @@
 			}
 
 			@media all and (min-width: 980px) {
-				padding: .6rem 4rem;
+				padding: .6rem 2.75rem;
 			}
 
 			.mock_columns-grid {
 				column-gap: 2rem;
 				display: grid;
 				grid-template-columns: 1fr;
-				margin-bottom: clamp(0rem, 1.5vw, 1rem);
+				margin-bottom: clamp(0rem, 1vw, .3rem);
 
-				@media all and (min-width: 620px) {
+				@media all and (min-width: 520px) {
 					grid-template-columns: 1fr 1fr 1fr;
 				}
 
 				.mock_column {
 					background-color: transparent;
 					border-radius: 10px;
-					padding: clamp(.5rem, 1.5vw, 1rem) .5rem;
+					padding: clamp(.25rem, 1.75vw, .75rem) 0;
 					max-width: 200px;
 					margin: 0 auto;
 
 					img {
 						color: #a0562a;
-						width: 22px;
-						margin-bottom: .25rem;
+						width: clamp(15px, 2.5vw, 22px);
 					}
 
 					.mock_column-title {
@@ -213,7 +204,7 @@
 
 				.mock_logos {
 					color: #a0562a;
-					column-gap: 1rem;
+					column-gap: clamp(10px, .8vw, 1rem);
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: center;
@@ -227,14 +218,6 @@
 
 						@media all and (min-width: 760px) {
 							width: unset;
-						}
-
-						.mock_logos-title {
-							font-size: 9px;
-							font-weight: 700;
-							text-transform: uppercase;
-                            position: relative;
-                            top: -2px;
 						}
 					}
 
@@ -250,8 +233,8 @@
 
                             .mock_logo-text {
                                 color: #a0562a;
-                                font-size: 12px;
-                                font-weight: 700;
+                                font-size: clamp(10px, .8vw, 12px);
+                                font-weight: 600;
                             }
 						}
 					}
@@ -261,17 +244,17 @@
 			.mock_content-area-grid {
 				color: #081a31;
 				display: flex;
-				column-gap: 8.5%;
+				column-gap: 6.5%;
 				flex-wrap: wrap;
 				padding: clamp(1rem, 3vw, 2.5rem) clamp(1.2rem, 4vw, 3rem) 0;
 
 				.mock_content {
-					font-size: 10px;
+					font-size: clamp(10px, 1.5vw, 13px);
 					margin: 0 auto;
-					max-width: 400px;
+					max-width: 350px;
 					padding-bottom: 16px;
 
-					@media all and (min-width: 760px) {
+					@media all and (min-width: 600px) {
 						margin: unset;
 						max-width: unset;
 						width: 54.5%;
@@ -279,9 +262,9 @@
 
 					.h5m {
 						color: $black;
-						font-size: clamp(.8rem, 1.5vw, 1rem);
+						font-size: clamp(.8rem, 2.5vw, 1rem);
 						line-height: 1.5;
-						margin-bottom: clamp(10px, .8vw, 12px);
+						margin-bottom: clamp(6px, 1vw, 12px);
 						max-width: 80%;
 
 						@media all and (min-width: 480px) {
@@ -306,12 +289,12 @@
 				.mock_aside {
 					display: none;
 
-					@media all and (min-width: 760px) {
+					@media all and (min-width: 600px) {
 						background-image: url( "assets/images/mock-browser/mock_browser-content-area-aside-joanna-kosinska-unsplash.png" );
 						background-position: left center;
-						border-radius: 10px 10px 0 0;
+						border-radius: 7px 7px 0 0;
 						display: block;
-						width: 37%;
+						width: 39%;
 					}
 				}
 			}
@@ -332,7 +315,7 @@
 							display: inline-block;
                             width: 14px;
 
-							@media all and (min-width: 760px) {
+							@media all and (min-width: 520px) {
 								display: none;
 							}
 						}
@@ -340,7 +323,7 @@
 						ul {
 							display: none;
 
-							@media all and (min-width: 760px) {
+							@media all and (min-width: 520px) {
 								display: flex;
 								justify-content: flex-end;
 								list-style-type: none;

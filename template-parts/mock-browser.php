@@ -59,9 +59,6 @@
 			<div class="mock_content-area">
 				<div class="mock_trusted-by">
 					<div class="mock_logos">
-						<div class="mock_logos-title-wrap">
-							<span class="mock_logos-title">Trusted by:</span>
-						</div>
 						<div class="mock_logo-wrap">
 							<span class="mock_logo">
 								<img class="mock_logo-img" src="<?php echo THEME_IMAGES . 'mock-browser/icons/cloud-solid-full.svg'; ?>" alt="">
@@ -97,7 +94,7 @@
 				<div class="mock_content-area-grid">
 					<div class="mock_content">
 						<span class="h5m">We've covered some essentials.</span>
-						<p>Not only have we presented you with a clean, understandable design, but we've also told you upfront what we do, how you can learn more, and where to go if you'd like to get started. Example images are provided by <a href="https://unsplash.com/@joannakosinska?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank" tabindex="-1">Joanna Kosinska</a></p>
+						<p>This is a clean, understandable design. Example images are provided by <a href="https://unsplash.com/@joannakosinska?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank" tabindex="-1">Joanna Kosinska</a></p>
 					</div>
 					<div class="mock_aside background-gray">
 
