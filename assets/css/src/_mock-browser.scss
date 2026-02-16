@@ -60,7 +60,7 @@
 					url( "assets/images/mock-browser/mock_hero-bg--joanna-kosinska-unsplash.png" );
 			background-size: cover;
 			color: #fff;
-			padding: 1rem clamp(1rem, 2vw, 1.6rem);
+			padding: clamp(.6rem, 1.6vw, 1rem) clamp(1rem, 2vw, 1.6rem) clamp(.3rem, 1.6vw, 1rem);
 
 			@media all and (min-width: 760px) {
 				background-image:
@@ -109,12 +109,12 @@
 
 				.mock_hero-title {
 					font-size: clamp(15px, 2.5vw, 25px);
-					margin-bottom: .7rem;
+					margin-bottom: clamp(.45rem, 1.2vw, .7rem);
 				}
 
 				.mock_hero-subtitle {
 					font-size: clamp(10px, 1.75vw, 13px);
-                    max-width: 380px;
+                    max-width: clamp(340px, 50vw, 420px);
                     margin: 0 auto clamp(10px, 1.75vw, 1rem);
 
 					@media all and (min-width: 760px) {
@@ -181,7 +181,7 @@
 					}
 
 					.mock_column-title {
-						font-size: clamp(12px, 2vw, 15px);
+						font-size: clamp(10px, 2vw, 15px);
 						margin-bottom: 8px;
 					}
 

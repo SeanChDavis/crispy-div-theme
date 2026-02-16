@@ -7,7 +7,7 @@ get_header();
 ?>
 
     <section id="page-header" class="page-header background-purple" role="region" aria-labelledby="page-header-title">
-		<div class="inner smedium corner-accent bottom-right white-white">
+		<div class="inner corner-accent bottom-right white-white">
 			<div class="content-wrap">
 				<h1 class="page-header-title"><?php echo get_bloginfo( 'description' ); ?></h1>
 				<div class="page-header-description">
@@ -38,7 +38,7 @@ get_header();
 					'classes' => 'top-semi-heavy corner-accent black-orange'
 			) );
 			?>
-			<div class="advanced-custom-fields-highlight element-spacing medium">
+			<div class="advanced-custom-fields-highlight element-spacing smedium">
 				<div class="acf-grid">
 					<div class="acf-highlight-content">
 						<img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES . 'logos/advanced-custom-fields-logo.png'; ?>" alt="Advanced Custom Fields Logomark">

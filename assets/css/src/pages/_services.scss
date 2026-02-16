@@ -28,13 +28,10 @@
 		}
 	}
 
-	.services-wrap {
+	.service-section {
 
-		.service-section {
-
-			&:nth-child(even) {
-				background-color: $gray;
-			}
+		&:nth-child(even) {
+			background-color: $gray;
 		}
 	}
 }
@@ -47,7 +44,7 @@
 		display: grid;
 		grid-template-columns: 1fr;
 
-		@media all and (min-width: 1200px) {
+		@media all and (min-width: 1050px) {
 			grid-template-columns: 33% 65.75%;
 		}
 
@@ -84,7 +81,7 @@
 
 		.service-aside {
 
-			@media all and (min-width: 1200px) {
+			@media all and (min-width: 1050px) {
 				padding-left: 2.5rem;
 			}
 

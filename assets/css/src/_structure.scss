@@ -1,7 +1,7 @@
 .inner {
 	margin: 0 auto;
 	/* Default without a size class */
-	padding: clamp(3rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
+	padding: clamp(2.5rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
 
 	&.tiny {
 		padding-bottom: var(--space-tiny);
@@ -41,7 +41,7 @@
 
 .element-spacing {
 	/* Default without a size class */
-	padding: clamp(3rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
+	padding: clamp(2.5rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
 
 	&.tiny {
 		padding-bottom: var(--space-tiny);

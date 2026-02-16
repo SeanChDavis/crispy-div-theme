@@ -18,7 +18,7 @@
 			align-items: center;
 			border-radius: 5px;
 			display: flex;
-			height: 100px;
+			height: 85px;
 			justify-content: center;
 			padding: 1rem;
 			width: 100%;
@@ -137,6 +137,7 @@
 				color: $color2;
 				display: block;
 				font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+				line-height: 1;
 			}
 
 			.example-status {

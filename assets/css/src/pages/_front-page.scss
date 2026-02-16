@@ -7,7 +7,7 @@
 		.content-wrap {
 
 			.page-header-title {
-				font-size: clamp(2.5rem, 5vw, 5rem);
+				font-size: clamp(2.5rem, 5vw, 4rem);
 				max-width: 88%;
 			}
 
@@ -47,6 +47,10 @@
 
 		.section-heading {
 			border-bottom: 1px dashed $border_over_white;
+
+			.section-title {
+				font-size: clamp(2.5rem, 5vw, 4rem);
+			}
 		}
 
         .customization-logos-wrap {
@@ -79,7 +83,7 @@
 
 				.acf-highlight-content {
 					max-width: 650px;
-					padding-bottom: 3rem;
+					padding-bottom: 2rem;
 
 					@media all and (min-width: 980px) {
 						padding-bottom: 0;
@@ -135,6 +139,10 @@
 
 	.theme-development-section {
 
+		.section-title {
+			font-size: clamp(2.5rem, 5vw, 4rem);
+		}
+
 		.nng-stats-grid {
 			border-top: 1px dashed $border_over_purple;
 
@@ -146,6 +154,7 @@
 		.mock-browser-grid {
 			display: grid;
 			grid-template-columns: 1fr;
+			font-size: 0.94rem;
 
 			@media all and (min-width: 1200px) {
 				column-gap: 5rem;

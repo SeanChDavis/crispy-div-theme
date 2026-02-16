@@ -292,7 +292,7 @@ html body #page {
 }
 
 .framed {
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 11px;
   box-shadow: 6px 6px 0 #f8f5fc;
 }
@@ -441,7 +441,7 @@ html body #page {
 .inner {
   margin: 0 auto;
   /* Default without a size class */
-  padding: clamp(3rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
+  padding: clamp(2.5rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
 }
 .inner.tiny {
   padding-bottom: var(--space-tiny);
@@ -474,7 +474,7 @@ html body #page {
 
 .element-spacing {
   /* Default without a size class */
-  padding: clamp(3rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
+  padding: clamp(2.5rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
 }
 .element-spacing.tiny {
   padding-bottom: var(--space-tiny);
@@ -1228,7 +1228,7 @@ figure.frame img {
   background-image: linear-gradient(to bottom, rgba(8, 26, 49, 0.8) 0%, rgba(8, 26, 49, 0.65) 100%), url("assets/images/mock-browser/mock_hero-bg--joanna-kosinska-unsplash.png");
   background-size: cover;
   color: #fff;
-  padding: 1rem clamp(1rem, 2vw, 1.6rem);
+  padding: clamp(0.6rem, 1.6vw, 1rem) clamp(1rem, 2vw, 1.6rem) clamp(0.3rem, 1.6vw, 1rem);
 }
 @media all and (min-width: 760px) {
   .browser .mock_viewport .mock_header {
@@ -1270,11 +1270,11 @@ figure.frame img {
 }
 .browser .mock_viewport .mock_header .mock_hero .mock_hero-title {
   font-size: clamp(15px, 2.5vw, 25px);
-  margin-bottom: 0.7rem;
+  margin-bottom: clamp(0.45rem, 1.2vw, 0.7rem);
 }
 .browser .mock_viewport .mock_header .mock_hero .mock_hero-subtitle {
   font-size: clamp(10px, 1.75vw, 13px);
-  max-width: 380px;
+  max-width: clamp(340px, 50vw, 420px);
   margin: 0 auto clamp(10px, 1.75vw, 1rem);
 }
 @media all and (min-width: 760px) {
@@ -1336,7 +1336,7 @@ figure.frame img {
   width: clamp(15px, 2.5vw, 22px);
 }
 .browser .mock_viewport .mock_columns .mock_columns-grid .mock_column .mock_column-title {
-  font-size: clamp(12px, 2vw, 15px);
+  font-size: clamp(10px, 2vw, 15px);
   margin-bottom: 8px;
 }
 .browser .mock_viewport .mock_columns .mock_columns-grid .mock_column .mock_column-description {
@@ -1520,7 +1520,7 @@ figure.frame img {
 }
 #site-navigation #primary-menu .menu-item a {
   font-size: 0.88rem;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
 }
 #site-navigation #primary-menu .menu-item a:active, #site-navigation #primary-menu .menu-item a:focus, #site-navigation #primary-menu .menu-item a:hover {
@@ -1575,7 +1575,6 @@ figure.frame img {
 #site-navigation.toggled #primary-menu .menu-item a {
   border-radius: 24px;
   display: block;
-  font-weight: 600;
   padding: 7px 20px;
   text-decoration: none;
 }
@@ -2313,7 +2312,7 @@ html {
   align-items: center;
   border-radius: 5px;
   display: flex;
-  height: 100px;
+  height: 85px;
   justify-content: center;
   padding: 1rem;
   width: 100%;
@@ -2414,6 +2413,7 @@ html {
   color: #341671;
   display: block;
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  line-height: 1;
 }
 .page-brand-assets .brand-name-grid .brand-name-example .example-status {
   color: #d24949;
@@ -2463,7 +2463,7 @@ html {
   color: #fff;
 }
 .page-front .page-header .content-wrap .page-header-title {
-  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   max-width: 88%;
 }
 .page-front .page-header .content-wrap .page-header-description {
@@ -2500,6 +2500,9 @@ html {
 .page-front .plugin-integration-section .section-heading {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
+.page-front .plugin-integration-section .section-heading .section-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
 .page-front .plugin-integration-section .customization-logos-wrap.small {
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -2529,7 +2532,7 @@ html {
 }
 .page-front .plugin-integration-section .advanced-custom-fields-highlight .acf-grid .acf-highlight-content {
   max-width: 650px;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 @media all and (min-width: 980px) {
   .page-front .plugin-integration-section .advanced-custom-fields-highlight .acf-grid .acf-highlight-content {
@@ -2572,6 +2575,9 @@ html {
     border-right: 1px dashed rgba(0, 0, 0, 0.1);
   }
 }
+.page-front .theme-development-section .section-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
 .page-front .theme-development-section .nng-stats-grid {
   border-top: 1px dashed #45307c;
 }
@@ -2583,6 +2589,7 @@ html {
 .page-front .theme-development-section .mock-browser-grid {
   display: grid;
   grid-template-columns: 1fr;
+  font-size: 0.94rem;
 }
 @media all and (min-width: 1200px) {
   .page-front .theme-development-section .mock-browser-grid {
@@ -2646,7 +2653,7 @@ html {
 .post-type-archive-service .page-header-description .jump-to-section select#jump-menu:focus-visible {
   background-color: #660f56 !important;
 }
-.post-type-archive-service .services-wrap .service-section:nth-child(even) {
+.post-type-archive-service .service-section:nth-child(even) {
   background-color: #f8f5fc;
 }
 
@@ -2656,7 +2663,7 @@ html {
   display: grid;
   grid-template-columns: 1fr;
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1050px) {
   .service-section .service-content-grid {
     grid-template-columns: 33% 65.75%;
   }
@@ -2687,7 +2694,7 @@ html {
 .service-section .service-content-grid .service-description p + .button {
   margin-top: 1.25rem;
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1050px) {
   .service-section .service-content-grid .service-aside {
     padding-left: 2.5rem;
   }
