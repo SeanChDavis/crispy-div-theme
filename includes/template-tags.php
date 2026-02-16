@@ -271,17 +271,14 @@ function crispydiv_page_header( $args = array() ) {
  * @return bool
  */
 function get_crispydiv_logo_by_color() {
+	global $post;
 
     if (
-            is_front_page()
-            || is_home()
-            || is_singular( 'post' )
-			|| is_page( 'about' )
-			|| is_page( 'contact' )
-			|| is_page( 'why-wordpress' )
-			|| is_page( 'brand-assets' )
+			( get_field( 'page_header_theme', $post->ID ) == 'purple' )
+			|| ( get_field( 'page_header_theme', $post->ID ) == 'pink' )
             || is_post_type_archive( 'service' )
             || is_singular( 'service' )
+			|| is_singular( 'post' )
     ) {
         return true;
     }

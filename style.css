@@ -571,7 +571,7 @@ button,
   color: #fff;
   display: inline-block;
   line-height: 1.6;
-  padding: 0.53em 1.7em;
+  padding: 0.53em 1.7em calc(0.53em - 2px);
   font-size: 0.8rem;
   text-transform: uppercase;
   text-decoration-color: #f54952;
@@ -607,41 +607,6 @@ button:focus-visible,
   outline: 3px dashed #f54952;
   outline-offset: 2px;
 }
-.button.purple,
-button.purple,
-[type=submit].purple {
-  background-color: #341671;
-  border-color: #341671;
-  text-decoration-color: #341671;
-}
-.button.purple:active, .button.purple:focus, .button.purple:hover,
-button.purple:active,
-button.purple:focus,
-button.purple:hover,
-[type=submit].purple:active,
-[type=submit].purple:focus,
-[type=submit].purple:hover {
-  background-color: #f54952;
-  border-color: #f54952;
-  text-decoration-color: #f54952;
-}
-.button.purple.outline,
-button.purple.outline,
-[type=submit].purple.outline {
-  color: #341671;
-}
-.button.purple.outline:active, .button.purple.outline:focus, .button.purple.outline:hover,
-button.purple.outline:active,
-button.purple.outline:focus,
-button.purple.outline:hover,
-[type=submit].purple.outline:active,
-[type=submit].purple.outline:focus,
-[type=submit].purple.outline:hover {
-  background-color: #280659;
-  border-color: #280659;
-  color: #fff;
-  text-decoration-color: #280659;
-}
 .button.outline,
 button.outline,
 [type=submit].outline {
@@ -657,6 +622,59 @@ button.outline:hover,
 [type=submit].outline:active,
 [type=submit].outline:focus,
 [type=submit].outline:hover {
+  background-color: #280659;
+  border-color: #280659;
+  color: #fff;
+  text-decoration-color: #280659;
+}
+.button.purple, .button.secondary,
+button.purple,
+button.secondary,
+[type=submit].purple,
+[type=submit].secondary {
+  background-color: #341671;
+  border-color: #341671;
+  text-decoration-color: #341671;
+}
+.button.purple:active, .button.purple:focus, .button.purple:hover, .button.secondary:active, .button.secondary:focus, .button.secondary:hover,
+button.purple:active,
+button.purple:focus,
+button.purple:hover,
+button.secondary:active,
+button.secondary:focus,
+button.secondary:hover,
+[type=submit].purple:active,
+[type=submit].purple:focus,
+[type=submit].purple:hover,
+[type=submit].secondary:active,
+[type=submit].secondary:focus,
+[type=submit].secondary:hover {
+  background-color: #f54952;
+  border-color: #f54952;
+  text-decoration-color: #f54952;
+}
+.button.purple.outline, .button.secondary.outline,
+button.purple.outline,
+button.secondary.outline,
+[type=submit].purple.outline,
+[type=submit].secondary.outline {
+  background-color: transparent;
+  color: #341671;
+  text-decoration-color: transparent;
+}
+.button.purple.outline:active, .button.purple.outline:focus, .button.purple.outline:hover, .button.secondary.outline:active, .button.secondary.outline:focus, .button.secondary.outline:hover,
+button.purple.outline:active,
+button.purple.outline:focus,
+button.purple.outline:hover,
+button.secondary.outline:active,
+button.secondary.outline:focus,
+button.secondary.outline:hover,
+[type=submit].purple.outline:active,
+[type=submit].purple.outline:focus,
+[type=submit].purple.outline:hover,
+[type=submit].secondary.outline:active,
+[type=submit].secondary.outline:focus,
+[type=submit].secondary.outline:hover {
   background-color: #280659;
   border-color: #280659;
   color: #fff;
@@ -3097,6 +3115,17 @@ html {
 }
 .page-why-wordpress .other-platforms .media img {
   max-width: 380px;
+}
+
+.work-section .work-content-grid {
+  gap: clamp(2.25rem, 5.5vw, 3.75rem);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media all and (min-width: 980px) {
+  .work-section .work-content-grid {
+    grid-template-columns: 2fr 3.5fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
