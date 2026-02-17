@@ -37,6 +37,17 @@
 			border-bottom: none;
 			border-top: 1px dashed $border_over_purple;
 
+			.grid-item-description {
+
+				ul,
+				ol {
+
+					li {
+						font-size: .85rem;
+					}
+				}
+			}
+
 			.button {
 				color: #fff;
 			}

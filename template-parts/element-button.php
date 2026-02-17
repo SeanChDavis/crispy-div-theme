@@ -18,5 +18,5 @@ if ( isset( $args ) ) {
 <a href="<?php echo $args['url']; ?>"<?php echo ' ' . ! empty( $args['classes'] ) ? 'class="' . implode( ' ', $args['classes'] ) . '"' : ''; ?> target="<?php echo $args['target_self'] ? '_self' : '_blank'; ?>"><?php echo $args['text']; ?></a>
 <?php if ( ! empty( $args['alt_link_text'] ) && ! empty( $args['alt_link_url'] ) ) { ?>
     <br>
-    <a href="<?php echo $args['alt_link_url']; ?>"<?php echo ' ' . ! empty( $args['alt_link_classes'] ) ? 'class="' . implode( ' ', $args['alt_link_classes'] ) . '"' : ''; ?> target="<?php echo $args['alt_target_self'] ? '_self' : '_blank'; ?>"><?php echo $args['alt_link_text']; ?></a>
+    <a href="<?php echo $args['alt_link_url']; ?>"<?php echo ' ' . ! empty( $args['alt_link_classes'] ) ? 'class="' . implode( ' ', $args['alt_link_classes'] ) . '"' : ''; ?> target="<?php echo $args['alt_link_target_self'] ? '_self' : '_blank'; ?>"><?php echo $args['alt_link_text']; ?></a>
 <?php } ?>

@@ -67,23 +67,24 @@ function crispydiv_post_categories_tags() {
 /**
  * Displays an optional post thumbnail.
  */
-function crispydiv_post_thumbnail() {
-	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+function crispydiv_post_thumbnail( $id = null ) {
+	if ( post_password_required() || is_attachment() || ( ! has_post_thumbnail() && empty( $id ) ) ) {
 		return;
 	}
 
-	if ( is_singular() ) :
+	if ( is_single() ) :
 		?>
 
         <div class="post-thumbnail">
-			<?php the_post_thumbnail( 'media-large' ); ?>
+			<?php echo get_the_post_thumbnail( $id, 'media-large' ); ?>
         </div>
 
 	<?php else : ?>
 
-        <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+        <a class="post-thumbnail" href="<?php echo get_the_permalink($id); ?>" aria-hidden="true" tabindex="-1">
 			<?php
-			the_post_thumbnail(
+			echo get_the_post_thumbnail(
+				$id,
 				'media',
 				array(
 					'alt' => the_title_attribute(

@@ -1,0 +1,31 @@
+.page {
+
+    .rl-gallery{
+
+        .rl-gallery-item {
+
+            img {
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-radius: 11px;
+            }
+        }
+
+        .rl-gallery-link:after {
+            border-radius: 11px;
+        }
+
+        .rl-gallery-link .rl-gallery-caption {
+            border-radius: 0 0 11px 11px;
+        }
+
+        .rl-gallery-link .rl-gallery-item-title {
+            font-weight: 600;
+        }
+    }
+
+    .rl-basicgrid-gallery {
+        @include framedShifted;
+        background-color: $gray;
+        padding: 5px;
+    }
+}

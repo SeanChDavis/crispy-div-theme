@@ -78,9 +78,7 @@
 				margin-bottom: 1rem;
 
 				img {
-					border-radius: 10px;
-					border: 1px solid rgba(0,0,0,.1);
-					box-shadow: 0 0 40px rgba(0,0,0,.1);
+					@include framedShifted;
 					vertical-align: bottom;
 				}
 			}
@@ -118,7 +116,10 @@
 			}
 
 			.grid-item-description {
-				flex: 1 0 auto;
+
+				&:not(.flex-basis-no-auto) {
+					flex: 1 0 auto;
+				}
 
 				&:not(:last-child) {
 					margin-bottom: 1.5rem;
@@ -130,7 +131,6 @@
 					padding: 0 0 0 24px;
 
 					li {
-						font-size: .85rem;
 						padding: 4px 0 6px;
 						margin-bottom: 0;
 

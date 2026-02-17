@@ -3,16 +3,6 @@
 
 	#site-content {
 
-		.post-thumbnail {
-			margin: 0 auto;
-			max-width: 940px;
-
-			img {
-				border: 1px solid rgba(0,0,0,.1);
-				box-shadow: 0 0 50px rgba(0,0,0,.2);
-			}
-		}
-
 		.post-content-grid {
 			margin: 0 auto;
 		}
@@ -42,6 +32,19 @@
 
 .single.single-post {
 
+	#site-content {
+
+		.post-thumbnail {
+			margin: 0 auto;
+			max-width: 940px;
+
+			img {
+				border: 1px solid rgba(0,0,0,.2);
+				box-shadow: 0 0 50px rgba(0,0,0,.2);
+			}
+		}
+	}
+
 	.page-header-title {
 		text-align: center;
 	}
@@ -53,7 +56,7 @@
 			margin-bottom: .75rem;
 
 			img {
-				border-radius: 10px;
+				border-radius: 11px;
 			}
 		}
 	}

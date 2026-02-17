@@ -1,6 +1,6 @@
 <?php // Mock browser ?>
 <div class="mock-browser-wrap" aria-hidden="true">
-	<div class="browser mock_desktop">
+	<div class="browser mock_desktop framed">
 		<div class="top-bar">
 			<div class="controls">
 				<div class="control red"></div>

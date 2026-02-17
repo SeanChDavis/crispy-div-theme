@@ -292,9 +292,9 @@ html body #page {
 }
 
 .framed {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-  box-shadow: 6px 6px 0 #f8f5fc;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.08);
 }
 
 .border-bottom-over-white {
@@ -815,9 +815,11 @@ form label {
   margin-bottom: 1rem;
 }
 .general-grid .grid-item .grid-item-content .post-thumbnail img {
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+  left: -5px;
   vertical-align: bottom;
 }
 .general-grid .grid-item .grid-item-content .grid-item-header {
@@ -847,7 +849,7 @@ form label {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   text-decoration-color: #ae2d68;
 }
-.general-grid .grid-item .grid-item-content .grid-item-description {
+.general-grid .grid-item .grid-item-content .grid-item-description:not(.flex-basis-no-auto) {
   flex: 1 0 auto;
 }
 .general-grid .grid-item .grid-item-content .grid-item-description:not(:last-child) {
@@ -860,7 +862,6 @@ form label {
 }
 .general-grid .grid-item .grid-item-content .grid-item-description ul li,
 .general-grid .grid-item .grid-item-content .grid-item-description ol li {
-  font-size: 0.85rem;
   padding: 4px 0 6px;
   margin-bottom: 0;
 }
@@ -1198,9 +1199,6 @@ figure.frame img {
 }
 
 .browser {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 11px;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   transition: all 0.4s;
 }
@@ -2308,9 +2306,6 @@ html {
   padding-bottom: clamp(2.25rem, 5.5vw, 4rem);
   padding-top: clamp(2.25rem, 5.5vw, 4rem);
 }
-.blog .general-grid .grid-item .grid-item-header {
-  margin-bottom: 0;
-}
 
 .page-brand-assets .section-description {
   margin-bottom: 2rem;
@@ -2508,6 +2503,10 @@ html {
 .page-front .page-header .services-grid {
   border-bottom: none;
   border-top: 1px dashed #45307c;
+}
+.page-front .page-header .services-grid .grid-item-description ul li,
+.page-front .page-header .services-grid .grid-item-description ol li {
+  font-size: 0.85rem;
 }
 .page-front .page-header .services-grid .button {
   color: #fff;
@@ -2839,16 +2838,6 @@ html {
   padding: 1rem 1.5rem;
 }
 
-.single #site-content .post-thumbnail,
-.page #site-content .post-thumbnail {
-  margin: 0 auto;
-  max-width: 940px;
-}
-.single #site-content .post-thumbnail img,
-.page #site-content .post-thumbnail img {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
-}
 .single #site-content .post-content-grid,
 .page #site-content .post-content-grid {
   margin: 0 auto;
@@ -2868,6 +2857,14 @@ html {
     width: 66.66667%;
   }
 }
+.single.single-post #site-content .post-thumbnail {
+  margin: 0 auto;
+  max-width: 940px;
+}
+.single.single-post #site-content .post-thumbnail img {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
 .single.single-post .page-header-title {
   text-align: center;
 }
@@ -2878,7 +2875,7 @@ html {
   margin-bottom: 0.75rem;
 }
 .single.single-post .post-content-grid .post-thumbnail img {
-  border-radius: 10px;
+  border-radius: 11px;
 }
 .single.single-post.has-post-thumbnail .page-header .inner {
   padding-bottom: 6.5rem;
@@ -3127,8 +3124,34 @@ html {
     grid-template-columns: 2fr 3.5fr;
   }
 }
+.work-section .work-content-grid .work-description {
+  max-width: 650px;
+}
 .work-section .work-content-grid .work-description .button {
   margin-top: clamp(0rem, 1.25vw, 1rem);
+}
+
+.page .rl-gallery .rl-gallery-item img {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+}
+.page .rl-gallery .rl-gallery-link:after {
+  border-radius: 11px;
+}
+.page .rl-gallery .rl-gallery-link .rl-gallery-caption {
+  border-radius: 0 0 11px 11px;
+}
+.page .rl-gallery .rl-gallery-link .rl-gallery-item-title {
+  font-weight: 600;
+}
+.page .rl-basicgrid-gallery {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+  left: -5px;
+  background-color: #f8f5fc;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

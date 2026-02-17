@@ -16,7 +16,7 @@ if ( isset( $args ) ) {
 
 <div class="grid-item">
     <article id="post-<?php the_ID(); ?>" <?php post_class( 'grid-item-content' ); ?>>
-	    <?php crispydiv_post_thumbnail(); ?>
+	    <?php crispydiv_post_thumbnail(get_the_ID()); ?>
         <header class="entry-header grid-item-header">
 			<?php
             if ( $args['is-services'] ) {

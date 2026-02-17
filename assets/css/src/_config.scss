@@ -24,6 +24,18 @@
 	}
 }
 
+@mixin framed {
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 11px;
+	box-shadow: 5px 5px 0 rgba(0,0,0,.08);
+}
+
+@mixin framedShifted {
+	@include framed;
+	position: relative;
+	left: -5px;
+}
+
 html {
 	color: $body;
 

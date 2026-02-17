@@ -15,7 +15,7 @@ crispydiv_page_header( array(
         <div class="inner medium">
 			<?php while ( have_posts() ) : the_post(); ?>
                 <div class="post-content-grid">
-	                <?php crispydiv_post_thumbnail(); ?>
+	                <?php crispydiv_post_thumbnail(get_the_ID()); ?>
                     <div class="content-column">
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <div class="entry-content">
