@@ -5,8 +5,6 @@
 
 get_header();
 crispydiv_page_header( array(
-	'bg-color'            => 'background-pink',
-	'corner-accent-color' => 'bottom-right white-white',
 	'title-label'         => 'Service:',
 	'description'         => get_field( 'service_description', get_the_ID() ),
 ) );

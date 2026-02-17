@@ -5,31 +5,44 @@
 
 // Template args
 $title = '';
-if ( ! empty( $args['title'] ) ) {
+if ( ! empty($args['title'])) {
 	$title = $args['title'];
 }
 
 $description = '';
-if ( ! empty( $args['description'] ) ) {
+if ( ! empty($args['description'])) {
 	$description = $args['description'];
 }
 
-$img_file = '';
-if ( ! empty( $args['img_file'] ) ) {
-	$img_file = $args['img_file'];
+$icon_file = '';
+if ( ! empty($args['icon_file'])) {
+	$icon_file = $args['icon_file'];
 }
 ?>
 
 <div class="grid-item">
 	<div class="grid-item-content">
-		<div class="grid-item-header">
-			<?php if ( ! empty( $img_file ) ) { ?>
-				<img class="grid-item-icon" src="<?php echo THEME_IMAGES . 'icons/' . $img_file . '.svg'; ?>" alt="">
+
+		<?php if ( ! empty($title) || ! empty($description)) { ?>
+
+			<?php if ( ! empty($title)) { ?>
+				<div class="grid-item-header">
+					<?php if ( ! empty($icon_file)) { ?>
+						<img class="grid-item-icon" src="<?php echo THEME_IMAGES.'icons/'.$icon_file.'.svg'; ?>" alt="">
+					<?php } ?>
+					<?php if ( ! empty($title)) { ?>
+						<span class="grid-item-title h4"><?php echo $title; ?></span>
+					<?php } ?>
+				</div>
 			<?php } ?>
-			<span class="grid-item-title h4"><?php echo $title; ?></span>
-		</div>
-		<div class="grid-item-description">
-			<?php echo wpautop( $description ); ?>
-		</div>
+
+			<?php if ( ! empty($description)) { ?>
+				<div class="grid-item-description">
+					<?php echo wpautop($description); ?>
+				</div>
+			<?php } ?>
+
+		<?php } ?>
+
 	</div>
 </div>

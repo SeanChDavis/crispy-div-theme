@@ -5,8 +5,6 @@
 
 get_header();
 crispydiv_page_header(array(
-		'bg-color'            => 'background-purple',
-		'corner-accent-color' => 'bottom-right white-white',
 		'title'               => get_field('page_header_title') ?: get_the_title(get_the_ID()),
 		'description'         => get_field('page_header_description') ?: '',
 ));
@@ -43,7 +41,7 @@ crispydiv_page_header(array(
 						<?php
 						get_template_part('template-parts/element', 'grid-item-header', array(
 								'title'    => 'Ownership & Responsibility',
-								'img_file' => 'circle-1-light-full',
+								'icon_file' => 'circle-1-light-full',
 						));
 						?>
 						<p>When you own a website using the WordPress script from <em>wordpress.org</em>,
@@ -58,7 +56,7 @@ crispydiv_page_header(array(
 						<?php
 						get_template_part('template-parts/element', 'grid-item-header', array(
 								'title'    => 'Flexibility & Customization',
-								'img_file' => 'circle-2-light-full',
+								'icon_file' => 'circle-2-light-full',
 						));
 						?>
 						<p>All WordPress websites look quite similar after installation. Where you go from there is up to you. WordPress
@@ -75,7 +73,7 @@ crispydiv_page_header(array(
 						<?php
 						get_template_part('template-parts/element', 'grid-item-header', array(
 								'title'    => 'Selective Scalability',
-								'img_file' => 'circle-3-light-full',
+								'icon_file' => 'circle-3-light-full',
 						));
 						?>
 						<p>The beauty of Plugins is that they
@@ -90,7 +88,7 @@ crispydiv_page_header(array(
 						<?php
 						get_template_part('template-parts/element', 'grid-item-header', array(
 								'title'    => 'Community Activity',
-								'img_file' => 'circle-4-light-full',
+								'icon_file' => 'circle-4-light-full',
 						));
 						?>
 						<p>Perhaps the best part about WordPress is its

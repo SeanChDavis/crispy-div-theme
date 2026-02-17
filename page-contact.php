@@ -5,8 +5,6 @@
 
 get_header();
 crispydiv_page_header( array(
-		'bg-color' => 'background-purple',
-	'corner-accent-color' => 'bottom-right white-white',
 	'title' => get_field( 'page_header_title' ) ?: get_the_title( get_the_ID() ),
 	'description' => get_field( 'page_header_description' ) ?: '',
 ) );

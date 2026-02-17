@@ -3,18 +3,33 @@
  * Page header section
  */
 
+$page_header_theme = 'background-gray';
+$corner_accent_color = 'black-orange';
+if ( ! empty( $args['bg-color'] ) && ! empty( $args['corner-accent-color'] ) ) {
+	$page_header_theme = $args['bg-color'];
+	$corner_accent_color = $args['corner-accent-color'];
+} else {
 
-// Bail if the page header is hidden
-if ( get_field( 'page_header_hide', get_the_ID() ) ) {
-	return;
+	$page_id = get_the_ID();
+	if (is_home()) {
+		$page_id = get_option('page_for_posts');
+	}
+
+	if ( get_field( 'page_header_theme', $page_id ) === 'purple' ) {
+		$page_header_theme = 'background-purple';
+		$corner_accent_color = 'bottom-right white-white';
+	} else if ( get_field( 'page_header_theme', $page_id ) === 'pink' ) {
+		$page_header_theme = 'background-pink';
+		$corner_accent_color = 'bottom-right white-white';
+	}
 }
 
 // Get the page header args and set defaults
 if ( isset( $args ) ) {
 
     $args = wp_parse_args( $args, array(
-        'bg-color' => 'background-gray',
-        'corner-accent-color' => 'black-orange',
+        'bg-color' => $page_header_theme,
+        'corner-accent-color' => $corner_accent_color,
         'title' => get_the_title( get_the_ID() ),
         'title-class' => 'h3',
         'title-label' => '',

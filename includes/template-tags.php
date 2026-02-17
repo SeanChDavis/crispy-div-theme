@@ -266,28 +266,6 @@ function crispydiv_page_header( $args = array() ) {
 
 
 /**
- * Custom page header
- *
- * @return bool
- */
-function get_crispydiv_logo_by_color() {
-	global $post;
-
-    if (
-			( get_field( 'page_header_theme', $post->ID ) == 'purple' )
-			|| ( get_field( 'page_header_theme', $post->ID ) == 'pink' )
-            || is_post_type_archive( 'service' )
-            || is_singular( 'service' )
-			|| is_singular( 'post' )
-    ) {
-        return true;
-    }
-
-    return false;
-}
-
-
-/**
  * Button
  *
  * @param $args array

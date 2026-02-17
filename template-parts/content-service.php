@@ -52,7 +52,7 @@ if (isset($args)) {
 			 */
 			if ('plugin-integration' === $args['the-slug']) {
 				?>
-				<h3 class="subdued-title">Some our favorite plugins and services</h3>
+				<h3 class="subdued-title">Some of our favorite plugins and services</h3>
 				<?php
 				$customization_logos = get_customization_logos();
 				if ( ! empty($customization_logos)) {

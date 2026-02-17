@@ -82,17 +82,17 @@ get_header();
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => 'Above the Fold',
 						'description' => 'Users spend 80% of their time on a website viewing information presented above the fold.',
-						'img_file' => 'browser-light-full',
+						'icon_file' => 'browser-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => 'The "F" Pattern',
 						'description' => 'Users scan content in an "F" pattern: horizontally from the top left, down the left side, and across the middle.',
-						'img_file' => 'eye-sharp-light-full',
+						'icon_file' => 'eye-sharp-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => 'Skimmable Content',
 						'description' => 'Users are more likely to engage with content presented as short paragraphs and clear headings.',
-						'img_file' => 'align-left-light-full',
+						'icon_file' => 'align-left-light-full',
 				) );
 				?>
 			</div>
@@ -122,32 +122,32 @@ get_header();
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => 'Mobile-friendly',
 						'description' => 'Both desktop and mobile designs are standard. More than 50% of all web traffic is mobile (<a href="https://gs.statcounter.com/platform-market-share/desktop-mobile/worldwide/#yearly-2015-2025" target="_blank">source</a>).',
-						'img_file' => 'mobile-light-full',
+						'icon_file' => 'mobile-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => 'Purpose-driven',
 						'description' => 'Pages are designed to guide visitors towards an action, like clicking a link or reading specific text.',
-						'img_file' => 'bullseye-arrow-light-full',
+						'icon_file' => 'bullseye-arrow-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => 'Accessible',
 						'description' => 'Clarity, contrast, and usability are paramount, providing the best user experience for visitors.',
-						'img_file' => 'handshake-angle-light-full',
+						'icon_file' => 'handshake-angle-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => 'Fast-loading',
 						'description' => '47% of users expect a page to load in two seconds or less. 40% will leave after three seconds (<a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-page-speed-new-industry-benchmarks/" target="_blank">source</a>).',
-						'img_file' => 'timer-light-full',
+						'icon_file' => 'timer-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => 'Carefully-designed',
 						'description' => 'Even the tiny details matter. When viewed as a whole, you can feel if a design is <em>crisp</em> or sloppy.',
-						'img_file' => 'pen-ruler-light-full',
+						'icon_file' => 'pen-ruler-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => 'Well-secured',
 						'description' => 'Only trusted and maintained scripts and resources are used. Site owners and visitors are protected.',
-						'img_file' => 'shield-check-light-full',
+						'icon_file' => 'shield-check-light-full',
 				) );
 				?>
 			</div>

@@ -840,7 +840,7 @@ form label {
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.5;
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 .general-grid .grid-item .grid-item-content .grid-item-title a {
   color: #341671;
@@ -3126,6 +3126,9 @@ html {
   .work-section .work-content-grid {
     grid-template-columns: 2fr 3.5fr;
   }
+}
+.work-section .work-content-grid .work-description .button {
+  margin-top: clamp(0rem, 1.25vw, 1rem);
 }
 
 /*# sourceMappingURL=style.css.map */

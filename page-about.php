@@ -4,8 +4,6 @@
  */
 get_header();
 crispydiv_page_header( array(
-	'bg-color' => 'background-purple',
-	'corner-accent-color' => 'bottom-right white-white',
 	'title' => get_field( 'page_header_title' ) ?: get_the_title( get_the_ID() ),
 	'description' => get_field( 'page_header_description' ) ?: '',
 ) );
@@ -53,32 +51,32 @@ crispydiv_page_header( array(
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => '1. Consult',
 						'description' => 'Meet to discuss project goals and gather information about your target audience, brand, and any specific functionality that you want to include on the website.',
-						'img_file' => 'comment-light-full',
+						'icon_file' => 'comment-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => '2. Propose',
 						'description' => 'Based on information gathered during consultation, you will be presented with a proposal outlining the scope of work, timeline, and cost for the project.',
-						'img_file' => 'presentation-screen-light-full',
+						'icon_file' => 'presentation-screen-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => '3. Design',
 						'description' => 'Upon agreement, Crispy Div will start designing. This may include wireframes and mockups to give you an idea of how the website will look and function.',
-						'img_file' => 'palette-light-full',
+						'icon_file' => 'palette-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => '4. Develop',
 						'description' => 'With an approved design, the development phase will begin. This includes technical implementation and testing the website to ensure it is fully functional.',
-						'img_file' => 'code-light-full',
+						'icon_file' => 'code-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => '5. Launch',
 						'description' => 'After successful design, development, and configuration, we are clear to launch your newly designed website and make it live for the public to enjoy.',
-						'img_file' => 'rocket-launch-light-full',
+						'icon_file' => 'rocket-launch-light-full',
 				) );
 				get_template_part( 'template-parts/element', 'grid-item', array(
 						'title' => '6. Maintain',
 						'description' => 'If it makes sense for your business, Crispy Div will provide ongoing maintenance and support to ensure that the website stays up to date and is functioning properly.',
-						'img_file' => 'screwdriver-wrench-light-full',
+						'icon_file' => 'screwdriver-wrench-light-full',
 				) );
 				?>
 			</div>
