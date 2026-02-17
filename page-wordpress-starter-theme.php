@@ -128,7 +128,7 @@ crispydiv_page_header(array(
 
 <?php
 get_template_part('template-parts/section', 'footer-lead', array(
-	'classes'        => 'border-bottom-over-white top-semi-heavy corner-accent black-orange',
+	'classes'        => 'border-bottom-over-white corner-accent black-orange',
 	'button_classes' => array('button', 'purple'),
 ));
 get_footer();
