@@ -17,9 +17,9 @@ crispydiv_page_header(array(
 		<section class="general-grid large">
 			<?php
 			get_template_part('template-parts/element', 'grid-item', array(
-					'title'              => 'WordPress Starter Theme (WST)',
+					'title'              => 'WordPress Starter Theme',
 					'slug_for_img'       => 'work/wordpress-starter-theme',
-					'description'        => 'WST is a WordPress theme built to provide a structured starting point for building WordPress websites.',
+					'description'        => 'WordPress Starter Theme provides a structured foundation for building WordPress websites. It is responsive, supports core WordPress functionality, and is built for rapid development.',
 					'button_text'        => 'View Project Details',
 					'button_url'         => home_url('/work/wordpress-starter-theme/'),
 					'button_classes'     => array('button', 'purple'),

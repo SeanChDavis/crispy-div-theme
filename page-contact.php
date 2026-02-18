@@ -33,11 +33,10 @@ crispydiv_page_header( array(
 
 <?php
 get_template_part( 'template-parts/section', 'footer-lead', array(
-		'title' => 'Unsure what you\'re looking for?',
+		'title' => 'Still not sure what you\'re looking for?',
 		'description' => 'Take a look at our wide range of services before reaching out.',
 		'classes' => 'border-y-over-white corner-accent black-orange',
 		'button_text' => 'View All Services',
 		'button_url' => get_post_type_archive_link( 'service' ),
-		'button_classes' => array( 'button', 'outline' ),
 ) );
 get_footer();

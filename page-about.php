@@ -88,6 +88,5 @@ get_template_part( 'template-parts/section', 'footer-lead', array(
 		'title' => 'Let\'s Have a Conversation',
 		'description' => 'If you believe we\'re a good fit, let\'s work together. Just reach out.',
 		'classes' => 'border-bottom-over-white medium center',
-		'button_classes' => array( 'button' ),
 ) );
 get_footer();

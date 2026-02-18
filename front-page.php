@@ -151,10 +151,10 @@ get_header();
 				) );
 				?>
 			</div>
-			<div class="small-cta-section element-spacing tiny background-pink">
-				<p><a href="<?php echo home_url( '/contact/' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
-			</div>
 		</section>
+		<div class="small-cta-section element-spacing tiny background-gray">
+			<p><a href="<?php echo home_url( '/contact/' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
+		</div>
 	</main>
     <?php
 

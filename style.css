@@ -504,6 +504,10 @@ html body #page {
   padding-bottom: clamp(2.75rem, 4vw, 3rem);
   padding-top: clamp(3.25rem, 6vw, 4.5rem);
 }
+.element-spacing.top-light {
+  padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  padding-top: clamp(3.25rem, 6vw, 4.5rem);
+}
 .element-spacing.no-vertical-spacing {
   padding-bottom: 0;
   padding-top: 0;
@@ -802,6 +806,15 @@ form label {
 .general-grid.three-col .grid-item .grid-item-content .grid-item-description {
   font-size: 0.94rem;
 }
+.general-grid.three-col .grid-item .grid-item-content .grid-item-description ul li,
+.general-grid.three-col .grid-item .grid-item-content .grid-item-description ol li {
+  padding: 4px 0 6px;
+  margin-bottom: 0;
+}
+.general-grid.three-col .grid-item .grid-item-content .grid-item-description ul li:not(:last-child),
+.general-grid.three-col .grid-item .grid-item-content .grid-item-description ol li:not(:last-child) {
+  padding-bottom: 0.25rem;
+}
 .general-grid .grid-item {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   padding: clamp(2rem, 4.5vw, 3.5rem) clamp(2rem, 6vw, 4.5rem);
@@ -859,15 +872,6 @@ form label {
 .general-grid .grid-item .grid-item-content .grid-item-description ol {
   margin: 0;
   padding: 0 0 0 24px;
-}
-.general-grid .grid-item .grid-item-content .grid-item-description ul li,
-.general-grid .grid-item .grid-item-content .grid-item-description ol li {
-  padding: 4px 0 6px;
-  margin-bottom: 0;
-}
-.general-grid .grid-item .grid-item-content .grid-item-description ul li:not(:last-child),
-.general-grid .grid-item .grid-item-content .grid-item-description ol li:not(:last-child) {
-  padding-bottom: 0.25rem;
 }
 
 #masthead {
@@ -1047,7 +1051,7 @@ p {
   margin: 0;
 }
 p:not(:last-child) {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.6rem;
 }
 p strong {
   font-weight: 600;
@@ -3127,9 +3131,6 @@ html {
 .work-section .work-content-grid .work-description {
   max-width: 650px;
 }
-.work-section .work-content-grid .work-description .button {
-  margin-top: clamp(0rem, 1.25vw, 1rem);
-}
 
 .page .rl-gallery .rl-gallery-item img {
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -3152,6 +3153,13 @@ html {
   left: -5px;
   background-color: #f8f5fc;
   padding: 5px;
+}
+.page [class^=rl-hover-icon-] .rl-gallery-link:before,
+.page [class*=rl-hover-icon-] .rl-gallery-link:before {
+  left: calc(50% - 27px);
+  top: calc(50% - 27px);
+  margin-left: 0;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

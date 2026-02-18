@@ -11,9 +11,7 @@ crispydiv_page_header(array(
 ?>
 
 	<main id="site-content">
-		<div class="small-cta-section element-spacing tiny background-purple-darker">
-			<p><a href="<?php echo home_url('/work/'); ?>">All Completed Work</a> &rarr; <?php the_title( '<span class="semi-heavy">', '</span>' ); ?></p>
-		</div>
+		<?php get_template_part('template-parts/element', 'work-breadcrumbs'); ?>
 		<section class="work-section element-spacing top-semi-heavy border-bottom-over-white">
 			<div class="work-content-grid">
 				<div class="work-description">
@@ -24,6 +22,7 @@ crispydiv_page_header(array(
 						crispydiv_button(array(
 							'text'    => 'Browse Theme Demo',
 							'url'     => 'https://wst.crispydiv.com/',
+							'target_self' => false,
 							'classes' => array('button', 'purple'),
 							'alt_link_text' => 'Download from GitHub',
 							'alt_link_url' => 'https://github.com/SeanChDavis/wordpress-starter-theme',
@@ -39,19 +38,10 @@ crispydiv_page_header(array(
 		</section>
 		<section class="general-grid large">
 			<?php
-
-			// Project Objectives
-			ob_start();
-			?>
-			<p>WST was born out of necessity. Freelance developers in the WordPress community often struggle to find a good starting point for each project, leading to inconsistencies in their work and frustrations in their experiences as developers.</p>
-			<p>WST aimed to address these challenges by providing a comprehensive, well-documented, and developer-friendly starter theme that includes best practices, documentation, and a focus on developer experience.</p>
-			<p>Nothing in WST will feel foreign to developers who are familiar with WordPress core functionality, the Block Editor, and Bootstrap. Simplicity is paramount.</p>
-			<?php
-			$grid_item_content = ob_get_clean();
+			// Project Objective
 			get_template_part( 'template-parts/element', 'grid-item', array(
-					'title' => 'Project Objectives',
-					'description' => $grid_item_content,
-					'icon_file' => 'bullseye-arrow-light-full'
+					'title' => 'Project Objective',
+					'description' => '<p class="semi-heavy">WordPress Starter Theme was born out of necessity. The goal was simple: give WordPress theme developers a starting point that handled heavy architecture and provided a solid foundation for building custom WordPress themes.</p><p>The theme needed to include common page templates, such as wide and narrow. It needed to give breathing room to build layouts within the WordPress Block Editor. And it needed to initiate common features like building page headers, supporting robust navigation, and having a design system that makes building systematic.</p>',
 			) );
 
 			// Theme Features
@@ -67,17 +57,17 @@ crispydiv_page_header(array(
 			<?php
 			$grid_item_content = ob_get_clean();
 			get_template_part( 'template-parts/element', 'grid-item', array(
-					'title' => 'Notable Theme Features',
+					'title' => 'Notable Features',
 					'description' => $grid_item_content,
-					'icon_file' => 'gear-complex-code-light-full',
 			) );
 			?>
 		</section>
 		<section class="screenshots-section">
 			<?php
 			get_template_part('template-parts/element', 'section-heading', array(
-					'title' => 'Have A Closer Look',
-					'description' => 'You can <a href="https://wst.crispydiv.com/" target="_blank">browse the WordPress Starter Theme live demo site here</a>. Or view the screenshots below to see WST in its minimally-configured state.',
+					'title' => 'A Closer Look',
+					'description' => 'You can <a href="https://wst.crispydiv.com/" target="_blank">browse the WordPress Starter Theme live demo site</a>. Or view the screenshots below to see its minimally configured state.',
+					'classes' => 'top-light'
 			))
 			?>
 			<div class="screenshots-gallery element-spacing no-vertical-spacing">
@@ -91,35 +81,25 @@ crispydiv_page_header(array(
 			ob_start();
 			?>
 			<ul>
-				<li>WST needed to provide useful features without being opinionated. Not every theme needs the same features, and developers should be able to customize the theme to their needs without hassle.</li>
-				<li>The WordPress Block Editor <em>is</em> opinionated. WST needed to be flexible enough to encourage developers to use the Block Editor without being forced into a specific design or layout.</li>
-				<li>WST needed to look "crispy" right out of the box without presenting itself as a finished design. If needed, WST could stand on its own with limited customization.</li>
+				<li><span class="semi-heavy">How do you provide useful features without being opinionated?</span> Not every theme needs the same features, and developers should be able to customize the theme to their needs without hassle.</li>
+				<li>The WordPress Block Editor <em>is</em> opinionated. Therefore, WST required the flexibility to encourage use of the Block Editor without enforcing a specific design or layout.</li>
+				<li>Of course, WST needed to look "crispy" out of the box without presenting itself as a completed design. If needed, WST can stand on its own with limited customization.</li>
 			</ul>
 			<?php
 			$grid_item_content = ob_get_clean();
 			get_template_part( 'template-parts/element', 'grid-item', array(
 				'title' => 'Interesting Challenges',
 				'description' => $grid_item_content,
-				'icon_file' => 'face-thinking-light-full',
 			) );
 
 			// CTA
-			ob_start();
-			?>
-			<p>If you're interested in building your own WordPress theme, or if you're looking for a solid starting point for your next project, WST is a perfect option. If you'd like to contribute to the project or discuss possible features, let's chat on GitHub.</p>
-			<?php
-			$grid_item_content = ob_get_clean();
 			get_template_part( 'template-parts/element', 'grid-item', array(
 				'title' => 'Collaborate',
-				'description' => $grid_item_content,
-				'icon_file' => 'handshake-angle-light-full',
+				'description' => '<p>If you\'re interested in building your own WordPress theme, or you\'re looking for a solid starting point for your next project, WST is a perfect option. To contribute to the project or discuss possible features, open an issue on GitHub.</p>',
 				'button_text'    => 'WST GitHub Repository',
 				'button_url'     => 'https://github.com/SeanChDavis/wordpress-starter-theme',
-				'button_classes' => array('button', 'purple'),
+				'button_classes' => array('button', 'purple', 'outline'),
 				'button_target_self' => false,
-				'alt_link_text' => 'Open an Issue on GitHub',
-				'alt_link_url' => 'https://github.com/SeanChDavis/wordpress-starter-theme/issues',
-				'alt_link_target_self' => false,
 				'flex_basis_no_auto' => true,
 			) );
 			?>
@@ -127,8 +107,9 @@ crispydiv_page_header(array(
 	</main>
 
 <?php
-get_template_part('template-parts/section', 'footer-lead', array(
-	'classes'        => 'border-bottom-over-white corner-accent black-orange',
-	'button_classes' => array('button', 'purple'),
-));
+get_template_part( 'template-parts/section', 'footer-lead', array(
+		'title' => 'Let\'s Have a Conversation',
+		'description' => 'If you like what you see, let\'s work together. Just reach out.',
+		'classes' => 'border-bottom-over-white medium center',
+) );
 get_footer();

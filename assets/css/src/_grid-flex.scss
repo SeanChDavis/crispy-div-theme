@@ -60,6 +60,19 @@
 
 				.grid-item-description {
 					font-size: .94rem;
+
+					ul,
+					ol {
+
+						li {
+							padding: 4px 0 6px;
+							margin-bottom: 0;
+
+							&:not(:last-child) {
+								padding-bottom: .25rem;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -129,15 +142,6 @@
 				ol {
 					margin: 0;
 					padding: 0 0 0 24px;
-
-					li {
-						padding: 4px 0 6px;
-						margin-bottom: 0;
-
-						&:not(:last-child) {
-							padding-bottom: .25rem;
-						}
-					}
 				}
 			}
 		}

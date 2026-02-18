@@ -28,4 +28,12 @@
         background-color: $gray;
         padding: 5px;
     }
+
+    [class^=rl-hover-icon-] .rl-gallery-link:before,
+    [class*=rl-hover-icon-] .rl-gallery-link:before {
+        left: calc(50% - 27px);
+        top: calc(50% - 27px);
+        margin-left: 0;
+        margin-top: 0;
+    }
 }

@@ -26,7 +26,7 @@ if ( ! empty( $args['button_url'] ) ) {
 	$button_url = $args['button_url'];
 }
 
-$button_classes = array( 'button', 'outline' );
+$button_classes = array( 'button' );
 if ( ! empty( $args['button_classes'] ) ) {
 	$button_classes = $args['button_classes'];
 }
