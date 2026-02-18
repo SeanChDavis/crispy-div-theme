@@ -35,10 +35,10 @@ get_header();
 					'title' => 'Plugin Functionality <br class="disappearing-br">Tweaked to Perfection',
 					'title_size' => 'h2',
 					'description' => 'The goal is to transform your WordPress site into an intentionally built tool with seamless plugin integrations. WordPress plugins are not always "one size fits all," or "plug & play." Sometimes you need a bit of customization.',
-					'classes' => 'top-semi-heavy corner-accent black-orange'
+					'classes' => 'top-light corner-accent black-orange'
 			) );
 			?>
-			<div class="advanced-custom-fields-highlight element-spacing smedium">
+			<div class="advanced-custom-fields-highlight element-spacing top-light">
 				<div class="acf-grid">
 					<div class="acf-highlight-content">
 						<img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES . 'logos/advanced-custom-fields-logo.png'; ?>" alt="Advanced Custom Fields Logomark">
@@ -74,7 +74,7 @@ get_header();
 					'title' => 'Theme Building <br class="disappearing-br">Based on Real Data',
 					'title_size' => 'h2',
 					'description' => 'According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:',
-					'classes' => 'subdued-links attribution top-semi-heavy corner-accent top-right white-white'
+					'classes' => 'subdued-links attribution top-light corner-accent top-right white-white'
 			) );
 			?>
 			<div class="nng-stats-grid general-grid three-col">

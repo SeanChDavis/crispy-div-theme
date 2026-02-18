@@ -61,6 +61,10 @@
 				.grid-item-description {
 					font-size: .94rem;
 
+					p:not(:last-child) {
+						margin-bottom: 1rem;
+					}
+
 					ul,
 					ol {
 

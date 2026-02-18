@@ -44,6 +44,6 @@ get_template_part( 'template-parts/section', 'footer-lead', array(
 		'classes' => 'border-y-over-white corner-accent black-orange',
 		'button_text' => 'View All Services',
 		'button_url' => get_post_type_archive_link( 'service' ),
-		'button_classes' => array( 'button', 'outline' ),
+		'button_classes' => array( 'button' ),
 ) );
 get_footer();
