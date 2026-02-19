@@ -6,12 +6,7 @@
  * @return false|string
  */
 function get_crispydiv_services_grid( $full = false, $with_cta = false, $classes = array() ) {
-
-	$services = new WP_Query( array(
-		'post_type' => 'service',
-		'post_status' => 'publish',
-		'posts_per_page' => -1,
-	) );
+	$services = crispydiv_get_child_pages_of_page( 'services' );
 
 	ob_start();
 
@@ -30,7 +25,8 @@ function get_crispydiv_services_grid( $full = false, $with_cta = false, $classes
             wp_reset_postdata();
             ?>
 		</div>
-	<?php
+		<?php
 	endif;
+
 	return ob_get_clean();
 }

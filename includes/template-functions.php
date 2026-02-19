@@ -41,9 +41,13 @@ add_filter('body_class', function ($classes) {
 	}
 
 	// Catch the blog page ID
-	$page_id = $post->ID;
-	if (is_home()) {
-		$page_id = get_option('page_for_posts');
+	if (isset($post)) {
+		$page_id = $post->ID;
+		if (is_home()) {
+			$page_id = get_option('page_for_posts');
+		}
+	} else {
+		$page_id = null;
 	}
 
 	// Conditionally add header color classes
@@ -53,9 +57,7 @@ add_filter('body_class', function ($classes) {
 	) {
 		$classes[] = 'has-purple-header';
 	} elseif (
-		is_post_type_archive('service')
-		|| is_singular('service')
-		|| (get_field('page_header_theme', $page_id) == 'pink') && ! is_archive()
+		(get_field('page_header_theme', $page_id) == 'pink')
 	) {
 		$classes[] = 'has-pink-header';
 	} else {
@@ -80,16 +82,18 @@ function get_crispydiv_logo_by_color() {
 	global $post;
 
 	// Catch the blog page ID
-	$page_id = $post->ID;
-	if (is_home()) {
-		$page_id = get_option('page_for_posts');
+	if (isset($post)) {
+		$page_id = $post->ID;
+		if (is_home()) {
+			$page_id = get_option('page_for_posts');
+		}
+	} else {
+		$page_id = null;
 	}
 
 	if (
-		( get_field( 'page_header_theme', $page_id ) == 'purple' ) && ! is_archive()
-		|| ( get_field( 'page_header_theme', $page_id ) == 'pink' ) && ! is_archive()
-		|| is_post_type_archive( 'service' )
-		|| is_singular( 'service' )
+		( get_field( 'page_header_theme', $page_id ) == 'purple' )
+		|| ( get_field( 'page_header_theme', $page_id ) == 'pink' )
 		|| is_singular( 'post' )
 	) {
 		return true;
@@ -110,6 +114,16 @@ add_action('pre_get_posts', function ($query) {
 		$query->set('post_type', 'post');
 	}
 });
+
+/**
+ * Add excerpts to pages.
+ *
+ * @return void
+ */
+function crispy_div_add_excerpts_to_pages() {
+	add_post_type_support( 'page', 'excerpt' );
+}
+add_action( 'init', 'crispy_div_add_excerpts_to_pages' );
 
 /**
  * Excerpt adjustments

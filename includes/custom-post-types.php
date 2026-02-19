@@ -2,42 +2,6 @@
 
 add_action( 'init', function() {
 
-	// Service
-	register_post_type( 'service',
-		array(
-			'labels' => array(
-				'name' => 'Service',
-				'singular_name' => 'Service',
-				'add_new' => 'Add New',
-				'add_new_item' => 'Add New Service',
-				'edit' => 'Edit',
-				'edit_item' => 'Edit Service',
-				'new_item' => 'New Service',
-				'view' => 'View',
-				'view_item' => 'View Service',
-				'search_items' => 'Search Services',
-				'not_found' => 'No Services found',
-				'not_found_in_trash' => 'No Services found in Trash',
-				'parent' => 'Parent Service',
-				'menu_name' => 'Services'
-			),
-			'public' => true,
-			'publicly_queryable' => true,
-			'show_ui' => true,
-			'show_in_menu' => true,
-			'show_in_rest' => true,
-			'query_var' => true,
-			'rewrite' => array( 'slug' => 'services' ),
-			'capability_type' => 'post',
-			'has_archive' => true,
-			'hierarchical' => false,
-			'menu_icon' => 'dashicons-money-alt',
-			'menu_position' => null,
-			'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
-			// 'taxonomies' => array( 'wordpress_plugin', 'wordpress_theme', 'custom_development' ),
-		)
-	);
-
 	// Custom Development
 	register_post_type( 'custom_development', array(
 		'labels' => array(

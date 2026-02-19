@@ -37,6 +37,6 @@ get_template_part( 'template-parts/section', 'footer-lead', array(
 		'description' => 'Take a look at our wide range of services before reaching out.',
 		'classes' => 'border-y-over-white corner-accent black-orange',
 		'button_text' => 'View All Services',
-		'button_url' => get_post_type_archive_link( 'service' ),
+		'button_url' => home_url( '/services/' ),
 ) );
 get_footer();

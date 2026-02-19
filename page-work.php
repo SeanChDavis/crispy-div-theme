@@ -16,15 +16,20 @@ crispydiv_page_header(array(
 		</div>
 		<section class="general-grid large">
 			<?php
-			get_template_part('template-parts/element', 'grid-item', array(
-					'title'              => 'WordPress Starter Theme',
-					'slug_for_img'       => 'work/wordpress-starter-theme',
-					'description'        => 'WordPress Starter Theme provides a structured foundation for building WordPress websites. It is responsive, supports core WordPress functionality, and is built for rapid development.',
-					'button_text'        => 'View Project Details',
-					'button_url'         => home_url('/work/wordpress-starter-theme/'),
-					'button_classes'     => array('button', 'purple'),
-					'button_target_self' => true,
-			));
+			$work = crispydiv_get_child_pages_of_page( 'work' );
+			if ( $work->have_posts() ) {
+				while ( $work->have_posts() ) {
+					$work->the_post();
+					get_template_part('template-parts/element', 'grid-item', array(
+							'the_id'             => get_the_ID(),
+							'title'              => get_the_title(),
+							'description'        => get_field('page_header_description'),
+							'button_text'        => 'View Project Details',
+							'button_url'         => get_the_permalink(),
+							'button_classes'     => array('button', 'purple'),
+					));
+				}
+			}
 			?>
 		</section>
 	</main>

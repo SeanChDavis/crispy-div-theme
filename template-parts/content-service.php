@@ -2,22 +2,14 @@
 /**
  * Single service template content
  */
-
-if (isset($args)) {
-
-	// Set default values for the arguments
-	$args = wp_parse_args($args, array(
-			'the-slug'  => get_post_field('post_name', get_post()),
-			'the-title' => get_the_title(get_the_ID()),
-	));
-}
+$the_slug = get_post_field( 'post_name', get_post() );
 ?>
 
-<section id="<?php echo $args['the-slug']; ?>"
-		 class="<?php echo $args['the-slug']; ?>-section service-section element-spacing medium">
+<section id="<?php echo $the_slug; ?>"
+		 class="<?php echo $the_slug; ?>-section service-section element-spacing medium">
 	<div class="service-content-grid">
 		<div class="service-description">
-			<span class="section-title"><?php echo $args['the-title']; ?></span>
+			<span class="section-title"><span class="wp-title-prefix">WordPress</span><?php echo get_the_title( get_the_ID() ); ?></span>
 			<?php
 			// Service content description
 			$content = get_the_content(get_the_ID());
@@ -31,9 +23,9 @@ if (isset($args)) {
 			$button_classes   = array('button', 'purple');
 
 			// Service type CTA overrides
-			if ('theme-development' === $args['the-slug']) {
+			if ('theme-development' === $the_slug) {
 				$button_text = 'Start the Conversation';
-			} elseif ('custom-development' === $args['the-slug']) {
+			} elseif ('custom-development' === $the_slug) {
 				$button_text = 'Let\'s Talk Details';
 			}
 
@@ -50,7 +42,7 @@ if (isset($args)) {
 			/**
 			 * Content by section
 			 */
-			if ('plugin-integration' === $args['the-slug']) {
+			if ('plugin-integration' === $the_slug) {
 				?>
 				<h3 class="subdued-title">Some of our favorite plugins and services</h3>
 				<?php
@@ -75,12 +67,12 @@ if (isset($args)) {
 					</div>
 					<?php
 				}
-			} elseif ('theme-development' === $args['the-slug']) {
+			} elseif ('theme-development' === $the_slug) {
 				?>
 				<h3 class="subdued-title" aria-hidden="true">Proven Design Practices</h3>
 				<?php
 				get_template_part('template-parts/mock-browser');
-			} elseif ('custom-development' === $args['the-slug']) {
+			} elseif ('custom-development' === $the_slug) {
 				?>
 				<div class="custom-development-accordion">
 					<span class="subdued-title">Custom Development Examples</span>

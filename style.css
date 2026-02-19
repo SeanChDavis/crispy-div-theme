@@ -2658,27 +2658,27 @@ html {
   z-index: 999;
 }
 
-.post-type-archive-service .page-header-description {
+.page-services .page-header-description {
   gap: 1.5rem 5rem;
 }
-.post-type-archive-service .page-header-description .jump-to-section label {
+.page-services .page-header-description .jump-to-section label {
   display: block;
 }
-.post-type-archive-service .page-header-description .jump-to-section select {
+.page-services .page-header-description .jump-to-section select {
   max-width: 320px;
   margin-top: 8px;
 }
-.post-type-archive-service .page-header-description .jump-to-section select#jump-menu {
+.page-services .page-header-description .jump-to-section select#jump-menu {
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%23fff' d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
   background-color: #660f56;
   background-size: 24px 24px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   color: #fff;
 }
-.post-type-archive-service .page-header-description .jump-to-section select#jump-menu:focus-visible {
+.page-services .page-header-description .jump-to-section select#jump-menu:focus-visible {
   background-color: #660f56 !important;
 }
-.post-type-archive-service .service-section:nth-child(even) {
+.page-services .service-section:nth-child(even) {
   background-color: #f8f5fc;
 }
 

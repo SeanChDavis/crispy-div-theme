@@ -37,7 +37,7 @@ if ( isset( $args ) ) {
     ) );
 }
 
-// Build full class name for corner accent
+// Build the full class name for the corner accent
 $corner_accent_classes = '';
 if ( ! empty( $args['corner-accent-color'] ) ) {
 	$corner_accent_classes = ' corner-accent ' . $args['corner-accent-color'];
@@ -74,17 +74,14 @@ if ( ! empty( $args['size'] ) ) {
 						}
 						?>
                     </div>
-                    <?php if ( is_post_type_archive( 'service' ) ) { ?>
+                    <?php if ( is_page( 'services' ) ) { ?>
                         <div class="jump-to-section">
-							<label class="screen-reader-text" for="jump-menu">Service Selector</label><select id="jump-menu" onchange="location = this.options[this.selectedIndex].value;">
+							<label class="screen-reader-text" for="jump-menu">Service Selector</label>
+							<select id="jump-menu" onchange="location = this.options[this.selectedIndex].value;">
                                 <option value="#">Select a Service</option>
                                 <?php
-                                // Get all services by title
-                                $services = get_posts( array(
-                                    'post_type' => 'service',
-                                    'posts_per_page' => -1,
-                                ) );
-                                foreach ( $services as $service ) {
+								$services = crispydiv_get_child_pages_of_page( 'services' );
+                                foreach ( $services->posts as $service ) {
                                     $service_title = $service->post_title;
                                     $service_slug = $service->post_name;
                                     ?>

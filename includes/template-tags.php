@@ -267,6 +267,21 @@ function crispydiv_page_header( $args = array() ) {
 
 
 /**
+ * Get child pages of a page by slug
+ */
+function crispydiv_get_child_pages_of_page( $parent_page_slug = '' ) {
+	$parent_page = get_page_by_path( $parent_page_slug, '');
+	return new WP_Query( array(
+			'post_type'      => 'page',
+			'posts_per_page' => -1,
+			'post_parent'    => $parent_page->ID,
+			'order'          => 'ASC',
+			'orderby'        => 'menu_order'
+	) );
+}
+
+
+/**
  * Button
  *
  * @param $args array
