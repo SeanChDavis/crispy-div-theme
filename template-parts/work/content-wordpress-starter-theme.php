@@ -60,11 +60,16 @@
 		'title' => 'A Closer Look',
 		'description' => 'You can <a href="https://wst.crispydiv.com/" target="_blank">browse the WordPress Starter Theme live demo site</a>. Or view the screenshots below to see its minimally configured state.',
 		'classes' => 'top-light'
-	))
+	));
+
+	if ( get_field( 'gallery_shortcode' ) ) {
+		?>
+		<div class="screenshots-gallery element-spacing no-vertical-spacing">
+			<?php echo do_shortcode( get_field( 'gallery_shortcode' ) ); ?>
+		</div>
+		<?php
+	}
 	?>
-	<div class="screenshots-gallery element-spacing no-vertical-spacing">
-		<?php echo do_shortcode('[rl_gallery id="325"]'); ?>
-	</div>
 </section>
 <section class="general-grid large">
 	<?php

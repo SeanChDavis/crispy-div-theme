@@ -60,11 +60,16 @@
 		'title' => 'A Closer Look',
 		'description' => 'You can <a href="https://scc.crispydiv.com/" target="_blank">browse the Simple Course Creator live demo site</a>. Or view the screenshots below to see its configured state with add-on plugins in use.',
 		'classes' => 'top-light'
-	))
+	));
+
+	if ( get_field( 'gallery_shortcode' ) ) {
+		?>
+		<div class="screenshots-gallery element-spacing no-vertical-spacing">
+			<?php echo do_shortcode( get_field( 'gallery_shortcode' ) ); ?>
+		</div>
+		<?php
+	}
 	?>
-	<div class="screenshots-gallery element-spacing no-vertical-spacing">
-		<?php echo do_shortcode('[rl_gallery id="365"]'); ?>
-	</div>
 </section>
 <section class="general-grid large">
 	<?php
