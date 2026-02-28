@@ -24,7 +24,7 @@
 			</p>
 		</div>
 		<div class="work-display">
-			<img class="advanced-custom-fields-graphic framed" src="<?php echo THEME_IMAGES.'wst-front-page-atf.jpg'; ?>" alt="Screenshot of ACF example fields for a page hero">
+			<img class="framed" src="<?php echo THEME_IMAGES.'wst-front-page-atf.jpg'; ?>" alt="Screenshot of WordPress Starter Theme hero area">
 		</div>
 	</div>
 </section>
