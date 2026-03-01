@@ -2933,11 +2933,18 @@ html {
 }
 .single.single-post .entry-footer {
   color: #756c86;
-  margin-top: 1.5rem;
+  margin-top: clamp(1.5rem, 5vw, 4rem);
 }
 .single.single-post .entry-footer .image-attribution {
   font-size: 0.88rem;
   margin-top: 6px;
+}
+.single.single-post .entry-footer a {
+  color: #443e4e;
+  text-decoration-color: #756c86;
+}
+.single.single-post .entry-footer a:active, .single.single-post .entry-footer a:focus, .single.single-post .entry-footer a:hover {
+  text-decoration-color: #443e4e;
 }
 
 @media all and (min-width: 980px) {

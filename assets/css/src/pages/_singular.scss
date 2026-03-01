@@ -132,11 +132,22 @@
 
 	.entry-footer {
 		color: $gray_text;
-		margin-top: 1.5rem;
+		margin-top: clamp(1.5rem, 5vw, 4rem);
 
 		.image-attribution {
 			font-size: .88rem;
 			margin-top: 6px;
+		}
+
+		a {
+			color: darken( $gray_text, 20% );
+			text-decoration-color: $gray_text;
+
+			&:active,
+			&:focus,
+			&:hover {
+				text-decoration-color: darken( $gray_text, 20% );
+			}
 		}
 	}
 }
