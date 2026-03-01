@@ -1,6 +1,9 @@
 .button,
 button,
-[type="submit"] {
+[type="submit"],
+.wp-block-button__link,
+.wp-block-file__button,
+.wp-block-search__button {
 	@include headingFont;
 	background-color: $color6;
 	border: 2px solid $color6;
