@@ -40,22 +40,10 @@ crispydiv_page_header( array(
                                 ?>
                             </footer>
                         </article>
-<!--                        <div class="post-comments">-->
-<!--                            --><?php
-//                            // If comments are open or we have at least one comment, load up the comment template.
-//                            if ( comments_open() || get_comments_number() ) :
-//                                comments_template();
-//                            endif;
-//                            ?>
-<!--                        </div>-->
                     </div>
                 </div>
 			<?php endwhile; ?>
         </div>
-<!--		--><?php //get_template_part( 'template-parts/section', 'subscribe', array(
-//			'title' => 'Subscribe for More',
-//			'size'  => 'medium',
-//		) ); ?>
         <div class="post-navigation-wrap element-spacing small background-gray">
 			<?php
 			the_post_navigation(
