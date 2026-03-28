@@ -32,16 +32,16 @@ if ( ! empty( $args['button_classes'] ) ) {
 }
 ?>
 
-<section class="<?php echo $classes; ?>" role="region" aria-labelledby="footer-lead-title">
-	<span id="footer-lead-title" class="cta-title h5"><?php echo $title; ?></span>
-	<p><?php echo $description; ?></p>
+<section class="<?php echo esc_attr( $classes ); ?>" role="region" aria-labelledby="footer-lead-title">
+	<span id="footer-lead-title" class="cta-title h5"><?php echo esc_html( $title ); ?></span>
+	<p><?php echo wp_kses_post( $description ); ?></p>
 	<?php
 	crispydiv_button(
-			array(
-					'text'  => $button_text,
-					'url'  => $button_url,
-					'classes' => $button_classes,
-			)
+		array(
+			'text'    => $button_text,
+			'url'     => $button_url,
+			'classes' => $button_classes,
+		)
 	);
 	?>
 </section>

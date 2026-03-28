@@ -6,8 +6,9 @@ if ( ! empty( $args['title'] ) ) {
 	$title = $args['title'];
 }
 
+$allowed_title_sizes = array( 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' );
 $title_size = 'h3';
-if ( ! empty( $args['title_size'] ) ) {
+if ( ! empty( $args['title_size'] ) && in_array( $args['title_size'], $allowed_title_sizes, true ) ) {
 	$title_size = $args['title_size'];
 }
 
@@ -27,13 +28,13 @@ if ( ! empty( $args['classes'] ) ) {
 }
 ?>
 
-<div class="<?php echo $classes; ?>">
-	<<?php echo $title_size; ?> class="section-title"><?php echo $title; ?></<?php echo $title_size; ?>>
+<div class="<?php echo esc_attr( $classes ); ?>">
+	<<?php echo $title_size; ?> class="section-title"><?php echo esc_html( $title ); ?></<?php echo $title_size; ?>>
 	<div class="section-description">
-		<p><?php echo $description; ?></p>
+		<p><?php echo wp_kses_post( $description ); ?></p>
 		<?php
 		if ( $description_secondary_element ) :
-			echo $description_secondary_element;
+			echo wp_kses_post( $description_secondary_element );
 		endif;
 		?>
 	</div>

@@ -13,6 +13,6 @@ if ( ! empty( $args['icon_file'] ) ) {
 ?>
 
 <div class="grid-item-header">
-	<img class="grid-item-icon" src="<?php echo THEME_IMAGES . 'icons/' . $icon_file . '.svg'; ?>" alt="">
-	<span class="grid-item-title h4"><?php echo $title; ?></span>
+	<img class="grid-item-icon" src="<?php echo esc_url( THEME_IMAGES . 'icons/' . $icon_file . '.svg' ); ?>" alt="">
+	<span class="grid-item-title h4"><?php echo esc_html( $title ); ?></span>
 </div>

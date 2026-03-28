@@ -1,6 +1,6 @@
 <?php
 /**
- * Brand Assets Template
+ * Why WordPress Template
  */
 
 get_header();
@@ -18,7 +18,7 @@ crispydiv_page_header(array(
 		</div>
 		<section class="why-wordpress-section">
 			<div class="section-heading element-spacing top-semi-heavy background-gray">
-				<h3 class="section-title">Let's Talk Benefits</h3>
+				<h2 class="section-title">Let's Talk Benefits</h2>
 				<div class="section-description">
 					<p>There are several reasons why WordPress is a great choice for your project. Many of those reasons become clearer over time as you use the platform. Remember, you can scale if you have a solid foundation.</p>
 					<div class="button-container">
@@ -123,7 +123,7 @@ crispydiv_page_header(array(
 						</div>
 					</div>
 					<div class="media">
-						<img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES.'platforms.svg'; ?>" alt="Logos of some supported platforms, tools, and services - React, Angular, Shopify, Shopify, PageMotor, Firebase, Vue, Tailwind CSS, Laravel">
+						<img class="advanced-custom-fields-logo" src="<?php echo esc_url( THEME_IMAGES . 'platforms.svg' ); ?>" alt="Logos of some supported platforms, tools, and services - React, Angular, Shopify, Shopify, PageMotor, Firebase, Vue, Tailwind CSS, Laravel">
 					</div>
 				</div>
 			</div>

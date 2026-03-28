@@ -14,7 +14,7 @@ $the_slug = get_post_field( 'post_name', get_post() );
 
 	<main id="site-content">
 		<div class="small-cta-section element-spacing tiny background-gray">
-			<p>Can't find the service you're looking for? No worries. <a href="<?php echo home_url( '/contact/' ); ?>">Send an email to ask questions.</a></p>
+			<p>Can't find the service you're looking for? No worries. <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Send an email to ask questions.</a></p>
 		</div>
 		<?php
 		if ( have_posts() ) {
@@ -22,6 +22,7 @@ $the_slug = get_post_field( 'post_name', get_post() );
 				the_post();
 				get_template_part( 'template-parts/content', 'service' );
 			}
+			wp_reset_postdata();
 		}
 		?>
 	</main>

@@ -16,10 +16,10 @@
 		<div class="fat-footer-grid">
 			<div class="crispy-div-info">
 				<p class="site-title">
-					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/crispy-div-logo-color.svg" alt="<?php echo THEME_NAME.' home'; ?>"/></a>
+					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img class="site-logo" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/branding/crispy-div-logo-color.svg' ); ?>" alt="<?php echo esc_attr( THEME_NAME . ' home' ); ?>"/></a>
 				</p>
 				<p class="site-description"><?php echo crispydiv_site_description(); ?>
-					<a href="<?php echo home_url('/contact/'); ?>">Reach out</a>.</p>
+					<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Reach out</a>.</p>
 			</div>
 			<div class="crispy-div-links">
 				<span class="footer-list-title h6">Services</span>
@@ -51,7 +51,7 @@
 		</div>
 	</div>
 	<div class="site-info">
-		<p class="site-copyright"><?php echo '&copy '.get_bloginfo('name').' '.date('Y'); ?> - <?php echo get_bloginfo('description'); ?></p>
+		<p class="site-copyright"><?php echo '&copy; ' . esc_html( get_bloginfo( 'name' ) ) . ' ' . wp_date( 'Y' ); ?> - <?php echo esc_html( get_bloginfo( 'description' ) ); ?></p>
 	</div>
 </footer>
 </div>

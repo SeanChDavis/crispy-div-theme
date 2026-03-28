@@ -43,14 +43,14 @@
 	} );
 
 	// Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
-	// document.addEventListener( 'click', function( event ) {
-	// 	const isClickInside = siteNavigation.contains( event.target );
-	//
-	// 	if ( ! isClickInside ) {
-	// 		siteNavigation.classList.remove( 'toggled' );
-	// 		button.setAttribute( 'aria-expanded', 'false' );
-	// 	}
-	// } );
+	document.addEventListener( 'click', function( event ) {
+		const isClickInside = siteNavigation.contains( event.target );
+
+		if ( ! isClickInside ) {
+			siteNavigation.classList.remove( 'toggled' );
+			button.setAttribute( 'aria-expanded', 'false' );
+		}
+	} );
 
 	// Get all the link elements within the menu.
 	const links = menu.getElementsByTagName( 'a' );
@@ -72,7 +72,7 @@
 	/**
 	 * Sets or removes .focus class on an element.
 	 */
-	function toggleFocus() {
+	function toggleFocus( event ) {
 		if ( event.type === 'focus' || event.type === 'blur' ) {
 			let self = this;
 			// Move up through the ancestors of the current link until we hit .nav-menu.
@@ -98,19 +98,44 @@
 	}
 }() );
 // Accordion Functionality
-const accordionItems = document.querySelectorAll(".custom-development-example-accordion-item");
-accordionItems.forEach(item => {
-	const header = item.querySelector(".custom-development-example-accordion-item-header");
-	const content = item.querySelector(".custom-development-example-accordion-item-content");
+const accordionItems = document.querySelectorAll( '.custom-development-example-accordion-item' );
 
-	header.addEventListener("click", () => {
-		if (!header.classList.contains("active")) {
-			accordionItems.forEach(otherItem => {
-				otherItem.querySelector(".custom-development-example-accordion-item-header").classList.remove('active');
-			});
-			header.classList.add("active");
-		} else {
-			header.classList.remove("active");
+accordionItems.forEach( item => {
+	const header = item.querySelector( '.custom-development-example-accordion-item-header' );
+	const content = item.querySelector( '.custom-development-example-accordion-item-content' );
+
+	if ( ! header || ! content ) return;
+
+	// Set initial ARIA state
+	header.setAttribute( 'role', 'button' );
+	header.setAttribute( 'tabindex', '0' );
+	header.setAttribute( 'aria-expanded', 'false' );
+
+	function toggleAccordion() {
+		const isActive = header.classList.contains( 'active' );
+
+		// Collapse all items
+		accordionItems.forEach( otherItem => {
+			const otherHeader = otherItem.querySelector( '.custom-development-example-accordion-item-header' );
+			if ( otherHeader ) {
+				otherHeader.classList.remove( 'active' );
+				otherHeader.setAttribute( 'aria-expanded', 'false' );
+			}
+		} );
+
+		// If it wasn't active, open it
+		if ( ! isActive ) {
+			header.classList.add( 'active' );
+			header.setAttribute( 'aria-expanded', 'true' );
 		}
-	});
-});
+	}
+
+	header.addEventListener( 'click', toggleAccordion );
+
+	header.addEventListener( 'keydown', ( e ) => {
+		if ( e.key === 'Enter' || e.key === ' ' ) {
+			e.preventDefault();
+			toggleAccordion();
+		}
+	} );
+} );

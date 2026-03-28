@@ -43,14 +43,14 @@
 	} );
 
 	// Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
-	// document.addEventListener( 'click', function( event ) {
-	// 	const isClickInside = siteNavigation.contains( event.target );
-	//
-	// 	if ( ! isClickInside ) {
-	// 		siteNavigation.classList.remove( 'toggled' );
-	// 		button.setAttribute( 'aria-expanded', 'false' );
-	// 	}
-	// } );
+	document.addEventListener( 'click', function( event ) {
+		const isClickInside = siteNavigation.contains( event.target );
+
+		if ( ! isClickInside ) {
+			siteNavigation.classList.remove( 'toggled' );
+			button.setAttribute( 'aria-expanded', 'false' );
+		}
+	} );
 
 	// Get all the link elements within the menu.
 	const links = menu.getElementsByTagName( 'a' );
@@ -72,7 +72,7 @@
 	/**
 	 * Sets or removes .focus class on an element.
 	 */
-	function toggleFocus() {
+	function toggleFocus( event ) {
 		if ( event.type === 'focus' || event.type === 'blur' ) {
 			let self = this;
 			// Move up through the ancestors of the current link until we hit .nav-menu.

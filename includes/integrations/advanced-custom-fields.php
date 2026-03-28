@@ -8,7 +8,7 @@ add_action('acf/init', function() {
             'page_title' => 'Crispy Div',
             'menu_title' => 'Crispy Div',
             'menu_slug'  => 'crispy-div',
-            'capability' => 'edit_posts',
+            'capability' => 'manage_options',
         ) );
 
     }

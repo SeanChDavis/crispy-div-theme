@@ -16,7 +16,7 @@
 			<?php foreach ( $customization_logos as $logo ) { ?>
 				<div class="customization-logo">
 					<?php $logo_name = $logo['alias'] ?? $logo['name']; ?>
-					<img class="logo <?php echo str_replace( " ", "-", strtolower( $logo_name ) ); ?>-logo" src="<?php echo THEME_IMAGES . 'logos/' . $logo['image']; ?>" alt="<?php echo $logo['name']; ?>">
+					<img class="logo <?php echo esc_attr( str_replace( ' ', '-', strtolower( $logo_name ) ) ); ?>-logo" src="<?php echo esc_url( THEME_IMAGES . 'logos/' . $logo['image'] ); ?>" alt="<?php echo esc_attr( $logo['name'] ); ?>">
 				</div>
 			<?php } ?>
 		</div>

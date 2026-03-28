@@ -19,11 +19,11 @@ function get_crispydiv_custom_dev_accordion(): void
 			?>
 			<div class="custom-development-example-accordion-item">
 				<div class="custom-development-example-accordion-item-header">
-					<span class="custom-development-example-accordion-item-title"><?php echo get_the_title(); ?></span>
-					<span class="custom-development-example-accordion-item-icon"><img src="<?php echo THEME_IMAGES.'icons/plus-sharp-solid-full.svg'; ?>" alt=""></span>
+					<span class="custom-development-example-accordion-item-title"><?php echo esc_html( get_the_title() ); ?></span>
+					<span class="custom-development-example-accordion-item-icon"><img src="<?php echo esc_url( THEME_IMAGES . 'icons/plus-sharp-solid-full.svg' ); ?>" alt=""></span>
 				</div>
 				<div class="custom-development-example-accordion-item-content">
-					<?php echo get_the_content(); ?>
+					<?php echo wp_kses_post( get_the_content() ); ?>
 				</div>
 			</div>
 		<?php

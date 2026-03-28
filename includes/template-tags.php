@@ -81,7 +81,7 @@ function crispydiv_post_thumbnail( $id = null ) {
 
 	<?php else : ?>
 
-        <a class="post-thumbnail" href="<?php echo get_the_permalink($id); ?>" aria-hidden="true" tabindex="-1">
+        <a class="post-thumbnail" href="<?php echo esc_url( get_the_permalink( $id ) ); ?>" aria-hidden="true" tabindex="-1">
 			<?php
 			echo get_the_post_thumbnail(
 				$id,
@@ -102,18 +102,6 @@ function crispydiv_post_thumbnail( $id = null ) {
 }
 
 
-if ( ! function_exists( 'wp_body_open' ) ) :
-	/**
-	 * Shim for sites older than 5.2.
-	 *
-	 * @link https://core.trac.wordpress.org/ticket/12563
-	 */
-	function wp_body_open() {
-		do_action( 'wp_body_open' );
-	}
-endif;
-
-
 /**
  * Social media link grid
  *
@@ -121,9 +109,9 @@ endif;
  */
 function crispydiv_social_links( $full_color = true ) {
 	?>
-    <div class="socials-flex <?php echo $full_color ? 'full-color' : ''; ?>">
-        <a href="https://twitter.com/crispydiv" class="social-icon twitter" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
-        <a href="https://instagram.com/crispydivdesigns" class="social-icon instagram" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <div class="socials-flex <?php echo esc_attr( $full_color ? 'full-color' : '' ); ?>">
+        <a href="https://twitter.com/crispydiv" class="social-icon twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i> Twitter</a>
+        <a href="https://instagram.com/crispydivdesigns" class="social-icon instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
     </div>
 	<?php
 }
@@ -270,13 +258,16 @@ function crispydiv_page_header( $args = array() ) {
  * Get child pages of a page by slug
  */
 function crispydiv_get_child_pages_of_page( $parent_page_slug = '' ) {
-	$parent_page = get_page_by_path( $parent_page_slug, '');
+	$parent_page = get_page_by_path( $parent_page_slug, OBJECT );
+	if ( ! $parent_page ) {
+		return new WP_Query( array( 'post_type' => 'page', 'post__in' => array( 0 ) ) );
+	}
 	return new WP_Query( array(
-			'post_type'      => 'page',
-			'posts_per_page' => -1,
-			'post_parent'    => $parent_page->ID,
-			'order'          => 'ASC',
-			'orderby'        => 'menu_order'
+		'post_type'      => 'page',
+		'posts_per_page' => -1,
+		'post_parent'    => $parent_page->ID,
+		'order'          => 'ASC',
+		'orderby'        => 'menu_order',
 	) );
 }
 

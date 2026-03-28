@@ -17,7 +17,7 @@ crispydiv_page_header( array(
 		<div class="inner smedium">
 			<div class="contact-form-grid">
 				<div class="contact-form-grid-content">
-					<?php echo get_field( 'contact_form', get_the_ID() ); ?>
+					<?php echo do_shortcode( get_field( 'contact_form', get_the_ID() ) ); ?>
 				</div>
 				<div class="kvk-details">
 					<span class="subdued-title"><abbr title="Kamer van Koophandel">KVK</abbr> Details</span>

@@ -16,7 +16,7 @@ crispydiv_page_header(array(
 		</div>
 		<section class="all-assets-section">
 			<div class="inner small">
-				<span class="h2">Brand Colors</span>
+				<h2>Brand Colors</h2>
 				<div class="section-description">
 					<p>Please use these colors responsibly for a cohesive look and feel. If you'd like to keep it simple, our two primary colors are purple <strong>(#341671)</strong> and orange <strong>(#F54952)</strong>.</p>
 				</div>
@@ -46,7 +46,7 @@ crispydiv_page_header(array(
 						<span class="hex">#f8f5fc</span>
 					</div>
 				</div>
-				<span class="h2">Logos & Logomark</span>
+				<h2>Logos &amp; Logomark</h2>
 				<div class="section-description">
 					<p>Try to keep the contrast in mind when implementing the logo so that the text is legible. Also, be sure to give the logo room to breathe. Do not allow it to touch or overlap any other elements (subtle background design elements are okay).</p>
 				</div>
@@ -64,7 +64,7 @@ crispydiv_page_header(array(
 						<img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-mark.svg'; ?>" alt="Crispy Div Logomark for light backgrounds">
 					</div>
 				</div>
-				<span class="h2">Typography & Text</span>
+				<h2>Typography &amp; Text</h2>
 				<div class="section-description">
 					<p>You have no obligation to use our preferred font when referencing our brand. If you choose to do so, we use <a href="https://fonts.google.com/specimen/Raleway?query=ralew" target="_blank" rel="nofollow">Raleway</a> for both body (weight 500) and heading (weight 700 or 800) text. Our Brand name is <strong>Crispy Div</strong>. That's capital C and D with a space between the two words.</p>
 				</div>
@@ -86,7 +86,7 @@ crispydiv_page_header(array(
 						<span class="example-status">Incorrect</span>
 					</div>
 				</div>
-				<span class="h2">Downloads</span>
+				<h2>Downloads</h2>
 				<div class="section-description">
 					<p>Logo and logomark variations can be downloaded in a single .zip file.</p>
 				</div>

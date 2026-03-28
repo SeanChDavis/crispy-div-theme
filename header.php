@@ -30,11 +30,11 @@
 					<div class="site-branding">
 						<?php $logo_color = get_crispydiv_logo_by_color() ? 'white' : 'color'; ?>
 						<?php echo is_front_page() ? '<h1 class="site-title">' : '<div class="site-title">'; ?>
-							<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/crispy-div-logo-<?php echo $logo_color; ?>.svg" alt="<?php echo THEME_NAME; ?>"/></a>
+							<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img class="site-logo" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/branding/crispy-div-logo-' . $logo_color . '.svg' ); ?>" alt="<?php echo esc_attr( THEME_NAME ); ?>"/></a>
 						<?php echo is_front_page() ? '</h1>' : '</div>'; ?>
 					</div>
 					<?php if (has_nav_menu('primary-menu')) { ?>
-						<nav id="site-navigation" class="main-navigation">
+						<nav id="site-navigation" class="main-navigation" aria-label="Primary">
 							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
 							<?php
 							wp_nav_menu(

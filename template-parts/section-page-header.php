@@ -11,8 +11,8 @@ if ( ! empty( $args['bg-color'] ) && ! empty( $args['corner-accent-color'] ) ) {
 } else {
 
 	$page_id = get_the_ID();
-	if (is_home()) {
-		$page_id = get_option('page_for_posts');
+	if ( is_home() ) {
+		$page_id = get_option( 'page_for_posts' );
 	}
 
 	if ( get_field( 'page_header_theme', $page_id ) === 'purple' ) {
@@ -25,17 +25,14 @@ if ( ! empty( $args['bg-color'] ) && ! empty( $args['corner-accent-color'] ) ) {
 }
 
 // Get the page header args and set defaults
-if ( isset( $args ) ) {
-
-    $args = wp_parse_args( $args, array(
-        'bg-color' => $page_header_theme,
-        'corner-accent-color' => $corner_accent_color,
-        'title' => get_the_title( get_the_ID() ),
-        'title-class' => 'h3',
-        'title-label' => '',
-        'description' => '',
-    ) );
-}
+$args = wp_parse_args( $args ?? [], array(
+	'bg-color'            => $page_header_theme,
+	'corner-accent-color' => $corner_accent_color,
+	'title'               => get_the_title( get_the_ID() ),
+	'title-class'         => 'h3',
+	'title-label'         => '',
+	'description'         => '',
+) );
 
 // Build the full class name for the corner accent
 $corner_accent_classes = '';
@@ -49,17 +46,17 @@ if ( ! empty( $args['size'] ) ) {
 }
 ?>
 
-<section id="page-header" class="page-header <?php echo $args['bg-color'], $corner_accent_classes; ?>" role="region" aria-labelledby="page-header-title">
-	<div class="inner <?php echo $size; ?>">
-		<h1 id="page-header-title" class="page-header-title <?php echo $args['title-class']; ?>">
+<section id="page-header" class="page-header <?php echo esc_attr( $args['bg-color'] ) . esc_attr( $corner_accent_classes ); ?>" role="region" aria-labelledby="page-header-title">
+	<div class="inner <?php echo esc_attr( $size ); ?>">
+		<h1 id="page-header-title" class="page-header-title <?php echo esc_attr( $args['title-class'] ); ?>">
             <?php if ( ! empty( $args['title-label'] ) ) { ?>
-                <span class="page-header-title-label"><?php echo $args['title-label']; ?></span>
+                <span class="page-header-title-label"><?php echo esc_html( $args['title-label'] ); ?></span>
             <?php } ?>
-            <?php echo $args['title']; ?>
+            <?php echo esc_html( $args['title'] ); ?>
         </h1>
 		<?php if ( is_singular( 'post' ) ) { ?>
             <div class="entry-meta">
-                <span class="posted-on"><?php echo crispydiv_posted_on(); ?></span>
+                <?php crispydiv_posted_on(); ?>
             </div>
 		<?php } ?>
 		<?php
@@ -68,7 +65,7 @@ if ( ! empty( $args['size'] ) ) {
                 <div class="page-header-description">
                     <div class="page-header-description-inner">
                         <?php
-						echo $args['description'];
+						echo wp_kses_post( $args['description'] );
 						if ( is_home() ) {
 							echo get_search_form();
 						}
@@ -85,7 +82,7 @@ if ( ! empty( $args['size'] ) ) {
                                     $service_title = $service->post_title;
                                     $service_slug = $service->post_name;
                                     ?>
-                                    <option value="#<?php echo $service_slug; ?>"><?php echo $service_title; ?></option>
+                                    <option value="#<?php echo esc_attr( $service_slug ); ?>"><?php echo esc_html( $service_title ); ?></option>
                                     <?php
                                 }
                                 ?>

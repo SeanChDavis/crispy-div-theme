@@ -4,26 +4,23 @@
  */
 
 // Check for args
-if ( isset( $args ) ) {
-
-	$args = wp_parse_args( $args, array(
-        'is-services' => false,
-		'services-full' => false,
-		'services-with-cta' => false,
-	) );
-}
+$args = wp_parse_args( $args ?? [], array(
+	'is-services'       => false,
+	'services-full'     => false,
+	'services-with-cta' => false,
+) );
 ?>
 
 <div class="grid-item">
     <article id="post-<?php the_ID(); ?>" <?php post_class( 'grid-item-content' ); ?>>
-	    <?php crispydiv_post_thumbnail(get_the_ID()); ?>
+	    <?php crispydiv_post_thumbnail( get_the_ID() ); ?>
         <header class="entry-header grid-item-header">
 			<?php
             if ( $args['is-services'] ) {
 				?>
-				<img class="grid-item-icon" src="<?php echo THEME_IMAGES . 'icons/' . get_field( 'service_icon', get_the_ID() ) . '.svg'; ?>" alt="">
+				<img class="grid-item-icon" src="<?php echo esc_url( THEME_IMAGES . 'icons/' . get_field( 'service_icon', get_the_ID() ) . '.svg' ); ?>" alt="">
 				<?php
-	            the_title( '<span class="entry-title grid-item-title h4">', '</h2>' );
+	            the_title( '<h2 class="entry-title grid-item-title h4">', '</h2>' );
             } else {
 	            the_title( '<h2 class="entry-title grid-item-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
             }
@@ -33,14 +30,14 @@ if ( isset( $args ) ) {
 			<?php
             if ( $args['is-services'] ) {
                 ?>
-                <p><?php echo get_field( 'service_description', get_the_ID() ); ?></p>
+                <p><?php echo wp_kses_post( get_field( 'service_description', get_the_ID() ) ); ?></p>
                 <?php
                 if ( $args['services-full'] ) {
                     ?>
                     <ul>
-						<li><?php echo get_field( 'service_features_list_feature_1', get_the_ID()); ?></li>
-						<li><?php echo get_field( 'service_features_list_feature_2', get_the_ID()); ?></li>
-						<li><?php echo get_field( 'service_features_list_feature_3', get_the_ID()); ?></li>
+						<li><?php echo esc_html( get_field( 'service_features_list_feature_1', get_the_ID() ) ); ?></li>
+						<li><?php echo esc_html( get_field( 'service_features_list_feature_2', get_the_ID() ) ); ?></li>
+						<li><?php echo esc_html( get_field( 'service_features_list_feature_3', get_the_ID() ) ); ?></li>
                     </ul>
                     <?php
                 }
@@ -57,8 +54,8 @@ if ( isset( $args ) ) {
                 <div class="cta">
 			        <?php
 			        crispydiv_button( array(
-				        'text' => get_field( 'service_cta_text' ),
-				        'url' => home_url( 'services/' ) . $the_slug,
+				        'text'    => get_field( 'service_cta_text' ) ?: 'Learn More',
+				        'url'     => home_url( '/services/' ) . $the_slug,
 				        'classes' => array( 'button', 'small', 'outline', 'orange' ),
 			        ) );
 			        ?>
@@ -70,8 +67,8 @@ if ( isset( $args ) ) {
             <div class="cta">
 		        <?php
 		        crispydiv_button( array(
-			        'text' => 'Keep Reading',
-			        'url' => get_permalink(),
+			        'text'    => 'Keep Reading',
+			        'url'     => get_permalink(),
 			        'classes' => array( 'button', 'purple', 'small', 'outline' ),
 		        ) );
 		        ?>

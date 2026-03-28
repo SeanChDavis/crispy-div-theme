@@ -34,7 +34,7 @@ crispydiv_page_header( array(
                                 crispydiv_post_categories_tags();
                                 if ( get_field( 'image_attribution' ) ) {
                                     ?>
-                                    <p class="image-attribution"><?php echo get_field( 'image_attribution' ); ?></p>
+                                    <p class="image-attribution"><?php echo wp_kses_post( get_field( 'image_attribution' ) ); ?></p>
                                     <?php
                                 }
                                 ?>
