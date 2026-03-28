@@ -52,7 +52,7 @@ if ( ! empty( $args['size'] ) ) {
             <?php if ( ! empty( $args['title-label'] ) ) { ?>
                 <span class="page-header-title-label"><?php echo esc_html( $args['title-label'] ); ?></span>
             <?php } ?>
-            <?php echo esc_html( $args['title'] ); ?>
+            <?php echo wp_kses( $args['title'], array( 'span' => array( 'class' => array() ) ) ); ?>
         </h1>
 		<?php if ( is_singular( 'post' ) ) { ?>
             <div class="entry-meta">
