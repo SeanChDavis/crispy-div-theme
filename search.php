@@ -7,7 +7,8 @@ get_header();
 
 crispydiv_page_header( array(
     'corner-accent-color' => 'black-orange',
-    'title' => get_search_query() ? '<span class="page-header-title-label">Search results for:</span>' . get_search_query() : '<span class="page-header-title-label">Search results:</span>',
+    'title-label'         => get_search_query() ? 'Search results for:' : 'Search results:',
+    'title'               => get_search_query() ?: '',
 ) );
 ?>
 
