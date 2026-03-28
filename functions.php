@@ -109,8 +109,8 @@ add_action( 'widgets_init', function() {
 
 // Enqueue scripts and styles.
 add_action( 'wp_enqueue_scripts', function() {
-	wp_enqueue_style( 'crispydiv-style', get_stylesheet_uri(), array(), THEME_VERSION );
-	wp_enqueue_script( 'crispydiv-navigation', get_template_directory_uri() . '/assets/js/scripts.js', array(), THEME_VERSION, true );
+	wp_enqueue_style( 'crispydiv-style', get_stylesheet_uri(), array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
+	wp_enqueue_script( 'crispydiv-scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), filemtime( get_stylesheet_directory() . '/assets/js/scripts.min.js' ), true );
 } );
 
 // Theme functions
