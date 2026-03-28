@@ -9,7 +9,7 @@ crispydiv_page_header();
 
 	<main id="site-content" class="site-main border-bottom-over-white">
 		<div class="small-cta-section element-spacing tiny background-gray">
-			<p>Read more about why this page exists: <a href="<?php echo esc_url( home_url( ‘/boost-your-brands-identity-with-a-brand-assets-page-on-your-website/’ ) ); ?>">Boost Your Brand’s Identity with a Brand Assets Page</a></p>
+			<p>Read more about why this page exists: <a href="<?php echo esc_url( home_url( '/boost-your-brands-identity-with-a-brand-assets-page-on-your-website/' ) ); ?>">Boost Your Brand's Identity with a Brand Assets Page</a></p>
 		</div>
 		<section class="all-assets-section">
 			<div class="inner small">
