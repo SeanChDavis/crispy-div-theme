@@ -10,7 +10,7 @@ crispydiv_page_header();
 	<main id="site-content">
 		<div class="small-cta-section element-spacing tiny background-purple-darker">
 			<p>
-				<img src="<?php echo THEME_IMAGES.'icons/circle-info-solid-full.svg'; ?>" alt="">Crispy Div builds with self-hosted WordPress (<em>wordpress.org</em>), not WordPress as a service (<em>wordpress.com</em>).
+				<img src="<?php echo esc_url( THEME_IMAGES . 'icons/circle-info-solid-full.svg' ); ?>" alt="">Crispy Div builds with self-hosted WordPress (<em>wordpress.org</em>), not WordPress as a service (<em>wordpress.com</em>).
 			</p>
 		</div>
 		<section class="why-wordpress-section">

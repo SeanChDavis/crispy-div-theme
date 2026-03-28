@@ -41,25 +41,25 @@ get_header();
 			<div class="advanced-custom-fields-highlight element-spacing top-light">
 				<div class="acf-grid">
 					<div class="acf-highlight-content">
-						<img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES . 'logos/advanced-custom-fields-logo.png'; ?>" alt="Advanced Custom Fields Logomark">
+						<img class="advanced-custom-fields-logo" src="<?php echo esc_url( THEME_IMAGES . 'logos/advanced-custom-fields-logo.png' ); ?>" alt="Advanced Custom Fields Logomark">
 						<span class="h5 acf-highlight-title semi-heavy">Tweak settings, not code.</span>
-						<p><a href="<?php echo home_url( '/advanced-custom-fields/' ); ?>" target="_blank">Advanced Custom Fields</a> (ACF) is a powerful plugin that allows you to create custom fields for your WordPress site. We use it to create custom post types, taxonomies, fields, and more.</p>
+						<p><a href="<?php echo esc_url( home_url( '/advanced-custom-fields/' ) ); ?>" target="_blank">Advanced Custom Fields</a> (ACF) is a powerful plugin that allows you to create custom fields for your WordPress site. We use it to create custom post types, taxonomies, fields, and more.</p>
 						<p>With ACF's features, <span class="color-black semi-heavy">we make important elements of your site editable from the WordPress dashboard</span>. This allows you to control your site's content, regardless of type or structure, without having to deal with code or theme customizations.</p>
 					</div>
 					<div class="acf-graphic">
-						<img class="advanced-custom-fields-graphic framed" src="<?php echo THEME_IMAGES . 'advanced-custom-fields-hero-area-fields.png'; ?>" alt="Screenshot of ACF example fields for a page hero">
+						<img class="advanced-custom-fields-graphic framed" src="<?php echo esc_url( THEME_IMAGES . 'advanced-custom-fields-hero-area-fields.png' ); ?>" alt="Screenshot of ACF example fields for a page hero">
 					</div>
 				</div>
 			</div>
 			<div class="facetwp-gravity-forms-grid">
 				<div class="facetwp-grid-item element-spacing">
-					<img class="logo facetwp-logo" src="<?php echo THEME_IMAGES . 'logos/facetwp-logo.png'; ?>" alt="">
-					<p><a href="<?php echo home_url( '/facetwp/' ); ?>" target="_blank">FacetWP</a> introduces advanced filtering for WordPress. The smart functionality allows site visitors to control what content they see and find what they are looking for much faster.</p>
+					<img class="logo facetwp-logo" src="<?php echo esc_url( THEME_IMAGES . 'logos/facetwp-logo.png' ); ?>" alt="">
+					<p><a href="<?php echo esc_url( home_url( '/facetwp/' ) ); ?>" target="_blank">FacetWP</a> introduces advanced filtering for WordPress. The smart functionality allows site visitors to control what content they see and find what they are looking for much faster.</p>
 					<p>We use FacetWP in a number of ways, including blog post filtering. Let your readers <span class="color-black semi-heavy">filter blog posts by category, tag, or custom field</span> (including fields created by Advanced Custom Fields). It's intelligent, fast, lightweight, and incredibly useful.</p>
 				</div>
 				<div class="gravity-forms-grid-item element-spacing">
-					<img class="logo gravity-forms-logo" src="<?php echo THEME_IMAGES . 'logos/gravity-forms-logo.svg'; ?>" alt="">
-					<p><a href="<?php echo home_url( '/gravity-forms/' ); ?>" target="_blank">Gravity Forms</a> is more than just a custom form builder. Its functionality can handle everything from collecting payments via Stripe to routing detailed support requests to Help Scout.</p>
+					<img class="logo gravity-forms-logo" src="<?php echo esc_url( THEME_IMAGES . 'logos/gravity-forms-logo.svg' ); ?>" alt="">
+					<p><a href="<?php echo esc_url( home_url( '/gravity-forms/' ) ); ?>" target="_blank">Gravity Forms</a> is more than just a custom form builder. Its functionality can handle everything from collecting payments via Stripe to routing detailed support requests to Help Scout.</p>
 					<p>We use Gravity Forms to streamline interactions with users and maintain detailed records. With <span class="color-black semi-heavy">over 30 form fields to choose from</span> and integration capabilities through its API & webhook functionality, the possibilities are endless and exciting.</p>
 				</div>
 			</div>

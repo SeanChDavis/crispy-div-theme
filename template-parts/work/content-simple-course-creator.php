@@ -18,13 +18,13 @@
 					'classes' => array('button', 'purple'),
 					'alt_link_text' => 'Download from GitHub',
 					'alt_link_url' => 'https://github.com/SeanChDavis/simple-course-creator',
-					'alt_link_target_self' => false,
+					'alt_target_self' => false,
 				));
 				?>
 			</p>
 		</div>
 		<div class="work-display">
-			<img class="framed" src="<?php echo THEME_IMAGES.'scc-front-page-atf.jpg'; ?>" alt="">
+			<img class="framed" src="<?php echo esc_url( THEME_IMAGES . 'scc-front-page-atf.jpg' ); ?>" alt="">
 		</div>
 	</div>
 </section>

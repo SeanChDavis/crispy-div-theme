@@ -56,6 +56,6 @@ function crispydiv_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function crispydiv_customize_preview_js() {
-	wp_enqueue_script( 'crispydiv-customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), THEME_VERSION, true );
+	wp_enqueue_script( 'crispydiv-customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), filemtime( get_stylesheet_directory() . '/assets/js/customizer.js' ), true );
 }
 add_action( 'customize_preview_init', 'crispydiv_customize_preview_js' );

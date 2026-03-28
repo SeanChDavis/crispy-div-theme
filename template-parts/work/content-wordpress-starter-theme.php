@@ -18,13 +18,13 @@
 					'classes' => array('button', 'purple'),
 					'alt_link_text' => 'Download from GitHub',
 					'alt_link_url' => 'https://github.com/SeanChDavis/wordpress-starter-theme',
-					'alt_link_target_self' => false,
+					'alt_target_self' => false,
 				));
 				?>
 			</p>
 		</div>
 		<div class="work-display">
-			<img class="framed" src="<?php echo THEME_IMAGES.'wst-front-page-atf.jpg'; ?>" alt="Screenshot of WordPress Starter Theme hero area">
+			<img class="framed" src="<?php echo esc_url( THEME_IMAGES . 'wst-front-page-atf.jpg' ); ?>" alt="Screenshot of WordPress Starter Theme hero area">
 		</div>
 	</div>
 </section>

@@ -3,8 +3,6 @@
  * Crispy Div functions and definitions
  */
 
-const THEME_VERSION = '1.4.2';
-
 define( 'THEME_URI', get_home_url() );
 define( 'THEME_NAME', get_bloginfo( 'name' ) );
 define( 'THEME_TEMPLATE_DIR', get_template_directory() );

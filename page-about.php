@@ -8,7 +8,7 @@ crispydiv_page_header();
 
 	<main id="site-content">
 		<div class="small-cta-section element-spacing tiny background-purple-darker">
-			<p><img src="<?php echo THEME_IMAGES . 'icons/circle-info-solid-full.svg'; ?>" alt="">Crispy Div is a registered business in the Netherlands but can accept clients from anywhere in the world.</p>
+			<p><img src="<?php echo esc_url( THEME_IMAGES . 'icons/circle-info-solid-full.svg' ); ?>" alt="">Crispy Div is a registered business in the Netherlands but can accept clients from anywhere in the world.</p>
 		</div>
 		<section class="history-section border-bottom-over-white">
 			<div class="inner smedium">
@@ -22,12 +22,12 @@ crispydiv_page_header();
 					<div class="history-grid-media">
 						<div class="history-grid-media-inner">
 							<div class="history-image">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sean-davis-headshot.png" alt="Sean Davis" />
+								<img src="<?php echo esc_url( THEME_IMAGES . 'sean-davis-headshot.png' ); ?>" alt="Sean Davis" />
 							</div>
 							<div class="history-media-content">
 								<p class="sean-label"><span class="name" aria-hidden="true">Sean Davis</span><span class="title">Web Developer</span><span class="education"><abbr title="Bachelor of Science">BSc</abbr> Information Systems</span></p>
 								<div class="link-grid">
-									<a class="homepage-icon" href="https://seanchdavis.com/" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/circle-user-sharp-solid-full.svg'; ?>" alt="Sean's Homepage"></a><a class="github-icon" href="https://github.com/SeanChDavis" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/github-brands-solid-full.svg'; ?>" alt="Sean's GitHub"></a><a class="wordpress-icon" href="https://profiles.wordpress.org/sdavis2702/" target="_blank"><img src="<?php echo THEME_IMAGES . 'icons/wordpress-brands-solid-full.svg'; ?>" alt="Sean's WordPress"></a>
+									<a class="homepage-icon" href="https://seanchdavis.com/" target="_blank"><img src="<?php echo esc_url( THEME_IMAGES . 'icons/circle-user-sharp-solid-full.svg' ); ?>" alt="Sean's Homepage"></a><a class="github-icon" href="https://github.com/SeanChDavis" target="_blank"><img src="<?php echo esc_url( THEME_IMAGES . 'icons/github-brands-solid-full.svg' ); ?>" alt="Sean's GitHub"></a><a class="wordpress-icon" href="https://profiles.wordpress.org/sdavis2702/" target="_blank"><img src="<?php echo esc_url( THEME_IMAGES . 'icons/wordpress-brands-solid-full.svg' ); ?>" alt="Sean's WordPress"></a>
 								</div>
 							</div>
 						</div>

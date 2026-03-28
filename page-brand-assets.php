@@ -9,7 +9,7 @@ crispydiv_page_header();
 
 	<main id="site-content" class="site-main border-bottom-over-white">
 		<div class="small-cta-section element-spacing tiny background-gray">
-			<p>Read more about why this page exists: <a href="<?php echo home_url( '/boost-your-brands-identity-with-a-brand-assets-page-on-your-website/' ); ?>">Boost Your Brand’s Identity with a Brand Assets Page</a></p>
+			<p>Read more about why this page exists: <a href="<?php echo esc_url( home_url( ‘/boost-your-brands-identity-with-a-brand-assets-page-on-your-website/’ ) ); ?>">Boost Your Brand’s Identity with a Brand Assets Page</a></p>
 		</div>
 		<section class="all-assets-section">
 			<div class="inner small">
@@ -49,16 +49,16 @@ crispydiv_page_header();
 				</div>
 				<div class="logos-grid">
 					<div class="logo-white background-purple">
-						<img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-white.svg'; ?>" alt="Crispy Div Logo for dark backgrounds">
+						<img src="<?php echo esc_url( THEME_ASSETS . 'brand/crispy-div-logo-white.svg' ); ?>" alt="Crispy Div Logo for dark backgrounds">
 					</div>
 					<div class="logomark background-pink">
-						<img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-mark.svg'; ?>" alt="Crispy Div Logomark for dark backgrounds">
+						<img src="<?php echo esc_url( THEME_ASSETS . 'brand/crispy-div-logo-mark.svg' ); ?>" alt="Crispy Div Logomark for dark backgrounds">
 					</div>
 					<div class="logo-color background-gray">
-						<img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-color.svg'; ?>" alt="Crispy Div Logo for light backgrounds">
+						<img src="<?php echo esc_url( THEME_ASSETS . 'brand/crispy-div-logo-color.svg' ); ?>" alt="Crispy Div Logo for light backgrounds">
 					</div>
 					<div class="logomark background-white">
-						<img src="<?php echo THEME_ASSETS . 'brand/crispy-div-logo-mark.svg'; ?>" alt="Crispy Div Logomark for light backgrounds">
+						<img src="<?php echo esc_url( THEME_ASSETS . 'brand/crispy-div-logo-mark.svg' ); ?>" alt="Crispy Div Logomark for light backgrounds">
 					</div>
 				</div>
 				<h2>Typography &amp; Text</h2>
@@ -88,7 +88,7 @@ crispydiv_page_header();
 					<p>Logo and logomark variations can be downloaded in a single .zip file.</p>
 				</div>
 				<div class="download-logos">
-					<a href="<?php echo THEME_ASSETS . 'brand/crispy-div-brand-assets.zip'; ?>" download="crispy-div-brand-assets.zip" class="button purple">Download All Assets</a>
+					<a href="<?php echo esc_url( THEME_ASSETS . 'brand/crispy-div-brand-assets.zip' ); ?>" download="crispy-div-brand-assets.zip" class="button purple">Download All Assets</a>
 				</div>
 			</div>
 		</section>

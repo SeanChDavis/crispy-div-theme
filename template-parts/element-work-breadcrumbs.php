@@ -4,5 +4,5 @@
  */
 ?>
 <div class="small-cta-section element-spacing tiny background-purple-darker">
-	<p><a href="<?php echo home_url('/work/'); ?>">Completed Work</a> &rarr; <?php the_title( '<span class="semi-heavy">', '</span>' ); ?></p>
+	<p><a href="<?php echo esc_url( home_url( '/work/' ) ); ?>">Completed Work</a> &rarr; <?php the_title( '<span class="semi-heavy">', '</span>' ); ?></p>
 </div>
