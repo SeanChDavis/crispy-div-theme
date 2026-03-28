@@ -14,7 +14,7 @@ $the_slug = get_post_field( 'post_name', get_post() );
 
 	<main id="site-content">
 		<div class="small-cta-section element-spacing tiny background-gray">
-			<p>Can't find the service you're looking for? No worries. <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Send an email to ask questions.</a></p>
+			<p>Can't find the service you're looking for? No worries. <a href="<?php echo esc_url( THEME_CONTACT_URL ); ?>">Send an email to ask questions.</a></p>
 		</div>
 		<?php
 		if ( have_posts() ) {

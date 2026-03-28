@@ -52,7 +52,7 @@
 									array(
 											'classes' => array( 'button small outline primary-cta' . $is_current_page ),
 											'text'    => 'Let\'s Talk',
-											'url'     => is_page( 'contact') ? '#site-content' : home_url( '/contact/' ),
+											'url'     => is_page( 'contact') ? '#site-content' : THEME_CONTACT_URL,
 									)
 							);
 							?>

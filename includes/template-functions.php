@@ -6,6 +6,21 @@
  */
 
 /**
+ * Get the effective page ID for the current request,
+ * accounting for the blog posts page.
+ *
+ * @return int|null
+ */
+function crispydiv_get_current_page_id() {
+	if ( is_home() ) {
+		return (int) get_option( 'page_for_posts' );
+	}
+	global $post;
+	return isset( $post ) ? $post->ID : null;
+}
+
+
+/**
  * Adds custom classes to the array of body classes.
  *
  * @param  array  $classes  Classes for the body element.
@@ -40,15 +55,7 @@ add_filter('body_class', function ($classes) {
 		$classes[] = 'has-light-header';
 	}
 
-	// Catch the blog page ID
-	if (isset($post)) {
-		$page_id = $post->ID;
-		if (is_home()) {
-			$page_id = get_option('page_for_posts');
-		}
-	} else {
-		$page_id = null;
-	}
+	$page_id = crispydiv_get_current_page_id();
 
 	// Conditionally add header color classes
 	if (
@@ -79,17 +86,7 @@ add_filter('body_class', function ($classes) {
  * @return bool
  */
 function get_crispydiv_logo_by_color() {
-	global $post;
-
-	// Catch the blog page ID
-	if (isset($post)) {
-		$page_id = $post->ID;
-		if (is_home()) {
-			$page_id = get_option('page_for_posts');
-		}
-	} else {
-		$page_id = null;
-	}
+	$page_id = crispydiv_get_current_page_id();
 
 	if (
 		( get_field( 'page_header_theme', $page_id ) == 'purple' )

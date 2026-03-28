@@ -4,11 +4,9 @@
  * The template for displaying a single work page
  */
 get_header();
-crispydiv_page_header(array(
-	'title'       => get_field('page_header_title') ?: get_the_title(get_the_ID()),
+crispydiv_page_header( array(
 	'title-label' => 'Completed Work:',
-	'description' => get_field('page_header_description') ?: '',
-));
+) );
 
 // Get the slug of the current page
 $the_slug = get_post_field( 'post_name', get_post() );

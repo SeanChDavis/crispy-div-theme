@@ -3,10 +3,7 @@
  * About page template
  */
 get_header();
-crispydiv_page_header( array(
-	'title' => get_field( 'page_header_title' ) ?: get_the_title( get_the_ID() ),
-	'description' => get_field( 'page_header_description' ) ?: '',
-) );
+crispydiv_page_header();
 ?>
 
 	<main id="site-content">

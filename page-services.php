@@ -13,7 +13,7 @@ crispydiv_page_header( array(
 
 	<main id="site-content">
 		<div class="small-cta-section element-spacing tiny background-gray">
-			<p>Curious about a service not listed below? <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Send an email to ask questions.</a> No obligations.</p>
+			<p>Curious about a service not listed below? <a href="<?php echo esc_url( THEME_CONTACT_URL ); ?>">Send an email to ask questions.</a> No obligations.</p>
 		</div>
 		<div class="services-wrap">
 			<?php

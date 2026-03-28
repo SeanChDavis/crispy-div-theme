@@ -14,6 +14,7 @@ define( 'THEME_STYLESHEET_DIR', get_stylesheet_directory_uri() );
 const THEME_ASSETS = THEME_STYLESHEET_DIR . '/assets/';
 const THEME_IMAGES = THEME_ASSETS . 'images/';
 const THEME_INCLUDES = THEME_TEMPLATE_DIR . '/includes';
+define( 'THEME_CONTACT_URL', home_url( '/contact/' ) );
 
 /**
  * Sets up WordPress features

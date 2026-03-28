@@ -19,7 +19,7 @@
 					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img class="site-logo" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/branding/crispy-div-logo-color.svg' ); ?>" alt="<?php echo esc_attr( THEME_NAME . ' home' ); ?>"/></a>
 				</p>
 				<p class="site-description"><?php echo crispydiv_site_description(); ?>
-					<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Reach out</a>.</p>
+					<a href="<?php echo esc_url( THEME_CONTACT_URL ); ?>">Reach out</a>.</p>
 			</div>
 			<div class="crispy-div-links">
 				<span class="footer-list-title h6">Services</span>

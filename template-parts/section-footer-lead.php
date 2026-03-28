@@ -21,7 +21,7 @@ if ( ! empty( $args['button_text'] ) ) {
 	$button_text = $args['button_text'];
 }
 
-$button_url = home_url( '/contact' );
+$button_url = THEME_CONTACT_URL;
 if ( ! empty( $args['button_url'] ) ) {
 	$button_url = $args['button_url'];
 }

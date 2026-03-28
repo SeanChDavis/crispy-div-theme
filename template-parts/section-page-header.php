@@ -10,10 +10,7 @@ if ( ! empty( $args['bg-color'] ) && ! empty( $args['corner-accent-color'] ) ) {
 	$corner_accent_color = $args['corner-accent-color'];
 } else {
 
-	$page_id = get_the_ID();
-	if ( is_home() ) {
-		$page_id = get_option( 'page_for_posts' );
-	}
+	$page_id = crispydiv_get_current_page_id();
 
 	if ( get_field( 'page_header_theme', $page_id ) === 'purple' ) {
 		$page_header_theme = 'background-purple';
@@ -28,10 +25,10 @@ if ( ! empty( $args['bg-color'] ) && ! empty( $args['corner-accent-color'] ) ) {
 $args = wp_parse_args( $args ?? [], array(
 	'bg-color'            => $page_header_theme,
 	'corner-accent-color' => $corner_accent_color,
-	'title'               => get_the_title( get_the_ID() ),
+	'title'               => get_field( 'page_header_title' ) ?: get_the_title( get_the_ID() ),
 	'title-class'         => 'h3',
 	'title-label'         => '',
-	'description'         => '',
+	'description'         => get_field( 'page_header_description' ) ?: '',
 ) );
 
 // Build the full class name for the corner accent

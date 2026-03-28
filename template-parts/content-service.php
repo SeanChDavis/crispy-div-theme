@@ -19,7 +19,7 @@ $the_slug = get_post_field( 'post_name', get_post() );
 
 			// CTA defaults
 			$button_text    = 'Let\'s Work Together';
-			$button_url     = home_url( '/contact/' );
+			$button_url     = THEME_CONTACT_URL;
 			$button_classes = array( 'button', 'purple' );
 
 			// Service type CTA overrides

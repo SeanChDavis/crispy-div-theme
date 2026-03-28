@@ -17,7 +17,7 @@ get_header();
 					<?php
 					crispydiv_button( array(
 							'text' => 'Work with Crispy Div',
-							'url' => home_url( '/contact/' ),
+							'url' => THEME_CONTACT_URL,
 							'classes' => array( 'button', 'outline', 'orange' )
 					) );
 					?>
@@ -64,7 +64,7 @@ get_header();
 				</div>
 			</div>
 			<div class="small-cta-section element-spacing tiny background-pink">
-				<p>Curious about a specific plugin or service? <a href="<?php echo home_url( '/contact/' ); ?>">Send an email to ask questions.</a> No obligations.</p>
+				<p>Curious about a specific plugin or service? <a href="<?php echo esc_url( THEME_CONTACT_URL ); ?>">Send an email to ask questions.</a> No obligations.</p>
 			</div>
 		</section>
 
@@ -153,7 +153,7 @@ get_header();
 			</div>
 		</section>
 		<div class="small-cta-section element-spacing tiny background-gray">
-			<p><a href="<?php echo home_url( '/contact/' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
+			<p><a href="<?php echo esc_url( THEME_CONTACT_URL ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
 		</div>
 	</main>
     <?php
