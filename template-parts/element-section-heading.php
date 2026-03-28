@@ -29,7 +29,7 @@ if ( ! empty( $args['classes'] ) ) {
 ?>
 
 <div class="<?php echo esc_attr( $classes ); ?>">
-	<<?php echo $title_size; ?> class="section-title"><?php echo esc_html( $title ); ?></<?php echo $title_size; ?>>
+	<<?php echo $title_size; ?> class="section-title"><?php echo wp_kses( $title, array( 'br' => array( 'class' => array() ), 'span' => array( 'class' => array() ) ) ); ?></<?php echo $title_size; ?>>
 	<div class="section-description">
 		<p><?php echo wp_kses_post( $description ); ?></p>
 		<?php
