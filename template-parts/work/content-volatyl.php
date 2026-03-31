@@ -56,6 +56,7 @@
 	) );
 	?>
 </section>
+<?php if ( get_field( 'gallery_shortcode' ) ) : ?>
 <section class="screenshots-section">
 	<?php
 	get_template_part( 'template-parts/element', 'section-heading', array(
@@ -63,16 +64,12 @@
 		'description' => 'You can <a href="https://volatyl.crispydiv.com/" target="_blank">browse the Volatyl live demo site</a>. Or view the screenshots below to see it in action.',
 		'classes'     => 'top-light',
 	) );
-
-	if ( get_field( 'gallery_shortcode' ) ) {
-		?>
-		<div class="screenshots-gallery element-spacing no-vertical-spacing">
-			<?php echo do_shortcode( get_field( 'gallery_shortcode' ) ); ?>
-		</div>
-		<?php
-	}
 	?>
+	<div class="screenshots-gallery element-spacing no-vertical-spacing">
+		<?php echo do_shortcode( get_field( 'gallery_shortcode' ) ); ?>
+	</div>
 </section>
+<?php endif; ?>
 <section class="general-grid large">
 	<?php
 
