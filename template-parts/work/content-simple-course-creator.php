@@ -24,7 +24,7 @@
 			</p>
 		</div>
 		<div class="work-display">
-			<img class="framed" src="<?php echo esc_url( THEME_IMAGES . 'scc-front-page-atf.jpg' ); ?>" alt="">
+			<img class="framed" src="<?php echo esc_url( THEME_IMAGES . 'work/scc-front-page-atf.jpg' ); ?>" alt="">
 		</div>
 	</div>
 </section>

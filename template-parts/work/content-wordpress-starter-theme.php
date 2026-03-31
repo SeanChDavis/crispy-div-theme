@@ -24,7 +24,7 @@
 			</p>
 		</div>
 		<div class="work-display">
-			<img class="framed" src="<?php echo esc_url( THEME_IMAGES . 'wst-front-page-atf.jpg' ); ?>" alt="Screenshot of WordPress Starter Theme hero area">
+			<img class="framed" src="<?php echo esc_url( THEME_IMAGES . 'work/wst-front-page-atf.jpg' ); ?>" alt="Screenshot of WordPress Starter Theme hero area">
 		</div>
 	</div>
 </section>
