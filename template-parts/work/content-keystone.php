@@ -21,7 +21,7 @@
 			</p>
 		</div>
 		<div class="work-display">
-			<img class="framed" src="<?php echo THEME_IMAGES.'keystone-front-page-atf.jpg'; ?>" alt="Screenshot of Keystone hero area">
+			<img class="framed" src="<?php echo esc_url( THEME_IMAGES . 'work/keystone-front-page-atf.jpg' ); ?>" alt="Screenshot of Keystone hero area">
 		</div>
 	</div>
 </section>
