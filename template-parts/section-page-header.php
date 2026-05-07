@@ -53,7 +53,7 @@ if ( ! empty( $args['size'] ) ) {
         </h1>
 		<?php if ( is_singular( 'post' ) ) { ?>
             <div class="entry-meta">
-                <?php crispydiv_posted_on(); ?>
+                <?php crispydiv_posted_on(); crispydiv_posted_by(); ?>
             </div>
 		<?php } ?>
 		<?php
