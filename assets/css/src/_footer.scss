@@ -40,6 +40,10 @@
 
 				.site-description {
 					padding-right: clamp(0rem, 1vw, 1rem);
+
+					p:not(:last-child) {
+						margin: 1rem 0;
+					}
 				}
 
 				.site-title {
